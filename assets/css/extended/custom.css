@@ -41,10 +41,10 @@ body a {
 
 nav a {
     color: black;
-    font-weight: 300;
+    font-weight: 400;
 }
 #menu .active {
-	border-bottom: none; 
+	border-bottom: 2px underline; 
     font-weight: 500;
 }
 
