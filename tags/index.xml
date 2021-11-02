@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Essence of Software</title>
-    <link>https://essenceofsoftware.com/tags/</link>
+    <link>https://dnjackson.github.io/eos/tags/</link>
     <description>Recent content in Tags on Essence of Software</description>
     <image>
-      <url>https://essenceofsoftware.com/papermod-cover.png</url>
-      <link>https://essenceofsoftware.com/papermod-cover.png</link>
+      <url>https://dnjackson.github.io/eos/papermod-cover.png</url>
+      <link>https://dnjackson.github.io/eos/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dnjackson.github.io/eos/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PaperMod</title>
-      <link>https://essenceofsoftware.com/tags/papermod/</link>
+      <link>https://dnjackson.github.io/eos/tags/papermod/</link>
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tags/papermod/</guid>
+      <guid>https://dnjackson.github.io/eos/tags/papermod/</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>https://essenceofsoftware.com/tags/css/</link>
+      <link>https://dnjackson.github.io/eos/tags/css/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tags/css/</guid>
+      <guid>https://dnjackson.github.io/eos/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://essenceofsoftware.com/tags/html/</link>
+      <link>https://dnjackson.github.io/eos/tags/html/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tags/html/</guid>
+      <guid>https://dnjackson.github.io/eos/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://essenceofsoftware.com/tags/markdown/</link>
+      <link>https://dnjackson.github.io/eos/tags/markdown/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tags/markdown/</guid>
+      <guid>https://dnjackson.github.io/eos/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://essenceofsoftware.com/tags/themes/</link>
+      <link>https://dnjackson.github.io/eos/tags/themes/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tags/themes/</guid>
+      <guid>https://dnjackson.github.io/eos/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>privacy</title>
-      <link>https://essenceofsoftware.com/tags/privacy/</link>
+      <link>https://dnjackson.github.io/eos/tags/privacy/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tags/privacy/</guid>
+      <guid>https://dnjackson.github.io/eos/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>https://essenceofsoftware.com/tags/shortcodes/</link>
+      <link>https://dnjackson.github.io/eos/tags/shortcodes/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tags/shortcodes/</guid>
+      <guid>https://dnjackson.github.io/eos/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text</title>
-      <link>https://essenceofsoftware.com/tags/text/</link>
+      <link>https://dnjackson.github.io/eos/tags/text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tags/text/</guid>
+      <guid>https://dnjackson.github.io/eos/tags/text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>https://essenceofsoftware.com/tags/emoji/</link>
+      <link>https://dnjackson.github.io/eos/tags/emoji/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tags/emoji/</guid>
+      <guid>https://dnjackson.github.io/eos/tags/emoji/</guid>
       <description></description>
     </item>
     
