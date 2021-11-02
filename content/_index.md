@@ -7,7 +7,7 @@ ShowBreadCrumbs: false
 ---
 
 
-{{< figure src="/images/cover.jpg#floatleft" width="400">}}
+{{< figure src="images/cover.jpg#floatleft" width="400">}}
 
 As our dependence on technology increases, the design of software matters more than ever before. Why then is so much software flawed? Why hasn’t there been a systematic and scalable way to create software that is easy to use, robust, and secure?
 
