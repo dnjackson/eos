@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>emoji on Essence of Software</title>
-    <link>https://dnjackson.github.io/eos/tags/emoji/</link>
+    <link>https://essenceofsoftware.com/tags/emoji/</link>
     <description>Recent content in emoji on Essence of Software</description>
     <image>
-      <url>https://dnjackson.github.io/eos/papermod-cover.png</url>
-      <link>https://dnjackson.github.io/eos/papermod-cover.png</link>
+      <url>https://essenceofsoftware.com/papermod-cover.png</url>
+      <link>https://essenceofsoftware.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://dnjackson.github.io/eos/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emoji Support</title>
-      <link>https://dnjackson.github.io/eos/posts/emoji-support/</link>
+      <link>https://essenceofsoftware.com/posts/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://dnjackson.github.io/eos/posts/emoji-support/</guid>
+      <guid>https://essenceofsoftware.com/posts/emoji-support/</guid>
       <description>Guide to emoji usage in Hugo</description>
     </item>
     

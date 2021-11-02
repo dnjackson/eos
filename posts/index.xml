@@ -10,50 +10,14 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dnjackson.github.io/eos/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dnjackson.github.io/eos/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://dnjackson.github.io/eos/posts/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Concepts: A Brief Intro</title>
+      <link>https://dnjackson.github.io/eos/posts/intro/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dnjackson.github.io/eos/posts/markdown-syntax/</guid>
-      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
-    </item>
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://dnjackson.github.io/eos/posts/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://dnjackson.github.io/eos/posts/rich-content/</guid>
-      <description>A brief description of Hugo Shortcodes</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://dnjackson.github.io/eos/posts/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://dnjackson.github.io/eos/posts/placeholder-text/</guid>
-      <description>Lorem Ipsum Dolor Si Amet</description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://dnjackson.github.io/eos/posts/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://dnjackson.github.io/eos/posts/math-typesetting/</guid>
-      <description>A brief guide to setup KaTeX</description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://dnjackson.github.io/eos/posts/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://dnjackson.github.io/eos/posts/emoji-support/</guid>
-      <description>Guide to emoji usage in Hugo</description>
+      <guid>https://dnjackson.github.io/eos/posts/intro/</guid>
+      <description>A brief introduction to concepts</description>
     </item>
     
   </channel>

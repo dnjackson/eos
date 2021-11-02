@@ -10,20 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dnjackson.github.io/eos/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PaperMod</title>
-      <link>https://dnjackson.github.io/eos/tags/papermod/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dnjackson.github.io/eos/tags/papermod/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dnjackson.github.io/eos/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>css</title>
       <link>https://dnjackson.github.io/eos/tags/css/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dnjackson.github.io/eos/tags/css/</guid>
       <description></description>
@@ -32,7 +23,7 @@
     <item>
       <title>html</title>
       <link>https://dnjackson.github.io/eos/tags/html/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dnjackson.github.io/eos/tags/html/</guid>
       <description></description>
@@ -41,7 +32,7 @@
     <item>
       <title>markdown</title>
       <link>https://dnjackson.github.io/eos/tags/markdown/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dnjackson.github.io/eos/tags/markdown/</guid>
       <description></description>
@@ -50,45 +41,9 @@
     <item>
       <title>themes</title>
       <link>https://dnjackson.github.io/eos/tags/themes/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dnjackson.github.io/eos/tags/themes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>privacy</title>
-      <link>https://dnjackson.github.io/eos/tags/privacy/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://dnjackson.github.io/eos/tags/privacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>https://dnjackson.github.io/eos/tags/shortcodes/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://dnjackson.github.io/eos/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>text</title>
-      <link>https://dnjackson.github.io/eos/tags/text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://dnjackson.github.io/eos/tags/text/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>emoji</title>
-      <link>https://dnjackson.github.io/eos/tags/emoji/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://dnjackson.github.io/eos/tags/emoji/</guid>
       <description></description>
     </item>
     

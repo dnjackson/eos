@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>text on Essence of Software</title>
-    <link>https://dnjackson.github.io/eos/tags/text/</link>
+    <link>https://essenceofsoftware.com/tags/text/</link>
     <description>Recent content in text on Essence of Software</description>
     <image>
-      <url>https://dnjackson.github.io/eos/papermod-cover.png</url>
-      <link>https://dnjackson.github.io/eos/papermod-cover.png</link>
+      <url>https://essenceofsoftware.com/papermod-cover.png</url>
+      <link>https://essenceofsoftware.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://dnjackson.github.io/eos/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tags/text/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Placeholder Text</title>
-      <link>https://dnjackson.github.io/eos/posts/placeholder-text/</link>
+      <link>https://essenceofsoftware.com/posts/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://dnjackson.github.io/eos/posts/placeholder-text/</guid>
+      <guid>https://essenceofsoftware.com/posts/placeholder-text/</guid>
       <description>Lorem Ipsum Dolor Si Amet</description>
     </item>
     

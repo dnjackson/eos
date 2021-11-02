@@ -2,89 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dnjackson.github.io/eos/posts/papermod/papermod-installation/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/posts/papermod/papermod-features/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/tags/papermod/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/series/papermod/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/posts/papermod/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/posts/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/series/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/tags/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://dnjackson.github.io/eos/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dnjackson.github.io/eos/posts/intro/</loc>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dnjackson.github.io/eos/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dnjackson.github.io/eos/</loc>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dnjackson.github.io/eos/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dnjackson.github.io/eos/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/posts/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://dnjackson.github.io/eos/posts/</loc>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dnjackson.github.io/eos/series/</loc>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dnjackson.github.io/eos/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dnjackson.github.io/eos/tags/</loc>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dnjackson.github.io/eos/tags/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dnjackson.github.io/eos/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dnjackson.github.io/eos/series/themes-guide/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/posts/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/posts/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/posts/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dnjackson.github.io/eos/posts/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dnjackson.github.io/eos/about/</loc>
   </url><url>
     <loc>https://dnjackson.github.io/eos/archives/</loc>
   </url><url>
+    <loc>https://dnjackson.github.io/eos/author/</loc>
+  </url><url>
     <loc>https://dnjackson.github.io/eos/buy/</loc>
+  </url><url>
+    <loc>https://dnjackson.github.io/eos/discuss/</loc>
   </url><url>
     <loc>https://dnjackson.github.io/eos/praise/</loc>
   </url><url>
