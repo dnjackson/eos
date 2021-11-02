@@ -1,8 +1,8 @@
 ---
-author: "Hugo Authors"
-title: "Placeholder Text"
-date: "2019-03-09"
-description: "Lorem Ipsum Dolor Si Amet"
+author: "Daniel Jackson"
+title: "Concepts: A Brief Intro"
+date: "2021-11-03"
+description: "A brief introduction to concepts"
 tags: ["markdown", "text"]
 hideMeta: true
 searchHidden: true

@@ -32,3 +32,22 @@ img[src$='#floatleft']
 	padding-left: 30px;
 	padding-right: 30px;
 }
+
+body a {
+/* 
+    color: #505050;
+ */
+}
+
+nav a {
+    color: black;
+}
+
+h1, h2, h3 {
+    color: rgb(43,103,121);
+	}
+
+h2 {
+	font-size: 22px;
+    line-height: 1.3;
+}
