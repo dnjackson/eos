@@ -41,6 +41,11 @@ body a {
 
 nav a {
     color: black;
+    font-weight: 300;
+}
+#menu .active {
+	border-bottom: none; 
+    font-weight: 500;
 }
 
 h1, h2, h3 {
@@ -51,3 +56,4 @@ h2 {
 	font-size: 22px;
     line-height: 1.3;
 }
+
