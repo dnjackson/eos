@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Buy on Essence of Software</title>
-    <link>https://essenceofsoftware.com/buy/</link>
+    <link>essenceofsoftware.com/buy/</link>
     <description>Recent content in Buy on Essence of Software</description>
     <image>
-      <url>https://essenceofsoftware.com/papermod-cover.png</url>
-      <link>https://essenceofsoftware.com/papermod-cover.png</link>
+      <url>essenceofsoftware.com/papermod-cover.png</url>
+      <link>essenceofsoftware.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Daniel Jackson</copyright><atom:link href="https://essenceofsoftware.com/buy/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Daniel Jackson</copyright><atom:link href="essenceofsoftware.com/buy/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
