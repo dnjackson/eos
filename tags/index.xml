@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Essence of Software</title>
-    <link>https://dnjackson.github.io/eos/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Essence of Software</description>
     <image>
-      <url>https://dnjackson.github.io/eos/papermod-cover.png</url>
-      <link>https://dnjackson.github.io/eos/papermod-cover.png</link>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dnjackson.github.io/eos/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>css</title>
-      <link>https://dnjackson.github.io/eos/tags/css/</link>
+      <link>/tags/css/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dnjackson.github.io/eos/tags/css/</guid>
+      <guid>/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://dnjackson.github.io/eos/tags/html/</link>
+      <link>/tags/html/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dnjackson.github.io/eos/tags/html/</guid>
+      <guid>/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://dnjackson.github.io/eos/tags/markdown/</link>
+      <link>/tags/markdown/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dnjackson.github.io/eos/tags/markdown/</guid>
+      <guid>/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://dnjackson.github.io/eos/tags/themes/</link>
+      <link>/tags/themes/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dnjackson.github.io/eos/tags/themes/</guid>
+      <guid>/tags/themes/</guid>
       <description></description>
     </item>
     

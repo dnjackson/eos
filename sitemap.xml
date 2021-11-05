@@ -2,57 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dnjackson.github.io/eos/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/posts/intro/</loc>
+    <loc>/posts/intro/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/tags/css/</loc>
+    <loc>/tags/css/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/</loc>
+    <loc>/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/tags/html/</loc>
+    <loc>/tags/html/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/tags/markdown/</loc>
+    <loc>/tags/markdown/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/series/</loc>
+    <loc>/series/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/categories/syntax/</loc>
+    <loc>/categories/syntax/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/tags/themes/</loc>
+    <loc>/tags/themes/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/categories/themes/</loc>
+    <loc>/categories/themes/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/series/themes-guide/</loc>
+    <loc>/series/themes-guide/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/about/</loc>
+    <loc>/about/</loc>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/archives/</loc>
+    <loc>/archives/</loc>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/author/</loc>
+    <loc>/author/</loc>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/buy/</loc>
+    <loc>/buy/</loc>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/discuss/</loc>
+    <loc>/discuss/</loc>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/praise/</loc>
+    <loc>/praise/</loc>
   </url><url>
-    <loc>https://dnjackson.github.io/eos/search/</loc>
+    <loc>/search/</loc>
   </url>
 </urlset>

@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://dnjackson.github.io/eos/sitemap.xml
+Sitemap: sitemap.xml
