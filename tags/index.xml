@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Essence of Software</title>
-    <link>essenceofsoftware.com/tags/</link>
+    <link>https://essenceofsoftware.com/tags/</link>
     <description>Recent content in Tags on Essence of Software</description>
     <image>
-      <url>essenceofsoftware.com/papermod-cover.png</url>
-      <link>essenceofsoftware.com/papermod-cover.png</link>
+      <url>https://essenceofsoftware.com/papermod-cover.png</url>
+      <link>https://essenceofsoftware.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="essenceofsoftware.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>css</title>
-      <link>essenceofsoftware.com/tags/css/</link>
+      <link>https://essenceofsoftware.com/tags/css/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>essenceofsoftware.com/tags/css/</guid>
+      <guid>https://essenceofsoftware.com/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>essenceofsoftware.com/tags/html/</link>
+      <link>https://essenceofsoftware.com/tags/html/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>essenceofsoftware.com/tags/html/</guid>
+      <guid>https://essenceofsoftware.com/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>essenceofsoftware.com/tags/markdown/</link>
+      <link>https://essenceofsoftware.com/tags/markdown/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>essenceofsoftware.com/tags/markdown/</guid>
+      <guid>https://essenceofsoftware.com/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>essenceofsoftware.com/tags/themes/</link>
+      <link>https://essenceofsoftware.com/tags/themes/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>essenceofsoftware.com/tags/themes/</guid>
+      <guid>https://essenceofsoftware.com/tags/themes/</guid>
       <description></description>
     </item>
     
