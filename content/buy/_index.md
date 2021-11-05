@@ -12,7 +12,7 @@ ShowBreadCrumbs: false
 
 [Princeton University Press](https://press.princeton.edu/books/hardcover/9780691225388/the-essence-of-software)  
 [Independent bookstores](https://www.indiebound.org/book/9780691225388)  
-[Amazon](https://www.amazon.com/Essence-Software-Concepts-Matter-Design-ebook/dp/B09DTR6F22)
+[Amazon](https://www.amazon.com/Essence-Software-Concepts-Matter-Design/dp/0691225389)
 
 #### Book details
 

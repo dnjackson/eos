@@ -1,5 +1,4 @@
-baseURL: "https://dnjackson.github.io/eos"
-#baseURL: "https://essenceofsoftware.com"
+#baseURL: "https://dnjackson.github.io/eos"
 title: Essence of Software
 paginate: 5
 theme: PaperMod
