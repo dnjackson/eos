@@ -7,7 +7,7 @@ ShowBreadCrumbs: false
 ---
 
 
-{{< figure src="images/photo.3951-20-600x900.jpg#floatleft" width="400">}}
+{{< figure src="images/photo.1022-17.jpg#floatleft" width="500">}}
 
 [Daniel Jackson](https://people.csail.mit.edu/dnj) is a Professor of Computer Science at MIT, a MacVicar teaching fellow, and an Associate Director of the Computer Science and Artificial Intelligence Laboratory.
 
