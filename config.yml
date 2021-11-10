@@ -54,6 +54,8 @@ params:
     description: "Essence of Software"
     author: Daniel Jackson
     
+    keywords: [essence of software, daniel jackson, software design, software, UX, design thinking, design, software engineering, programming, user interfaces]
+    
     defaultTheme: auto
     disableThemeToggle: true
     ShowShareButtons: true
@@ -91,13 +93,13 @@ params:
 #
 #            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
 
-    socialIcons:
-        - name: github
-          url: "https://github.com/adityatelange/hugo-PaperMod"
-        - name: KoFi
-          url: "https://ko-fi.com/adityatelange"
-        - name: RsS
-          url: "index.xml"
+#    socialIcons:
+#        - name: github
+#          url: "https://github.com/adityatelange/hugo-PaperMod"
+#        - name: KoFi
+#          url: "https://ko-fi.com/adityatelange"
+#        - name: RsS
+#          url: "index.xml"
 
     # fix this up once Discourse is going
     editPost:
