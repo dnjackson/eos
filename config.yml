@@ -35,12 +35,15 @@ languages:
                 - name: Praise
                   url: praise/
                   weight: 3
+                - name: Excerpts
+                  url: excerpts/
+                  weight: 4
                 - name: Discuss
                   url: discuss/
-                  weight: 4
+                  weight: 5
                 - name: Blog
                   url: posts/
-                  weight: 5
+                  weight: 6
 
 
 outputs:
