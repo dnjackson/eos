@@ -54,7 +54,7 @@ outputs:
 
 params:    
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Essence of Software"
+    description: "The Essence of Software: Why Concepts Matter for Great Design " # I think this appears in social cards
     author: Daniel Jackson
     
     keywords: [essence of software, daniel jackson, software design, software, UX, design thinking, design, software engineering, programming, user interfaces]
@@ -70,7 +70,7 @@ params:
     ShowCodeCopyButtons: true
     ShowToc: true
     # comments: false
-    images: ["papermod-cover.png"]
+    images: ["eos-twitter-card.png"]
 
     profileMode:
         enabled: false
