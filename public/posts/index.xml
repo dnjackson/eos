@@ -10,14 +10,14 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Concepts: A Brief Intro</title>
-      <link>https://essenceofsoftware.com/posts/intro/</link>
-      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      <title>Sample chapter</title>
+      <link>https://essenceofsoftware.com/posts/sample-chapter/</link>
+      <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/posts/intro/</guid>
-      <description>A brief introduction to concepts</description>
+      <guid>https://essenceofsoftware.com/posts/sample-chapter/</guid>
+      <description>Why I Wrote This Book</description>
     </item>
     
   </channel>

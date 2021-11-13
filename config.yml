@@ -23,27 +23,24 @@ languages:
         weight: 1
         menu:
             main:
-                - name: About
-                  url: about/
-                  weight: 1
                 - name: Author
                   url: author/
                   weight: 5
                 - name: Buy
                   url: buy/
                   weight: 2
-                - name: Praise
+                - name: Reviews
                   url: praise/
                   weight: 3
-                - name: Excerpts
-                  url: excerpts/
-                  weight: 4
-                - name: Discuss
-                  url: discuss/
-                  weight: 5
-                - name: Blog
+                - name: Ask
+                  url: ask/
+                  weight: 1
+                - name: Read
                   url: posts/
                   weight: 6
+                - name: Subscribe
+                  url: subscribe/
+                  weight: 7
 
 
 outputs:
@@ -61,7 +58,7 @@ params:
     
     defaultTheme: auto
     disableThemeToggle: true
-    ShowShareButtons: true
+    ShowShareButtons: false # DNJ for now
     ShowReadingTime: true
     # disableSpecial1stPost: true
     displayFullLangName: true
@@ -72,6 +69,7 @@ params:
     # comments: false
     images: ["eos-twitter-card.png"]
 
+    # this mode is not active
     profileMode:
         enabled: false
         title: The Essence of Software
@@ -80,10 +78,10 @@ params:
         imageWidth: 400
         imageHeight: 600
         buttons:
-            - name: Archives
-              url: archives
-            - name: Tags
-              url: tags
+            - name: About
+              url: About
+            - name: Buy
+              url: buy
 
 #    homeInfoParams:
 #        Title: "Essence of Software"
