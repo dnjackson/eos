@@ -30,12 +30,12 @@ languages:
                   url: buy/
                   weight: 2
                 - name: Reviews
-                  url: praise/
+                  url: reviews/
                   weight: 3
                 - name: Ask
                   url: ask/
                   weight: 1
-                - name: Read
+                - name: Goodies
                   url: posts/
                   weight: 6
                 - name: Subscribe

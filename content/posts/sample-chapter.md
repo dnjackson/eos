@@ -9,6 +9,8 @@ description: "Why I Wrote This Book"
 # ShowToc: true
 # TocOpen: true
 hideMeta: true # removes date etc from post
+summary: "Download a free sample chapter."
+
 ---
 
 You can download a free sample chapter from the book <a href="eos-intro-sample-chapter.pdf" target="_blank">here</a>.
