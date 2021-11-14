@@ -1,8 +1,8 @@
 ---
-# title: "Home"
+title: "Essence of Software"
 layout: "home"
 # url: "/home"
-# summary: "home"
+summary: "home"
 ShowBreadCrumbs: false
 ---
 
