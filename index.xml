@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Sat, 13 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upcoming tech talk</title>
+      <link>https://essenceofsoftware.com/posts/acm-tech-talk/</link>
+      <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/posts/acm-tech-talk/</guid>
+      <description>Register here for upcoming seminar on Dec 1.</description>
+    </item>
+    
     <item>
       <title>Sample chapter</title>
       <link>https://essenceofsoftware.com/posts/sample-chapter/</link>
