@@ -15,7 +15,7 @@ He is the lead designer of the [Alloy](https://alloytools.org) modeling language
 
 Jackson has consulted for many companies, including Accenture, AIG, AT&T, Fujitsu and Teradyne. He has mentored startups for the Center for MIT Entrepreneurship, and has given talks to developers worldwide. More than 50 companies have used his videos on UX design, and he has taught 6.170, a capstone course in software design, to MIT computer science students for more than 10 years.
 
-Jackson is also a [photographer](https://dnj.photo). 
+Jackson is also a [photographer](https://dnj.photo).
 <!-- 
 
 Jackson is also a [photographer](https://dnj.photo). Recent projects include [Portraits of Resilience](https://www.portraitsofresilience.com), a collection of stories and images of members of the MIT community experiencing anxiety and depression, [The Pond](https://dnj.photo/projects/pond), a long-time study of family life around a pond in the Berkshires, and [At a Distance](https://dnj.photo/projects/distance), a series about neighbors during the pandemic.
