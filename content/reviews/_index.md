@@ -1,7 +1,7 @@
 ---
 title: "Praise"
 layout: "home"
-url: "/praise"
+url: "/reviews"
 ShowBreadCrumbs: false
 ---
 
