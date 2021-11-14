@@ -2,7 +2,7 @@
 # title: "Home"
 layout: "home"
 # url: "/home"
-summary: "home"
+# summary: "home"
 ShowBreadCrumbs: false
 ---
 
