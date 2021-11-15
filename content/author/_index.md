@@ -13,7 +13,7 @@ ShowBreadCrumbs: false
 
 He is the lead designer of the [Alloy](https://alloytools.org) modeling language, and author of [Software Abstractions](https://softwareabstractions.org). He chaired a [National Academies study](https://www.nap.edu/catalog/11923/software-for-dependable-systems-sufficient-evidence) on software dependability, and has collaborated on software projects with NASA on air-traffic control, with Massachusetts General Hospital on proton therapy, and with Toyota on autonomous cars (for which he has two patents pending). 
 
-Jackson has consulted for many companies, including Accenture, AIG, AT&T, Fujitsu and Teradyne. He has mentored startups for the Center for MIT Entrepreneurship, and has given talks to developers worldwide. More than 1,000 developers have watched his videos on UX design, and he has taught 6.170, a capstone course in software design, to MIT computer science students for more than 10 years.
+Jackson has consulted for many companies, including Accenture, AIG, AT&T, Fujitsu and Teradyne. He has mentored startups for the Center for MIT Entrepreneurship, and has given talks to developers worldwide. Developers from 500 companies have watched his videos on UX design, and more than 2,000 students have taken his courses on programming and software design at MIT.
 
 Jackson is also a [photographer](https://dnj.photo).
 <!-- 
