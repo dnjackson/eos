@@ -6,11 +6,11 @@
     margin-inline-start: auto;
     margin-inline-end: auto;
     line-height: var(--header-height);
-    background-color: #eeeeee; /* DNJ */
+    background-color: #dddddd; /* DNJ, was #eeeeee*/
 }
 
 p {
-	color: grey;
+	color: dimgrey; /* DNJ, was grey */
 	}
 	
 body {

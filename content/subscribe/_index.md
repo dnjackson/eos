@@ -6,7 +6,7 @@ summary: "Subscribe"
 ShowBreadCrumbs: false
 ---
 
-For invitations to seminars and workshops, book updates, and occasional design dispatches:
+Receive new design ideas in your mailbox, along with invitations to talks and workshops:
 
 <iframe
 scrolling="no"
