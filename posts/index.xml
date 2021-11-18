@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Sun, 14 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upvote: An Example Concept</title>
+      <link>https://essenceofsoftware.com/posts/upvote/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/posts/upvote/</guid>
+      <description>An example of what a concept catalog entry might look like</description>
+    </item>
+    
     <item>
       <title>Upcoming tech talk</title>
       <link>https://essenceofsoftware.com/posts/acm-tech-talk/</link>

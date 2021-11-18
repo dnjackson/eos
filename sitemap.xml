@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://essenceofsoftware.com/tags/catalog/</loc>
+    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tags/concept/</loc>
+    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/</loc>
+    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/posts/</loc>
+    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tags/</loc>
+    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tags/upvote/</loc>
+    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/posts/upvote/</loc>
+    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://essenceofsoftware.com/drafts/intro/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/drafts/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/posts/</loc>
-    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/acm-tech-talk/</loc>
     <lastmod>2021-11-14T00:00:00+00:00</lastmod>
@@ -39,7 +54,5 @@
     <loc>https://essenceofsoftware.com/series/</loc>
   </url><url>
     <loc>https://essenceofsoftware.com/subscribe/</loc>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tags/</loc>
   </url>
 </urlset>
