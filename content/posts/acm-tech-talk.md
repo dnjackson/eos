@@ -9,9 +9,13 @@ description: ""
 # series: ["Themes Guide"]
 ShowToc: false
 # TocOpen: true
-hideMeta: true # removes date etc from post
+hideMeta: false # removes date etc from post
 # hideSummary: true
 summary: "Register here for upcoming seminar on Dec 1."
+editPost:
+    URL: "https://forum.softwareconcepts.io"
+    Text: "Comments" # edit text
+    appendFilePath: false # to append file path to Edit link
 ---
 
 I'm excited to have been invited by the [ACM Practitioner Board](https://learning.acm.org/practitioner-board)

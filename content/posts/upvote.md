@@ -8,7 +8,6 @@ tags: ["upvote", "catalog", "concept"]
 # series: ["Themes Guide"]
 ShowToc: true
 TocOpen: true
-comments: true
 hideMeta: false # removes date etc from post
 summary: "An example of a concept catalog entry that defines a concept's 
 purpose, behavior and design issues."

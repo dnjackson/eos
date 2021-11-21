@@ -12,7 +12,9 @@ ShowBreadCrumbs: false
 
 [Princeton University Press](https://press.princeton.edu/books/hardcover/9780691225388/the-essence-of-software)  
 [Independent bookstores](https://www.indiebound.org/book/9780691225388)  
-[Amazon](https://www.amazon.com/Essence-Software-Concepts-Matter-Design/dp/0691225389)
+[Amazon](https://www.amazon.com/Essence-Software-Concepts-Matter-Design/dp/0691225389)  
+[Barnes & Noble](https://www.barnesandnoble.com/w/the-essence-of-software-daniel-jackson/1139308059)  
+[Powell's](https://www.powells.com/book/the-essence-of-software-9780691225388)  
 
 #### Book details
 

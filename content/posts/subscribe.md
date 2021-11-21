@@ -11,6 +11,10 @@ TocOpen: false
 comments: false
 hideMeta: false # removes date etc from post
 summary: "Join an ultra-low-volume email list to hear new ideas about concepts and design."
+editPost:
+    URL: "https://forum.softwareconcepts.io"
+    Text: "Comments" # edit text
+    appendFilePath: false # to append file path to Edit link
 ---
 Yes, I know you get too much email too. But I wanted a chance to be in touch with people who are interested in concept design, so if you'd like to be included in my occasional mailings:
 
