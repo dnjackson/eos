@@ -21,6 +21,8 @@ editPost:
 I'm excited to have been invited by the [ACM Practitioner Board](https://learning.acm.org/practitioner-board)
 to give a [tech talk](https://learning.acm.org/techtalks) at noon Eastern Time on Dec 1, 2021.
 
+{{< figure src="acmtechtalksbanner.jpeg" width="700">}}
+
 Free registration [here](https://event.on24.com/wcc/r/3519662/D728F9A15A3FAA94F89EA92B0E736F44#).
 
 Title: [The Essence of Software (Or Why Systems Often Fail by Design, and How to Fix Them)](https://event.on24.com/wcc/r/3519662/D728F9A15A3FAA94F89EA92B0E736F44#)
