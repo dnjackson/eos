@@ -15,6 +15,7 @@ ShowBreadCrumbs: false
 [Amazon](https://www.amazon.com/Essence-Software-Concepts-Matter-Design/dp/0691225389)  
 [Barnes & Noble](https://www.barnesandnoble.com/w/the-essence-of-software-daniel-jackson/1139308059)  
 [Powell's](https://www.powells.com/book/the-essence-of-software-9780691225388)  
+[Amazon UK](https://www.amazon.co.uk/Essence-Software-Concepts-Matter-Design/dp/0691225389)
 
 #### Book details
 
