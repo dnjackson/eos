@@ -259,5 +259,5 @@ and also include some lighter topics such as:
 
 ### Comments & reactions?
 
-Join the discussion at [forum.softwareconcepts.io](forum.softwareconcepts.io)!
+Join the discussion at [forum.softwareconcepts.io](https://forum.softwareconcepts.io)!
 
