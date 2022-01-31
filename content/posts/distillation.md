@@ -1,16 +1,38 @@
-## The Essence of the Essence
+---
+author: "Daniel Jackson"
+title: "The Essence of the Essence"
+date: "2022-01-31"
+description: "A short(ish) summary of the book"
+# tags: ["markdown", "css", "html", "themes"]
+# categories: ["themes", "syntax"]
+# series: ["Themes Guide"]
+ShowToc: true
+TocOpen: true
+hideMeta: false # removes date etc from post
+# hideSummary: true
+summary: "Save yourself the trouble of actually reading the book."
+editPost:
+    URL: "https://forum.softwareconcepts.io"
+    Text: "Comments" # edit text
+    appendFilePath: false # to append file path to Edit link
+aliases: "/distillation/"
+---
 
-*v 1.0; Daniel Jackson, January 26, 2022*
+<!-- *v 1.0; Daniel Jackson, January 26, 2022* -->
 
-This article summarizes the key ideas in the book *The Essence of Software*. It is not intended to be understandable by itself; in particular, it contains almost no examples, which the book is full of.
+This article summarizes the key ideas in the book *The Essence of Software*. It is not intended to be understandable by itself. It gives almost no examples, makes claims without justifying them, and cites almost no related work. And, I'll admit, it's probably not that much fun to read. But, hey, at least it's short(ish)!
 
-If you've read the book, this summary may be a useful reminder of its ideas that will help you solidify them in your mind; if you haven't read it yet, it will give you a sense of what to expect.
+If you've read the book, this summary may be a useful reminder of its ideas to help you solidify them in your mind; if you haven't read it yet, it may give you a sense of what to expect (at least content-wise: the book is more fun, I hope!).
 
-This summary is aimed at readers with a fairly extensive background in software design and development. The book itself is aimed at a broader audience, introduces the ideas more gently by way of example, and relegates the harder technical stuff to end notes.
+This summary assumes a fairly extensive background in software design and development. The book itself is aimed at a broader audience, introduces the ideas more gently by way of example, and relegates the harder technical stuff to end notes.
 
 ### Defining Software Design
 
-In most fields, "design" means shaping an artifact to meet the needs of users, thus sitting at the boundary between humans and machines. Despite Kapor's notable manifesto in 1990, and the book edited by Winograd that followed in 1996, little attention has been paid to software design—especially in contrast to the enormous effort devoted to software engineering (whose interest instead is software's internal structure and means of construction). This disparity of attention has resulted in great advances in programming, represented by a major body of knowledge and well-known design principles. For software design, our knowledge is much more limited, consisting primarily of heuristics for user interface design.
+In most fields, "design" means shaping an artifact to meet the needs of users, thus sitting at the boundary between humans and machines. Despite Kapor's notable manifesto in 1990, and the book edited by Winograd that followed in 1996, little attention has been paid to software design.
+
+Enormous effort, in contrast, has been devoted to software engineering (whose interest instead is software's internal structure and means of construction). This disparity of attention has resulted in great advances in programming, represented by a major body of knowledge and well-known design principles.
+
+The field of human-computer interaction has likewise produced an impressive body of knowledge about user interfaces and how they shape the way we understand and use software. But for software design, where the focus is on the fundamental abstractions that underlie both the interface and the implementation, our knowledge is much more limited, and we have had to be content with being guided instead by vaguer notions, and (albeit sensible) appeals to simplicity and clarity.
 
 ### The Book's Aims and Approach
 
