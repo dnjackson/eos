@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Essence of the Essence</title>
+      <link>https://essenceofsoftware.com/posts/distillation/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/posts/distillation/</guid>
+      <description>A short(ish) summary of the book</description>
+    </item>
+    
     <item>
       <title>Concept Design Sketchnote</title>
       <link>https://essenceofsoftware.com/posts/sketchnote/</link>
@@ -66,14 +75,12 @@
     </item>
     
     <item>
-      <title></title>
-      <link>https://essenceofsoftware.com/distillation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Test A</title>
+      <link>https://essenceofsoftware.com/posts/testa/</link>
+      <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/distillation/</guid>
-      <description>The Essence of the Essence v 1.0; Daniel Jackson, January 26, 2022
-This article summarizes the key ideas in the book The Essence of Software. It is not intended to be understandable by itself; in particular, it contains almost no examples, which the book is full of.
-If you&amp;rsquo;ve read the book, this summary may be a useful reminder of its ideas that will help you solidify them in your mind; if you haven&amp;rsquo;t read it yet, it will give you a sense of what to expect.</description>
+      <guid>https://essenceofsoftware.com/posts/testa/</guid>
+      <description>Test A</description>
     </item>
     
     

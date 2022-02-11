@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://essenceofsoftware.com/posts/sketchnote/</loc>
-    <lastmod>2021-11-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://essenceofsoftware.com/</loc>
-    <lastmod>2021-11-20T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/posts/distillation/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/posts/sketchnote/</loc>
     <lastmod>2021-11-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/subscribe/</loc>
@@ -41,8 +44,8 @@
     <loc>https://essenceofsoftware.com/posts/sample-chapter/</loc>
     <lastmod>2021-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/distillation/</loc>
-    <priority>0</priority>
+    <loc>https://essenceofsoftware.com/posts/testa/</loc>
+    <lastmod>2021-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/about/</loc>
   </url><url>
