@@ -32,7 +32,7 @@ languages:
                 - name: Reviews
                   url: reviews/
                   weight: 3
-                - name: Ask
+                - name: Q&A
                   url: ask/
                   weight: 1
                 - name: Goodies
