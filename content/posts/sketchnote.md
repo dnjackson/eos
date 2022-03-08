@@ -9,7 +9,7 @@ description: "A graphical summary of concept design ideas"
 # ShowToc: true
 # TocOpen: true
 hideMeta: false # removes date etc from post
-summary: "Some concept design ideas in a graphical poster, thanks to MJ Broadbent."
+summary: "Early concept design ideas, drawn by MJ Broadbent."
 editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text

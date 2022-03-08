@@ -6,14 +6,13 @@ summary: "ask"
 ShowBreadCrumbs: false
 ---
 
-### The Concept Forum
+### Where can I learn more?
 
-Have questions about the book or concept design? Feedback about the book?<br> 
-Join the discussion at the [software concept forum](http://forum.softwareconcepts.io)!
+From the book, of course! But also a [sample chapter](/posts/sample-chapter), my [ACM tech talk](/posts/acm-tech-talk), and this [summary](/posts/distillation). Questions about the book or concept design? Feedback? Join us at the [software concept forum](http://forum.softwareconcepts.io)!
 
 ### Why did you write this book?
 
-In my career in software, I've seen many good languages, tools and methods adopted. But none had the impact we'd hoped for. I came to realize that there's one thing that makes for great software: conceptual clarity in the design. So I've spent the last 8 years thinking about how this can be achieved, and this book is the result.
+In my career in software, I've seen many good languages, tools and methods adopted. But none had the impact we'd hoped for. I came to realize that there's one thing that makes for great software: conceptual clarity in the design. So I've spent the last 8 years thinking about how this can be achieved, and this book is the result. 
 
 ### Is this a practical book?
 

@@ -20,11 +20,13 @@ aliases: "/distillation/"
 
 <!-- *v 1.0; Daniel Jackson, January 26, 2022* -->
 
-This article summarizes the key ideas in the book *The Essence of Software*. It is not intended to be understandable by itself. It gives almost no examples, makes claims without justifying them, and cites almost no related work. And, I'll admit, it's probably not that much fun to read. But, hey, at least it's short(ish)!
+This article summarizes the key ideas in the book *The Essence of Software*. It is not intended to be understandable by itself. It gives almost no examples, makes claims without justifying them, and cites almost no related work. And it's not nearly so much fun to read as the book :-). But, hey, at least it's short(ish)!
 
-If you've read the book, this summary may be a useful reminder of its ideas to help you solidify them in your mind; if you haven't read it yet, it may give you a sense of what to expect (at least content-wise: the book is more fun, I hope!).
+If you haven't read the book, I recommend that you don't start with this, but watch my [ACM talk](/posts/acm-tech-talk/) instead. But perhaps you don't really want to read the book, and just want to be able to hold your own at a cocktail party showing off your sophistication in software design. In that case, this may be for you.
 
-This summary assumes a fairly extensive background in software design and development. The book itself is aimed at a broader audience, introduces the ideas more gently by way of example, and relegates the harder technical stuff to end notes.
+If you've read the book, this summary should be a useful reminder of the key ideas, to help you solidify them in your mind and relate them to other approaches. In this sense, it augments the shorter list of provocative questions in Chapter 12 of the book.
+
+A final warning before you jump in: this summary assumes a fairly extensive background in software design and development. The book itself is aimed at a broader audience, introduces the ideas more gently by way of example, and relegates the harder technical stuff to end notes.
 
 ### Defining Software Design
 

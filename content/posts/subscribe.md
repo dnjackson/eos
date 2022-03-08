@@ -1,6 +1,6 @@
 ---
 author: "Daniel Jackson"
-title: "For updates on design..."
+title: "Design Updates in Your Mailbox"
 date: "2021-11-19"
 description: ""
 # tags: ["upvote", "catalog", "concept"]

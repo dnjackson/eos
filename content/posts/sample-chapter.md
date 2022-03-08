@@ -1,6 +1,6 @@
 ---
 author: "Daniel Jackson"
-title: "Sample chapter"
+title: "Sample book chapter"
 date: "2021-11-13"
 description: "Why I Wrote This Book"
 # tags: ["markdown", "css", "html", "themes"]
