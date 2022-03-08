@@ -14,6 +14,7 @@ editPost:
     appendFilePath: false # to append file path to Edit link
 aliases: "/classnumbers/"
 ---
+
 I'm always excited to find examples outside software that concept design can be applied to. Here's one I came across this week.
 
 As part of a restructuring of our curriculum, we're fixing up our class numbers. Currently, our programming sequence looks like this:
@@ -47,3 +48,4 @@ Is this a reasonable solution? I'm not sure. It would require a culture change a
 
 I wonder if there's a better conceptual solution. Let me know if you can think of one!
 
+*From my newsletter: archives and signup [here](https://buttondown.email/essence-of-software).*
