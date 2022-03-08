@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Class Number Dilemma</title>
+      <link>https://essenceofsoftware.com/posts/class-numbers/</link>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/posts/class-numbers/</guid>
+      <description>A Concept Example in Everyday Life</description>
+    </item>
+    
     <item>
       <title>The Essence of the Essence</title>
       <link>https://essenceofsoftware.com/posts/distillation/</link>
@@ -30,7 +39,7 @@
     </item>
     
     <item>
-      <title>For updates on design...</title>
+      <title>Design Updates in Your Mailbox</title>
       <link>https://essenceofsoftware.com/posts/subscribe/</link>
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
       
@@ -66,7 +75,7 @@
     </item>
     
     <item>
-      <title>Sample chapter</title>
+      <title>Sample book chapter</title>
       <link>https://essenceofsoftware.com/posts/sample-chapter/</link>
       <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
       
