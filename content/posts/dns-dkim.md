@@ -1,0 +1,57 @@
+---
+author: "Daniel Jackson"
+title: "Concept Piggybacking in DNS"
+date: "2022-03-11"
+description: "How overloading in DNS brings trouble"
+ShowToc: false
+TocOpen: false
+hideMeta: false # removes date etc from post
+# hideSummary: true
+summary: "Or why basic sysadmin tasks are so hard."
+editPost:
+    URL: "https://forum.softwareconcepts.io"
+    Text: "Comments" # edit text
+    appendFilePath: false # to append file path to Edit link
+---
+
+Basic sys admin tasks can be surprisingly hard. You find some magic incantations online, which you dutifully type into a terminal, but then they don't have the desired effect. What now? At that point, you're usually stuck with no recourse (except to start an endless descent into online forums).
+
+I had this experience recently trying to install Jekyll, a static website generator. Despite trying for a few hours, I just couldn't do it. So I switched to Hugo, a similar tool that offers an executable image so you don't have to build it yourself. Downloading a file and executing it is fortunately something I'm capable of doing (although even that has become harder with Apple's security protections).
+
+Why are these simple tasks often so challenging? In large part, it's because the underlying concepts are both complicated and fragile, so you need to know a lot—and understand them more deeply than should be necessary— to work around their rough edges.
+
+### DNS and DKIM
+
+Here's an example, involving two concepts—one you're probably familiar with and one that might be new to you. The first is *domain name resolution*, and is the central concept of DNS (the Domain Name System). Its purpose is to decouple long-lasting domain names from the ephemeral machine addresses that serve them. The operational principle, roughly, is that the owner of a domain provides the domain name and an IP address, and subsequent lookups for that domain resolve to that IP address. The concept works hand-in-hand with the *domain registration* concept, which manages the process by which an owner acquires a domain (along with permission to update its DNS records), and the concepts corresponding to the various protocols that use DNS, such as *http*.
+
+The second is *domain keys identified mail* (DKIM), a concept whose purpose is to reduce email spoofing. The operational principle is that the owner of a domain signs the from-address of an outgoing email message (along with some other fields from the email header) with the domain's private key, and places the signature in the header; the recipient then uses the domain's public key to check the signature, rejecting the message if the check fails. Assuming no other server has access to the domain's private key, this ensures that only the legitimate servers of that domain can successfully sign messages, and messages that purport to come from that domain but are actually spoofing the from-address will be rejected.
+
+### Getting the Key
+
+How does the recipient obtain the domain's public key? It could send a request to the outgoing email server, but that would require the server to support a special protocol. Instead, the key is stored as a DNS record. In addition to the records used for the *domain name resolution* concept, the domain name system includes a special "TXT" record type that is used to hold protocol-specific details associated with a domain. Thus a domain owner can create a record for *DKIM* that holds the DKIM public key.
+
+TXT records have proliferated with the growth of new applications. Unfortunately, the DNS query that returns TXT records returns *all* the TXT records associated with a domain, and the recipient has to sort through them to find the relevant record. For this reason (and others), a new approach has become popular, in which the DKIM key is placed not in a TXT record, but in a CNAME record. CNAME, which stands for "canonical name" is a form of record used for domain name aliasing: it lets you map one host name within your domain to another. It is commonly used, for example, to redirect a name such as [*www.dnj.photo*](https://www.dnj.photo) to [*dnj.photo*](https://dnj.photo).
+
+So how is this done? Here's the trick. You create a CNAME record that maps a name like *s1.\_domainkey.foo.com* to the name of a host that, when queried, will provide the DKIM key (thus also introducing a useful layer of indirection, so you can change the DKIM key without changing the DNS record). In this name, *s1* is called a "selector" and is used by DKIM to select one key over another (so that you can rotate keys for example, or have different keys for different email services), and *foo.com* is the email-sending domain that is being authenticated. The funny part is *\_domainkey*. That's an actual string, not a placeholder, and its purpose is to ensure that the whole name is interpreted as a label for a DKIM key, and not as a regular domain name.
+
+### Underscoring the Problem
+
+This tactic risks polluting the namespace of your domain, and that's why the DKIM designers included the underscore. Perhaps you have a host name called *domainkey*, but surely you wouldn't want a host name that starts with an underscore? In fact, IETF standards prohibited underscores in host names until recently, although [RFC2181](https://datatracker.ietf.org/doc/html/rfc2181) eliminates this restriction, precisely to allow for this kind of usage of DNS. If you're confused by this, you're not the only one: some DNS providers are too, and they [reject](https://help.sharpspring.com/hc/en-us/articles/115001065988-Understanding-CNAME-Records) underscores in CNAME records, preventing you from setting up DKIM!
+
+What's going on here? In short, to support DKIM, the *domain name resolution* concept has been overloaded. This is a form of overloading I call "piggybacking" in my book, in which a developer wanting to add some function finds some existing concept to support it, even though it doesn't quite fit.
+
+Here, the new function is using DNS for mapping application-specific attributes to values. By squeezing this functionality into the existing *domain name resolution* concept, and the CNAME record in particular, we now have a mess in which some "host names" aren't in fact names of hosts, and DNS providers differ on how they interpret the rules about whether a name can include an underscore.
+
+What's the alternative? Instead of piggybacking, DNS might have been extended with a new concept, allowing lookups in which you give a domain name (*foo.com*) and an application-specific attribute (*dkim*, say), and the DNS server returns the associated value (the DKIM public key). A new standard for TXT records might support this.
+
+### No Big Deal?
+
+Now you might say that I'm making a mountain out of a molehill, and that these are small complications. But in practice, it's a mass of small, self-inflicted wounds of this sort that make many systems so complex and fragile. It turns out that DKIM (and SPF and DMARC, the other protocols used to prevent mail spoofing) can often be [broken by hackers](https://www.usenix.org/conference/usenixsecurity20/presentation/chen-jianjun), because of exactly this kind of non-uniformity (for example, in parsing email addresses).
+
+Piggybacking will always seem cheaper and easier than modifying a concept or creating a new one. But the eventual price may be much higher.
+
+<!-- 
+*As always, comments welcome, in the [concept forum](https://forum.softwareconcepts.io) or by [email](mailto:dnj@mit.edu).*
+ -->
+
+*From my newsletter: archives and signup [here](https://buttondown.email/essence-of-software).*
