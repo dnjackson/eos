@@ -35,6 +35,8 @@ Most cases of dark patterns are more subtle. Take Facebook, for example. Suppose
 
 Now Facebook would likely respond that its users should know how the app behaves, and that they are free to choose more stringent privacy settings. Bob, for example, could turn on a "tag review" setting that would have required his approval before the photo was shown to all his friends. In practice, of course, most users don't have a clue what's going on, or how to change their settings. Not surprisingly, the defaults seem to favor Facebook rather than its users.
 
+(I've written a piece for a lay audience about how Facebook uses "dark concepts" to further its sometimes nefarious business practices: you can find it [here](https://press.princeton.edu/ideas/facebooks-dark-design-its-not-just-the-algorithms).)
+
 ## The key idea
 
 Here's our idea. What's wrong with simple UI dark patterns is that they confound the expectations of the user: you think that big green button is the normal approval of your purchase, but it turns out to be the one that signs you up with extra insurance that you didn't want to buy. Patterns that operate more deeply also confound expectations, not about the meaning of user interface widgets, but about the concept at hand. When you see a familiar concept like a shopping cart, you bring with you all your prior experiences of shopping carts, so you assume this shopping cart will be no different. You don't expect items to be added to the cart spontaneously without your approval; shopping carts just don't do that.
