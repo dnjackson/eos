@@ -142,17 +142,17 @@ taxonomies:
     tag: tags
     series: series
 
-#markup:
-#    goldmark:
-#        renderer:
-#            unsafe: true
-#     highlight:
-#        anchorLineNos: false
-#        codeFences: false
-#        guessSyntax: false
-#        lineNos: false
-#        # noClasses: false
-#        style: api
+markup:
+    goldmark:
+       renderer:
+           unsafe: true
+    highlight:
+       anchorLineNos: false
+       codeFences: false
+       guessSyntax: false
+       lineNos: false
+       # noClasses: false
+       style: api
 
 privacy:
     vimeo:
