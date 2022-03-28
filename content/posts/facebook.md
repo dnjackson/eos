@@ -79,7 +79,7 @@ Our next task is to outline the behavior of the individual concepts. The interes
 	friends: User -> set User
 	sees: User -> set Item = friends.publishes
 
-The *publishes* relation will track which items have been published by which users. Note that I wrote *Item* and not *Post* or *Comment* or *Tag**. No concept should depend on the existence of any other; we should be able to understand Friend without knowing what form the items that are published will take. From Friend's point of view, only the identity of an item matters, and *Item** can be viewed as a type variable (so that Friend is generic over all possible items).
+The *publishes* relation will track which items have been published by which users. Note that I wrote *Item* and not *Post* or *Comment* or *Tag*. No concept should depend on the existence of any other; we should be able to understand Friend without knowing what form the items that are published will take. From Friend's point of view, only the identity of an item matters, and *Item* can be viewed as a type variable (so that Friend is generic over all possible items).
 
 Note also that the Friend concept maintains its own record of which item was published by which user; it can't refer to a relation in some other concept (such as which items are owned by which users in the Owner concept, or which posts are authored by which users in the Post concept). This might seem to be redundant, but in fact it isn't: we'll see that the *publishes* relation does not neatly align with these other relations in the other concepts.
 
