@@ -14,8 +14,7 @@ editPost:
     appendFilePath: false # to append file path to Edit link
 ---
 
-Dark patterns are no longer just yucky strategies that companies get away with, tempting you to buy insurance you don't need or sign up for a free-for-a-while trial that can only be canceled by calling a phone number that is always busy. Soon they might be illegal. [Regulators](https://www.ftc.gov/news-events/events/2021/04/bringing-dark-patterns-light-ftc-workshop) are taking a closer look, and lawyers in the [US](https://www.law.com/legaltechnews/2021/11/03/dark-patterns-are-an-ethical-and-legal-no-no-but-is-your-legal-team-prepared-for-them/?slreturn=20220223153700
-) and the [UK](https://www.farrer.co.uk/news-and-insights/dark-patterns-an-overview-of-legal-considerations/) are starting to warn about the liabilities they bring.
+Dark patterns are no longer just yucky strategies that companies get away with, tempting you to buy insurance you don't need or sign up for a free-for-a-while trial that can only be canceled by calling a phone number that is always busy. Soon they might be illegal. [Regulators](https://www.ftc.gov/news-events/events/2021/04/bringing-dark-patterns-light-ftc-workshop) are taking a closer look, and lawyers in the [US](https://www.law.com/legaltechnews/2021/11/03/dark-patterns-are-an-ethical-and-legal-no-no-but-is-your-legal-team-prepared-for-them/?slreturn=20220223153700) and the [UK](https://www.farrer.co.uk/news-and-insights/dark-patterns-an-overview-of-legal-considerations/) are starting to warn about the liabilities they bring.
 
 But what exactly makes a pattern dark? Where is the line between an aggressive but legitimate sales tactic and an immoral or illegal scheme?
 
