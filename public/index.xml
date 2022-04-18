@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Design moves for software</title>
+      <link>https://essenceofsoftware.com/posts/design-moves/</link>
+      <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/posts/design-moves/</guid>
+      <description>A new way to think about concept design</description>
+    </item>
+    
     <item>
       <title>Facebook and Dark Patterns</title>
       <link>https://essenceofsoftware.com/posts/facebook/</link>
