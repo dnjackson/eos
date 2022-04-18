@@ -33,7 +33,7 @@ Although design thinking has done good things, raising awareness of design and e
 
 Thinking about design moves, I came to realize that many of the case studies that I analyze in [EOS](https://essenceofsoftware.com) involve one or more simple tactics. I've classified them into 3 pairs of design moves, each pair comprising a move and its dual. A design move isn't a panacea; it trades off one quality of the design for another. If applied skillfully though, a single move can transform a design from good to great.
 
-I outline the design moves and give examples of their application in a [paper](https://people.csail.mit.edu/dnj/publications/nfm-design-moves-22.pdf) that I'll be presenting in a keynote at the [NASA Formal Methods conference](https://nfm2022.caltech.edu) in May. Here, I'll just give a taste of the moves. 
+I outline the design moves and give examples of their application in a [paper](https://people.csail.mit.edu/dnj/publications/nfm-design-moves-22.pdf) that I'll be presenting in a keynote at the [NASA Formal Methods conference](https://nfm2022.caltech.edu) in May. (Also see [slides](https://people.csail.mit.edu/dnj/talks/) on this topic from my recent talk at the Boston ACM/IEEE chapter.) Here, I'll just give a taste of the moves. 
 
 1. **Split/merge**. Split breaks a concept into multiple smaller concepts; merge forms a composite concept from distinct ones. The tradeoff here is between simplicity and power: with more than one concept, the user has more control but things are also more complicated.
 
