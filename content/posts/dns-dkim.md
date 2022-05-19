@@ -59,3 +59,28 @@ Piggybacking will always seem cheaper and easier than modifying a concept or cre
  -->
 
 *From my newsletter: archives and signup [here](https://buttondown.email/essence-of-software).*
+
+### Update
+
+A few updates and corrections, following some further investigation and [input](https://forum.softwareconcepts.io/t/one-little-underscore-reveals-overloading/107/6) from DNS experts:
+
+**DNS as a general database**. The earliest RFCs mention DNS holding information beyond host addresses—including phone numbers for CSNET, for example—and make it clear that the resource records were not to be limited to the initial types. It wasn't until later, though, that the idea of DNS as a general key/value store seems to have emerged explicitly. Jerry Saltzer, who developed a name service for Athena at MIT called Hesiod, told me that Paul Mockapetris added the TXT resource type to support more general lookups, as required by applications such as Hesiod.
+
+**Domain-names as intentional names**. The idea of using domain names to specify a desired service by its properties goes back at least to [Hesiod](https://web.mit.edu/Saltzer/www/publications/athenaplan/e.2.3.pdf), which used an @-symbol to separate the property-specifying part from the rest, eg. finger-server@berkeley.mit.edu. A project at MIT in 1999 explored this general idea and called it [intentional naming](http://nms.lcs.mit.edu/projects/ins/). In 2000, [RFC 2782](https://datatracker.ietf.org/doc/html/rfc2782) described the addition of the SRV resource type, which mapped domain names of the form _service._protocol.name to server/port names, allowing intentional names such as _ldap._tcp.foo.com.
+
+**Underscores in domain names**. The use of underscores in these intentional names prevented conflicts with hostnames, but introduced the new risk of the name specifiers themselves conflicting. In 2019, [RFC 8552](https://datatracker.ietf.org/doc/html/rfc8552) described the convention of naming with underscored labels, and introduced a registry to avoid collisions between services.
+
+**Underscore confusions**. The early RFCs said that domain names should be as general as possible, but confusing wording misled many people. A much-quoted statement from [RFC 882](https://datatracker.ietf.org/doc/html/rfc882) seems to say that underscores are not permitted in the labels that comprise domain names: "The labels must follow the rules for ARPANET host names.  They must start with a letter, end with a letter or digit, and have as interior characters only letters, digits, and hyphen." This statement, however, seems on closer reading to be an informal explanation for a grammar that is not intended to be mandatory: "The preferred syntax of domain names is given by the following BNF rules.  Adherence to this syntax will result in fewer problems with many applications that use domain names (e.g., mail, TELNET)." This complicated position is elaborated in [RFC 1035](https://datatracker.ietf.org/doc/html/rfc1035) which states:
+
+*The DNS specifications attempt to be as general as possible in the rules
+for constructing domain names.  The idea is that the name of any
+existing object can be expressed as a domain name with minimal changes. However, when assigning a domain name for an object, the prudent user
+will select a name which satisfies both the rules of the domain system
+and any existing rules for the object, whether these rules are published
+or implied by existing programs.**
+
+Not surprisingly this has confused even experts; a [ballot](https://www.ssl.com/faqs/underscores-not-allowed-in-domain-names/) amongst a consortium of companies voted to sunset the use of underscores in DNS names appearing in certificates, citing the statement in 1035 that "labels must follow the rules for ARPANET host names" which it took, incorrectly, to specify "the characters which may be used in DNS domain names.""
+
+**CNAME records for DKIM**. Use of CNAME resource records for DKIM seems not, as I suggested above, to avoid the use of TXT records, but rather to provide an extra level of indirection so that a domain could delegate to a hosting service the job of assigning (and rotating) DKIM keys. The use of the _domainkey prefix alone would limit the number of TXT records returned.
+
+**Refining the concept observation**. I still believe there is an overloading going on here, but it's a bit more subtle than I originally described. There are two different concepts currently embodied in domain names. The first is a traditional hierarchical naming scheme, which is how DNS started out, in which name mapping allows you to introduce a space of names and aliases that is decoupled from physical addresses. The second is an intentional naming scheme, in which names are used to look up services by their properties. This second concept is partly redundant, because it might have been accomplished using keys in TXT records or by adding new resource types, but it does add new power (notably in the ability to perform a lookup on two keys, as in names such as  _ldap._tcp.foo.com). The impact of this overloading is not clear. At the very least, it complicates the use of DNS [wildcards](https://datatracker.ietf.org/doc/html/rfc8552#section-1.4). I also wonder if problems arise because multi-key names such as _ldap._tcp.foo.com are no longer really hierarchical, unless one claims, somewhat implausibly, that _tcp.foo.com aggregates all services of foo.com that use TCP as their protocol.
