@@ -1,6 +1,6 @@
 ---
 author: "Daniel Jackson"
-title: "Design moves for software"
+title: "Design Moves for Software"
 date: "2022-04-18"
 description: "A new way to think about concept design"
 ShowToc: false
