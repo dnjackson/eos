@@ -21,6 +21,10 @@ body {
     background: var(--theme);
 }
 
+/* fix list items in posts coming out black, not sure why */
+.post-content li {
+	color: dimgrey;
+	}
 	
 h3 {
 	color: #696969
