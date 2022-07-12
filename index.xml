@@ -84,15 +84,6 @@
     </item>
     
     <item>
-      <title>Concepts: A Brief Intro</title>
-      <link>https://essenceofsoftware.com/drafts/intro/</link>
-      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/drafts/intro/</guid>
-      <description>A brief introduction to concepts</description>
-    </item>
-    
-    <item>
       <title>ACM tech talk</title>
       <link>https://essenceofsoftware.com/posts/acm-tech-talk/</link>
       <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
@@ -108,6 +99,16 @@
       
       <guid>https://essenceofsoftware.com/posts/sample-chapter/</guid>
       <description>Why I Wrote This Book</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://essenceofsoftware.com/drafts/smooth-software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/smooth-software/</guid>
+      <description>Smooth Software In an old interview, unfortunately no longer online, Jony Ive explained how his team at Apple had designed the MacBook&amp;rsquo;s rounded corners. &amp;ldquo;I suppose that&amp;rsquo;s pretty obsessive, isn&amp;rsquo;t it?&amp;rdquo; he ended, with a self-deprecating smile.
+It struck me as a perfect metaphor for software design: that so often the real work is in the smoothing of rough edges. Each small protrusion and snag may seem inconsequential by itself, but in aggregate they create a constant stream of irritation and confusion for the user.</description>
     </item>
     
     
