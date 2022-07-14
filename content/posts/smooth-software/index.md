@@ -138,6 +138,17 @@ As to the yes/no, slow down/speed up buttons: they too suggest a separate Feedba
 
 One might also wonder whether the yes/no buttons are intended to provide a kind of ad hoc poll. If so, perhaps they should be integrated into Zoom's Poll concept. This concept is rather heavyweight: you have to create questions in advance, give a title to the poll as a whole, and only multiple-choice (and not yes/no) questions are supported.
 
+## A User Interface Mockup
+Our concept analysis of the Reaction concept has led us to a realization that there are actually multiple concepts behind this one dialog. Ideally, concepts are mapped directly to the user interface. Here's a mockup of how things might look, with tooltips showing all at once:
+
+![A speculative UI change for Zoom](zoom-mockup.jpg)
+
+The raise-hand and coffee-cup reactions have been moved into a Presence concept (far left) with which the user indicates their participation (requesting to speak, speaking, watching/listening or away). The audio   and video settings might be set implicitly: when you switch to speaking, for example, your audio is unmuted. This might address the common problem that users often start speaking without unmuting. Also, some (like me!) are anxious in a large meeting that they might have their audio on inadvertently, so having an explicit indicator that you're not speaking may help. Less common settings (eg, speaking with video off, or speaking with video on and audio off for an ASL presenter) could be available in a submenu.
+
+The emoji reactions have been moved into the Chat concept, which is now directly accessible on the toolbar. And the slow down/speed up reactions are now in a Feedback concept of their own, along with visible counts. These controls might appear only when a host activates them. 
+
+Of course, this is all speculative, and this design undoubtedly has flaws yet to be discovered. My intent in showing this mockup is not to claim that it would necessarily work better than Zoom's current arrangement, but simply to show the way in which concept analysis can drive user interface design.
+
 ## Summary of principles
 The approach I've described here is guided by a few basic principles:
 1. Irregularities, or differences between similar features, usually impose a cognitive burden, because there's more to understand than when things behave the same way. Simplicity therefore suggests eliminating irregularities and a preference for uniformity.
