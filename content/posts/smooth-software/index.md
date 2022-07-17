@@ -52,15 +52,15 @@ The disjointness idea is plausible: for example, you wouldn't want to tell a spe
 
 But when we examine these more closely, we see that there are some problems. It makes sense that speed up and slow down are disjoint, and that laughing and crying are too. But why can't you clap and send a heart at the  same time? And why does stepping away make your yes/no response disappear? And raising your hand cancel your request that the speaker slow down or speed up?
 
-We can summarize the irregularities we've found in two tables. First, a table of the features of each reaction type, with a check mark showing that a feature is present, and a red checkmark that it is present but questionable:
+We can summarize the irregularities we've found in two tables. First, a table of the features of each reaction type, with a check mark showing that a feature is present, and a red checkmark in parens showing that it is present but probably shouldn't be:
 
 | Reaction | Disappears | Counted | Cancel by host
 | -------- | ----- |----- |----- |
-| Emojis | ✔︎|<span style="color:red">✔︎</span>| |
+| Emojis | ✔︎ | (<span style="color:red">✔︎</span>)| |
 | Yes/no |  |✔︎|✔︎|
 | Slow/speed | |✔︎|✔︎|
-| Away | |<span style="color:red">✔︎</span>|<span style="color:red">✔︎</span>|
-| Hand | |<span style="color:red">✔︎</span>|✔︎|
+| Away | |(<span style="color:red">✔︎</span>)|(<span style="color:red">✔︎</span>)|
+| Hand | |(<span style="color:red">✔︎</span>)|✔︎|
 
 (Counted refers to whether a count is displayed for the reaction in the participants panel; cancel by host refers to that panel's "clear all feedback" action. Both are discussed later.)
 
@@ -69,10 +69,10 @@ And a table showing disjointness between reaction types:
 | Reaction | Emojis | Yes/no | Slow/speed | Away | Hand
 | -------- | ----- |----- |----- |----- |----- |
 | Emojis |✔︎|  |  |  |  |
-| Yes/no | | ✔︎| <span style="color:red">✔︎</span>|<span style="color:red">✔︎</span>|<span style="color:red">✔︎</span>|
-| Slow/speed | | <span style="color:red">✔︎</span>| ✔︎| <span style="color:red">✔︎</span>| <span style="color:red">✔︎</span>|
-| Away | | <span style="color:red">✔︎</span>| <span style="color:red">✔︎</span>| ✔︎| <span style="color:red">✔︎</span>|
-| Hand | | <span style="color:red">✔︎</span>| <span style="color:red">✔︎</span>| <span style="color:red">✔︎</span>| ✔︎|
+| Yes/no | | ✔︎| (<span style="color:red">✔︎</span>)|(<span style="color:red">✔︎</span>)|(<span style="color:red">✔︎</span>)|
+| Slow/speed | | (<span style="color:red">✔︎</span>)| ✔︎| (<span style="color:red">✔︎</span>)| (<span style="color:red">✔︎</span>)|
+| Away | | (<span style="color:red">✔︎</span>)| (<span style="color:red">✔︎</span>)| ✔︎| (<span style="color:red">✔︎</span>)|
+| Hand | | (<span style="color:red">✔︎</span>)| (<span style="color:red">✔︎</span>)| (<span style="color:red">✔︎</span>)| ✔︎|
 
 The large number of red marks in these tables suggests we have work to do!
 
@@ -181,3 +181,6 @@ The basic idea of identifying and eliminating irregularities is not specific to 
 ## An Invitation
 
 I'm sure many of my readers have conducted analyses similar to the one I describe here. If you have one you can share, please post it in the [concept forum](http://forum.softwareconcepts.io). And as always, comments, criticisms and reactions (!) welcome.
+
+## A Concept Integrity Violation
+You may wonder why I included parens around the red checkmarks in the tables. Winter F. [pointed out](https://forum.softwareconcepts.io/t/concept-design-tutorials/129/2) that those checkmarks appear uncolored on Android phones. Android automatically converts text characters to corresponding emoji, on which CSS colors are then ineffective. This is a nice example of a concept integrity violation and is a [known problem](https://stackoverflow.com/questions/32915485/how-to-prevent-unicode-characters-from-rendering-as-emoji-in-html-from-javascrip).
