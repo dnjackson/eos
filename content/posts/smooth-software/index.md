@@ -106,7 +106,7 @@ Having noticed that the reactions behave differently, we identified at least two
 
 Recognizing these distinct subpurposes, we might now wonder whether they suggest additional differences in behavior.
 
-First, we might consider differences of audience: perhaps feedback should be shown only to the speaker; a student in a class might not want to share with all the other students a request that the lecturer slow down. And perhaps users would like to select the targets of their emojis, sending a heart to just one favored participant, say. 
+First, we might consider differences of audience: perhaps feedback should be shown only to the speaker; a student in a class might not want to share with all the other students a request that the lecturer slow down (and might want to be anonymous to the lecturer too). And perhaps users would like to select the targets of their emojis, sending a heart to just one favored participant, say. 
 
 Second, noticing that the participant window shows counts for reactions:
 
