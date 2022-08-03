@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Design in general on The Essence of Software</title>
+    <link>https://essenceofsoftware.com/tutorials/design-general/</link>
+    <description>Recent content in Design in general on The Essence of Software</description>
+    <image>
+      <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
+      <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Daniel Jackson</copyright>
+    <lastBuildDate>Tue, 02 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tutorials/design-general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Design vs. Engineering</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</guid>
+      <description>What&amp;#39;s the difference between design and engineering?</description>
+    </item>
+    
+  </channel>
+</rss>

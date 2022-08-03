@@ -13,6 +13,8 @@ editPost:
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 aliases: "/classnumbers/"
+categories:
+- Cases
 ---
 
 I'm always excited to find examples outside software that concept design can be applied to. Here's one I came across this week.

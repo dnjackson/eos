@@ -81,7 +81,7 @@ params:
               url: About
             - name: Buy
               url: buy
-
+        
 #    homeInfoParams:
 #        Title: "Essence of Software"
 #        Content: >

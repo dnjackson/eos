@@ -12,6 +12,8 @@ editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
+categories:
+- Cases
 ---
 
 Basic sys admin tasks can be surprisingly hard. You find some magic incantations online, which you dutifully type into a terminal, but then they don't have the desired effect. What now? At that point, you're usually stuck with no recourse (except to start an endless descent into online forums).
@@ -54,7 +56,7 @@ Now you might say that I'm making a mountain out of a molehill, and that these a
 
 Piggybacking will always seem cheaper and easier than modifying a concept or creating a new one. But the eventual price may be much higher.
 
-<!-- 
+<!--
 *As always, comments welcome, in the [concept forum](https://forum.softwareconcepts.io) or by [email](mailto:dnj@mit.edu).*
  -->
 
@@ -66,9 +68,9 @@ A few updates and corrections, following some further investigation and [input](
 
 **DNS as a general database**. The earliest RFCs mention DNS holding information beyond host addresses—including phone numbers for CSNET, for example—and make it clear that the resource records were not to be limited to the initial types. It wasn't until later, though, that the idea of DNS as a general key/value store seems to have emerged explicitly. Jerry Saltzer, who developed a name service for Athena at MIT called Hesiod, told me that Paul Mockapetris added the TXT resource type to support more general lookups, as required by applications such as Hesiod.
 
-**Domain names as intentional names**. Domain names that included property labels go back at least to [Hesiod](https://web.mit.edu/Saltzer/www/publications/athenaplan/e.2.3.pdf), which used an @-symbol to separate the property-specifying part from the rest, eg. finger-server@berkeley.mit.edu. A project at MIT in 1999 explored this general idea, in which a name does not designate a service directly, but rather specifies the properties for a desired service, and called it [intentional naming](http://nms.lcs.mit.edu/projects/ins/). In 2000, [RFC 2782](https://datatracker.ietf.org/doc/html/rfc2782) described the addition of the SRV resource type, which mapped domain names of the form _service._protocol.name to server/port names, allowing intentional names such as _ldap._tcp.foo.com. 
+**Domain names as intentional names**. Domain names that included property labels go back at least to [Hesiod](https://web.mit.edu/Saltzer/www/publications/athenaplan/e.2.3.pdf), which used an @-symbol to separate the property-specifying part from the rest, eg. finger-server@berkeley.mit.edu. A project at MIT in 1999 explored this general idea, in which a name does not designate a service directly, but rather specifies the properties for a desired service, and called it [intentional naming](http://nms.lcs.mit.edu/projects/ins/). In 2000, [RFC 2782](https://datatracker.ietf.org/doc/html/rfc2782) described the addition of the SRV resource type, which mapped domain names of the form _service._protocol.name to server/port names, allowing intentional names such as _ldap._tcp.foo.com.
 
-**Domain names that include property keys**. A domain name like *domainkey.foo.com* is not an intentional name that specifies a service. The DKIM protocol does not require a service; all that's needed is for the DKIM key to provided for the domain. Instead, this domain name is a combination of a domain name (*foo.com*) and a key to be looked up in the DNS records of that domain name. 
+**Domain names that include property keys**. A domain name like *domainkey.foo.com* is not an intentional name that specifies a service. The DKIM protocol does not require a service; all that's needed is for the DKIM key to provided for the domain. Instead, this domain name is a combination of a domain name (*foo.com*) and a key to be looked up in the DNS records of that domain name.
 
 **Underscores in domain names**. The use of underscores in these extended forms of name prevented conflicts with hostnames, but introduced the new risk of the new labels conflicting. In 2019, [RFC 8552](https://datatracker.ietf.org/doc/html/rfc8552) described the convention of naming with underscored labels, and introduced a registry to avoid collisions.
 
@@ -89,7 +91,7 @@ Not surprisingly this has confused even experts; a [ballot](https://www.ssl.com/
 
 The lens of concept design helps us recognize that much of the richness of DNS that we have explored comes from the fact that three distinct concepts are being offered. The familiarity of these existing concepts should make DNS easier to understand.
 
-What is unusual is that all three concepts are implemented by the same mechanism. In concept lingo, the second and third concepts are "piggybacked" onto the first concept, with the properties and specifiers of **Metadata** and **IntentionalName** respectively both represented as labels in a prefix of a domain name. Like many piggybacking designs, this is ingenious and solves some problems. In particular, it allowed DNS itself to remain unchanged, without the need for new resource types or mechanisms (although it did require the creation of a new registry to avoid name clashes). 
+What is unusual is that all three concepts are implemented by the same mechanism. In concept lingo, the second and third concepts are "piggybacked" onto the first concept, with the properties and specifiers of **Metadata** and **IntentionalName** respectively both represented as labels in a prefix of a domain name. Like many piggybacking designs, this is ingenious and solves some problems. In particular, it allowed DNS itself to remain unchanged, without the need for new resource types or mechanisms (although it did require the creation of a new registry to avoid name clashes).
 
 The downside is that piggybacked concepts generally cannot be fully supported by a mechanism that was not designed for them. A full implementation of **IntentionalName**, for example, would allow wildcard specifiers, so that for example one could request not only a color printer *_printer._color.local.foo.com* or a monochrome printer *_printer._mono.local.foo.com* but also any printer *_printer.\*.local.foo.com* whether color or monochrome. As noted in [RFC8552](https://datatracker.ietf.org/doc/html/rfc8552#section-1.4), DNS cannot support such wildcards. Another price paid for the piggybacking is some additional complexity involved in squeezing the new functionality into a Procrustean bed—here, the underscore, and all the confusion created about whether it is permitted.
 
