@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Design vs. Engineering</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</guid>
+      <description>What&amp;#39;s the difference between design and engineering?</description>
+    </item>
+    
     <item>
       <title>Smooth Software</title>
       <link>https://essenceofsoftware.com/posts/smooth-software/</link>
