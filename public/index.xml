@@ -12,12 +12,53 @@
     <copyright>Daniel Jackson</copyright>
     <lastBuildDate>Tue, 02 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Design vs. Engineering</title>
+      <title>Beyond the user interface</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</guid>
+      <description>In the 1980s, there was a revolution in software. The Apple Macintosh came out (building on the invention of the WIMP interface at PARC), Don Norman wrote The Design of Everyday Things, and the first CHI conference was held.
+Now everyone knows how important user interface design is, and there’s no excuse for messing it up. You can find several collections of UI design heuristics (such as Nielsen’s) online, and many companies publish standards for how to use UI widgets consistently (here’s Google’s, for example).</description>
+    </item>
+    
+    <item>
+      <title>Design vs. engineering</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</guid>
       <description>What&amp;#39;s the difference between design and engineering?</description>
+    </item>
+    
+    <item>
+      <title>Levels of design</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</guid>
+      <description>When you’re diagnosing a usability snag, or coming up with a new design idea, it’s helpful to know what level you’re working at.
+Over the years, designers and researchers have defined various levels, reflecting their view of design and what they emphasize.
+I find the following scheme most helpful:
+ Physical. If you want to think of levels as low and high, this one is at the bottom. It’s the level of design in which you’re concerned about the physical (and physiological) qualities of human users.</description>
+    </item>
+    
+    <item>
+      <title>Misfits</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/misfits/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/design-general/misfits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simplicity</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/simplicity/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/design-general/simplicity/</guid>
+      <description>Most of us* believe that simplicity is the key to design. I’m a sucker for the best quotes about it. Here are some of my favorites. First, Tony Hoare in his Turing Award lecture lamenting the complexity of Algol-68:
+I conclude that there are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies.</description>
     </item>
     
     <item>

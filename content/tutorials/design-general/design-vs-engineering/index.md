@@ -1,6 +1,6 @@
 ---
 author: "Daniel Jackson"
-title: "Design vs. Engineering"
+title: "Design vs. engineering"
 date: "2022-08-02"
 description: "What's the difference between design and engineering?"
 ShowToc: false
