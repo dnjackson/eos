@@ -12,7 +12,7 @@ From the book, of course! But also a [sample chapter](/posts/sample-chapter), my
 
 ### Why did you write this book?
 
-In my career in software, I've seen many good languages, tools and methods adopted. But none had the impact we'd hoped for. I came to realize that there's one thing that makes for great software: conceptual clarity in the design. So I've spent the last 8 years thinking about how this can be achieved, and this book is the result. 
+In my career in software, I've seen many good languages, tools and methods adopted. But none had the impact we'd hoped for. I came to realize that there's one thing that makes for great software: conceptual clarity in the design. So I've spent the last ten years thinking about how this can be achieved, and this book is the result. 
 
 ### Is this a practical book?
 

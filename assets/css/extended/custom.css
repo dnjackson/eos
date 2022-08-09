@@ -1,3 +1,7 @@
+:root {
+  --content-gap: 12px;
+}
+
 .nav {
     display: flex;
     flex-wrap: wrap;
