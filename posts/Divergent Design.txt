@@ -1,0 +1,30 @@
+# 6.1040 · Fall 2022
+# Assignment: Divergent Design
+
+
+**Overview**. In this assignment, you’ll generate some provocative design ideas for Fritter, your Twitter clone, in response to some perceived needs. You’ll identify the needs by interviewing friends, observing Twitter and related apps, and reflecting on your own experience. You’ll present your design ideas as concept outlines, along with rough sketches of their user interfaces.
+
+**Purposes**. The purposes of this assignment are to give you experience with, and deepen your understanding of needfinding techniques and divergent design; to introduce to the idea of concepts; and to give you some practice drawing sketches and writing markdown.
+
+**Reminders**. Make sure you have read and understood the rules for collaboration, submission and slack days.
+
+**Tasks**. 
+- **Interview**. Explore some unmet needs in the current design of Twitter, by interviewing a friend about their usage of Twitter (or a similar social media platform) and the respects in which it falls short. Keep track of your questions and your friend’s responses, and the conclusions you drew from them. 
+- **Introspection**. Augment the needs you discover from the interview by thinking about your own experiences and reading any relevant comments that you find online. Write down your sources, your observations and your conclusions. Include specimens in the form of annotated screenshots where relevant.
+- **Brainstorming**. Come up with three to five ideas for new Twitter concepts. For each concept, provide (a) a short and compelling name; (b) a succinct purpose that captures the benefit that the concept brings; (c) a brief precis indicating in a few sentences how the concept works; (d) an operational principle: an archetypal scenario of how the concept is used and fulfills its purpose; (e) a rough sketch of what a user interface for the concept might look like.
+
+- You can do this with friends in the class.
+
+
+**Rubric**.
+
+
+**Advice**.
+
+Interviewing.
+Brainstorming.
+Purposes.
+Operational principle. should show how purpose is fulfilled. one or more archetypal scenarios
+
+Sample outline concept.
+
