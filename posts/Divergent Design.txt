@@ -10,21 +10,31 @@
 
 **Tasks**. 
 - **Interview**. Explore some unmet needs in the current design of Twitter, by interviewing a friend about their usage of Twitter (or a similar social media platform) and the respects in which it falls short. Keep track of your questions and your friend’s responses, and the conclusions you drew from them. 
-- **Introspection**. Augment the needs you discover from the interview by thinking about your own experiences and reading any relevant comments that you find online. Write down your sources, your observations and your conclusions. Include specimens in the form of annotated screenshots where relevant.
-- **Brainstorming**. Come up with three to five ideas for new Twitter concepts. For each concept, provide (a) a short and compelling name; (b) a succinct purpose that captures the benefit that the concept brings; (c) a brief precis indicating in a few sentences how the concept works; (d) an operational principle: an archetypal scenario of how the concept is used and fulfills its purpose; (e) a rough sketch of what a user interface for the concept might look like.
-
-- You can do this with friends in the class.
-
+- **Introspection**. Augment the needs you discover from the interview by thinking about your own experiences and reading any relevant comments that you find online. Write down your sources, your observations and your conclusions. Include specimens in the form of annotated screenshots where relevant which illustrate the needs.
+- **Brainstorming**. Come up with three to five ideas for new Twitter concepts. For each concept, provide an outline comprising (a) a short and compelling name; (b) a succinct purpose that captures the benefit that the concept brings; (c) an operational principle: an archetypal scenario of how the concept is used and fulfills its purpose. Accompany each outline with a rough sketch of what a user interface for the concept might look like.
 
 **Rubric**.
 
+| *Part* | Excellent | Satisfactory | Poor
+| ----- | ----- |----- |----- |
+| **Interview** | Perceptive questions; attentive and thoughtful recording of answers; insightful summary | Reasonable questions; effective recording of answers; helpful summary | Routine or uninteresting questions; uninformative transcriptions of answers, too short or too long; summary lacking content or just repeating answers |
+| **Introspection** | Crisp and insightful observations; compelling evidence or argument | Plausible observations with some support | Trivial or hackneyed observations; weak or no support|
+| **Specimens** | Revealing screenshots add punch to narrative and are elegantly annotated  | Screenshots show problem; helpfully annotated  | Role and significance of screenshots is unclear |
+| **Concepts** | Concept is novel and imaginative; pithy and well chosen name; compelling purpose; OP offers good UX and convincingly fulfills purpose | Concept is plausible and not present in Twitter; short and informative name; understandable purpose; OP is clear and could fulfill purpose | Concept is confusing or already overlaps with Twitter; clunky or uninformative name; purpose unclear, or describes behavior; OP is too low-level, vague or implausible |
+| **Sketches** | Instantly conveys concept idea; understandable by itself | Easy to understand with some explanation, clear correspondence to concept outline | Relationship to concept outline unclear; cluttered or lacking essential features |
+
+The qualitative judgments correspond roughly to grades of A (9/10), B (8/10), C (< 8/10).
 
 **Advice**.
+*To be written*.
 
 Interviewing.
 Brainstorming.
 Purposes.
-Operational principle. should show how purpose is fulfilled. one or more archetypal scenarios
+Operational principle.
 
-Sample outline concept.
+**Sample outline concept**.
 
+*Name*: Refutation<br>
+*Purpose*: Counter the prevalence of misinformation in social media forums<br>
+*Operational principle*: When a user encounters a post containing misinformation, she can attach to it a “refuting banner” containing a link to a webpage that purportedly refutes the content of the post. A user who disagrees can add a “supporting banner” pointing to a page that purportedly supports the content. Users can upvote banners (but cannot downvote them). Now when a user sees a post, they can assess its credibility by looking at the banners, how many upvotes they received, and by following the links to the refuting and supporting pages.
