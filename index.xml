@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Tue, 02 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>For Want of a Nail…</title>
+      <link>https://essenceofsoftware.com/posts/missing-concept/</link>
+      <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/posts/missing-concept/</guid>
+      <description>When critical concepts are missing</description>
+    </item>
+    
     <item>
       <title>Apps are state machines</title>
       <link>https://essenceofsoftware.com/tutorials/concept-basics/apps-are-state-machines/</link>
@@ -91,7 +100,8 @@ Physical. If you want to think of levels as low and high, this one is at the bot
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/tutorials/concept-basics/operational-principle/</guid>
-      <description></description>
+      <description>A compelling way to explain how something works is to tell a story. Not any story, but a kind of defining story that shows, through a typical scenario, why the thing is useful and fulfills its purpose.
+The Minuteman Library Network, for example, offers a wonderful service. If I request a book, then when it becomes available at my local library, I get an email notifying me that it’s ready to be picked up.</description>
     </item>
     
     <item>

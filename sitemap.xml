@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://essenceofsoftware.com/posts/missing-concept/</loc>
+    <lastmod>2022-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/</loc>
+    <lastmod>2022-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/posts/</loc>
+    <lastmod>2022-08-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/apps-are-state-machines/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
@@ -18,9 +27,6 @@
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/fitness-criteria/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/great-design/</loc>
@@ -40,9 +46,6 @@
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/posts/</loc>
-    <lastmod>2022-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/smooth-software/</loc>
     <lastmod>2022-07-12T00:00:00+00:00</lastmod>
