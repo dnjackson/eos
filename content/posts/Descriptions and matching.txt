@@ -1,7 +1,0 @@
-
-Descriptions and matching
-*// product description for each item<br>*
-*// for a search term, which descriptions match<br>*
-	description: Item -> one Description
-matches: SearchTerm -> set Description<br>
-

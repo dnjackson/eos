@@ -26,6 +26,8 @@ For me, however, the most interesting and valuable part of the book is the frame
 
 Design, Alexander explains, is the creation of a **form** within a **context**. Together these make an **ensemble**. The designer’s task is to ensure that the form **fits** the context within the bounds of the ensemble as a whole. A cork, for example, is a form that has to fit in the context of a wine bottle; together the cork and bottle make an ensemble. 
 
+![](form-context-ensemble.jpg)
+
 ## A rich framing
 
 This framing is richer and more subtle than it first appears to be:
