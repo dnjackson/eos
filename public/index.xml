@@ -21,6 +21,17 @@
     </item>
     
     <item>
+      <title>Apps are made of concepts</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/apps-made-of-concepts/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/apps-made-of-concepts/</guid>
+      <description>Apps as sets of concepts
+concept is a unit of functionality, behavior, experienced by the user
+What’s radical about this? — most of the concepts are reused — the concepts can be understood independently of one another both of these unlike features</description>
+    </item>
+    
+    <item>
       <title>Apps are state machines</title>
       <link>https://essenceofsoftware.com/tutorials/concept-basics/apps-are-state-machines/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>

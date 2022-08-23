@@ -56,4 +56,4 @@ Zoom’s very advantage over its competitors—that it was easier to use because
 
 Zoom’s advantage in video quality (and better handling of bandwidth glitches) is shrinking as its competitors improve their technology. If Apple, Google and Microsoft continue to unify and integrate the features they offer within their own platforms, it will be easier and more tempting just to schedule meetings there, leaving Zoom out in the cold.
 
-*This post was inspired by a discussion with David Jackson.*
+*This post was inspired by a discussion with [David Jackson](https://seekingalpha.com/author/david-jackson) who pointed out to me the risk of Zoom's lack of stickiness in its platform, which helped me understand the larger significance of a conceptual flaw that had always bothered me.*
