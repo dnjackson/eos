@@ -1,3 +1,3 @@
 ---
-title: "Concept Basics"
+title: "Concept basics"
 ---
