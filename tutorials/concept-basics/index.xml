@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Concept Basics on The Essence of Software</title>
+    <title>Concept basics on The Essence of Software</title>
     <link>https://essenceofsoftware.com/tutorials/concept-basics/</link>
-    <description>Recent content in Concept Basics on The Essence of Software</description>
+    <description>Recent content in Concept basics on The Essence of Software</description>
     <image>
       <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
       <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Tue, 02 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tutorials/concept-basics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tutorials/concept-basics/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Apps are made of concepts</title>
+      <title>Software = concepts</title>
       <link>https://essenceofsoftware.com/tutorials/concept-basics/apps-made-of-concepts/</link>
-      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/tutorials/concept-basics/apps-made-of-concepts/</guid>
-      <description>Apps as sets of concepts
-concept is a unit of functionality, behavior, experienced by the user
-What’s radical about this? — most of the concepts are reused — the concepts can be understood independently of one another both of these unlike features</description>
+      <description>Any software app, service or system can be viewed as a collection of interacting concepts.
+Concepts are the building blocks of software Imagine explaining Twitter to someone who&amp;rsquo;s never used it. You might tell them about the Tweet and Follower concepts, then maybe Hashtag and Like (aka Upvote), and if they&amp;rsquo;re keen to know even more, you could explain VerifiedAccount or Bookmark.
+Each concept can be explained with a purpose (what it&amp;rsquo;s for) and an operational principle (how you use it):</description>
     </item>
     
     <item>
