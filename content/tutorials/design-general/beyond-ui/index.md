@@ -18,7 +18,7 @@ Now everyone knows how important user interface design is, and there’s no excu
 
 The downside of all this success is that people sometimes forget that UI design is only part of [software design](../design-vs-engineering). A good user interface is necessary for a good user experience but it’s not sufficient. Just as important—maybe more important—is the underlying functionality, defined by the concepts that the software provides.
 
-In my book, I open with a story about Dropbox. Its UI design is state of the art, but people still get confused and end up deleting other people’s files. The reason, I explain, is that the underling conceptual model is confusing.
+In my book, I open with a story about Dropbox. Its UI design is state of the art, but people still get confused and end up deleting other people’s files. The reason, I explain, is that the underlying conceptual model is confusing.
 
 To see how UX is more than the UI, consider three widgets that let the user do a thumbs-up on something:
 

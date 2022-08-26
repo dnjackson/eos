@@ -92,7 +92,7 @@ A simple concept may have just one OP. Here’s an example of a concept whose OP
 Some concepts, though, need two or more OPs to explain their essential functionality:
 
 - **Trash**. (1) If you delete a file, you can then restore it by moving it out of the trash. (2) If you delete a file and then empty the trash, the file is gone forever and its storage space can be reused.
-- **Password**. (1) If you register with a user name and password, and then you login with that same user name and password, you will be authenticated as the user who register (that is, able to act in their name). (2) If you register with a username and password, and then you login with that same username but a different password, you will not be authenticated.
+- **Password**. (1) If you register with a user name and password, and then you login with that same user name and password, you will be authenticated as the user who registered (that is, able to act in their name). (2) If you register with a username and password, and then you login with that same username but a different password, you will not be authenticated.
 - **Personal access token (PAT)**. (1) If you create an access token for a resource and pass it to another user, then that user can enter the token string and obtain access. (2) If you create an access token, pass it to another user, and then revoke it, the other user will not be able to access the resource with it.
 
 It’s not unusual for a more elaborate OP to be the one that actually motivates the concept design. For the PAT concept, it’s the revocation that’s the essence: without it, a simple password would do.
@@ -109,7 +109,7 @@ One of the risks of focusing on user goals is that it becomes tempting to articu
 
 ## OPs with multiple users
 
-Another reason an OP might have no user goal is that the purpose involves collaboration of multiple users. The purpose of *Upvote* is to let users rank items by their popularity. When you as a user give a thumbs-up to an item, you’re not fulfilling a goal worth articulating, but simply contributing to a larger communal purpose. The OP for *Upvote* must include a upvotes by multiple users on multiple items, to illustrate the key idea that the ranking of items depends on the number of upvotes they receive.
+Another reason an OP might have no user goal is that the purpose involves collaboration of multiple users. The purpose of *Upvote* is to let users rank items by their popularity. When you as a user give a thumbs-up to an item, you’re not fulfilling a goal worth articulating, but simply contributing to a larger communal purpose. The OP for *Upvote* must include upvotes by multiple users on multiple items, to illustrate the key idea that the ranking of items depends on the number of upvotes they receive.
 
 ## The danger of “secondary” goals
 

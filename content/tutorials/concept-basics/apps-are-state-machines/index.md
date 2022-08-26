@@ -94,7 +94,7 @@ An ER diagram offers a nice way to show the state variables:
 
 ![](er-diagram.jpg)
 
-There are a few differences from the textual declarations. I’ve used symbols rather than words for multiplicity (*!* in place of *one*, for example). I’ve shown the multiplicity on both ends of a relation: the *!* on the source end of the cart arrow says that each cart belongs to one user. You can do both of these textually too. The diagram doesn’t naturally accommodate unions of sets, so for the items relation I introduced a superset called *Bag*, with each *Bag* being either a *Cart* of an *Order*.
+There are a few differences from the textual declarations. I’ve used symbols rather than words for multiplicity (*!* in place of *one*, for example). I’ve shown the multiplicity on both ends of a relation: the *!* on the source end of the cart arrow says that each cart belongs to one user. You can do both of these textually too. The diagram doesn’t naturally accommodate unions of sets, so for the items relation I introduced a superset called *Bag*, with each *Bag* being either a *Cart* or an *Order*.
 
 These diagrams are very lightweight and contain lots of information. Working out the details of the state as you the draw the diagram always reveals interesting questions. Can a user have more than one cart, for example? That’s certainly possible for Amazon, because a client-side cart is created before you even log in.
 
