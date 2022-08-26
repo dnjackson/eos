@@ -5,13 +5,10 @@
     <loc>https://essenceofsoftware.com/</loc>
     <lastmod>2022-08-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/</loc>
+    <loc>https://essenceofsoftware.com/posts/</loc>
     <lastmod>2022-08-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/</loc>
-    <lastmod>2022-08-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/why-not-same/</loc>
+    <loc>https://essenceofsoftware.com/posts/why-not-same/</loc>
     <lastmod>2022-08-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/</loc>
@@ -20,10 +17,10 @@
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/apps-made-of-concepts/</loc>
     <lastmod>2022-08-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/missing-concept/</loc>
-    <lastmod>2022-08-21T00:00:00+00:00</lastmod>
+    <loc>https://essenceofsoftware.com/tutorials/</loc>
+    <lastmod>2022-08-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/</loc>
+    <loc>https://essenceofsoftware.com/posts/missing-concept/</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/apps-are-state-machines/</loc>
@@ -45,6 +42,9 @@
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/operational-principle/</loc>
