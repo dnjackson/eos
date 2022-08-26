@@ -12,17 +12,6 @@ editPost:
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---
-
-description: ""
-ShowToc: false
-TocOpen: true
-hideMeta: false # removes date etc from post
-summary: ""
-editPost:
-    URL: "https://forum.softwareconcepts.io"
-    Text: "Comments" # edit text
-    appendFilePath: false # to append file path to Edit link
----
 Innovation and software are almost synonyms. It’s often software that's changing the way we live and work (for good and for bad), and new applications of software abound. And then there’s AI which is advancing in leaps and bounds and *might* be a net benefit (but the jury is still out on that).
 
 How strange then that software development, as  a field, is so conservative. We do things pretty much the way we've always done them: mostly by trial-and-error, hacking the code until it sort of works. Agile development brought us more project discipline (in tracking progress, breaking the work into reasonable chunks, etc) and saved us from the often pointless work of writing massive documents that few people read anyway. At the same time, by trumpeting the joy of code it sapped much of the enthusiasm we might have had for thinking carefully about what we were trying to do before writing code (although the advent of design thinking, with its emphasis on need finding, offered a small corrective on that).
