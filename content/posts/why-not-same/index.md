@@ -2,6 +2,17 @@
 author: "Daniel Jackson"
 title: "Why not try something new?"
 date: "2022-08-26"
+description: "How UX design is currently siloed and why change is hard."
+ShowToc: true
+TocOpen: true
+hideMeta: false # removes date etc from post
+summary: "How UX design is currently siloed and why change is hard."
+editPost:
+    URL: "https://forum.softwareconcepts.io"
+    Text: "Comments" # edit text
+    appendFilePath: false # to append file path to Edit link
+---
+
 description: ""
 ShowToc: false
 TocOpen: true
