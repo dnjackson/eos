@@ -67,12 +67,15 @@ h2 {
 
 /* quick hack to remove syntax highlighting */
 .post-content pre code {
-	font-size: 13px;
+	font-size: 14px;
 	color: black;
 	background: lightgrey;
 }
 
-.hljs-keyword, .hljs-selector-tag, .hljs-built_in, .hljs-builtin-name, .hljs-link, .hljs-literal, .hljs-meta, .hljs-number, .hljs-params, .hljs-type, .hljs-attribute, .hljs-addition, .hljs-bullet, .hljs-string, .hljs-symbol {
+.hljs-keyword, .hljs-selector-tag, .hljs-built_in, .hljs-builtin-name, .hljs-link, .hljs-literal, .hljs-meta, .hljs-number, .hljs-params, .hljs-type, .hljs-attribute, .hljs-addition, .hljs-bullet, .hljs-string, .hljs-symbol, .hljs-deletion, .hljs-name, .hljs-regexp, .hljs-selector-class, .hljs-selector-id, .hljs-tag, .hljs-template-variable, .hljs-variable {
 	color: black;
 }
 
+.hljs-comment, .hljs-quote {
+	color: darkgreen;
+}
