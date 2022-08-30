@@ -72,7 +72,7 @@ h2 {
 	background: lightgrey;
 }
 
-.hljs-keyword, .hljs-selector-tag, .hljs-built_in, .hljs-builtin-name, .hljs-link, .hljs-literal, .hljs-meta, .hljs-number, .hljs-params, .hljs-type, .hljs-attribute {
+.hljs-keyword, .hljs-selector-tag, .hljs-built_in, .hljs-builtin-name, .hljs-link, .hljs-literal, .hljs-meta, .hljs-number, .hljs-params, .hljs-type, .hljs-attribute, .hljs-addition, .hljs-bullet, .hljs-string, .hljs-symbol {
 	color: black;
 }
 
