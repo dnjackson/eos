@@ -152,7 +152,7 @@ markup:
        guessSyntax: false
        lineNos: false
        # noClasses: false
-       style: api
+       style: friendly
 
 privacy:
     vimeo:

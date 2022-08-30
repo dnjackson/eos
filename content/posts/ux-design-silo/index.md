@@ -2,7 +2,7 @@
 author: "Daniel Jackson"
 title: "The siloing of UX design"
 date: "2022-08-26"
-description: “Why a new discipline of software design is needed."
+description: "Why a new discipline of software design is needed."
 ShowToc: true
 TocOpen: true
 hideMeta: false # removes date etc from post

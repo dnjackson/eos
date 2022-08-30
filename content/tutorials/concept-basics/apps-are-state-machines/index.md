@@ -26,9 +26,37 @@ This diagram describes the state machine of a shopping cart. You start with an e
 
 Diagrams like this are useful for capturing basic control flow. But they’re not rich enough for modeling behavior, because the number of states must be finite (and small enough to draw!). This diagram doesn’t say that the order you submit when you checkout contains the items you added and didn’t remove. And because individual items aren’t tracked, it needs some non-determinism to model the fact that when you remove an item from a non-empty cart you might end up back with an empty cart (if it was the last item) or you might not (if it wasn’t).
 
-A richer state machine model has a set of states, usually infinite, and a set of parameterized actions over the states. The states can be defined with some variables whose values are either primitives (such as integers and strings) or more often structures (such as sets and relations).
+## What exactly is a state machine?
+
+To understand exactly what a state machine is, let’s look at an example that’s so simple we can draw it in full. Here’s a rather basic egg timer:
+
+![](egg-timer.jpg)
+
+It works like this. You start in the state *s0*, and then press the *up* button to increment the timer to *s1* corresponding to one minute, *s2* for two minutes, or *s3* for three minutes; you can press the *down* button to decrement the timer; and then when you’re ready, you press *start* and a countdown begins, with *r3* meaning running for three minutes, etc; and then when no time is remaining (*r0*) the timer rings.
+
+We could write down this state machine as a collection of explicit transitions, but to more succinct we could introduce two separate variables:
+
+	time: 0..3
+	running: bool
+
+and then define an action like this:
+
+	up ()
+	  when not running and time < 3
+	  time += 1
+	start ()
+	  when not running and time > 0
+	  running := true
+
+This looks more like a program but it’s still a state machine. The states are all the possible *environments* (that is, bindings of values to variables), and the actions are sets of transitions like *(e, a, e’)* where *e* and *e’* are the environments before and after and *a* is the action name. To be pedantic, we might use the term *action* for the name of an action (and its transitions) and *action occurrence* for a particular transition.
+
+For example, the action up has three occurrences, of which the first (corresponding to the leftmost arrow in the diagram) is
+
+	({time: 0, running: false}, up, {time: 1, running: false})
 
 ## States
+
+In a more realistic app, the variables won’t have primitive values. Instead, each variable will be a data structure itself. The easiest way to represent such data structures uniformly is to think of them as relations.
 
 The variables representing the state of an online store, for example, might include one holding the number of each item in stock:
 
@@ -46,7 +74,7 @@ and, for each cart or order, the items it contains:
 
 	items: (Cart + Order) -> set Item
 	
-The value of each of these variables is a *relation*. The *fulfilled* variable, for example, is a set of pairs of the form *(u, o)* where *u* is a user and *o* is one of *u*’s fulfilled orders. Viewed as a table, there’s a separate row for each user and order. So if there are two fulfilled orders for Alice  and one for Bob, the table might look like this:
+The value of each of these variables is a *binary relation*. The *fulfilled* variable, for example, is a set of pairs of the form *(u, o)* where *u* is a user and *o* is one of *u*’s fulfilled orders. Viewed as a table, there’s a separate row for each user and order. So if there are two fulfilled orders for Alice  and one for Bob, the table might look like this:
 
 | User | Order |
 | ----- | ----- |
@@ -56,41 +84,53 @@ The value of each of these variables is a *relation*. The *fulfilled* variable, 
 
 ## Actions
 
-The actions read and write these states. Here’s an action for adding an item to a cart:
+Just as the states of a real app are richer, so the actions are a bit richer too. The label of the action includes not only the action name, but often some parameters too. 
+
+For example, here’s an action for adding an item to a cart:
 
 	add (c: Cart, i: Item)
-	  i.stock > 0
+	  when i.stock > 0
 	  c.items += i
 	  i.stock -= 1
 
-The first line says the item has to be in stock; the second adds the item to the card; and the third reduces the stock of that item by one. An occurrence of an action is defined by an action name and some parameters. You can imagine drawing an infinite state machine diagram, but instead of labels like *add* (as above) we have labels like *add (Cart\_0, Item\_1)*.
+An example occurrence might be *add (c0, i1)*, meaning an addition of item *i1* to cart *c0*.
+
+The definition of actions is just like it was with the simple egg timer, except now we have to read and write relating values. Here I’m using an [Alloy-like](http://alloytools.org) notation, in which 
+
+	c.items += i
+
+means that item *i* is added to the set associated with the cart *c* by the *items* relation. In traditional mathematical notation, it’d be written like this
+
+	items' = items U {(c, i)}
+
+where *items’* is the value of the *items* relation after. So this action definition says that when the requested item is in stock, the item is added to the given cart and its inventory count is reduced by one. The *when* condition is a guard; if it doesn’t hold the action can’t happen. So you can’t add an item to your cart if the item is out of stock.
 
 Removing an item from a cart looks like this:
 
 	remove (c: Cart, i: Item)
-		i in c.items
-		c.items -= i
-		i.stock += 1
+	  when i in c.items
+	  c.items -= i
+	  i.stock += 1
 
-When you checkout, a fresh order is created and made pending, the cart is deleted from the user’s carts, and the order is given the set of items that were in the cart:
+When you checkout, a new order is created and made pending, the cart is deleted from the user’s carts, and the order is given the set of items that were in the cart:
 
 	checkout (u: User, c: Cart, o: Order)
-		fresh o
-		u.pending += o
-		c in u.carts
-		u.carts -= c
-		o.items := c.items
+	  new o
+	  u.pending += o
+	  c in u.carts
+	  u.carts -= c
+	  o.items := c.items
 
 Finally, when an order gets fulfilled, it’s moved from the set of pending orders to the set of fulfilled orders:
 
 	fulfill (u: User, o: Order)
-		o in u.pending
-		u.pending -= o
-		u.fulfilled += o
+	  when o in u.pending
+	  u.pending -= o
+	  u.fulfilled += o
 
 ## ER diagrams
 
-An ER diagram offers a nice way to show the state variables:
+An entity-relationship diagram offers a nice way to show the state variables:
 
 ![](er-diagram.jpg)
 
@@ -112,8 +152,8 @@ These diagrams are very lightweight and contain lots of information. Working out
 - **Visible state**. In many formal methods, the state is assumed to be hidden, and the user’s view of the state is represented by observer actions that produce outputs but don’t update the state. It’s easier to just assume that the state is by default visible to the user, and to describe how and when the user can view the state as part of the user interface mapping.
 - **Relations and RDBs**. Relations don’t need to be binary. But relations of higher-arity should only be used when there’s a genuine need to relate more than two things: in RDB terms, the relations should be fully *normalized*. For example, to allow more than one of a given item in a cart or order, we could declare a 3-place relation containing the tuple *(c, i, n)* when cart *c* has *n* copies of item *i*:
 
-		items: (Cart + Order) -> Item -> one Number
+	  items: (Cart + Order) -> Item -> one Number
 - **Output actions**. Actions can be inputs (initiated by a user) or outputs (initiated by the system). An input action can have output parameters as well as input parameters.
 - **Determinism**. I prefer all actions to be deterministic. This doesn’t actually prevent the system from making choices that aren’t controlled by the user; it just means that those choices must be exposed in action parameters. For example, an airline reservation system might assign a seat to a passenger with an action whose signature is
 
-		assignSeat (p: Passenger, out s: Seat)
+	  assignSeat (p: Passenger, out s: Seat)

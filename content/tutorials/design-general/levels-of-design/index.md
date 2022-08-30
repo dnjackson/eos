@@ -22,9 +22,14 @@ I find the following scheme most helpful:
 2. **Linguistic**. This level involves design around language, and how you can use icons and words to convey information to users. Unlike the physical level, this level is culturally dependent: a [white circle with a red border](https://en.wikipedia.org/wiki/Prohibitory_traffic_sign) means no entry to Europeans, but not to Americans. One of the most important design heuristics is to use linguistic cues consistently within your app and across apps.
 3. **Conceptual**. This level is about the semantics of an app: its behavior, given by the actions you can perform and the state the actions read and write, and the meaning and implications of those actions and state.
 
-Here’s a picture illustrating these levels. The illustration for the linguistic level is a British road sign affectionately known as “man having trouble opening umbrella.”
+Here’s a picture illustrating these levels. The illustration for the linguistic level is a British road sign affectionately known as “man having trouble opening umbrella” (illustrating the subjectivity of linguistic signals).
 
 ![](design-levels.jpg)
 
-Beyond the conceptual, there’s another level that is significant but less often considered explicitly by designers. We might call it the **social** level, and its about the impacts that your app has on society. In the design of a social media app, for example, you’d want to make sure you don’t encourage addiction and damage the self-esteem of teenagers.
+## Levels of impact? An orthogonal dimension
 
+You may wonder if these levels correspond to the amount of impact a design decision can have. There’s some truth in that: in particular, because concept design questions address the question of what an app does and what purposes it fulfills, they tends to be more impactful. But the scope of impact—on a scale that might include personal, group, society, planet—is not so neatly tied to the levels.
+
+At the conceptual level, a design decision can have impact at any scale. We’ve come to understand, for example, that the *Upvote* concept used in social media apps has its immediate impact in the quality of the ranking, and how well it serves the interests of an individual user; a deeper impact in terms of the user’s psychology (for example, encouraging addiction to social media); a more widespread impact on a social group (for example teenagers competing for attention and approval); and even impact on an entire society (for example, with the way the concept enables the spread of disinformation).
+
+And wider impacts can occur even at the “lowest,” physical level. A design that requires a particular physical ability can disadvantage large numbers of users. Poor use of color, for example, might make an app unusable to the almost 8% of men who experience color-blindness.
