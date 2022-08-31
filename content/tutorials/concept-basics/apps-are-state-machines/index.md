@@ -157,3 +157,5 @@ These diagrams are very lightweight and contain lots of information. Working out
 - **Determinism**. I prefer all actions to be deterministic. This doesn’t actually prevent the system from making choices that aren’t controlled by the user; it just means that those choices must be exposed in action parameters. For example, an airline reservation system might assign a seat to a passenger with an action whose signature is
 
 	  assignSeat (p: Passenger, out s: Seat)
+	  
+  *Thanks to Gordon Cassie for comments on this post which led to several improvements.*
