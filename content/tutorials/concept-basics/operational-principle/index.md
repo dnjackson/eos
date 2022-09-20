@@ -95,10 +95,10 @@ Some concepts, though, need two or more OPs to explain their essential functiona
 - **Password**. (1) If you register with a user name and password, and then you login with that same user name and password, you will be authenticated as the user who registered (that is, able to act in their name). (2) If you register with a username and password, and then you login with that same username but a different password, you will not be authenticated.
 - **Personal access token (PAT)**. (1) If you create an access token for a resource and pass it to another user, then that user can enter the token string and obtain access. (2) If you create an access token, pass it to another user, and then revoke it, the other user will not be able to access the resource with it.
 
-It’s not unusual for a more elaborate OP to be the one that actually motivates the concept design. For the PAT concept, it’s the revocation that’s the essence: without it, a simple password would do.
+It’s not unusual for a more elaborate OP to be the one that actually motivates the concept design. For the *PAT* concept, it’s the revocation that’s the essence: without it, a simple password would do.
 
 ## Generic and context-specific OPs
-Most concepts are generic, which means that they can be instantiated in different contexts, applying to different kinds of objects. The Trash concept, for example, can be applied to files and folders in a file system; or to messages in an email client; or to photos in a catalog. 
+Most concepts are generic, which means that they can be instantiated in different contexts, applying to different kinds of objects. The *Trash* concept, for example, can be applied to files and folders in a file system; or to messages in an email client; or to photos in a catalog. 
 
 When writing an OP as part of a concept design, you’ll have to decide whether to write it in a generic form, or instantiated for the context at hand. My recommendation is that you write it initially in its instantiated, more concrete form, as this will let you assess more easily whether the concept will provide the value that’s expected. Then, once you’re happy that the concept is the right one, you can reformulate it in a more generic way to gain the benefit of a simpler and more flexible concept, and to ensure that you haven’t specialized the concept in some way that will make it unfamiliar. 
 
