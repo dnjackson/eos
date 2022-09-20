@@ -97,6 +97,19 @@ Some concepts, though, need two or more OPs to explain their essential functiona
 
 It’s not unusual for a more elaborate OP to be the one that actually motivates the concept design. For the PAT concept, it’s the revocation that’s the essence: without it, a simple password would do.
 
+## Generic and context-specific OPs
+Most concepts are generic, which means that they can be instantiated in different contexts, applying to different kinds of objects. The Trash concept, for example, can be applied to files and folders in a file system; or to messages in an email client; or to photos in a catalog. 
+
+When writing an OP as part of a concept design, you’ll have to decide whether to write it in a generic form, or instantiated for the context at hand. My recommendation is that you write it initially in its instantiated, more concrete form, as this will let you assess more easily whether the concept will provide the value that’s expected. Then, once you’re happy that the concept is the right one, you can reformulate it in a more generic way to gain the benefit of a simpler and more flexible concept, and to ensure that you haven’t specialized the concept in some way that will make it unfamiliar. 
+
+Here’s an example. Suppose you’re designing an email client, and realize that it would be convenient if the app were to automatically complete email addresses when they are typed in to the *to* or *cc* fields. You might start with an OP like this:
+
+- **PreviousRecipientCompletion**. After you have sent emails to a variety of addresses, each time you send an email and start to type an address, the app automatically suggests a completion based on the addresses previously used.
+
+Having written this, you realize there is nothing email-specific about this; this is just a simplified form of a generic concept:
+
+- **Autocompletion**. When you start typing a string, the system suggests suffixes that would extend the string to one that appears in a predefined dictionary, or to one that you previously typed.
+
 ## Purposes, not user goals
 
 The design of a concept is driven by some purpose that the concept fulfills. In some cases, this purpose is aligned with a simple user goal. The purpose of the *TextMessage* concept is to convey messages between users; a user following the OP (if you send a message to another user, then they will receive it) has the simple goal of conveying a single message.
