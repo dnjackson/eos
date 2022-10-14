@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "The siloing of UX design"
-date: "2022-08-26"
+date: "2022-10-14”
 description: "Why a new discipline of software design is needed."
 ShowToc: true
 TocOpen: true

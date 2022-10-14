@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Conceptual models missed the point"
-date: "2022-09-20"
+date: "2022-10-18”
 description: ""
 ShowToc: false
 TocOpen: true
