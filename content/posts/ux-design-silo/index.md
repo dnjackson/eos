@@ -55,13 +55,13 @@ One final example: as a UX designer, you shouldn’t need to know anything about
 
 How then can we break down the UX design siloes and create designers with the right combination of skills? 
 
-Within companies today, UX designers, product managers and programmers can work more closely together. UX designers can expand their training in software concepts; and product managers and programmers can learn more about social, psychological and ethical factors.
+Within companies today, UX designers, product managers and programmers can work more closely together. UX designers can expand their training in software concepts; and product managers and programmers can learn more about social, psychological and ethical factors. Of course the very best practitioners are already crossing these artificial boundaries.
 
-But the future will be impacted most, I believe, by a new kind of software design education, in which students are taught how to work at Kapor’s interface between human and machine: combining the technical aspects of software with an appreciation of human needs and purposes.
+The future will be impacted most, I believe, by a new kind of software design education, in which students are taught how to work at Kapor’s interface between human and machine: combining the technical aspects of software with an appreciation of human needs and purposes.
 
 ## A new software design class
 
-These are the principles that have guided the development of a new class that I’m teaching with [Arvind Satyanarayan](https://arvindsatya.com) at MIT. In Software Studio (6.1040*), we teach students how to think about software design through the lenses of [concept design](https://essenceofsoftware.com) and [value-sensitive design](https://vsdesign.org). 
+These are the principles that have guided the development of a [new class](https://61040-fa22.github.io) that I’m teaching with [Arvind Satyanarayan](https://arvindsatya.com) at MIT. In Software Studio (6.1040*), we teach students how to think about software design through the lenses of [concept design](https://essenceofsoftware.com) and [value-sensitive design](https://vsdesign.org). 
 
 In our class, students learn (and practice!) a collection of standard user-centered design techniques, including needfinding, brainstorming, sketching and wire framing, paper prototypes, user testing and heuristic evaluation of UIs. But they also learn how to formulate and analyze designs precisely in terms of concepts, and how to explore the social and ethical impacts of their work.
 
