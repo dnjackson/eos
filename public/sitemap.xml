@@ -2,11 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://essenceofsoftware.com/posts/conceptual-models/</loc>
+    <lastmod>2022-10-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://essenceofsoftware.com/</loc>
-    <lastmod>2022-10-14T00:00:00+00:00</lastmod>
+    <lastmod>2022-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/</loc>
-    <lastmod>2022-10-14T00:00:00+00:00</lastmod>
+    <lastmod>2022-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/ux-design-silo/</loc>
     <lastmod>2022-10-14T00:00:00+00:00</lastmod>
@@ -121,5 +124,7 @@
     <loc>https://essenceofsoftware.com/series/</loc>
   </url><url>
     <loc>https://essenceofsoftware.com/subscribe/</loc>
+  </url><url>
+    <loc>https://essenceofsoftware.com/workshops/</loc>
   </url>
 </urlset>
