@@ -5,6 +5,7 @@
     <link>https://essenceofsoftware.com/tutorials/design-general/</link>
     <description>Recent content in On software design on The Essence of Software</description>
     <image>
+      <title>The Essence of Software</title>
       <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
       <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
@@ -49,7 +50,7 @@ Most of the book is about a way to structure goals into a tree, by noting alignm
       <guid>https://essenceofsoftware.com/tutorials/design-general/fitness-criteria/</guid>
       <description>Seven criteria What makes a design fit for purpose depends—surprise!—on the purpose. But generic criteria are helpful for two reasons. First, they give you some basis for evaluation, however crude. Second, they can be used as a checklist to suggest more specific ones.
 A software product should be:
- Efficient: letting users accomplish their goals with no more steps or effort than needed; Flexible: supporting not just one fixed and narrow goal, but a range of goals that users are likely to have; Responsive: responding to requests from the user in a timely way; Understandable: behaving predictably, offering options and producing outcomes that make sense to users; Robust: tolerant of errors made by the user and other common perturbations of context, such as failures of other systems or agents to perform their expected roles; Secure: resistant to malicious attacks, including social engineering attacks that induce the user to perform unintended actions.</description>
+Efficient: letting users accomplish their goals with no more steps or effort than needed; Flexible: supporting not just one fixed and narrow goal, but a range of goals that users are likely to have; Responsive: responding to requests from the user in a timely way; Understandable: behaving predictably, offering options and producing outcomes that make sense to users; Robust: tolerant of errors made by the user and other common perturbations of context, such as failures of other systems or agents to perform their expected roles; Secure: resistant to malicious attacks, including social engineering attacks that induce the user to perform unintended actions.</description>
     </item>
     
     <item>
@@ -71,7 +72,7 @@ With all the hype in the design world about creativity and brainstorming, it’s
       <description>When you’re diagnosing a usability snag, or coming up with a new design idea, it’s helpful to know what level you’re working at.
 Over the years, designers and researchers have defined various levels, reflecting their view of design and what they emphasize.
 I find the following scheme most helpful:
- Physical. If you want to think of levels as low and high, this one is at the bottom. It’s the level of design in which you’re concerned about the physical (and physiological) qualities of human users.</description>
+Physical. If you want to think of levels as low and high, this one is at the bottom. It’s the level of design in which you’re concerned about the physical (and physiological) qualities of human users.</description>
     </item>
     
     <item>
