@@ -14,7 +14,7 @@ editPost:
     appendFilePath: false # to append file path to Edit link
 ---
 
-## Concerns about computing technology
+## The risks of computing
 
 From the very birth of computing, enthusiasm for its benefits has been accompanied by concerns about its risks. These concerns can be placed into three broad categories, corresponding to three periods in which they came to the fore: from the advent of computing to the late 1980s; from the 1990s through to around 2010; and from then until today.
 
