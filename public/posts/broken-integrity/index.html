@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Breaking Integrity: Three Examples | The Essence of Software</title>
+<meta name="keywords" content="">
+<meta name="description" content="Integrity violations aren&rsquo;t as common as I once expected. But when they happen, they&rsquo;re bad.">
+<meta name="author" content="Daniel Jackson">
+<link rel="canonical" href="https://essenceofsoftware.com/posts/broken-integrity/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.c9184ca838a58dfe44c96d4d1c62377e6758d4f3f4eebbab25347e788f39374f.css" integrity="sha256-yRhMqDiljf5EyW1NHGI3fmdY1PP07rurJTR&#43;eI85N08=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Breaking Integrity: Three Examples" />
+<meta property="og:description" content="Integrity violations aren&rsquo;t as common as I once expected. But when they happen, they&rsquo;re bad." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://essenceofsoftware.com/posts/broken-integrity/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-02T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
+
+<meta name="twitter:title" content="Breaking Integrity: Three Examples"/>
+<meta name="twitter:description" content="Integrity violations aren&rsquo;t as common as I once expected. But when they happen, they&rsquo;re bad."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://essenceofsoftware.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Breaking Integrity: Three Examples",
+      "item": "https://essenceofsoftware.com/posts/broken-integrity/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Breaking Integrity: Three Examples",
+  "name": "Breaking Integrity: Three Examples",
+  "description": "Integrity violations aren\u0026rsquo;t as common as I once expected. But when they happen, they\u0026rsquo;re bad.",
+  "keywords": [
+    
+  ],
+  "articleBody": "As I developed the framework of concept design, I thought that concept integrity would be central. Violations of integrity would be like feature interactions in telephony, and at the very core of software design.\nI have to admit that I was wrong. Violations of concept integrity are just so egregious that they can usually not be tolerated. Consequently, they occur rarely, and other design criteria (in particular concept specificity) turn out to be more useful in practice.\nWhen integrity violations do occur, however, they can cause major trouble for users. In EOS, I give the example of the violation of Google Drive’s synchronization concept, one so painful that an angry user bought the domain googledrivesucks.com (now no longer active) to vent his frustration at losing all his files due to the design bug.\nRecently, I’ve come across three more examples of integrity violation, causing varying degrees of surprise.\nViolation of Undo in Apple Mail In a recent update to macOS, Apple extended the basic Message concept with an undo send action. This is handy: it gives you 30 seconds after you’ve sent a message to change you mind.\nAppropriately, Apple synchronized this action with the undo action of the general Undo concept. So if you send a message and then immediately execute an undo, it is interpreted as undo send, even without clicking the special transient button carrying that label.\nBut Apple went further. The undo action is synchronized with undo send for as long as the message has not been sent, even if another action has been performed in the meantime.\nI noticed this because I have a standard way of dealing with messages in my inbox. I respond to the message, and then I either delete it, or move it to another folder. With the new undo send, something surprising and annoying kept happening. I would reply to a message, delete that message, and then execute undo, having decided I would prefer to file it instead. Mail would undo the send, and not the deletion.\nInitially, I thought that the effect of the undo was to pop the undo-stack all the way back to the send. In fact, it’s not that bad, and what it does instead is to keep the send action on the top of the stack even as other actions are performed. Either way, this violates the simple and intuitive operational principle of Undo that executing undo reverses the last action performed.\nViolation of Playlist in Spotify The operational principle of the Playlist concept says that if you start playing the playlist by selecting a song and clicking play then, until you stop playing, it will play the tracks of the playlist in order from that song onwards.\nSpotify aficionados will know that this isn’t true. If you add a song to the queue, that song will be played before the next song in the playlist.\nArguably, there’s nothing wrong with the this. The Queue is a nice concept that brings more flexibility to users. Moreover, the Playlist concept is arguably overloaded if its purposes include both organizing tracks into groups and scheduling their playing, so regarding the scheduling as a feature of only the Queue concept is not only a more accurate reflection of how Spotify works, but also eliminates the overloading.\nNevertheless, the app shows signs of some design struggles here. Strangely, if the interposed song is in the current playlist, it won’t be highlighted with the little playing animation that would be shown if it were next in the playlist. And the entries in the queue that show upcoming tracks from a playlist disappear en masse if you start playing a song from a different playlist. The Queue concept, in other words, isn’t exactly a queue, and includes two distinct kinds of tracks which are treated differently: the ones added implicitly when you play a playlist and the ones added explicitly through the add to queue action. You might wonder: can you move songs from the explicit list to the implicit one? Yes, it seems you can. Hmmm.\nViolation of Ride in Uber An operational principle may have caveats: that the typical outcome may not follow in extraordinary circumstances. For example, The Order concept promises that if you order some items, they will eventually be shipped and delivered. But customers understand that this principle cannot be a cast iron promise, and an inventory glitch may prevent its fulfillment.\nIf the expected outcome fails to follow with high enough frequency, perhaps it becomes an integrity violation.\nUsing Uber’s ride service, I’ve noticed that rides are increasingly canceled. You request a ride, select the service level, confirm the pickup location and expect the driver to arrive at the prescribed time or shortly thereafter. But just before the expected arrival time, you get a message saying that the driver has canceled. (On several occasions, that message has been followed immediately by an email from Uber telling me that I have been charged a fee for canceling the ride myself.) At other times, I’ve received a message that the driver already arrived but couldn’t find me, even though I could see that no car had passed.\nThe driver must surely have the ability to cancel a confirmed ride in some circumstances (such as unexpected traffic). But it seems that drivers are canceling more frequently than necessary, presumably so that they can switch to more lucrative rides.\nWhen integrity is lost How do typical users respond to broken integrity? I doubt they say to themselves “ah, this app seems to be violating the essential integrity of this concept.” I suspect that instead they just get confused: they don’t really know what to expect when they order an Uber, what happens when they queue songs in Spotify, or what undo actually does in Apple Mail.\nFor the designer, however, integrity is a yearning for what might have been: how if things had been different, everything would have been so simple…\n",
+  "wordCount" : "992",
+  "inLanguage": "en",
+  "datePublished": "2023-04-02T00:00:00Z",
+  "dateModified": "2023-04-02T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Daniel Jackson"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://essenceofsoftware.com/posts/broken-integrity/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Essence of Software",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://essenceofsoftware.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://essenceofsoftware.com/ask/" title="Q&amp;A">
+                    <span>Q&amp;A</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
+                    <span>Buy</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/author/" title="Author">
+                    <span>Author</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/posts/" title="Goodies">
+                    <span>Goodies</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
+                    <span>Subscribe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Breaking Integrity: Three Examples
+    </h1>
+    <div class="post-meta"><span title='2023-04-02 00:00:00 +0000 UTC'>April 2, 2023</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="https://forum.softwareconcepts.io" rel="noopener noreferrer" target="_blank">Comments</a>
+
+</div>
+  </header> 
+  <div class="post-content"><p>As I developed the framework of concept design, I thought that concept integrity would be central. Violations of integrity would be like feature interactions in telephony, and at the very core of software design.</p>
+<p>I have to admit that I was wrong. Violations of concept integrity are just so egregious that they can usually not be tolerated. Consequently, they occur rarely, and other design criteria (in particular concept specificity) turn out to be more useful in practice.</p>
+<p>When integrity violations do occur, however, they can cause major trouble for users. In EOS, I give the example of the violation of Google Drive&rsquo;s synchronization concept, one so painful that an angry user bought the domain googledrivesucks.com (now no longer active) to vent his frustration at losing all his files due to the design bug.</p>
+<p>Recently, I&rsquo;ve come across three more examples of integrity violation, causing varying degrees of surprise.</p>
+<h2 id="violation-of-undo-in-apple-mail">Violation of Undo in Apple Mail<a hidden class="anchor" aria-hidden="true" href="#violation-of-undo-in-apple-mail">#</a></h2>
+<p>In a recent update to macOS, Apple extended the basic <em>Message</em> concept with an <em>undo send</em> action. This is handy: it gives you 30 seconds after you&rsquo;ve sent a message to change you mind.</p>
+<p><img loading="lazy" src="undo-send-screenshot.png" alt="Undo send in Apple Mail"  />
+</p>
+<p>Appropriately, Apple synchronized this action with the <em>undo</em> action of the general <em>Undo</em> concept. So if you send a message and then immediately execute an <em>undo</em>, it is interpreted as <em>undo send</em>, even without clicking the special transient button carrying that label.</p>
+<p>But Apple went further. The <em>undo</em> action is synchronized with <em>undo send</em> for as long as the message has not been sent, even if another action has been performed in the meantime.</p>
+<p>I noticed this because I have a standard way of dealing with messages in my inbox. I respond to the message, and then I either delete it, or move it to another folder. With the new <em>undo send</em>, something surprising and annoying kept happening. I would reply to a message, delete that message, and then execute undo, having decided I would prefer to file it instead. Mail would undo the send, and not the deletion.</p>
+<p>Initially, I thought that the effect of the undo was to pop the undo-stack all the way back to the <em>send</em>. In fact, it&rsquo;s not that bad, and what it does instead is to keep the <em>send</em> action on the top of the stack even as other actions are performed. Either way, this violates the simple and intuitive operational principle of <em>Undo</em> that executing <em>undo</em> reverses the last action performed.</p>
+<h2 id="violation-of-playlist-in-spotify">Violation of Playlist in Spotify<a hidden class="anchor" aria-hidden="true" href="#violation-of-playlist-in-spotify">#</a></h2>
+<p>The operational principle of the <em>Playlist</em> concept says that if you start playing the playlist by selecting a song and clicking play then, until you stop playing, it will play the tracks of the playlist in order from that song onwards.</p>
+<p>Spotify aficionados will know that this isn&rsquo;t true. If you add a song to the queue, that song will be played before the next song in the playlist.</p>
+<p>Arguably, there&rsquo;s nothing wrong with the this. The <em>Queue</em> is a nice concept that brings more flexibility to users. Moreover, the <em>Playlist</em> concept is arguably overloaded if its purposes include both organizing tracks into groups and scheduling their playing, so regarding the scheduling as a feature of only the <em>Queue</em> concept is not only a more accurate reflection of how Spotify works, but also eliminates the overloading.</p>
+<p>Nevertheless, the app shows signs of some design struggles here. Strangely, if the interposed song is in the current playlist, it won&rsquo;t be highlighted with the little playing animation that would be shown if it were next in the playlist. And the entries in the queue that show upcoming tracks from a playlist disappear en masse if you start playing a song from a different playlist. The <em>Queue</em> concept, in other words, isn&rsquo;t exactly a queue, and includes two distinct kinds of tracks which are treated differently: the ones added implicitly when you play a playlist and the ones added explicitly through the <em>add to queue</em> action. You might wonder: can you move songs from the explicit list to the implicit one? Yes, it seems you can. Hmmm.</p>
+<p><img loading="lazy" src="spotify-queue-screenshot.png" alt="Spotify&amp;rsquo;s queue"  />
+</p>
+<h2 id="violation-of-ride-in-uber">Violation of Ride in Uber<a hidden class="anchor" aria-hidden="true" href="#violation-of-ride-in-uber">#</a></h2>
+<p>An operational principle may have caveats: that the typical outcome may not follow in extraordinary circumstances. For example, The <em>Order</em> concept promises that if you order some items, they will eventually be shipped and delivered. But customers understand that this principle cannot be a cast iron promise, and an inventory glitch may prevent its fulfillment.</p>
+<p>If the expected outcome fails to follow with high enough frequency, perhaps it becomes an integrity violation.</p>
+<p>Using Uber&rsquo;s ride service, I&rsquo;ve noticed that rides are increasingly canceled. You request a ride, select the service level, confirm the pickup location and expect the driver to arrive at the prescribed time or shortly thereafter. But just before the expected arrival time, you get a message saying that the driver has canceled. (On several occasions, that message has been followed immediately by an email from Uber telling me that I have been charged a fee for canceling the ride myself.) At other times, I&rsquo;ve received a message that the driver already arrived but couldn&rsquo;t find me, even though I could see that no car had passed.</p>
+<p><img loading="lazy" src="uber-cancel-screenshot.png" alt="Uber cancellation message"  />
+</p>
+<p>The driver must surely have the ability to cancel a confirmed ride in some circumstances (such as unexpected traffic). But it seems that drivers are canceling more frequently than necessary, presumably so that they can switch to more lucrative rides.</p>
+<h2 id="when-integrity-is-lost">When integrity is lost<a hidden class="anchor" aria-hidden="true" href="#when-integrity-is-lost">#</a></h2>
+<p>How do typical users respond to broken integrity? I doubt they say to themselves &ldquo;ah, this app seems to be violating the essential integrity of this concept.&rdquo; I suspect that instead they just get confused: they don&rsquo;t really know what to expect when they order an Uber, what happens when they queue songs in Spotify, or what undo actually does in Apple Mail.</p>
+<p>For the designer, however, integrity is a yearning for what might have been: how if things had been different, everything would have been so simple…</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://essenceofsoftware.com/posts/dark-concepts/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Dark Concepts in Software Design</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+
+    <span>&copy; 2023 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

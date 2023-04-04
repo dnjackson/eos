@@ -2,12 +2,12 @@
 author: "Daniel Jackson"
 title: "Dark Concepts in Software Design"
 date: "2023-03-27"
-description: "The building blocks that social media apps use to control us"
+description: "The building blocks that social media apps use to control us."
 ShowToc: false
 TocOpen: false
 hideMeta: false # removes date etc from post
 # hideSummary: true
-summary: "The building blocks that social media apps use to control us"
+summary: "The building blocks that social media apps use to control us."
 editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text
