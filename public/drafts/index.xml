@@ -5,19 +5,29 @@
     <link>https://essenceofsoftware.com/drafts/</link>
     <description>Recent content in Drafts on The Essence of Software</description>
     <image>
+      <title>The Essence of Software</title>
       <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
       <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Daniel Jackson</copyright><atom:link href="https://essenceofsoftware.com/drafts/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Daniel Jackson</copyright>
+    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/drafts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Three Stages of Enlightenment</title>
+      <link>https://essenceofsoftware.com/drafts/three-stages/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/three-stages/</guid>
+      <description>A brief intro to concept design in three stages</description>
+    </item>
+    
     <item>
       <title></title>
-      <link>https://essenceofsoftware.com/drafts/smooth-software/</link>
+      <link>https://essenceofsoftware.com/drafts/links-to-my-tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/drafts/smooth-software/</guid>
-      <description>Smooth Software In an old interview, unfortunately no longer online, Jony Ive explained how his team at Apple had designed the MacBook&amp;rsquo;s rounded corners. &amp;ldquo;I suppose that&amp;rsquo;s pretty obsessive, isn&amp;rsquo;t it?&amp;rdquo; he ended, with a self-deprecating smile.
-It struck me as a perfect metaphor for software design: that so often the real work is in the smoothing of rough edges. Each small protrusion and snag may seem inconsequential by itself, but in aggregate they create a constant stream of irritation and confusion for the user.</description>
+      <guid>https://essenceofsoftware.com/drafts/links-to-my-tutorials/</guid>
+      <description>links to my tutorials link to Pal paper in Arxiv CD of noosphere</description>
     </item>
     
   </channel>

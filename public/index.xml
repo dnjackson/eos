@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Sun, 02 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Three Stages of Enlightenment</title>
+      <link>https://essenceofsoftware.com/drafts/three-stages/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/three-stages/</guid>
+      <description>A brief intro to concept design in three stages</description>
+    </item>
+    
     <item>
       <title>Breaking Integrity: Three Examples</title>
       <link>https://essenceofsoftware.com/posts/broken-integrity/</link>
@@ -259,6 +268,15 @@ I conclude that there are two ways of constructing a software design: One way is
       
       <guid>https://essenceofsoftware.com/posts/sample-chapter/</guid>
       <description>Why I Wrote This Book</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://essenceofsoftware.com/drafts/links-to-my-tutorials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/links-to-my-tutorials/</guid>
+      <description>links to my tutorials link to Pal paper in Arxiv CD of noosphere</description>
     </item>
     
     
