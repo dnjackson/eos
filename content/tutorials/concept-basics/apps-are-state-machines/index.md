@@ -34,7 +34,7 @@ To understand exactly what a state machine is, let’s look at an example that�
 
 It works like this. You start in the state *s0*, and then press the *up* button to increment the timer to *s1* corresponding to one minute, *s2* for two minutes, or *s3* for three minutes; you can press the *down* button to decrement the timer; and then when you’re ready, you press *start* and a countdown begins, with *r3* meaning running for three minutes, etc; and then when no time is remaining (*r0*) the timer rings.
 
-We could write down this state machine as a collection of explicit transitions, but to more succinct we could introduce two separate variables:
+We could write down this state machine as a collection of explicit transitions, but to be more succinct we could introduce two separate variables:
 
 	time: 0..3
 	running: bool
@@ -144,6 +144,8 @@ These diagrams are very lightweight and contain lots of information. Working out
 2. **More succinct than use cases**. A use case can be useful for describing the details of a workflow, but often a single action will suffice. The *checkout* action, for example, could encompass all the steps in checking out a shopping cart, and the flow would be better described using wireframes than text. For capturing a fuller journey (that a user adds and removes items from a cart, then checks it out, then the order is fulfilled), I recommend using an [operational principle](../operational-principle) written in terms of actions.
 3. **Path to implementation**. It’s easy to extract a relational database schema from the ER diagram. [OMT](https://en.wikipedia.org/wiki/Object-modeling_technique) showed how to do this systematically. You can also generate a class hierarchy for an object-oriented approach.
 4. **Small details expose big issues**. The biggest advantage of writing down a state machine is that as you work out small details you inevitably encounter questions that expose serious design issues. For example, when I wrote the *add* action, I had to decide whether it should check the *stock* of the item, and if so, whether it should decrement it. I decided to do both, which means that (a) you can only add an item that is in stock; and (b) you’re assured that when you checkout, the item you wanted won’t have been taken by someone else. But this convenience for the user comes at a cost for the company, because it means that items will be shown as unavailable when they haven’t yet been paid for. And there will need to be a way to return an item to the inventory if too much time elapses with the cart not being checked out.
+
+Describing a whole app as a single state machine rarely makes sense (unless it’s a very small app). Concepts to the rescue! Just as you can describe an app as a state machine, we’ll see that you can do the same thing for an individual concept. Then an app is just a composition of concepts, and you can define in detail only the concepts that seem tricky or interesting.
 
 ## Some technical notes
 - **History**. This kind of state machine model was introduced by the Z Notation in the late 1970s, and became universal in all formal modeling languages (VDM, B, TLA and my own language Alloy).
