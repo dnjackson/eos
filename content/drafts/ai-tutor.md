@@ -94,7 +94,7 @@ The chatbot is fueled by a repository of advice, which I’ll model as a concept
 	actions
 		newTopic (name: Text, out t: Topic)
 	  addAdvice (t: Topic, advice: Text)
-	  getAdvice (t: Task, out advices: set Text)
+	  getAdvice (t: Topic, out advices: set Text)
 
 **Side notes**. This is a strange concept because it has so little behavior but it seems to represent a very significant part of the tutor, and would likely have its own code. I’ve included an action *getAdvice* to help reify the operational principle even though the state is visible and observer actions aren’t generally needed (but I think I should rethink this for OP-relevant state observations). At first, I incorporated advice into a concept that managed exercise/part structure, but then when I realized that that concept needed to incorporate the student behavior, it became too complex and I decided this was a better concept to factor out than a student behavior concept. Could this concept be made more similar to one that already exists, such as a Q&A concept of the sort you might use to model StackOverflow etc? In the AI tutor setting, the advice will be given to the chatbot, not the student, but this should be irrelevant in the design of the concept.
 
@@ -158,8 +158,7 @@ Notes
 ## Composing concepts
 
 	app Tutor [Student, Competency]
-	includes
-		ChatBot
+	includes		
 		Buffer
 		Advice [Competency]
 		Exercise [Competency]
@@ -169,10 +168,17 @@ Notes
 - drills is a set of concept instances indexed by student.
 - How to deal with type that has no allocator in any concept? For now, just making such types parameters of the app itself and will assume that they get allocated in syncs.
 
-Needing a diagram to see what actions might be sync’d. A tool could suggest syncs based on types.
+Example of a sync:
 
-	sync selectExercise (s: Student, e: Exercise.Exercise)
-		Buffer.new (b) // where does the buffer go? associate with student session
-		
-		Drills[s].
-		
+	sync selectPart (s: Student, e: Exercise.exercise, p: Exercise.Part)
+		// get part's text to present to student
+		Exercise.selectPart (e, p, t, c)
+		// get advices associated with competency
+		Advice.getAdvice (c, as)
+		// prompt chatbot with concatenation of advices	ChatBot.new (concat(as), session)
+		// where does the session go?
+		// set the student context for answering
+		Drills[s].selectSubTask (e, p)
+
+		Buffer.new (b) // where does the buffer go? 
+
