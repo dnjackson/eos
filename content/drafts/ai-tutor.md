@@ -8,9 +8,9 @@ TocOpen: true
 hideMeta: false # removes date etc from post
 summary: "Notes on design of a GPT-powered tutor"
 editPost:
-    URL: "https://forum.softwareconcepts.io"
-    Text: "Comments" # edit text
-    appendFilePath: false # to append file path to Edit link
+  URL: "https://forum.softwareconcepts.io"
+  Text: "Comments" # edit text
+  appendFilePath: false # to append file path to Edit link
 ---
 
 ## Goals and Principles
@@ -45,13 +45,13 @@ The central concept captures the protocol of interacting with tools like GPT:
 	  questions, answers: Session -> seq Text
 	actions
 	  new (prompt: Text, out s: Session)
-	    // create new session with given prompt
+	  	// create new session with given prompt
 	  ask (s: Session, t: Text)
-	    // user enters text
+	  	// user enters text
 	  respond (s: Session, t: Text)
-	    // bot responds
+	  	// bot responds
 	  close (s: Session)
-	    // needed?
+	  	// needed?
 
 The operational principle says that a new session is created with a prompt; in our design, this will turn out to be hidden from the user. The user then enters some text (modeled by the *ask* action) and the bot *responds*.
 
@@ -62,21 +62,21 @@ The student will work in a mutable buffer, generating a sequence of immutable te
 	concept Buffer
 	purpose create immutable text with mutable buffer
 	principle
-		// if you create a buffer and edit it,
-		// saving produces the last content
+	  // if you create a buffer and edit it,
+	  // saving produces the last content
 	  new (b); edit (b, t); save (t') {t' = t}
 	state
 	  content: Buffer -> one Text
 	actions
 	  new (out b: Buffer)
-	    // create new buffer
+	  	// create new buffer
 	  edit (b: Buffer, t: Text)
-	    // edit buffer so new content is t
+	  	// edit buffer so new content is t
 	  save (b: Buffer, t: Text)
-	    // save contents of buffer
+	  	// save contents of buffer
 	  close (b: Buffer)
-	    // needed?
-	    
+	  	// needed?
+	  	
 The *save* action is intended to be sync’d with another concept; I’ve factored out the means by which the text is saved.
 
 The chatbot is fueled by a repository of advice, which I’ll model as a concept that offers advice on various topics:
@@ -84,15 +84,15 @@ The chatbot is fueled by a repository of advice, which I’ll model as a concept
 	concept Advice [Topic]
 	purpose manage repo of advice
 	principle
-		// create topic, add advice, then getting
-		// advice will return all advice added to that
-		// topic
-		newTopic (n, t); addAdvice (t, a1)... addAdvice (t, aN); get (t, a') {a' = a1 + ... + aN}
+	  // create topic, add advice, then getting
+	  // advice will return all advice added to that
+	  // topic
+	  newTopic (n, t); addAdvice (t, a1)... addAdvice (t, aN); get (t, a') {a' = a1 + ... + aN}
 	state
 	  advices: Topic -> set Text
 	  name: Topic lone -> one Text
 	actions
-		newTopic (name: Text, out t: Topic)
+	  newTopic (name: Text, out t: Topic)
 	  addAdvice (t: Topic, advice: Text)
 	  getAdvice (t: Topic, out advices: set Text)
 
@@ -103,11 +103,11 @@ The pedagogical content is organized as a collection of exercises with multiple 
 	concept Exercise [Competency]
 	purpose maintain and offer structured exercises
 	principle
-		// admin creates exercise with parts
-		// when student selects part, they get 
-		// the relevant descriptions
-		newExercise(te, e); newPart (e, tp, c, p);
-		 selectPart (e, p, t', c') {t' = te^tp, c' = c}
+	  // admin creates exercise with parts
+	  // when student selects part, they get 
+	  // the relevant descriptions
+	  newExercise(te, e); newPart (e, tp, c, p);
+	   selectPart (e, p, t', c') {t' = te^tp, c' = c}
 	state
 	  parts: Exercise one -> set Part
 	  competence: Part -> one Competency
@@ -133,11 +133,11 @@ Concept for student behavior:
 	concept Drill
 	purpose govern student work blah...
 	principle
-		// if you select a task and one of its subtasks
-		// and then submit a solution, it's recorded
-		// appropriately
-		selectTask (t); selectSubTask (t, t'); 
-		submit (s) {t' in t.subtasks and t.solution = s}
+	  // if you select a task and one of its subtasks
+	  // and then submit a solution, it's recorded
+	  // appropriately
+	  selectTask (t); selectSubTask (t, t'); 
+	  submit (s) {t' in t.subtasks and t.solution = s}
 	state
 	  subtasks: Task one -> set Task
 	  solution: Task -> lone Text
@@ -158,11 +158,11 @@ Notes
 ## Composing concepts
 
 	app Tutor [Student, Competency]
-	includes		
-		Buffer
-		Advice [Competency]
-		Exercise [Competency]
-		Drills: Student -> Drill
+	includes	  
+	  Buffer
+	  Advice [Competency]
+	  Exercise [Competency]
+	  Drills: Student -> Drill
 
 Notes
 - drills is a set of concept instances indexed by student.
@@ -171,14 +171,14 @@ Notes
 Example of a sync:
 
 	sync selectPart (s: Student, e: Exercise.exercise, p: Exercise.Part)
-		// get part's text to present to student
-		Exercise.selectPart (e, p, t, c)
-		// get advices associated with competency
-		Advice.getAdvice (c, as)
-		// prompt chatbot with concatenation of advices	ChatBot.new (concat(as), session)
-		// where does the session go?
-		// set the student context for answering
-		Drills[s].selectSubTask (e, p)
+	  // get part's text to present to student
+	  Exercise.selectPart (e, p, t, c)
+	  // get advices associated with competency
+	  Advice.getAdvice (c, as)
+	  // prompt chatbot with concatenation of advices	ChatBot.new (concat(as), session)
+	  // where does the session go?
+	  // set the student context for answering
+	  Drills[s].selectSubTask (e, p)
 
-		Buffer.new (b) // where does the buffer go? 
+	  Buffer.new (b) // where does the buffer go? 
 
