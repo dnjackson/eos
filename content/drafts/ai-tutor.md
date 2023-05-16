@@ -243,7 +243,7 @@ When a user selects a part of an exercise, a new subtask is selected associated 
 	  Drills[s].selectSubTask (ex, part)
 	  Buffers[s].open (emptyIfNone(part.solution))
 	  Advice.getAdvice (comp, advice)
-	  Chatbots[s][p].prompt (advice ^ partText)
+	  Chatbots[s][part].prompt (advice ^ partText)
 
 When a user saves the buffer, the content is submitted as a solution (to the current part), that solution is presented as a query to the relevant chatbot, and the solution is also emailed to the user:
 
@@ -274,4 +274,5 @@ The concept design offers only a draft attempt at resolving the tricky questions
 - Deriving exercise solutions from part solutions, and not allowing them to be edited explicitly.
 - Conveying solutions to user by emailing submitted solutions to subparts. Clearly, users may prefer an explicit action for sending or saving a solution, which should probably send the entire exercise solution. There should also be a way to send the chatbot transcript.
 - Associating prompts with competencies tied to parts, and not with whole exercises, and feeding the text of the exercise part as part of the prompt.
+- The chatbot instances are associated with parts of exercises, and their sessions persist, so that if you select a part, then select another part and come back to the first, you’ll be in the same session.
 - ...
