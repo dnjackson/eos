@@ -78,11 +78,7 @@ which says that each invitation is associated with zero or one dates at which th
 
 The relation declarations of the state can also be represented in a diagrammatic form. Here, for example, is a diagram for the *Invitation* concept:
 
-**[to do]**
-pending <| Invitation
-from, to: Inv -> one User
-date: Inv -> one Date
-remindOn: Pending -> one Date
+![](invitation-state.jpg)
 
 This kind of diagram is called an *extended entity-relationship* diagram. It’s “extended” because it lets you show that one set is a subset of another, in this case that the *Pending* invitations are a subset of all invitations.
 
