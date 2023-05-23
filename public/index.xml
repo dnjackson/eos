@@ -11,15 +11,24 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Concept state</title>
       <link>https://essenceofsoftware.com/tutorials/concept-basics/state/</link>
-      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/tutorials/concept-basics/state/</guid>
       <description>Motivation: Defining Behavior The operational principle of a concept explains its archetypal behavior: how it’s typically used, and how it fulfills its purpose. But for a concept to be flexible and powerful, it should work in many different scenarios, so we need a way to pin down the behavior in detail.
 Using the notion of a state machine, we can define how a concept will behave in every possible situation. Then we can analyze the design to make sure that the behavior is always acceptable.</description>
+    </item>
+    
+    <item>
+      <title>Notes on design of a GPT-powered tutor</title>
+      <link>https://essenceofsoftware.com/drafts/ai-tutor-v3/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/ai-tutor-v3/</guid>
+      <description>Notes on design of a GPT-powered tutor</description>
     </item>
     
     <item>
@@ -33,10 +42,10 @@ Using the notion of a state machine, we can define how a concept will behave in 
     
     <item>
       <title>Notes on design of a GPT-powered tutor</title>
-      <link>https://essenceofsoftware.com/drafts/ai-tutor/</link>
+      <link>https://essenceofsoftware.com/drafts/ai-tutor-v2/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/drafts/ai-tutor/</guid>
+      <guid>https://essenceofsoftware.com/drafts/ai-tutor-v2/</guid>
       <description>Notes on design of a GPT-powered tutor</description>
     </item>
     
@@ -309,11 +318,32 @@ I conclude that there are two ways of constructing a software design: One way is
     
     <item>
       <title></title>
+      <link>https://essenceofsoftware.com/drafts/a-while-back-i-discovered-a-fascinating-book-called-the-essence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/a-while-back-i-discovered-a-fascinating-book-called-the-essence/</guid>
+      <description>A while back, I discovered a fascinating book called The Essence of Software by Prof. Daniel Jackson. It describes a semi-formal design method called “concept design”.
+The concept design method is adjacent to many of the themes that inspire me—Christopher Alexander’s design patterns, the design science movement, category theory, methods as tools for thought…
+I’ve been chatting back and forth with Daniel and am delighted to have him share a couple of guest posts.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://essenceofsoftware.com/drafts/links-to-my-tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/drafts/links-to-my-tutorials/</guid>
       <description>links to my tutorials link to Pal paper in Arxiv CD of noosphere</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://essenceofsoftware.com/drafts/state/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/state/</guid>
+      <description>Motivation: Defining Behavior Using the notion of a state machine, we can define how a concept will behave in every possible situation.
+The Role of State The state of a concept plays a very straightforward role, and that’s to determine what the concept remembers at runtime. The state is the concept’s memory. If some piece of information is needed in an action, then it will have to be in the memory; if it will never be needed, it shouldn’t be there, even if it’s interesting.</description>
     </item>
     
     

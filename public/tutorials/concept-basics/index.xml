@@ -11,11 +11,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tutorials/concept-basics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tutorials/concept-basics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Concept state</title>
       <link>https://essenceofsoftware.com/tutorials/concept-basics/state/</link>
-      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/tutorials/concept-basics/state/</guid>
       <description>Motivation: Defining Behavior The operational principle of a concept explains its archetypal behavior: how it’s typically used, and how it fulfills its purpose. But for a concept to be flexible and powerful, it should work in many different scenarios, so we need a way to pin down the behavior in detail.
