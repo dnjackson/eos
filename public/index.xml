@@ -51,10 +51,10 @@ Using the notion of a state machine, we can define how a concept will behave in 
     
     <item>
       <title>Noosphere concepts</title>
-      <link>https://essenceofsoftware.com/drafts/noosphere/</link>
+      <link>https://essenceofsoftware.com/drafts/noosphere-v1/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/drafts/noosphere/</guid>
+      <guid>https://essenceofsoftware.com/drafts/noosphere-v1/</guid>
       <description>A Concept Exploration of Noosphere</description>
     </item>
     
@@ -329,11 +329,30 @@ I’ve been chatting back and forth with Daniel and am delighted to have him sha
     
     <item>
       <title></title>
+      <link>https://essenceofsoftware.com/drafts/hello/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/hello/</guid>
+      <description>hello</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://essenceofsoftware.com/drafts/links-to-my-tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/drafts/links-to-my-tutorials/</guid>
       <description>links to my tutorials link to Pal paper in Arxiv CD of noosphere</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://essenceofsoftware.com/drafts/noosphere-v2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/noosphere-v2/</guid>
+      <description>A Concept Model of Noosphere Warning Heavy-duty concept design ahead! This note exploring the concept design of Noosphere is not for the faint-hearted. For those who aren&amp;rsquo;t very familiar with the concepts of decentralized storage (which includes me!) or who are learning concept design for the first time, this is likely not the best introduction to concepts.
+Why conceptualize Noosphere? This note applies my theory of concept design to Gordon Brander&amp;rsquo;s Noosphere.</description>
     </item>
     
     <item>
