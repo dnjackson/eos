@@ -38,9 +38,12 @@ languages:
                 - name: Blog
                   url: posts/
                   weight: 6
+                - name: Tutorials
+                  url: tutorials/
+                  weight: 7
                 - name: Subscribe
                   url: subscribe/
-                  weight: 7
+                  weight: 8
 
 
 outputs:
