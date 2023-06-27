@@ -1,0 +1,38 @@
+---
+author: "Daniel Jackson"
+title: "An Experiment in Concept Design at Palantir"
+date: "2023-06-26"
+description: "Lessons learned from deploying concepts at scale"
+ShowToc: false
+TocOpen: false
+hideMeta: false # removes date etc from post
+# hideSummary: true
+summary: "Deploying concepts at scale"
+editPost:
+    URL: "https://forum.softwareconcepts.io"
+    Text: "Comments" # edit text
+    appendFilePath: false # to append file path to Edit link
+---
+When I wrote my book about concept design, I hoped that its ideas might nudge practicing software developers to think differently about their work. My grander, long-term dream was that whole organizations might restructure themselves around concepts.
+
+Thrillingly, this is starting to happen. About a year ago, Peter Wilczynski got in touch to tell me about some exciting work that he and Taylor Gregoire-Wright were doing at [Palantir](https://www.palantir.com) to center their development process on concepts. Their idea was to add concepts as a new entity type to Palantir's company-wide knowledge database, augmenting existing types (which ranged from representing individual software modules to entire applications and teams). This would be their Trojan horse, not only encouraging developers to think about their projects in terms of concepts, but most significantly, to factor out the concepts that are common to multiple apps, shining a light on them and providing a basis for efforts to align them more fully.
+
+Peter and Taylor had noticed an increasing number of issues reported against their products that couldn't be neatly assigned to a module or even to an entire app. These issues weren't simple bugs in which some function does the wrong thing; they were manifestations of deeper conceptual flaws, in which an app's behavior didn't match user expectations, or in which two apps in their product suite presented essentially the same functionality in confusingly different ways.
+
+Over a period of a year or so, Peter and Taylor insinuated concepts into Palantir's daily work. They organized many of their internal design documents to highlight key concepts, creating new concept entries in the knowledge base and linking them to the relevant documents. They invented a new structure, the _concept cluster_, to represent a collection of concepts that are typically used together. And, most impressively, they persuaded their colleagues to follow along, identifying their own concepts and concept clusters, and thinking about their design work in a new way.
+
+This experiment is in its early days, but the results so far are promising. The collection of concepts in the knowledge base is growing, from only in handful at the start of 2023 to over 150 now, with several hundred Palantir employees accessing the concepts in the knowledge graph regularly.
+
+Most exciting, in my view, is the way concepts are changing the role of product managers, who typically have few opportunities for career advancement unless they move into management. In Palantir, product managers can now become owners of clusters of concepts that cross application boundaries, becoming the company's experts on key product assets. In this role, they can ensure that valuable design experience (which is often tied to concepts rather than code modules, and is thus easily lost as members rotate in and out of product teams) is maintained and exploited as products mature. And with their larger view of the product family, these product managers are well positioned to align different products, so that their functionality is uniform and consistent, and to prevent needless reinvention.
+
+Peter, Taylor and I recently wrote an experience report about this effort, which will appear in the SPLASH Onward! [conference](https://2023.splashcon.org/track/splash-2023-Onward-papers) this fall. We expect to improve the paper in line with the helpful suggestions of the reviewers. In the meantime, a draft of the paper is available on [Arxiv](http://arxiv.org/abs/2304.14975). 
+
+I was delighted (and somewhat surprised) that my coauthors, with the approval of the company, were able to talk in detail about what Peter calls the "dynamics" of concept development. In two brief case studies, the paper explains how two concepts were created and evolved, drawing on prior concepts and lessons from the experiences of users. The paper offers some preliminary advice to others interested in reorienting software design around concepts--for example, the importance of educating engineers about concepts, assigning staff to curation of the concept inventory, and integrating concepts into existing work planning and task tracking.
+
+I learned a lot working with Peter and Taylor on the paper. One lesson involved microservices. I sometimes explain concepts as "nanoservices"---like microservices but smaller. I knew that microservices hadn't fulfilled all their promises (and had supervised an industrial masters thesis focused on reducing microservice dependences). But I was surprised to learn that, in Peter and Taylor's experience, adopting a microservice architecture often leads to even less modularity, since microservices encourage teams to replicate functionality that has been implemented in other teams' microservices. Concepts may act as a corrective, allowing teams working on different microservices to identify shared functionality.
+
+In a similar vein, domain-driven design, a deservedly popular approach to development, may also have a tendency towards replication of functionality. Teams are discouraged from discovering commonalities with the designs of other teams, since they lie beyond the "bounded context" that isolates one team's work from another's. In addition to resulting in wasted development effort, this may make it hard to identify the concepts that comprise a company's key assets, and to ensure consistent experiences across products. Concept design may help redress the balance, and break down some barriers between teams by offering a succinct way to express shared assets.
+
+One anecdote I can't resist telling you about: We had explained in the paper how including concepts in the knowledge base was helping employees working in marketing and strategy, because the concepts provided a simpler account of each app's functionality and of the value of product improvements. Since the paper shared a considerable amount of detail about Palantir's software development practices and was not shy about reporting some challenges that teams had faced, it was necessary (of course) to run the paper by Palantir's legal team prior to publication. In their email to us approving publication, they suggested that concepts might help them in their work too, by highlighting the essential IP of their products. I'd hinted at this role for concepts in Chapter 3 of my book, but was delighted to see it acknowledged by experts.
+
+One of the reasons that improvements in design processes are so rare is that companies are often reluctant to make investments that don't pay off immediately. As Nelson Repenning and John Sterman explain in an [insightful paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uL95gtAAAAAJ&citation_for_view=uL95gtAAAAAJ:hMod-77fHWUC) from 2001, improvements to capability may not only fail to bring benefits in the short term, but cutting back on new capabilities may produce a productivity boost (albeit one that is short-lived). It takes courage to slow down the production line to sharpen the tools.

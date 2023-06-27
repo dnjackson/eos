@@ -24,4 +24,4 @@ The book is written for everyone who creates software—programmers, software ar
 
 ### Do you teach workshops?
 
-Yes. My next round of workshops will be in early 2022: subscribe [here](/subscribe) for updates. I also offer private workshops for companies; contact [me](/author) for details.
+Yes. I offer a variety of teaching sessions and workshops of varying size and focus; contact [me](/author) for details.

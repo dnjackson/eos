@@ -6,7 +6,7 @@ summary: "buy"
 ShowBreadCrumbs: false
 ---
 
-### Where to buy
+### Where to buy the book
 
 #### Sources
 

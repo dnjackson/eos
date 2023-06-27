@@ -26,16 +26,16 @@ languages:
                 - name: Author
                   url: author/
                   weight: 5
-                - name: Buy
+                - name: Book
                   url: buy/
                   weight: 2
                 - name: Reviews
                   url: reviews/
                   weight: 3
-                - name: Q&A
+                - name: FAQ
                   url: ask/
                   weight: 1
-                - name: Goodies
+                - name: Blog
                   url: posts/
                   weight: 6
                 - name: Subscribe
