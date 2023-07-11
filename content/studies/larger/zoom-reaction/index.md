@@ -1,6 +1,6 @@
 ---
 author: "Daniel Jackson"
-title: "Smooth Software"
+title: "Redesigning Zoom's Reaction Concept"
 date: "2022-07-12"
 description: "A How-To Guide for Removing Irregularities in Your App"
 ShowToc: true
@@ -11,7 +11,10 @@ editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
+aliases:
+    - /posts/smooth-software
 ---
+
 In an old interview, unfortunately no longer online, Jony Ive explained how his team at Apple had designed the MacBook's rounded corners. "I suppose that's pretty obsessive, isn't it?" he ended, with a self-deprecating smile.
 
 It struck me as a perfect metaphor for software design: that so often the real work is in the smoothing of rough edges. Each small protrusion and snag may seem inconsequential by itself, but in aggregate they create a constant stream of irritation and confusion for the user. Focusing on them may seem obsessive, but the result can be dramatic. As the Eames told us, the details are not the details: they _are_ the design.

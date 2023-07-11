@@ -79,3 +79,7 @@ h2 {
 .hljs-comment, .hljs-quote {
 	color: darkgreen;
 }
+
+h1.post-title {
+	font-size: 28px;
+}

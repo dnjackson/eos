@@ -1,6 +1,6 @@
 ---
 author: "Daniel Jackson"
-title: "For Want of a Nail…"
+title: "Zoom's Missing Concept"
 date: "2022-08-21"
 description: "When critical concepts are missing"
 ShowToc: true
@@ -11,6 +11,8 @@ editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
+aliases:
+    - /posts/missing-concept/
 ---
 Sometimes an app would be enormously improved if a single essential concept were added. 
 

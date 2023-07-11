@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://essenceofsoftware.com/posts/palantir/</loc>
-    <lastmod>2023-06-26T00:00:00+00:00</lastmod>
+    <loc>https://essenceofsoftware.com/studies/larger/tutor/</loc>
+    <lastmod>2023-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/studies/</loc>
+    <lastmod>2023-07-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/</loc>
+    <lastmod>2023-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/studies/larger/</loc>
+    <lastmod>2023-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/posts/palantir/</loc>
     <lastmod>2023-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/</loc>
@@ -38,7 +47,10 @@
     <loc>https://essenceofsoftware.com/drafts/three-stages/</loc>
     <lastmod>2023-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/broken-integrity/</loc>
+    <loc>https://essenceofsoftware.com/studies/small/broken-integrity/</loc>
+    <lastmod>2023-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/studies/small/</loc>
     <lastmod>2023-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/dark-concepts/</loc>
@@ -53,7 +65,7 @@
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/apps-made-of-concepts/</loc>
     <lastmod>2022-08-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/missing-concept/</loc>
+    <loc>https://essenceofsoftware.com/studies/small/zoom-missing/</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/apps-are-state-machines/</loc>
@@ -86,25 +98,25 @@
     <loc>https://essenceofsoftware.com/tutorials/design-general/simplicity/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/smooth-software/</loc>
+    <loc>https://essenceofsoftware.com/studies/larger/zoom-reaction/</loc>
     <lastmod>2022-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/design-moves/</loc>
     <lastmod>2022-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/facebook/</loc>
+    <loc>https://essenceofsoftware.com/studies/larger/facebook/</loc>
     <lastmod>2022-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/categories/cases/</loc>
+    <loc>https://essenceofsoftware.com/studies/larger/dns-dkim/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/categories/cases/</loc>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/categories/</loc>
-    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/dns-dkim/</loc>
-    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/posts/class-numbers/</loc>
+    <loc>https://essenceofsoftware.com/studies/small/class-numbers/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/distillation/</loc>
@@ -128,7 +140,7 @@
     <loc>https://essenceofsoftware.com/tags/upvote/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/upvote/</loc>
+    <loc>https://essenceofsoftware.com/studies/larger/upvote/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/acm-tech-talk/</loc>

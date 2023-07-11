@@ -11,6 +11,8 @@ editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
+aliases:
+    - /posts/broken-integrity/
 ---
 As I developed the framework of concept design, I thought that concept integrity would be central. Violations of integrity would be like feature interactions in telephony, and at the very core of software design.
 

@@ -41,9 +41,12 @@ languages:
                 - name: Tutorials
                   url: tutorials/
                   weight: 7
+                - name: Case Studies
+                  url: studies/
+                  weight: 8
                 - name: Subscribe
                   url: subscribe/
-                  weight: 8
+                  weight: 9
 
 
 outputs:

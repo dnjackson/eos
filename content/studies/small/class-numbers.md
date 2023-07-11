@@ -12,7 +12,9 @@ editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
-aliases: "/classnumbers/"
+aliases:
+    - /posts/class-numbers
+    - /posts/classnumbers
 categories:
 - Cases
 ---

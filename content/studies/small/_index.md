@@ -1,0 +1,3 @@
+---
+title: "Shorter case studies"
+---

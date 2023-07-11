@@ -12,6 +12,8 @@ editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
+aliases:
+    - /posts/facebook/
 ---
 
 [Dark patterns](https://uxdesign.cc/dark-patterns-in-ux-design-7009a83b233c) are no longer just yucky strategies that companies get away with, tempting you to buy insurance you don't need or sign up for a free-for-a-while trial that can only be canceled by calling a phone number that is always busy. Soon they might be illegal. [Regulators](https://www.ftc.gov/news-events/events/2021/04/bringing-dark-patterns-light-ftc-workshop) are taking a closer look, and lawyers in the [US](https://www.law.com/legaltechnews/2021/11/03/dark-patterns-are-an-ethical-and-legal-no-no-but-is-your-legal-team-prepared-for-them/?slreturn=20220223153700) and the [UK](https://www.farrer.co.uk/news-and-insights/dark-patterns-an-overview-of-legal-considerations/) are starting to warn about the liabilities they bring.

@@ -12,8 +12,8 @@ editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
-categories:
-- Cases
+aliases:
+    - /posts/dns-dkim/
 ---
 
 Basic sys admin tasks can be surprisingly hard. You find some magic incantations online, which you dutifully type into a terminal, but then they don't have the desired effect. What now? At that point, you're usually stuck with no recourse (except to start an endless descent into online forums).

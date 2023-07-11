@@ -15,6 +15,8 @@ editPost:
     URL: "https://forum.softwareconcepts.io/t/upvote-sample-concept-catalog-entry/32"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
+aliases:
+    - /posts/upvote/
 ---
 Concepts provide a framework for recording design experience. Designers often find themselves reinventing the wheel, designing and deploying concepts that have been built many times before, and then rediscovering a raft of subtle problems that were already known.
 
