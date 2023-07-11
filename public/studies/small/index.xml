@@ -40,5 +40,14 @@
       <description>A Concept Example in Everyday Life</description>
     </item>
     
+    <item>
+      <title>Upvote: An Example Concept</title>
+      <link>https://essenceofsoftware.com/studies/small/upvote/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/studies/small/upvote/</guid>
+      <description>An example of what a concept catalog entry might look like</description>
+    </item>
+    
   </channel>
 </rss>

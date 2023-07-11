@@ -23,6 +23,15 @@
     </item>
     
     <item>
+      <title>Android Camera API</title>
+      <link>https://essenceofsoftware.com/studies/larger/rotation/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/studies/larger/rotation/</guid>
+      <description>Applying concept design to the camera rotation API</description>
+    </item>
+    
+    <item>
       <title>Redesigning Zoom&#39;s Reaction Concept</title>
       <link>https://essenceofsoftware.com/studies/larger/zoom-reaction/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
@@ -47,15 +56,6 @@
       
       <guid>https://essenceofsoftware.com/studies/larger/dns-dkim/</guid>
       <description>How overloading in DNS brings trouble</description>
-    </item>
-    
-    <item>
-      <title>Upvote: An Example Concept</title>
-      <link>https://essenceofsoftware.com/studies/larger/upvote/</link>
-      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/studies/larger/upvote/</guid>
-      <description>An example of what a concept catalog entry might look like</description>
     </item>
     
   </channel>
