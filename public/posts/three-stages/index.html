@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Three Stages of Enlightenment | The Essence of Software</title>
+<meta name="keywords" content="">
+<meta name="description" content="A brief intro to concept design in three parts">
+<meta name="author" content="Daniel Jackson">
+<link rel="canonical" href="https://essenceofsoftware.com/posts/three-stages/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2e7233f1eda5b0ed5b65d97b4091e50cb7c049a0f885a948abb89369b8a860cc.css" integrity="sha256-LnIz8e2lsO1bZdl7QJHlDLfASaD4halIq7iTabioYMw=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Three Stages of Enlightenment" />
+<meta property="og:description" content="A brief intro to concept design in three parts" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://essenceofsoftware.com/posts/three-stages/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-05-02T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
+
+<meta name="twitter:title" content="Three Stages of Enlightenment"/>
+<meta name="twitter:description" content="A brief intro to concept design in three parts"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://essenceofsoftware.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Three Stages of Enlightenment",
+      "item": "https://essenceofsoftware.com/posts/three-stages/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Three Stages of Enlightenment",
+  "name": "Three Stages of Enlightenment",
+  "description": "A brief intro to concept design in three parts",
+  "keywords": [
+    
+  ],
+  "articleBody": "I originally wrote this post in response to a lovely invitation from Gordon Brander to contribute a post to his blog (which I thoroughly recommend—it’s full of provocative ideas).\nIntroduction I’ve spent the last ten years or so looking at hundreds of apps, trying to figure out what software design is all about. The result of my explorations is concept design: a new lens for thinking about software, how it’s designed, constructed and used.\nViewing software design through this lens can improve the quality of the software you build, for both developers and users, and bridge the gap between UX and engineering (which are often siloed into different roles). You can think of it as a computational take on UX design.\nI call it a “new” lens, because adopting it dramatically changes the way most software design happens. But in some sense, it’s not new at all. It makes explicit what I suspect the best designers have always done, and it distills and combines some ideas that have been floating around for a long time.\nI’ll explain concept design in three stages, each of which suggests adopting a different perspective on design from the conventional one.\nStage One: Design = Functionality Stage One is the least radical, but it’s important to grasp it before moving on: view the design of software as the shaping of its functionality.\nThis might sound obvious, but it’s not what people actually do. Functionality is what the software does, not how it does it (which is what software architecture is about), or how it’s presented (which is what UI design is about). It’s the most basic starting point, because you can’t think about code until you know what function it should implement, and you can’t think about a UI until you know what functions the UI should support. In practice, the functionality is often implicit and apps are “designed” by starting with code fragments or wireframes. Being explicit about what we’re actually designing is the first stage.\nSo imagine we’re designing a social media app—call it WhatsUp—that lets users post in groups. As we’re evolving the design, we’ll need a way to describe the functionality we have in mind. How do we do that?\nWe could start by defining the set of states: there are users, groups and posts; posts are by users and divided into groups; users can be members of multiple groups. We can explore these states more precisely by considering candidate invariants (“integrity constraints” in database lingo) as design questions: Must a post belong to exactly one group? Must a post be from a member of the group it’s in?\nThe state space of WhatsUp, shown as an ER diagram\nThen we can list the actions that users can perform: create, delete, join and leave a group; add a post to a group; reply to a post; etc.\nThe beauty of this scheme is that just by writing down the state and invariants you’re describing a whole (infinite!) set of possible behaviors. A good designer can see through a seemingly straightforward invariant to the impacts it will have on the behavior (and even the software architecture), so the design of the state becomes a powerful design tool in its own right. Suppose we say that the posts in a group must be by members of that same group. Then what happens if a user leaves a group? Presumably their posts will have to be deleted, and that will have complicated consequences if there are replies.\nThe state also acts as a measure of complexity: sometimes you’ll consider some behavior and realize it needs a richer state. For example, we might want to ensure that users can only see posts in a group that were added after they joined. If so, the state will have to include not only dates for posts but also dates of joining for users.\nDescribing an app in terms of states and actions is pretty challenging, and the work is often worth it. But doing it for the whole app still seems like a daunting task. Is there any way to break the task down and make it simpler?\nStage Two: Concepts Stage Two involves the most fundamental move, in which we bring some modular structure to an app’s functionality.\nWhen I introduced WhatsUp, I described it as an app that “lets users post in groups.” You may wonder: Why isn’t that enough? You understood what I meant because you’re already familiar with the concepts I’m alluding to. The concept of Group, for example, is present in many social media apps, and goes back to the earliest chat apps (such as IRC). I could have called it ChatRoom instead.\nWhat kind of “concept” is Group? To a philosopher, a concept is a kind of category or classification: the concept of Dog corresponds to the set of all things that are dogs. Applied to software, this line of thinking leads to concept lattices and ontologies. It’s useful, but I don’t believe it’s what matters most. To a software design, a concept is about behavior: a Group is something you join and leave and post to.\nIn my approach to concept design, a concept is a small service with its own API defined by its actions. I sometimes use the term “nanoservice” because a concept is like a microservice but smaller and more tightly focused. (And, as we’ll see, unlike a microservice, a concept is designed to be independent of other concepts.)\nAt the same time, a concept is a social protocol describing the rules of the game for the users: that you have to join the group before you can post in it, for example. All software concepts are inventions. Some of them were designed within software, and so they impose protocols on users; the Password concept, for example. May of them were designed first as social protocols in the world, and were then adopted by software; the Reservation concept, for example, (at least as applied to restaurants) was invented in the 19th century, long before OpenTable!\nHow to define the behavior of a concept? States and actions, just as we might have done for the app as a whole. But the difference is that now we have some structure: each concept has its own local state and actions. So the grouping of posts is part of the Group concept state, and the content of posts can be part of Post, a different concept. Joining and leaving are actions of Group; editing a post is an action of Post. Different designers (or different teams) can work on different concepts, allowing modular design of the functionality.\nThe state of WhatsUp factored into concepts: each concept has its own state space.\nNow here’s where concept design diverges from current perspectives on design (such as “design thinking”). My claim is that if you look at most apps, you’ll find that they are composed of conventional concepts that appear in many other apps. That’s how we’re able to switch so easily from one social media app to another, for example.\nThis means that design, for the most part, isn’t about inventing a completely new set of behaviors from whole cloth. Rather, it’s about deciding which standard concepts to use, and then how to fit them together. Novelty comes from putting existing concepts together in new ways, and occasionally from introducing brand new concepts.\nApps are like molecules that have different characteristics but are built from the same atoms. So we can think of WhatsApp as the molecule PoGrUsRe (Post + Group + User + Reaction); Facebook as PoFrUsUpRe (Post + Friend + User + Upvote + Reaction); Twitter as PoFoUsUpHa (Post + Follower + User + Upvote + Hashtag); and so on.\nThe WhatsApp molecule and its structure: the graph defines a family of apps, with an arrow from concept A to concept B meaning that any (subset) app in the family that contains A will contain B too.\nHow does this change the design process? It means that your first step is to figure out if some existing concepts will do the job. You might want to adjust them, or even add some new concepts. You won’t need to elaborate the states and actions of most of the concepts because you know them already.\nYou might wonder if this makes design less creative. I’d argue that it makes it more creative, because you spend less time reinventing the wheel and more time focusing on the aspects that are truly novel. When you put concepts together in creative ways, magical things can happen. Two examples: Yellkey takes two familiar concepts—let’s call them LinkShortener and ExpiringService—and puts them together, and by ensuring that links expire quickly, can offer common words as links, completely changing the user’s experience. And the Arc browser makes tabs more manageable by joining the Tab and Bookmark concepts in a new way.\nConcept design helps you identify what makes apps distinct, and what a company’s true assets are. Photoshop succeeded because of the Layer concept; TBL’s invention of the web rests not on hypertext or markup or HTTP (none of which were novel) but on the URL concept; Microsoft Word introduced Style, the concept that almost defines desktop publishing; Dan Bricklin’s VisiCalc had RelativeReference, the concept that makes spreadsheets work.\nStage Three: Independence The full benefit of concepts comes when they can be designed (and even implemented) fully independently of one another.\nAlthough the concepts within an app work together and interact with each other, users understand them independently. HackerNews combines Post and Upvote so that posts to be upvoted, and the state of the Upvote concept will (at runtime) contain references to posts, which are created within the Post concept. But in the user’s mind, the Upvote concept is the same one the New York Times uses for ranking Comments.\nSo we need to describe a concept like Upvote without any dependence on any other concept. This means first that its types can’t refer to the types of other concepts. It must be polymorphic, so that the items being voted can have any type, whether they’re posts, newspaper articles, comments, or even users.\nSecond, independence requires that the actions of one concept can’t call those of another. Consider Facebook’s (controversial) integration of Upvote and Reaction. We’d like to say that when a user reacts to a post, it gets upvoted too. The conventional way to do something like this would be with a function call, so that the action Reaction.react(u, r, p) (which means that user u adds reaction r to post p) is modeled as some code that call the action Upvote.upvote(u, p).\nBut embedding a call to an action of the Upvote concept inside the Reaction concept would couple the concepts together. So what to do? The standard programming trick would be to use callbacks (or objects), but that’s complicated and takes us away from simple state and actions into the world of higher-order functions.\nConcept design uses a much simpler approach, inspired by Tony Hoare’s CSP. Instead of modifying the Reaction concept itself, we synchronize it with the Upvote concept by saying that whenever one action happens the other one should happen too:\nsync Reaction.react(u, r, p) Upvote.upvote (u, p) Synchronizations are like transactions: either all the actions happen or none of them. So this sync\nsync Group.post (u, p) Karma.permit (u, 10) might enforce the requirement that a user can post to a group only when the permit action of the Karma concept can occur (with 20 karma points).\nIn many apps, especially those composed of standard concepts, much of the design challenge is figuring out how the concepts fit together. Concept design factors this out into separate synchronizations, and lets you focus on this aspect independently. Many usability problems can be traced to problematic syncs. In Google’s calendar app, for example, Event and Invitation are synchronized so that deleting an invitation sends a declining message to the inviter, which may be unwanted. (In fact, problems with this particular sync go back a long way, with users of Apple’s iCal complaining that spam events could not be deleted without notifying the spammer that the account was valid!).\nAnd sometimes even clever syncs can’t make a concept composition work. Gmail’s composition of Label and Conversation is ingenious but troubled: you’ll understand this if you know why searching for messages with the label sent includes messages that were instead received.\nFinally, in some cases, a synchronization is so powerful that it enables all kinds of new workflows. Photoshop, for example, syncs Channel, Selection and Image in a way that only experts fully understand but which brings amazing opportunities (you’ll know what I mean if you’ve ever extracted the edges from an image and applied sharpening just to them).\nSo what can you do with all this? As an individual designer, a concept design lens can change how you work:\nApp = concepts. Viewing apps as compositions of concepts brings a new clarity: now you can explain how a word processor differs from a text editor (it has Paragraph, Style and Format concepts, but usually no robust Line concept) and from a desktop publishing app (it has a TextFlow concept and a real Page concept).\n90% of design is reuse. Designing an app is now mostly about combining existing concepts in creative ways. Gordon’s Noosphere takes concepts like Notebook, ContentAddressableStorage, PublicKeyNaming, ImmutableDocument, Version, etc and makes an entirely new platform for peer-to-peer knowledge sharing.\nBehavior = state + actions. Sketching behavior as a tentative UI is very evocative, but it only goes so far. If you think about behavior as states and actions, with the help of concepts to modularize it, you can go a lot further and still avoid the complexities of code.\nConcepts can help you think more deeply about design:\nSynergies. The best concept compositions bring synergies. Making the Macintosh Trash a Folder was not inevitable, and it has some complex consequences (if you understand both concepts, you’ll be able to construct a scenario in which emptying the trash doesn’t delete the items in it). Design moves. You can think about design in steps that correspond to a repertoire of known design moves, with analogies in physical design. Creating synergy by tightening the synchronization of two concepts is an example. Overloading. Every concept should have exactly one purpose. You can diagnose subtle flaws by analyzing concepts that are “overloaded” with more than one purpose (see the knots Epson tied itself into by including tray selection in PaperSize). Radical independence. We’re used to letting all our concepts depend on each other. But what if you made them truly independent? How would file systems change if names were disentangled from identities? For one, Git would know when you renamed a file. At the organizational level, concept design can have even bigger impacts:\nCataloging assets. Your products’ concepts are your key assets, differentiators (and liabilities). Alignment across products. Many companies have a family of products that drift apart over time. Aligning concepts helps users and saves dev effort. Shared language. Concepts offer a way to bridge between engineers and designers, and to bring your whole organization (marketing, strategy, IP) aligned on a clear understanding of your products. And this is just the beginning. There are lots of exciting things to apply concepts to, such as\nDark patterns. Deviation from known concepts can offer a more solid way to identify dark patterns, and what Cory Doctorow calls the “enshittification” of apps can be explained in terms of dark concepts. New modularization. Concepts suggest a new way to structure code that avoids some of the entanglements of OOP. Using LLMs. We’re looking at using LLMs to help with concept design. A catalog of concepts may also help an LLM generate better code. Want to learn more? My book The Essence of Software explains all this and much more with hundreds of examples from popular apps. The website includes a bunch of blog posts, and a talk.\nHot off the press: a paper I wrote with colleagues at Palantir describing how they organized their development process around concepts.\nThere’s a concept design forum too, which is a great place to post reactions, questions, comments, etc. Feel free to email me too.\n",
+  "wordCount" : "2710",
+  "inLanguage": "en",
+  "datePublished": "2023-05-02T00:00:00Z",
+  "dateModified": "2023-05-02T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Daniel Jackson"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://essenceofsoftware.com/posts/three-stages/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Essence of Software",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://essenceofsoftware.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
+                    <span>Buy</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/author/" title="Author">
+                    <span>Author</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
+                    <span>Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
+                    <span>Case Studies</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
+                    <span>Subscribe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Three Stages of Enlightenment
+    </h1>
+    <div class="post-description">
+      A brief intro to concept design in three parts
+    </div>
+    <div class="post-meta"><span title='2023-05-02 00:00:00 +0000 UTC'>May 2, 2023</span>&nbsp;·&nbsp;13 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="https://forum.softwareconcepts.io" rel="noopener noreferrer" target="_blank">Comments</a>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#introduction" aria-label="Introduction">Introduction</a></li>
+                <li>
+                    <a href="#stage-one-design--functionality" aria-label="Stage One: Design = Functionality">Stage One: Design = Functionality</a></li>
+                <li>
+                    <a href="#stage-two-concepts" aria-label="Stage Two: Concepts">Stage Two: Concepts</a></li>
+                <li>
+                    <a href="#stage-three-independence" aria-label="Stage Three: Independence">Stage Three: Independence</a></li>
+                <li>
+                    <a href="#so-what-can-you-do-with-all-this" aria-label="So what can you do with all this?">So what can you do with all this?</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>I originally wrote this post in response to a lovely invitation from Gordon Brander to contribute a <a href="https://subconscious.substack.com/p/concept-design-in-three-easy-steps">post</a> to his <a href="https://subconscious.substack.com">blog</a> (which I thoroughly recommend—it’s full of provocative ideas).</p>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>I&rsquo;ve spent the last ten years or so looking at hundreds of apps, trying to figure out what software design is all about. The result of my explorations is <em>concept design</em>: a new lens for thinking about software, how it’s designed, constructed and used.</p>
+<p>Viewing software design through this lens can improve the quality of the software you build, for both developers and users, and bridge the gap between UX and engineering (which are often <a href="https://essenceofsoftware.com/posts/ux-design-silo/">siloed</a> into different roles). You can think of it as a computational take on UX design.</p>
+<p>I call it a “new” lens, because adopting it dramatically changes the way most software design happens. But in some sense, it&rsquo;s not new at all. It makes explicit what I suspect the best designers have always done, and it distills and combines some ideas that have been floating around for a long time.</p>
+<p>I’ll explain concept design in three stages, each of which suggests adopting a different perspective on design from the conventional one.</p>
+<h2 id="stage-one-design--functionality">Stage One: Design = Functionality<a hidden class="anchor" aria-hidden="true" href="#stage-one-design--functionality">#</a></h2>
+<p>Stage One is the least radical, but it’s important to grasp it before moving on: <em>view the design of software as the shaping of its functionality</em>.</p>
+<p>This might sound obvious, but it’s not what people actually do. Functionality is what the software does, not how it does it (which is what software architecture is about), or how it’s presented (which is what UI design is about). It’s the most basic starting point, because you can’t think about code until you know what function it should implement, and you can’t think about a UI until you know what functions the UI should support. In practice, the functionality is often implicit and apps are “designed” by starting with code fragments or wireframes. Being explicit about what we’re actually <a href="https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/">designing</a> is the first stage.</p>
+<p>So imagine we’re designing a social media app—call it <em>WhatsUp</em>—that lets users post in groups. As we’re evolving the design, we’ll need a way to describe the functionality we have in mind. How do we do that?</p>
+<p>We could start by defining the set of states: there are users, groups and posts; posts are by users and divided into groups; users can be members of multiple groups. We can explore these states more precisely by considering candidate invariants (“integrity constraints” in database lingo) as design questions: Must a post belong to exactly one group? Must a post be from a member of the group it’s in?</p>
+<p><img loading="lazy" src="wa-state.jpg" alt="States for WhatsUp"  />
+</p>
+<p><em>The state space of WhatsUp, shown as an ER diagram</em></p>
+<p>Then we can list the actions that users can perform: <em>create</em>, <em>delete</em>, <em>join</em> and <em>leave</em> a group; <em>add</em> a post to a group; <em>reply</em> to a post; etc.</p>
+<p>The beauty of this scheme is that just by writing down the state and invariants you’re describing a whole (infinite!) set of possible behaviors. A good designer can see through a seemingly straightforward invariant to the impacts it will have on the behavior (and even the software architecture), so the design of the state becomes a powerful design tool in its own right. Suppose we say that the posts in a group must be by members of that same group. Then what happens if a user leaves a group? Presumably their posts will have to be deleted, and that will have complicated consequences if there are replies.</p>
+<p>The state also acts as a measure of complexity: sometimes you’ll consider some behavior and realize it needs a richer state. For example, we might want to ensure that users can only see posts in a group that were added after they joined. If so, the state will have to include not only dates for posts but also dates of joining for users.</p>
+<p>Describing an app in terms of <a href="https://essenceofsoftware.com/tutorials/concept-basics/apps-are-state-machines/">states and actions</a> is pretty challenging, and the work is often worth it. But doing it for the whole app still seems like a daunting task. Is there any way to break the task down and make it simpler?</p>
+<h2 id="stage-two-concepts">Stage Two: Concepts<a hidden class="anchor" aria-hidden="true" href="#stage-two-concepts">#</a></h2>
+<p>Stage Two involves the most fundamental move, in which we bring some modular structure to an app’s functionality.</p>
+<p>When I introduced <em>WhatsUp</em>, I described it as an app that “lets users post in groups.” You may wonder: Why isn’t that enough? You understood what I meant because you’re already familiar with the <a href="https://essenceofsoftware.com/tutorials/concept-basics/apps-made-of-concepts/">concepts</a> I’m alluding to. The concept of <em>Group</em>, for example, is present in many social media apps, and goes back to the earliest chat apps (such as IRC). I could have called it <em>ChatRoom</em> instead.</p>
+<p>What kind of “concept” is <em>Group</em>? To a philosopher, a concept is a kind of category or classification: the concept of <em>Dog</em> corresponds to the set of all things that are dogs. Applied to software, this line of thinking leads to concept lattices and ontologies. It’s useful, but I don’t believe it’s what matters most. To a software design, a concept is about behavior: a <em>Group</em> is something you join and leave and post to.</p>
+<p>In my approach to concept design, a concept is a small service with its own API defined by its actions. I sometimes use the term “nanoservice” because a concept is like a microservice but smaller and more tightly focused. (And, as we’ll see, unlike a microservice, a concept is designed to be independent of other concepts.)</p>
+<p>At the same time, a concept is a social protocol describing the rules of the game for the users: that you have to join the group before you can post in it, for example. All software concepts are inventions. Some of them were designed within software, and so they impose protocols on users; the <em>Password</em> concept, for example. May of them were designed first as social protocols in the world, and were then adopted by software; the <em>Reservation</em> concept, for example, (at least as applied to restaurants) was invented in the 19th century, long before OpenTable!</p>
+<p>How to define the behavior of a concept? States and actions, just as we might have done for the app as a whole. But the difference is that now we have some structure: each concept has its own local state and actions. So the grouping of posts is part of the Group concept state, and the content of posts can be part of Post, a different concept. Joining and leaving are actions of <em>Group</em>; editing a post is an action of <em>Post</em>. Different designers (or different teams) can work on different concepts, allowing modular design of the functionality.</p>
+<p><img loading="lazy" src="wa-concepts.jpg" alt="Factoring into concepts"  />
+</p>
+<p><em>The state of WhatsUp factored into concepts: each concept has its own state space.</em></p>
+<p>Now here’s where concept design diverges from current perspectives on design (such as “design thinking”). My claim is that if you look at most apps, you’ll find that they are composed of conventional concepts that appear in many other apps. That’s how we’re able to switch so easily from one social media app to another, for example.</p>
+<p>This means that design, for the most part, isn’t about inventing a completely new set of behaviors from whole cloth. Rather, it’s about deciding which standard concepts to use, and then how to fit them together. Novelty comes from putting existing concepts together in new ways, and occasionally from introducing brand new concepts.</p>
+<p>Apps are like molecules that have different characteristics but are built from the same atoms. So we can think of WhatsApp as the molecule <em>PoGrUsRe</em> (<em>Post</em> + <em>Group</em> + <em>User</em> + <em>Reaction</em>); Facebook as <em>PoFrUsUpRe</em> (<em>Post</em> + <em>Friend</em> + <em>User</em> + <em>Upvote</em> + <em>Reaction</em>); Twitter as <em>PoFoUsUpHa</em> (<em>Post</em> + <em>Follower</em> + <em>User</em> + <em>Upvote</em> + <em>Hashtag</em>); and so on.</p>
+<p><img loading="lazy" src="wa-graph.jpg" alt="The WhatsApp molecule and its structure"  />
+</p>
+<p><em>The WhatsApp molecule and its structure: the <a href="https://essenceofsoftware.com/posts/distillation/#concept-dependence-diagrams">graph</a> defines a family of apps, with an arrow from concept A to concept B meaning that any (subset) app in the family that contains A will contain B too</em>.</p>
+<p>How does this change the design process? It means that your first step is to figure out if some existing concepts will do the job. You might want to adjust them, or even add some new concepts. You won’t need to elaborate the states and actions of most of the concepts because you know them already.</p>
+<p>You might wonder if this makes design less creative. I’d argue that it makes it more creative, because you spend less time reinventing the wheel and more time focusing on the aspects that are truly novel. When you put concepts together in creative ways, magical things can happen. Two examples: <a href="http://yellkey.com">Yellkey</a> takes two familiar concepts—let’s call them <em>LinkShortener</em> and <em>ExpiringService</em>—and puts them together, and by ensuring that links expire quickly, can offer common words as links, completely changing the user’s experience. And the <a href="https://arc.net">Arc</a> browser makes tabs more manageable by joining the <em>Tab</em> and <em>Bookmark</em> concepts in a new way.</p>
+<p>Concept design helps you identify what makes apps distinct, and what a company’s true assets are. Photoshop succeeded because of the Layer concept; TBL’s invention of the web rests not on hypertext or markup or HTTP (none of which were novel) but on the <em>URL</em> concept; Microsoft Word introduced <em>Style</em>, the concept that almost defines desktop publishing; Dan Bricklin’s VisiCalc had <em>RelativeReference</em>, the concept that makes spreadsheets work.</p>
+<h2 id="stage-three-independence">Stage Three: Independence<a hidden class="anchor" aria-hidden="true" href="#stage-three-independence">#</a></h2>
+<p>The full benefit of concepts comes when they can be designed (and even implemented) fully independently of one another.</p>
+<p>Although the concepts within an app work together and interact with each other, users understand them independently. <a href="https://news.ycombinator.com">HackerNews</a> combines <em>Post</em> and <em>Upvote</em> so that posts to be upvoted, and the state of the <em>Upvote</em> concept will (at runtime) contain references to posts, which are created within the <em>Post</em> concept. But in the user’s mind, the <em>Upvote</em> concept is the same one the New York Times uses for ranking <em>Comments</em>.</p>
+<p>So we need to describe a concept like <em>Upvote</em> without any dependence on any other concept. This means first that its types can’t refer to the types of other concepts. It must be polymorphic, so that the items being voted can have any type, whether they’re posts, newspaper articles, comments, or even users.</p>
+<p>Second, independence requires that the actions of one concept can’t call those of another. Consider Facebook’s (controversial) integration of <em>Upvote</em> and <em>Reaction</em>. We’d like to say that when a user reacts to a post, it gets upvoted too. The conventional way to do something like this would be with a function call, so that the action <em>Reaction.react(u, r, p)</em> (which means that user <em>u</em> adds reaction <em>r</em> to post <em>p</em>) is modeled as some code that call the action <em>Upvote.upvote(u, p)</em>.</p>
+<p>But embedding a call to an action of the Upvote concept inside the Reaction concept would couple the concepts together. So what to do? The standard programming trick would be to use callbacks (or objects), but that’s complicated and takes us away from simple state and actions into the world of higher-order functions.</p>
+<p>Concept design uses a much simpler approach, inspired by Tony Hoare’s <a href="https://en.wikipedia.org/wiki/Communicating_sequential_processes">CSP</a>. Instead of modifying the <em>Reaction</em> concept itself, we <em>synchronize</em> it with the Upvote concept by saying that whenever one action happens the other one should happen too:</p>
+<pre><code>sync Reaction.react(u, r, p)
+  Upvote.upvote (u, p)
+</code></pre>
+<p>Synchronizations are like transactions: either all the actions happen or none of them. So this sync</p>
+<pre><code>sync Group.post (u, p)
+  Karma.permit (u, 10)
+</code></pre>
+<p>might enforce the requirement that a user can post to a group only when the <em>permit</em> action of the <em>Karma</em> concept can occur (with 20 karma points).</p>
+<!---
+The *permit* action is a kind of placeholder that is included in the Karma concept to allow it to be synchronized with other concepts, while its behavior (eg, permitting use 20 points only after 20 points has been accumulated) can be defined without reference to them.
+--->
+<p>In many apps, especially those composed of standard concepts, much of the design challenge is figuring out how the concepts fit together. Concept design factors this out into separate synchronizations, and lets you focus on this aspect independently. Many usability problems can be traced to problematic syncs. In Google’s calendar app, for example, <em>Event</em> and <em>Invitation</em> are synchronized so that deleting an invitation sends a declining message to the inviter, which may be unwanted. (In fact, problems with this particular sync go back a long way, with users of Apple’s iCal complaining that spam events could not be deleted without notifying the spammer that the account was valid!).</p>
+<p>And sometimes even clever syncs can’t make a concept composition work. Gmail’s composition of <em>Label</em> and <em>Conversation</em> is ingenious but troubled: you’ll understand this if you know why searching for messages with the label sent includes messages that were instead received.</p>
+<p>Finally, in some cases, a synchronization is so powerful that it enables all kinds of new workflows. Photoshop, for example, syncs <em>Channel</em>, <em>Selection</em> and <em>Image</em> in a way that only experts fully understand but which brings amazing opportunities (you’ll know what I mean if you’ve ever extracted the edges from an image and applied sharpening just to them).</p>
+<h2 id="so-what-can-you-do-with-all-this">So what can you do with all this?<a hidden class="anchor" aria-hidden="true" href="#so-what-can-you-do-with-all-this">#</a></h2>
+<p>As an <strong>individual designer</strong>, a concept design lens can change how you work:</p>
+<ul>
+<li>
+<p><strong>App = concepts</strong>. Viewing apps as compositions of concepts brings a new clarity: now you can explain how a word processor differs from a text editor (it has <em>Paragraph</em>, <em>Style</em> and <em>Format</em> concepts, but usually no robust <em>Line</em> concept) and from a desktop publishing app (it has a <em>TextFlow</em> concept and a real <em>Page</em> concept).</p>
+</li>
+<li>
+<p><strong>90% of design is reuse</strong>. Designing an app is now mostly about combining existing concepts in creative ways. Gordon’s Noosphere takes concepts like <em>Notebook</em>, <em>ContentAddressableStorage</em>, <em>PublicKeyNaming</em>, <em>ImmutableDocument</em>, <em>Version</em>, etc and makes an entirely new platform for peer-to-peer knowledge sharing.</p>
+</li>
+<li>
+<p><strong>Behavior = state + actions</strong>. Sketching behavior as a tentative UI is very evocative, but it only goes so far. If you think about behavior as states and actions, with the help of concepts to modularize it, you can go a lot further and still avoid the complexities of code.</p>
+</li>
+</ul>
+<p>Concepts can help you <strong>think more deeply</strong> about design:</p>
+<ul>
+<li><strong>Synergies</strong>. The best concept compositions bring <a href="https://essenceofsoftware.com/posts/distillation/#concept-synergy">synergies</a>. Making the Macintosh <em>Trash</em> a <em>Folder</em> was not inevitable, and it has some complex consequences (if you understand both concepts, you’ll be able to construct a scenario in which emptying the trash doesn’t delete the items in it).</li>
+<li><strong>Design moves</strong>. You can think about design in steps that correspond to a repertoire of known <a href="https://essenceofsoftware.com/posts/design-moves/">design moves</a>, with analogies in physical design. Creating synergy by tightening the synchronization of two concepts is an example.</li>
+<li><strong>Overloading</strong>. Every concept should have exactly one <a href="https://essenceofsoftware.com/posts/distillation/#concept-purposes">purpose</a>. You can diagnose subtle flaws by analyzing concepts that are <a href="https://essenceofsoftware.com/posts/distillation/#concept-design-principles">“overloaded”</a> with more than one purpose (see the knots Epson tied itself into by including tray selection in PaperSize).</li>
+<li><strong>Radical independence</strong>. We’re used to letting all our concepts depend on each other. But what if you made them truly independent? How would file systems change if names were disentangled from identities? For one, Git would know when you renamed a file.</li>
+</ul>
+<p><strong>At the organizational level</strong>, concept design can have even bigger impacts:</p>
+<ul>
+<li><strong>Cataloging assets</strong>. Your products’ concepts are your key assets, differentiators (and <a href="https://essenceofsoftware.com/posts/missing-concept/">liabilities</a>).</li>
+<li><strong>Alignment across products</strong>. Many companies have a family of products that drift apart over time. Aligning concepts helps users and saves dev effort.</li>
+<li><strong>Shared language</strong>. Concepts offer a way to <a href="https://essenceofsoftware.com/posts/ux-design-silo/">bridge between engineers and designers</a>, and to bring your whole organization (marketing, strategy, IP) aligned on a clear understanding of your products.</li>
+</ul>
+<p>And this is just the beginning. There are lots of <strong>exciting things</strong> to apply concepts to, such as</p>
+<ul>
+<li><strong>Dark patterns</strong>. <a href="https://essenceofsoftware.com/posts/facebook/">Deviation</a> from known concepts can offer a more solid way to identify <a href="https://essenceofsoftware.com/posts/dark-concepts/">dark patterns</a>, and what Cory Doctorow calls the “enshittification” of apps can be explained in terms of <a href="https://essenceofsoftware.com/posts/dark-concepts/">dark concepts</a>.</li>
+<li><strong>New modularization</strong>. Concepts suggest a new way to structure code that avoids some of the entanglements of OOP.</li>
+<li><strong>Using LLMs</strong>. We’re looking at using LLMs to help with concept design. A catalog of concepts may also help an LLM generate better code.</li>
+</ul>
+<p><strong>Want to learn more</strong>? My book <a href="https://essenceofsoftware.com">The Essence of Software</a> explains all this and much more with hundreds of examples from popular apps. The website includes a bunch of <a href="https://essenceofsoftware.com/posts/">blog posts</a>, and a <a href="https://essenceofsoftware.com/posts/acm-tech-talk/">talk</a>.</p>
+<p><strong>Hot off the press</strong>: a <a href="http://arxiv.org/abs/2304.14975">paper</a> I wrote with colleagues at Palantir describing how they organized their development process around concepts.</p>
+<p>There’s a concept design <a href="https://forum.softwareconcepts.io">forum</a> too, which is a great place to post reactions, questions, comments, etc. Feel free to <a href="mailto:dnj@mit.edu">email</a> me too.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://essenceofsoftware.com/posts/palantir/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>An Experiment in Concept Design at Palantir</span>
+  </a>
+  <a class="next" href="https://essenceofsoftware.com/posts/dark-concepts/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Dark Concepts in Software Design</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+
+    <span>&copy; 2023 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
