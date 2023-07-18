@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>LLM Coders: The End of Agile? | The Essence of Software</title>
+<meta name="keywords" content="">
+<meta name="description" content="How LLMs will change programming and the role concepts can play">
+<meta name="author" content="Daniel Jackson">
+<link rel="canonical" href="https://essenceofsoftware.com/posts/llm-coding/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1eecbf9c7523bd5ac80b32f81ece29e45269e9f1fa42874b4bbc1b722c883eba.css" integrity="sha256-Huy/nHUjvVrICzL4Hs4p5FJp6fH6QodLS7wbciyIPro=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="LLM Coders: The End of Agile?" />
+<meta property="og:description" content="How LLMs will change programming and the role concepts can play" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://essenceofsoftware.com/posts/llm-coding/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-18T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
+
+<meta name="twitter:title" content="LLM Coders: The End of Agile?"/>
+<meta name="twitter:description" content="How LLMs will change programming and the role concepts can play"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://essenceofsoftware.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "LLM Coders: The End of Agile?",
+      "item": "https://essenceofsoftware.com/posts/llm-coding/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "LLM Coders: The End of Agile?",
+  "name": "LLM Coders: The End of Agile?",
+  "description": "How LLMs will change programming and the role concepts can play",
+  "keywords": [
+    
+  ],
+  "articleBody": "To celebrate my lab’s 60th birthday, we put on a two-day bash: one day of talks from alumni and one day or talks from the faculty. I started my talk by noting that the title of the event was “AI Frontiers \u0026 Implications”, and that I felt like Cinderella, being a plain old computer scientist gatecrashing an AI ball.\nOur lab’s name (CSAIL) stands for “Computer Science and Artificial Intelligence Laboratory,” but of course nowadays it’s all about AI. Like many of us, I’ve sometimes wondered if AI will make everything I’ve worked on irrelevant. After all, won’t GPT-N (for some sufficiently large N) be able to design and code all our software without human intervention?\nWhy AI will never make a great programmer For now, I’ve come to the conclusion that there’s no risk of this in the near future. I noted in another recent talk that there are three predictions you should never make: (3) that the stock market will crash this year; (2) that a certain politician is too stupid and corrupt to win election; and (1) that GPT won’t ever be able to do X (for any X). Nevertheless, despite all of GPT’s amazing capabilities, there’s good reason for skepticism:\nLLMs like GPT aren’t reliable. They make stuff up, and they make mistakes. There’s no evidence that this will ever change. GPT is really good at writing code that’s like all the code that’s been written before. Nobody’s shown any examples of it inventing new and better ways to write code, so if we just leave it to GPT-4, our code will be stuck with the knowledge that StackOverflow had in 2021, when GPT-4’s training ended. And if we stop innovating, a future version of GPT won’t know any more. I think of this as a kind of vigilance decrement writ large: just as a human driver can’t take over when a self-driving car gets in a pickle, so we human coders won’t be able to fix a massive software mess that LLMs create if we don’t continue to hone our skills. Sometimes it’s OK if software mostly works. But this is less common than you might imagine, and software has a habit of becoming critical the more useful it is. We just won’t tolerate software that has occasional but devastating failures. Are LLMs like compilers? Some people say LLMs will be like compilers. Initially, there were skeptical programmers who believed they could write better machine code themselves. But eventually people realized that compilers saved so much trouble that it was rarely worth the effort of writing low level code yourself.\nAre the LLM naysayers like those early compiler skeptics? LLMs are already successfully generating complex code fragments, and many programmers rely on them daily.\nBut this analogy misses a crucial point. The reason that high-level languages took over is that compilers are completely dependable. Nothing is ambiguous in the instructions a compiler is given. So we can define correctness for a compiler and, given enough resources, even verify it.\nWhat’s so great about LLMs as coders, in contrast, is that they take a vague specification and fill in the implicit details from the context. This is what makes using an LLM to generate code so compelling: you just nudge a bit, offer some hints, and if you’re lucky, you get what you wanted. The downside is that there’s no guarantee that the ambiguities will be resolved the way you expected.\nAn impressive example of LLM coding Here’s an example of a coding task that I gave ChatGPT last week that illustrates its amazing ability to fill in the gaps in a vague specification.\nMy dad has recorded our family tree in a massive text file. I wanted GPT to generate a program to read this file and draw the tree. I started by telling it what problem I was trying to solve, giving it just one entry from the file and asking it to write a function to parse it.\nHere’s what my entry looks like:\n0001 born 09-01-1964 London 0001 male 0001 marr 01 0014 01-02-1989 NYC USA 0001 name Daniel Nicholas Jackson 0001 fthr 0002 0001 mthr 0003 0001 chld 01 0482 0014 0001 chld 02 0505 0014 0001 chld 03 0515 0014 0001 note 01 Computer Scientist, CMU \u0026 MIT 0001 note 02 Oriel College, Oxford, physics 0001 note 03 MIT MS, PhD Computer Science I wasn’t surprised that GPT was able to write the parsing code. What blew me away was that it correctly interpreted every single field in this structure even though I’d told it nothing about the encoding. It inferred without any help that the line\n0001 chld 02 0505 0014 meant that the person with ID 0001 has a second child with ID number 0505 who was born also to the person with ID 0014 (matching the ID of the person 0001 is married to, as shown on an earlier line).\nI then gave GPT a series of additional instructions: to extend this function across the whole file; to handle some new fields it hadn’t seen before; and to generate a graph in DOT format. All this worked fine and the resulting 100 or so lines of code had no bugs, as far as I could tell.\nDomain knowledge is critical My takeaway from the family tree experiment is that domain knowledge is GPT’s secret sauce. It’s indeed impressive that it can write routine code (such as a basic parser) so effectively, but its ability to fill in the gaps in a spec is even more remarkable.\nTo illustrate this, let me show you one more example. I was playing around with having GPT generate code for some basic concepts. I wanted some code for a Friend concept, so I started (mischievously) by giving it a rather abstract specification:\nCan you write a JavaScript class for me? I want it to maintain a graph between nodes, and associate a set of items with each node. It should include (1) a method that connects a node n1 to a node n2, (2) a method for associating an item i with a node n, and (3) a boolean method that takes a node n and an item i and returns true if the node is connected to a node associated with the item.\nMy intent was that the nodes would represent users, and the items would represent posts. So this would embody the key operational principle of Friend: that you can see your friends’ posts.\nThe code GPT generated in response had a basic flaw: it made the node relation asymmetric, so if I friended you, it meant I could read your posts but you couldn’t read mine. This asymmetry resulted from my asking for “a method connects a node n1 to a node n2”; if I said instead “a method for connecting one node to another”, it correctly implemented a symmetric relation.\nSo what if instead I revealed the concept?\nCan you write me a Javascript class to implement the friend concept in a social media app? It should track who is friends with who, and which posts someone has written, and then allow access to a post to a user if it was written by one of the user’s friends. There should be (1) a method to make one user a friend of another, (2) a method to record that a user wrote a post, and (3) a method that returns true if a user can access a post.\nThe code GPT produced for this prompt was much better. What was most exciting was that it not only made inferences from my spec (eg, that the friend relation should be symmetric) but it actually violated my spec in a desirable way. Look at this method:\nclass SocialMediaApp { ... canAccessPost(username, postId) { if (this.users.has(username) \u0026\u0026 this.posts.has(postId)) { const postAuthor = this.posts.get(postId); if (postAuthor === username) { return true; // User can access their own post } const user = this.users.get(username); return user.friends.has(postAuthor); } return false; } } GPT has correctly inserted a special case: that even though you’re not friends with yourself, you should be able to read your own posts.\nThe future of programming: unremarkable observations What are the implications of all this for the future of programming? First, some unremarkable observations that others have made many times before:\nGPT is amazing at writing routine code. It can save you tons of time and relieve the tedium of writing basic functions. GPT is a great interlocutor for discussing technical questions (what platform or API to use, what algorithmic challenges you might face, etc). GPT writes competent, standard code and can’t be expected to do anything that requires true creativity (like a new design pattern). GPT isn’t like a compiler: it makes mistakes, so code review is more important than ever. These facts alone mean that the way you program (and teach programming) will change a lot. I’m particularly intrigued by the new role that code review will play, and how classic ideas about invariants and verification might become more relevant than ever.\nThe end of agile? I’m most excited by the ways in which GPT differs from all software engineering tools we’ve previously encountered.\nWhen you use GPT as a programmer, you can spend much less time writing code (and tests), because GPT can do that for you. Instead, you spend your time writing prompts (aka specifications), and creating an overall structure for the code that GPT is writing.\nWhat does agile development tell you to do? Roughly, to put all your effort into coding, and to spend almost no time on specification. Thinking hard about overall structure is derided as “big design upfront” (BDUF) and we’re told that we can always “refactor” later.\nLLMs have turned all this on its head. Now the focus of our work is writing thoughtful “documentation”: prompts that we give to GPT that hold our specs and all the background knowledge we’d like it to exploit. Coding matters less than ever before.\nGranular domain knowledge and concepts My two little experiments suggest that GPT’s coding ability is dramatically amplified if it has appropriate domain knowledge. In these cases, the domains (family trees and social media) were presumably well represented in GPT’s training set.\nBut what about less familiar domains? What if GPT hadn’t known about friending? How will GPT exploit domain knowledge in a novel application?\nHere’s where I believe concepts have a vital role to play. Concepts embody domain knowledge in a granular and reusable fashion. If we had a repository of concepts, we could pick the concepts that are relevant to a particular coding task and give them to GPT as prompts.\nMy intuition is that GPT already has a large number of concepts represented implicitly in its training set. I’m excited to explore what would happen if we made concepts explicit. Perhaps GPT could fill in subtle aspects of a specification more effectively if it had a fuller representation of the concept at hand. And perhaps it could replicate the kind of “common sense exception” that we saw (in the Friend example, for reading your own post) in much more novel and unfamiliar domains.\nDesign still matters My family tree story actually had a disappointing ending. Sadly, I wasn’t able to draw a nice tree. It was so big and had so many crossing edges that it was impossible to read. I tried to improve the layout by having GPT write code to assign each person to a generation, and then to layer the output so that each generation occupied one horizontal layer.\nWhen prompted, GPT did helpfully point out some of the challenges in assigning generations (eg, that the notion isn’t even well defined if you have a disconnected subtree). But it became clear that I’d hit a design problem that GPT at least wasn’t able to solve without much more prompting.\nMight a rich set of concepts for family trees have given GPT the knowledge it needed to complete this task? Maybe. But at the very least this example suggests that even apparently simple problems can harbor subtle design challenges, and for now, software designers are still needed.\n",
+  "wordCount" : "2032",
+  "inLanguage": "en",
+  "datePublished": "2023-07-18T00:00:00Z",
+  "dateModified": "2023-07-18T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Daniel Jackson"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://essenceofsoftware.com/posts/llm-coding/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Essence of Software",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://essenceofsoftware.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
+                    <span>Buy</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/author/" title="Author">
+                    <span>Author</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
+                    <span>Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
+                    <span>Case Studies</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
+                    <span>Subscribe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      LLM Coders: The End of Agile?
+    </h1>
+    <div class="post-description">
+      How LLMs will change programming and the role concepts can play
+    </div>
+    <div class="post-meta"><span title='2023-07-18 00:00:00 +0000 UTC'>July 18, 2023</span>&nbsp;·&nbsp;10 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="https://forum.softwareconcepts.io" rel="noopener noreferrer" target="_blank">Comments</a>
+
+</div>
+  </header> 
+  <div class="post-content"><p>To celebrate my lab’s 60th birthday, we put on a two-day bash: one day of talks <a href="https://www.csail.mit.edu/CSAIL_20_60">from alumni</a> and one day or talks <a href="https://www.imaginationinaction.co">from the faculty</a>. I started my talk by noting that the title of the event was “AI Frontiers &amp; Implications”, and that I felt like Cinderella, being a plain old computer scientist gatecrashing an AI ball.</p>
+<p>Our lab’s name (<a href="http://csail.mit.edu">CSAIL</a>) stands for “Computer Science and Artificial Intelligence Laboratory,” but of course nowadays it’s all about AI. Like many of us, I’ve sometimes wondered if AI will make everything I’ve worked on irrelevant. After all, won’t GPT-N (for some sufficiently large N) be able to design and code all our software without human intervention?</p>
+<h2 id="why-ai-will-never-make-a-great-programmer">Why AI will never make a great programmer<a hidden class="anchor" aria-hidden="true" href="#why-ai-will-never-make-a-great-programmer">#</a></h2>
+<p>For now, I’ve come to the conclusion that there’s no risk of this in the near future. I noted in another <a href="http://people.csail.mit.edu/dnj/talks/index.html#alliances-2023">recent talk</a> that there are three predictions you should never make: (3) that the stock market will crash this year; (2) that a certain politician is too stupid and corrupt to win election; and (1) that GPT won’t ever be able to do X (for any X). Nevertheless, despite all of GPT’s amazing capabilities, there’s good reason for skepticism:</p>
+<ul>
+<li>LLMs like GPT aren’t reliable. They make stuff up, and they make mistakes. There’s no evidence that this will ever change.</li>
+<li>GPT is really good at writing code that’s like all the code that’s been written before. Nobody’s shown any examples of it inventing new and better ways to write code, so if we just leave it to GPT-4, our code will be stuck with the knowledge that StackOverflow had in 2021, when GPT-4’s training ended. And if we stop innovating, a future version of GPT won’t know any more. I think of this as a kind of <a href="https://en.wikipedia.org/wiki/Vigilance_(psychology)#:~:text=Vigilance%20decrement%20is%20defined%20as,detect%20a%20weak%20target%20signal.">vigilance decrement</a> writ large: just as a human driver can’t take over when a self-driving car gets in a pickle, so we human coders won’t be able to fix a massive software mess that LLMs create if we don’t continue to hone our skills.</li>
+<li>Sometimes it’s OK if software mostly works. But this is less common than you might imagine, and software has a habit of becoming critical the more useful it is. We just won’t tolerate software that has occasional but devastating failures.</li>
+</ul>
+<h2 id="are-llms-like-compilers">Are LLMs like compilers?<a hidden class="anchor" aria-hidden="true" href="#are-llms-like-compilers">#</a></h2>
+<p>Some people say LLMs will be like compilers. Initially, there were skeptical programmers who believed they could write better machine code themselves. But eventually people realized that compilers saved so much trouble that it was rarely worth the effort of writing low level code yourself.</p>
+<p>Are the LLM naysayers like those early compiler skeptics? LLMs are already successfully generating complex code fragments, and many programmers rely on them daily.</p>
+<p>But this analogy misses a crucial point. The reason that high-level languages took over is that compilers are completely dependable. Nothing is ambiguous in the instructions a compiler is given. So we can define correctness for a compiler and, given enough resources, even verify it.</p>
+<p>What’s so great about LLMs as coders, in contrast, is that they take a vague specification and fill in the implicit details from the context. This is what makes  using an LLM to generate code so compelling: you just nudge a bit, offer some hints, and if you’re lucky, you get what you wanted. The downside is that there’s no guarantee that the ambiguities will be resolved the way you expected.</p>
+<h2 id="an-impressive-example-of-llm-coding">An impressive example of LLM coding<a hidden class="anchor" aria-hidden="true" href="#an-impressive-example-of-llm-coding">#</a></h2>
+<p>Here’s an example of a coding task that I gave ChatGPT last week that illustrates its amazing ability to fill in the gaps in a vague specification.</p>
+<p>My dad has recorded our family tree in a massive text file. I wanted GPT to generate a program to read this file and draw the tree. I started by telling it what problem I was trying to solve, giving it just one entry from the file and asking it to write a function to parse it.</p>
+<p>Here’s what my entry looks like:</p>
+<pre><code>0001 born 09-01-1964 London
+0001 male
+0001 marr 01 0014 01-02-1989 NYC USA
+0001 name Daniel Nicholas Jackson
+0001 fthr 0002
+0001 mthr 0003
+0001 chld 01 0482 0014
+0001 chld 02 0505 0014
+0001 chld 03 0515 0014
+0001 note 01 Computer Scientist, CMU &amp; MIT
+0001 note 02 Oriel College, Oxford, physics
+0001 note 03 MIT MS, PhD Computer Science
+</code></pre>
+<p>I wasn’t surprised that GPT was able to write the parsing code. What blew me away was that it correctly interpreted every single field in this structure even though I’d told it nothing about the encoding. It inferred without any help that the line</p>
+<pre><code>0001 chld 02 0505 0014
+</code></pre>
+<p>meant that the person with ID 0001 has a second child with ID number 0505 who was born also to the person with ID 0014 (matching the ID of the person 0001 is married to, as shown on an earlier line).</p>
+<p>I then gave GPT a series of additional instructions: to extend this function across the whole file; to handle some new fields it hadn’t seen before; and to generate a graph in DOT format. All this worked fine and the resulting 100 or so lines of code had no bugs, as far as I could tell.</p>
+<h2 id="domain-knowledge-is-critical">Domain knowledge is critical<a hidden class="anchor" aria-hidden="true" href="#domain-knowledge-is-critical">#</a></h2>
+<p>My takeaway from the family tree experiment is that domain knowledge is GPT’s secret sauce. It’s indeed impressive that it can write routine code (such as a basic parser) so effectively, but its ability to fill in the gaps in a spec is even more remarkable.</p>
+<p>To illustrate this, let me show you one more example. I was playing around with having GPT generate code for some basic concepts. I wanted some code for a <em>Friend</em> concept, so I started (mischievously) by giving it a rather abstract specification:</p>
+<blockquote>
+<p>Can you write a JavaScript class for me? I want it to maintain a graph between nodes, and associate a set of items with each node. It should include (1) a method that connects a node n1 to a node n2, (2) a method for associating an item i  with a node n, and (3) a boolean method that takes a node n and an item i and returns true if the node is connected to a node associated with the item.</p>
+</blockquote>
+<p>My intent was that the nodes would represent users, and the items would represent posts. So this would embody the key operational principle of <em>Friend</em>: that you can see your friends’ posts.</p>
+<p>The code GPT generated in response had a basic flaw: it made the node relation asymmetric, so if I friended you, it meant I could read your posts but you couldn’t read mine. This asymmetry resulted from my asking for “a method connects a node n1 to a node n2”; if I said instead “a method for connecting one node to another”, it correctly implemented a symmetric relation.</p>
+<p>So what if instead I revealed the concept?</p>
+<blockquote>
+<p>Can you write me a Javascript class to implement the friend concept in a social media app? It should track who is friends with who, and which posts someone has written, and then allow access to a post to a user if it was written by one of the user&rsquo;s friends. There should be (1) a method to make one user a friend of another, (2) a method to record that a user wrote a post, and (3) a method that returns true if a user can access a post.</p>
+</blockquote>
+<p>The code GPT produced for this prompt was much better. What was most exciting was that it not only made inferences from my spec (eg, that the friend relation should be symmetric) but it actually <em>violated</em> my spec in a desirable way. Look at this method:</p>
+<pre><code>class SocialMediaApp {
+...
+  canAccessPost(username, postId) {
+    if (this.users.has(username) &amp;&amp; this.posts.has(postId)) {
+      const postAuthor = this.posts.get(postId);
+      if (postAuthor === username) {
+        return true; // User can access their own post
+      }
+      const user = this.users.get(username);
+      return user.friends.has(postAuthor);
+    }
+    return false;
+  }
+}
+</code></pre>
+<p>GPT has correctly inserted a special case: that even though you’re not friends with yourself, you should be able to read your own posts.</p>
+<h2 id="the-future-of-programming-unremarkable-observations">The future of programming: unremarkable observations<a hidden class="anchor" aria-hidden="true" href="#the-future-of-programming-unremarkable-observations">#</a></h2>
+<p>What are the implications of all this for the future of programming? First, some unremarkable observations that others have made many times before:</p>
+<ul>
+<li>GPT is amazing at writing routine code. It can save you tons of time and relieve the tedium of writing basic functions.</li>
+<li>GPT is a great interlocutor for discussing technical questions (what platform or API to use, what algorithmic challenges you might face, etc).</li>
+<li>GPT writes competent, standard code and can’t be expected to do anything that requires true creativity (like a new design pattern).</li>
+<li>GPT isn’t like a compiler: it makes mistakes, so code review is more important than ever.</li>
+</ul>
+<p>These facts alone mean that the way you program (and teach programming) will change a lot. I’m particularly intrigued by the new role that code review will play, and how classic ideas about invariants and verification might become more relevant than ever.</p>
+<h2 id="the-end-of-agile">The end of agile?<a hidden class="anchor" aria-hidden="true" href="#the-end-of-agile">#</a></h2>
+<p>I’m most excited by the ways in which GPT differs from all software engineering tools we’ve previously encountered.</p>
+<p>When you use GPT as a programmer, you can spend much less time writing code (and tests), because GPT can do that for you. Instead, you spend your time writing prompts (aka specifications), and creating an overall structure for the code that GPT is writing.</p>
+<p>What does agile development tell you to do? Roughly, to put all your effort into coding, and to spend almost no time on specification. Thinking hard about overall structure is derided as “big design upfront” (BDUF) and we’re told that we can always “refactor” later.</p>
+<p>LLMs have turned all this on its head. Now the focus of our work is writing thoughtful “documentation”: prompts that we give to GPT that hold our specs and all the background knowledge we’d like it to exploit. Coding matters less than ever before.</p>
+<h2 id="granular-domain-knowledge-and-concepts">Granular domain knowledge and concepts<a hidden class="anchor" aria-hidden="true" href="#granular-domain-knowledge-and-concepts">#</a></h2>
+<p>My two little experiments suggest that GPT’s coding ability is dramatically amplified if it has appropriate domain knowledge. In these cases, the domains (family trees and social media) were presumably well represented in GPT’s training set.</p>
+<p>But what about less familiar domains? What if GPT hadn’t known about friending? How will GPT exploit domain knowledge in a novel application?</p>
+<p>Here’s where I believe concepts have a vital role to play. Concepts embody domain knowledge in a granular and reusable fashion. If we had a repository of concepts, we could pick the concepts that are relevant to a particular coding task and give them to GPT as prompts.</p>
+<p>My intuition is that GPT already has a large number of concepts represented implicitly in its training set. I’m excited to explore what would happen if we made concepts explicit. Perhaps GPT could fill in subtle aspects of a specification more effectively if it had a fuller representation of the concept at hand. And perhaps it could replicate the kind of “common sense exception” that we saw (in the Friend example, for reading your own post) in much more novel and unfamiliar domains.</p>
+<h2 id="design-still-matters">Design still matters<a hidden class="anchor" aria-hidden="true" href="#design-still-matters">#</a></h2>
+<p>My family tree story actually had a disappointing ending. Sadly, I wasn’t able to draw a nice tree. It was so big and had so many crossing edges that it was impossible to read. I tried to improve the layout by having GPT write code to assign each person to a generation, and then to layer the output so that each generation occupied one horizontal layer.</p>
+<p>When prompted, GPT did helpfully point out some of the challenges in assigning generations (eg, that the notion isn’t even well defined if you have a disconnected subtree). But it became clear that I’d hit a design problem that GPT at least wasn’t able to solve without much more prompting.</p>
+<p>Might a rich set of concepts for family trees have given GPT the knowledge it needed to complete this task? Maybe. But at the very least this example suggests that even apparently simple problems can harbor subtle design challenges, and for now, software designers are still needed.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://essenceofsoftware.com/posts/palantir/">
+    <span class="title">Next »</span>
+    <br>
+    <span>An Experiment in Concept Design at Palantir</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+
+    <span>&copy; 2023 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

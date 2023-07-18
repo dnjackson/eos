@@ -81,5 +81,19 @@ h2 {
 }
 
 h1.post-title {
-	font-size: 28px;
+	font-size: 36px;
+}
+
+.post-content h1 {
+    margin: 40px auto 32px;
+    font-size:32px
+}
+
+.post-content h2 {
+    margin: 24px auto 24px;
+    font-size:28px
+}
+
+.post-content h3 {
+    font-size:18px
 }
