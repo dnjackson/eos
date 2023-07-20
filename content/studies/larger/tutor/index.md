@@ -78,10 +78,10 @@ On the other hand, we realized that the submitted solutions would need to be ind
 And yet there is no interaction between students; each student's behavior and subsequent submitted solutions are independent. This suggests what I call *lifting* the concept, and defining the application using an indexed collection of concepts rather than indexing within the concept state itself. So the application might be declared like this
 
 	include
-		concept User makes User
-		concept UserExercise: User -> one Exercise
+		User
+		UserExercise: User.User -> one Exercise
 
-so that it includes a *User* concept that exports a type *User* corresponding to the set of users, and an indexed collection *UserExercise* of concepts, with *UserExercise[u]* being the exercise concept for user *u*.
+so that it includes a *User* concept (which exports a type *User.User* corresponding to the set of users), and an indexed collection *UserExercise* of concepts, with *UserExercise[u]* being the exercise concept for user *u*.
 
 This is bad because it inappropriately replicates not only the student-specific submission behavior but also the exercises themselves, which should be defined independently of any students.
 
@@ -94,18 +94,18 @@ The one downside of this approach is that the *Exercise* concept no longer has a
 **Linking advice to exercises**. How should advice be linked to exercises? Our initial idea was to include, in the *Exercise* concept, a mapping from parts of exercises to the “competences” that they tested, and to index advice texts in the *Advice* concept on “topics” that would be equated to competences. The two concepts would be polymorphic in these types, with an additional *Competence* concept providing concrete competences to instantiate the two other concepts:
 
 	include
-		concept Competence makes Competence
-		concept Advice <Competence>
-		concept Exercise <Competence>
+		Competence
+		Advice <Competence.Competence>
+		Exercise <Competence.Competence>
 
-Note that I’ve overloaded *Competence* here so it refers to both the concept and the type of value it exports (or “makes”). 
+Note that I’ve overloaded *Competence* here so it refers to both the concept and the type of value it exports (as I did for *User.User* above).
 
 This approach makes sense, but there wasn’t much functionality we wanted to associate with competences aside from the linking of exercises to advise. So we decided to simple have the *Exercise* concept define (and export) the competences. This gives the following structure
 
 	include
-		concept Exercise makes Competence, Part
-		concept CompetenceAdvice: Advice <Competence>
-		concept ExerciseAdvice: Advice <Part>
+		Exercise
+		CompetenceAdvice: Advice <Exercise.Competence>
+		ExerciseAdvice: Advice <Exercise.Part>
 
 in which *Advice* is instantiated with the *Competence* type provided by *Exercise*. Note that I’ve instantiated *Advice* twice: once for the advice associated with competences, and a second time for the advice associated with individual parts of exercises.
 
@@ -141,19 +141,21 @@ Here’s a screenshot showing the chat panel:
 
 We now outline the concepts in detail. The *Exercise* concept manages the exercise texts, and associates parts of exercises with competences:
 
-	data concept Exercise makes Competence, Exercise, Part
+	concept Exercise
 	purpose construct and present structured exercises
+	principle // just a CRUD concept
 	state
 	  parts: Exercise one -> set Part
 	  competence: Part -> one Competence
 	  description: Exercise + Part -> one Text
 
-**Concept design theory note**. I’m using an experimental notion of a “data concept” that offers only simple CRUD actions for creating and updating state. Because these are straightforward, they are left implicit and not specified.
+(Since the purpose of the concept is just to store exercises, it doesn’t have an interesting operational principle, so rather than elaborating the expected behavior of CRUD actions, I’ve just omitted them and left the principle empty too.)
 
 The *Advice* concept indexes advice texts on generic topic identifiers (which will later be instantiated with competences and exercise parts):
 
-	data concept Advice [Topic]
+	concept Advice [Topic]
 	purpose manage indexed repository of advice
+	principle // just a CRUD concept
 	state
 	  advices: Topic -> set Text
 	  name: Topic lone -> one Text
@@ -167,15 +169,15 @@ The student activity of completing an exercise is handled by the *Drill* concept
 	  // if you select a task, edit a solution
 	  // and submit it, the final edit is recorded
 	  // as the submission
-	  selectTask (t); edit (x1); edit (x2); submit ();\
+	  selectTask (t); edit (x1); edit (x2); submit ();
 	  {t.submitted = x2}
 	state
 	  selected: lone Task
 	  current: Task -> lone Text
 	  submitted: Task -> lone Text
 	actions
-    selectTask (t: Task)
-      selected := t
+	  selectTask (t: Task)
+	    selected := t
 	  edit (x: Text)
 	    selected.current := x
 	  submit ()
@@ -185,11 +187,11 @@ The *Task* type is left generic, but will be instantiated later as the *Part* ty
 
 The *Chat* concept will manage the informal exchanges between user and bot, and will have the exercise submissions and their grading injected as additional messages:
 
-	concept Chat <Party> makes Msg
+	concept Chat <Party>
 	purpose multi-party exchange of messages
 	principle
 		// series of posts gives expected msg sequence
-		post (p1, t1, m1); post (p2, t2, m2);\
+		post (p1, t1, m1); post (p2, t2, m2);
 		{msgs = <m1, m2>, m_i.author = p_i, m_i.content = t_i, etc}
 	state
 	  msgs: seq Msg
@@ -218,17 +220,17 @@ The app as a whole is a composition of concepts:
 
 	app ConceptTutor
 	include
-	  concept User makes User
-	  concept Exercise makes Competence, Part
-	  concept UserDrill: User -> one Drill <Part>
-	  concept CompetenceAdvice: Advice <Competence>
-	  concept ExerciseAdvice: Advice <Part>
-	  concept UserPartChat: User, Part -> one Chat <BOT + USER>
-	  concept Bot
+	  User
+	  Exercise
+	  UserDrill: User.User -> one Drill <Exercise.Part>
+	  CompetenceAdvice: Advice <Exercise.Competence>
+	  ExerciseAdvice: Advice <Exercise.Part>
+	  UserPartChat: User.User, Exercise.Part -> one Chat <BOT + USER>
+	  Bot
 
-We haven’t specified the *User* concept, since it could take many forms; all that matters for tracking completed exercises is that it provide some identifiers, given by the type *User*, which indexes the *Drill* concept, so there is one instance of *Drill* for each user. In our implementation, the browser naturally provides a distinct identifier for each user and no explicit implementation of such a concept is needed. We currently aren’t recording completed exercises, but could easily do that by labeling them with a browser identifier, for example.
+We haven’t specified the *User* concept, since it could take many forms; all that matters for tracking completed exercises is that it provide some identifiers, given by the type *User.User*, which indexes the *Drill* concept, so there is one instance of *Drill* for each user. In our implementation, the browser naturally provides a distinct identifier for each user and no explicit implementation of such a concept is needed. We currently aren’t recording completed exercises, but could easily do that by labeling them with a browser identifier, for example.
 
-There are two instantiations of the *Advice* concept, one holding advice for each competence and one holding specific advice for each exercise part. Note that the type *Exercise* that represents the aggregate exercises of multiple parts is not used outside the *Exercise* concept; its current role is only to organize the display of parts. That’s why it’s not mentioned here: only exported types that instantiated other concepts appear.
+There are two instantiations of the *Advice* concept, one holding advice for each competence and one holding specific advice for each exercise part.
 
 The *Chat* concept is instantiated in two dimensions, over users and exercise parts, so each user has a separate chat for each exercise part they are working on. The *Party* parameter of the *Chat* concept is instantiated with a type consisting of two simple constant values: *USER* representing the user, and *BOT* representing the LLM bot. Don’t be confused by the *User* vs. *Party* types: the users of the app as a whole are not the parties to the chats, since each chat involves only one user (and the bot).
 
@@ -262,6 +264,36 @@ When a user clicks on the button to submit a solution, the relevant exercise par
 for example. I prefer to treat the out parameters more like other arguments so they can be named (which matters more when an action has more than one of them). Also, I haven’t included the extra prefixes that are added to the chat posts (“You submitted: “, “Feedback: “).
 
 A similar but simpler sync is needed when the user posts a question to the LLM in the chat.
+
+## The design as a diagram
+
+The entire concept design can be shown as a diagram. Here it is:
+
+![](tutor-diagram.png)
+
+Each concept is shown as a box with a thick grey outline. Inside each box, there is the concept state (shown as a kind of entity relationship diagram), and arrows representing actions.
+
+Let’s look at the *Drill* concept, for example. There are two sets represented in the state by the capitalized words \<*Task*\> and *Text*. \<*Task*\> is a type parameter (hence the angle brackets); you can see from the dotted line that in the composition it is bound to the *Part* type of the *Exercise* concept. *Text* is a primitive type of text strings. The two relations between \<*Task*\> and *Text* are shown as solid lines, and correspond to the declarations in the textual form of the concept:
+
+	  current: Task -> lone Text
+	  submitted: Task -> lone Text
+
+The “pin” labeled *selected* represents the selected task:
+
+		selected: lone Task
+
+There are three solid arrows representing the three actions of the concept, and their target shows which state component they update. So *selectTask* sets which task is selected; *edit* updates the current text for a task; and *submit* sets the submitted text for a task.
+
+The dashed arrows represent the synchronizations. So the arrow from *submit* to *ask* says that when *submit* happens there is a sync that causes *ask* to happen to; and the arrow from *ask* to *post* means that this third action will happen too.
+
+A few more details about the diagrammatic notation:
+- **Relations**. I’m using lines to represent relations, as in entity-relationship diagrams. I realize that programmers who are unfamiliar with ER or UML diagrams find this confusing, but in my view it’s superior to any other way of showing an abstract state and there are no viable alternatives.
+- **No relation arrows**. I’ve departed from traditional ER representations (and notation that I’ve advocated myself and taught to students in the past, such as the diagrammatic notation for Alloy) in a few key respects. There are no arrows on the relations, even though a mathematical relation is directed. I removed the arrows both because the direction is not essential to the design (it’s only needed to ensure that updates and queries are specified consistently), and more importantly, I want the design diagram to emphasize *causality*, so I’m reserving arrows for causal effects.
+- **Sets as pins**. Another departure from ER is to show dynamic subsets as pins, rather than using a special subset arrow. I like this because it’s easier to draw and allows you to follow paths in the diagram (so *selected.current*, eg, is the path that gets you the current text of the selected task).
+- **Omissions**. I’ve omitted some details that are present in the textual form that could be included, most notably relation multiplicities. I’ve also omitted some state components (such as the *description* relation for exercises), and am only showing some synchronizations.
+- **Instantiations**. I’ve only shown one instantiation of *Advice*, and the indexing of *Drill* and *Chat* isn’t shown.
+
+I plan to write a tutorial soon explaining the notation in more detail.
 
 ## State Queries and Concept Mapping
 
