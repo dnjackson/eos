@@ -164,6 +164,16 @@ and connect their behaviors with synchronization. The essential one occurs when 
 
 When the accelerometer reports a change in the rotation of the device, a new inferred orientation is obtained from the new angle, and the additional rotation in the camera is updated accordingly.
 
+## A diagram
+
+Here is a diagrammatic depiction that shows more directly the causal flow, from the rotation being updated in *DeviceRotation* to the device angle being updated in *UserOrientation* and then finally the additional rotation being set in *Camera*:
+
+![](android-camera-diagram.png)
+
+The diagrammatic notation is explained [here](http://essenceofsoftware/studies/larger/tutor/#the-design-as-a-diagram) (and will be explained more fully in an upcoming tutorial). 
+
+Note that some causal steps are still implicit, in particular how the updating of *additionalRotation* in *Camera* affects the rotation of the image produced by *capture*.
+
 ## Connecting back to the API
 
 Now looking back at the API code sample we can understand it more readily:
