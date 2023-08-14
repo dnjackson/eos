@@ -12,6 +12,9 @@ editPost:
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---
+
+_Now [translated into Japanese](https://bonotake.hatenablog.com/entry/2023/08/09/194410) by Takeo Imai!_
+
 Don Norman’s influential book, *The Design of Everyday Things*, talked about doors, light switches and refrigerators, and had little to say about software. But many of Norman’s diagnoses and prescriptions applied nicely in our domain too.
 
 We recognized, for example, that in software the gulfs of execution and evaluation—which separate the user’s intent and interpretation from the system’s actions and outputs—are especially troublesome, and we took on Norman’s notion of affordances for guiding the selection of user interface widgets.
