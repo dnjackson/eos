@@ -13,7 +13,7 @@ editPost:
     appendFilePath: false # to append file path to Edit link
 ---
 
-_Now [translated into Japanese](https://bonotake.hatenablog.com/entry/2023/08/09/194410) by Takeo Imai!_
+_Now [translated into Japanese](https://bonotake.hatenablog.com/entry/2023/08/09/194410) by Takeo Imai! You can also read his book review in [English](https://bonotake.github.io/software%20engineering/2022/06/22/reviewing-the-essence-of-software.html) or [Japanese](https://note.com/idein/n/ncdb32616e738)._
 
 Don Norman’s influential book, *The Design of Everyday Things*, talked about doors, light switches and refrigerators, and had little to say about software. But many of Norman’s diagnoses and prescriptions applied nicely in our domain too.
 
