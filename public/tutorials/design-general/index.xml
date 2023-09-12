@@ -12,7 +12,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Tue, 02 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tutorials/design-general/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tutorials/design-general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Divergent and convergent design</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</guid>
+      <description>Two modes of design thinking. Design, whatever the domain, includes two different modes of thinking. In one, the designer generates ideas freely, often responding only loosely to any given need or problem. In the other, the designer takes some previously articulated design ideas, and attempts to improve them.
+The first mode is expansive, and most successful when critical judgment is suspended; the second is reductive, and calls for focus and analysis.</description>
+    </item>
+    
+    <item>
+      <title>Tactics for divergent design</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</guid>
+      <description>Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.
+Interviewing stakeholders. Talking to potential users and other stakeholders is good not only for identifying needs but also for getting design ideas. You can ask what tools and techniques a user currently finds helpful, and what changes might make them more effective.</description>
+    </item>
+    
     <item>
       <title>Beyond the user interface</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</link>

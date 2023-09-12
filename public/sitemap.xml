@@ -2,8 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/</loc>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</loc>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</loc>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://essenceofsoftware.com/</loc>
-    <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/</loc>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</loc>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/</loc>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/llm-coding/</loc>
     <lastmod>2023-07-18T00:00:00+00:00</lastmod>
@@ -26,13 +44,7 @@
     <loc>https://essenceofsoftware.com/posts/palantir/</loc>
     <lastmod>2023-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/</loc>
-    <lastmod>2023-05-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/state/</loc>
-    <lastmod>2023-05-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/</loc>
     <lastmod>2023-05-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/drafts/</loc>
@@ -93,9 +105,6 @@
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/operational-principle/</loc>
