@@ -26,7 +26,7 @@ It was introduced in a [paper](https://ieeexplore.ieee.org/document/1702607) tha
 
 **A snarky remark**. Even back in 1979, Parnas was aware of the fact that this idea was getting less attention than it deserved. He wrote rather snarkily:
 
-	After studying a number of such systems, I have identified some simple concepts that can help programmers to design software so that subsets and extensions are more easily obtained. These concepts are simple if you think about software in the way suggested by this paper. Programmers do not commonly do so.
+> After studying a number of such systems, I have identified some simple concepts that can help programmers to design software so that subsets and extensions are more easily obtained. These concepts are simple if you think about software in the way suggested by this paper. Programmers do not commonly do so.
 
 In writing this post, I hope to do my part in putting this right, albeit 40 years later!
 
