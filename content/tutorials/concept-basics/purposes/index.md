@@ -12,7 +12,7 @@ editPost:
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---
-# Concept purposes
+## The role of purposes
 
 **From what to why**. The beginning of wisdom for a designer   is to stop asking “what?” and start asking “why?”. 
 
