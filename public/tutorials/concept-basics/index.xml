@@ -19,8 +19,30 @@
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</guid>
-      <description>Concept Criteria What is a concept? Two sides of a coin. The key to concept design is, perhaps not surprisingly, the idea of concepts. A concept is two things at once.
+      <description>What is a concept? Two sides of a coin. The key to concept design is, perhaps not surprisingly, the idea of concepts. A concept is two things at once.
 A mental construct. On the one hand, a “concept” means you’d expect it to mean: a mental construct that you need to understand to be able to use an app effectively. So you might that to use Photoshop you need to understand the “concept of a layer”; to use Facebook you need to understand the “concept of friending”; and so on.</description>
+    </item>
+    
+    <item>
+      <title>Concept dependencies and subsets</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/dependency/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/dependency/</guid>
+      <description>A seminal paper An idea you need to know. One of the most important and useful ideas in software also happens to be one of the least well known.
+It was introduced in a paper that David Parnas wrote in 1979, entitled Designing Software for Ease of Extension and Contraction.
+Program families. Following on from an earlier paper that introduced the idea of “program families”&amp;mdash;that when you design software you should realize that you’re designing a whole family of programs, not just one&amp;mdash;this paper addresses the question of how to do this.</description>
+    </item>
+    
+    <item>
+      <title>Concept purposes</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/purposes/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/purposes/</guid>
+      <description>Concept purposes From what to why. The beginning of wisdom for a designer is to stop asking “what?” and start asking “why?”.
+This applies at every level. You can ask “what application shall I design?”. But a better question is “why would I design that?”. And at a finer grain, the question “what features should my app have?” gives way to “why should my app have these particular features?”.
+Granular justifications.</description>
     </item>
     
     <item>

@@ -12,8 +12,6 @@ editPost:
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---
-# Concept Criteria
-
 ## What is a concept?
 
 **Two sides of a coin**. The key to concept design is, perhaps not surprisingly, the idea of *concepts*. 
