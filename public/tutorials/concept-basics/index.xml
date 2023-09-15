@@ -19,8 +19,7 @@
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</guid>
-      <description>What is a concept? Two sides of a coin. The key to concept design is, perhaps not surprisingly, the idea of concepts. A concept is two things at once.
-A mental construct. On the one hand, a “concept” means you’d expect it to mean: a mental construct that you need to understand to be able to use an app effectively. So you might that to use Photoshop you need to understand the “concept of a layer”; to use Facebook you need to understand the “concept of friending”; and so on.</description>
+      <description>Two sides of a coin The key to concept design is, perhaps not surprisingly, the idea of concepts. A concept is two things at once. On the one hand, a “concept” means you’d expect it to mean: a mental construct that you need to understand to be able to use an app effectively. So you might that to use Photoshop you need to understand the “concept of a layer”; to use Facebook you need to understand the “concept of friending”; and so on.</description>
     </item>
     
     <item>
@@ -29,8 +28,7 @@ A mental construct. On the one hand, a “concept” means you’d expect it to 
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/tutorials/concept-basics/dependency/</guid>
-      <description>A seminal paper An idea you need to know. One of the most important and useful ideas in software also happens to be one of the least well known.
-It was introduced in a paper that David Parnas wrote in 1979, entitled Designing Software for Ease of Extension and Contraction.
+      <description>An idea you need to know One of the most important and useful ideas in software also happens to be one of the least well known. It was introduced in a paper that David Parnas wrote in 1979, entitled Designing Software for Ease of Extension and Contraction.
 Program families. Following on from an earlier paper that introduced the idea of “program families”&amp;mdash;that when you design software you should realize that you’re designing a whole family of programs, not just one&amp;mdash;this paper addresses the question of how to do this.</description>
     </item>
     
@@ -52,6 +50,15 @@ This applies at every level. You can ask “what application shall I design?”.
       <guid>https://essenceofsoftware.com/tutorials/concept-basics/state/</guid>
       <description>Motivation: Defining Behavior The operational principle of a concept explains its archetypal behavior: how it’s typically used, and how it fulfills its purpose. But for a concept to be flexible and powerful, it should work in many different scenarios, so we need a way to pin down the behavior in detail.
 Using the notion of a state machine, we can define how a concept will behave in every possible situation. Then we can analyze the design to make sure that the behavior is always acceptable.</description>
+    </item>
+    
+    <item>
+      <title>Concepts are state machines</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/concepts-are-state-machines/</link>
+      <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/concepts-are-state-machines/</guid>
+      <description>As I explained in another tutorial, the easiest and most effective way to define the behavior of an app precisely is to model it as a state machine. The app has a set of possible states, and actions that update and query the states. An execution of the app is just a sequence of actions (or more correctly, action instances that include particular action arguments), and the behavior as a whole is the set of all possible executions.</description>
     </item>
     
     <item>

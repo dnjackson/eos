@@ -12,11 +12,9 @@ editPost:
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---
-## A seminal paper
+## An idea you need to know
 
-**An idea you need to know**. One of the most important and useful ideas in software also happens to be one of the least well known.
-
-It was introduced in a [paper](https://ieeexplore.ieee.org/document/1702607) that [David Parnas](https://en.wikipedia.org/wiki/David_Parnas) wrote in 1979, entitled *Designing Software for Ease of Extension and Contraction*. 
+One of the most important and useful ideas in software also happens to be one of the least well known. It was introduced in a [paper](https://ieeexplore.ieee.org/document/1702607) that [David Parnas](https://en.wikipedia.org/wiki/David_Parnas) wrote in 1979, entitled *Designing Software for Ease of Extension and Contraction*. 
 
 **Program families**. Following on from an earlier paper that introduced the idea of “program families”---that when you design software you should realize that you’re designing a whole family of programs, not just one---this paper addresses the question of how to do this. How do you come up with one design that can be easily extended (by adding new functionality) or contracted (by removing functionality)?
 
