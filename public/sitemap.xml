@@ -2,28 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/</loc>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</loc>
+    <lastmod>2022-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/great-design/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/misfits/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/principle/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/fitness-criteria/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/app-as-machine/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/simplicity/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/</loc>
+    <lastmod>2022-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/state/</loc>
+    <lastmod>2023-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</loc>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/sync/</loc>
+    <lastmod>2022-09-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/dependency/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/purposes/</loc>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</loc>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/</loc>
-    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/</loc>
@@ -49,9 +88,6 @@
   </url><url>
     <loc>https://essenceofsoftware.com/posts/palantir/</loc>
     <lastmod>2023-06-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/state/</loc>
-    <lastmod>2023-05-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/drafts/</loc>
     <lastmod>2023-05-22T00:00:00+00:00</lastmod>
@@ -86,41 +122,8 @@
     <loc>https://essenceofsoftware.com/posts/ux-design-silo/</loc>
     <lastmod>2022-10-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/concepts-are-state-machines/</loc>
-    <lastmod>2022-09-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/apps-made-of-concepts/</loc>
-    <lastmod>2022-08-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://essenceofsoftware.com/studies/small/zoom-missing/</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/apps-are-state-machines/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/misfits/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/fitness-criteria/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/great-design/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/operational-principle/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/simplicity/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/studies/larger/zoom-reaction/</loc>
     <lastmod>2022-07-12T00:00:00+00:00</lastmod>

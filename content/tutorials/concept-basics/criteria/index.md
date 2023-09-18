@@ -1,5 +1,6 @@
 ---
 author: "Daniel Jackson"
+weight: 4
 title: "Concept criteria: what's a concept?"
 date: "2023-09-11"
 description: ""

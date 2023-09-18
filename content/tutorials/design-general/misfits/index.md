@@ -1,6 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Form, context & misfits"
+weight: 3
 date: "2022-08-02"
 description: ""
 ShowToc: false

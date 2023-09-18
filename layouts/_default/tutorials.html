@@ -15,7 +15,7 @@
 	{{ .Title }}
   </h2>
     <div class="archive-posts">
-      {{- range .Pages.ByTitle }}
+      {{- range .Pages.ByWeight }}
       {{- if eq .Kind "page" }}
       <div class="archive-entry">
         <h3 class="archive-entry-title">

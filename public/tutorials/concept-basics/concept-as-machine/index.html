@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Concepts are state machines | The Essence of Software</title>
+<meta name="keywords" content="">
+<meta name="description" content="As I explained in another tutorial, the easiest and most effective way to define the behavior of an app precisely is to model it as a state machine. The app has a set of possible states, and actions that update and query the states. An execution of the app is just a sequence of actions (or more correctly, action instances that include particular action arguments), and the behavior as a whole is the set of all possible executions.">
+<meta name="author" content="Daniel Jackson">
+<link rel="canonical" href="https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1eecbf9c7523bd5ac80b32f81ece29e45269e9f1fa42874b4bbc1b722c883eba.css" integrity="sha256-Huy/nHUjvVrICzL4Hs4p5FJp6fH6QodLS7wbciyIPro=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Concepts are state machines" />
+<meta property="og:description" content="As I explained in another tutorial, the easiest and most effective way to define the behavior of an app precisely is to model it as a state machine. The app has a set of possible states, and actions that update and query the states. An execution of the app is just a sequence of actions (or more correctly, action instances that include particular action arguments), and the behavior as a whole is the set of all possible executions." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="tutorials" />
+<meta property="article:published_time" content="2022-09-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-14T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
+
+<meta name="twitter:title" content="Concepts are state machines"/>
+<meta name="twitter:description" content="As I explained in another tutorial, the easiest and most effective way to define the behavior of an app precisely is to model it as a state machine. The app has a set of possible states, and actions that update and query the states. An execution of the app is just a sequence of actions (or more correctly, action instances that include particular action arguments), and the behavior as a whole is the set of all possible executions."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tutorials",
+      "item": "https://essenceofsoftware.com/tutorials/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Concept basics",
+      "item": "https://essenceofsoftware.com/tutorials/concept-basics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "Concepts are state machines",
+      "item": "https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Concepts are state machines",
+  "name": "Concepts are state machines",
+  "description": "As I explained in another tutorial, the easiest and most effective way to define the behavior of an app precisely is to model it as a state machine. The app has a set of possible states, and actions that update and query the states. An execution of the app is just a sequence of actions (or more correctly, action instances that include particular action arguments), and the behavior as a whole is the set of all possible executions.",
+  "keywords": [
+    
+  ],
+  "articleBody": "As I explained in another tutorial, the easiest and most effective way to define the behavior of an app precisely is to model it as a state machine. The app has a set of possible states, and actions that update and query the states. An execution of the app is just a sequence of actions (or more correctly, action instances that include particular action arguments), and the behavior as a whole is the set of all possible executions.\nDescribing concepts themselves as state machines brings the same advantages. The state machine of the app as a whole is just a combination of the machines of the individual concepts. This is how concepts bring modularity to thinking about the functionality of an app.\nAn example of a concept as a state machine Let’s model the core concept of Yellkey, a URL shortening service that many teachers use. The novelty of Yellkey is that the short URLs it generates use common English words, so you get short URLs like “https://yellkey.com/hello” rather than ones that contains strange sequences of letters that are harder to transcribe.\nHere’s the Yellkey concept as a state machine:\nconcept Yellkey purpose shorten URLs to common words principle after registering a URL u for t seconds and obtaining a shortening s, looking up s will yield u until the shortening expires t seconds from now: register (u, t, s); lookup (u, s') {s' = s} state used: set String shortFor: used -\u003e one URL expiry: used -\u003e one Date const shorthands: set String actions // register URL u for t seconds // resulting in shortening s register (u: URL, t: int, out s: String) s in shorthands - used s.shortFor := u s.expiry := // t secs after now used += s // lookup shortening s and get u back lookup (s: String, out u: URL) s in used u := s.shortFor // system action: shorthand s expires expire (out s: String) s.expiry is before now used -= s s.shortFor := none s.expiry := none Actions are a good place to start because they capture what the user does to use the concept. There are two actions that are performed by the user: register, which takes a URL and some duration in seconds, and returns a shortening; and lookup, which takes a shortening and expands it by returning a URL. In Yellkey, the user doesn’t get to choose an arbitrary duration, but selects one from a dropdown (which has a few options between 1 and 24 hours).\nThe fact that a shortening can expire is represented by an action that is performed by the system: expire occurs for a given shortening when it has passed its registered duration.\nDefining state To design the state, you consider what must be remembered by the concept in order to support the actions. In this case, what’s needed is: a mapping from shortenings to URLs, and a mapping from shortenings to their expiry times. Since the shortenings must be drawn from a set of common words, that set is stored as part of the state also.\nFor convenience, I’ve also included a component that remembers which shortenings are currently being used. Strictly, this isn’t necessary because the shortenings in use are just the ones mapped by the two mappings. But this makes it a bit easier to define the actions, and to make explicit (in the declarations of the mappings) that every shortening being used maps to exactly one URL and exactly one expiry time.\nDefining Actions Each action has a header that names the action and lists some arguments, and a body that defines the action’s behavior:\nregister (u: URL, t: int, out s: String) s in shorthands - used s.shortFor := u s.expiry := // time now plus secs used += s The arguments that are marked with the keyword out are outputs that are returned by the action; the others are all inputs. (Using a keyword rather than having a special return value turns out to be more convenient, because it allows more than one output, and introduces names for them).\nThe body includes two kinds of statements: preconditions that limit when the action can occur, and postconditions that say what effect the action has.\nLet’s look at each line in turn. The first line\ns in shorthands - used says that any value can be picked for s that is in the set shorthands - used, that is the set of words that are shorthands but not used.\nThe second line\ns.shortFor := u says that the mapping between shortenings and their URLs is updated so that the new shortening s maps to the given URL u.\nThe third line\ns.expiry := // t secs after now says (informally) that the mapping between shortenings and their expiry times is updated so that the new shortening s maps to the time corresponding to t seconds after the current time.\nAnd finally\nused += s says that the set of used shortenings has s added to it.\nA note on notation. I’ve used a simple notation for the action formulas based on Alloy, extended with some C-style operators. Given a relation r: A -\u003e B, and variables a and b holding values drawn from the sets A and B, the statement a.r := b makes a map to b in r—that is, adds the pair (a, b) to r.\nNon-determinism The register action doesn’t say how the shortening is chosen. It says any shortening is acceptable so long as it’s in the set of shorthands that are not currently being used.\nThis is called “non-determinism”. It doesn’t mean that the selection has to be random, or that if you could somehow undo the action and do it again that you might get a different result.\nAll it means is that the specification doesn’t say how the shortening is chosen, and whoever implements the concept can decide how it’s done (so some prefer the term “under-determined” to “non-deterministic”).\nFor example, the set of shorthands could be represented as a ring with a pointer to the last shorthand issued. When register is called, it returns the next shorthand in the ring, or skips it if it’s being used, carrying on round the ring until it finds an unused one.\nDesign is in the details The details are not the details. They make the design.—Charles Eames\nBeing precise about the states and actions helps in several ways. The first is communication: it helps you convey the concept behavior unambiguously to others.\nThe second is that it counters wishful thinking. As anyone who’s written software knows, it’s easy to convince yourself that some function is obvious until you actually try and code it, and then you discover you don’t even understand what it should do. Writing a model is like writing code in this respect, except that it’s less work and lets you know sooner that you’re confused.\nThe third is that different options come up as you formalize the behavior, prompting you to address design questions you might not even have noticed.\nFor example, an alternative specification of the register action might not just add a new shortening for a URL but might replace any existing ones.\nOn the one hand, one could argue that it’s not in the spirit of Yellkey to support multiple shortenings for a single URL, and it would also save resources to do this.\nOn the other hand, this would open up a potential malicious attack. Suppose a lecturer writes a Yellkey short URL on the board for a class quiz. A naughty student in the class could register a new one for the same URL, causing the old one to stop working.\nConcepts aren’t classes People are sometimes confused about the difference between concepts and classes in object-oriented languages. With our concept example in hand, we can now see how different a concept is from a class.\nUser-facing, end-to-end functionality. A concept provides user-facing functionality, in an end-to-end way. A class, in contrast, is usually hidden from users, and provides only a piece of functionality that is combined with functionality in other classes to deliver some value to the user. For example, an implementation of Yellkey might have a Shorthand class each of whose instances holds a shorthand and its associated URL. But this class doesn’t offer lookups; that would have to be in another class. No intrinsic dependencies. Concepts don’t have intrinsic dependencies on other concepts, and can be understood in isolation. Classes almost always use other classes, and can’t operate without making calls to them. System actions. Concepts can have both user and system actions; the methods of a class are called from outside (and if they were called internally, the call would not be visible to the outside). Richly associative state. Concepts hold state that associates different objects and values in rich ways, and allows flexible navigation. Classes, in classic OOP, are more constrained. A class is represented by a set of objects, and each object can contain references to other objects or collections of objects. But this structure does not support querying for particular objects within a class. For example, as I just noted, given a Shorthand class whose objects represent registrations of shorthand/URLs, you can’t ask for the objects that match a particular shorthand. The OOP workaround for this is to introduce another class whose instances are shorthand-to-URL mappings. None of this means that concepts can’t be implemented in an object-oriented language. In fact, a reasonable approach is to implement each concept as a class, supported by whatever other classes are needed to fulfill its functionality (but avoiding any references to the classes of other concepts).\n",
+  "wordCount" : "1613",
+  "inLanguage": "en",
+  "datePublished": "2022-09-14T00:00:00Z",
+  "dateModified": "2022-09-14T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Daniel Jackson"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Essence of Software",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://essenceofsoftware.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
+                    <span>Buy</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/author/" title="Author">
+                    <span>Author</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
+                    <span>Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
+                    <span>Case Studies</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
+                    <span>Subscribe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Concepts are state machines
+    </h1>
+    <div class="post-meta"><span title='2022-09-14 00:00:00 +0000 UTC'>September 14, 2022</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="https://forum.softwareconcepts.io" rel="noopener noreferrer" target="_blank">Comments</a>
+
+</div>
+  </header> 
+  <div class="post-content"><p>As I explained in another <a href="../apps-are-state-machines">tutorial</a>, the easiest and most effective way to define the behavior of an app precisely is to model it as a state machine. The app has a set of possible states, and actions that update and query the states. An execution of the app is just a sequence of actions (or more correctly, action instances that include particular action arguments), and the behavior as a whole is the set of all possible executions.</p>
+<p>Describing concepts themselves as state machines brings the same advantages. The state machine of the app as a whole is just a combination of the machines of the individual concepts. This is how concepts bring modularity to thinking about the functionality of an app.</p>
+<h2 id="an-example-of-a-concept-as-a-state-machine">An example of a concept as a state machine<a hidden class="anchor" aria-hidden="true" href="#an-example-of-a-concept-as-a-state-machine">#</a></h2>
+<p>Let’s model the core concept of <a href="https://yellkey.com">Yellkey</a>, a URL shortening service that many teachers use. The novelty of Yellkey is that the short URLs it generates use common English words, so you get short URLs like “https://yellkey.com/hello” rather than ones that contains strange sequences of letters that are harder to transcribe.</p>
+<p>Here’s the Yellkey concept as a state machine:</p>
+<pre><code>concept Yellkey
+purpose shorten URLs to common words
+principle
+  after registering a URL u for t seconds
+  and obtaining a shortening s, looking up s
+  will yield u until the shortening expires
+  t seconds from now:
+  register (u, t, s); lookup (u, s') {s' = s}
+state
+  used: set String
+  shortFor: used -&gt; one URL
+  expiry: used -&gt; one Date    
+  const shorthands: set String
+actions
+  // register URL u for t seconds
+  // resulting in shortening s
+  register (u: URL, t: int, out s: String)
+    s in shorthands - used
+    s.shortFor := u
+    s.expiry := // t secs after now
+    used += s
+
+  // lookup shortening s and get u back
+  lookup (s: String, out u: URL)
+    s in used
+    u := s.shortFor
+
+  // system action: shorthand s expires
+  expire (out s: String)
+    s.expiry is before now
+    used -= s
+    s.shortFor := none
+    s.expiry := none
+</code></pre>
+<p>Actions are a good place to start because they capture what the user does to use the concept. There are two actions that are performed by the user: <strong>register</strong>, which takes a URL and some duration in seconds,  and returns a shortening; and <strong>lookup</strong>, which takes a shortening and expands it by returning a URL. In Yellkey, the user doesn’t get to choose an arbitrary duration, but selects one from a dropdown (which has a few options between 1 and 24 hours).</p>
+<p>The fact that a shortening can expire is represented by an action that is performed by the system: <strong>expire</strong> occurs for a given shortening when it has passed its registered duration.</p>
+<h2 id="defining-state">Defining state<a hidden class="anchor" aria-hidden="true" href="#defining-state">#</a></h2>
+<p>To design the state, you consider what must be remembered by the concept in order to support the actions. In this case, what’s needed is: a mapping from shortenings to URLs, and a mapping from shortenings to their expiry times. Since the shortenings must be drawn from a set of common words, that set is stored as part of the state also.</p>
+<p>For convenience, I’ve also included a component that remembers which shortenings are currently being used. Strictly, this isn’t necessary because the shortenings in use are just the ones mapped by the two mappings. But this makes it a bit easier to define the actions, and to make explicit (in the declarations of the mappings) that every shortening being used maps to exactly one URL and exactly one expiry time.</p>
+<h2 id="defining-actions">Defining Actions<a hidden class="anchor" aria-hidden="true" href="#defining-actions">#</a></h2>
+<p>Each action has a header that names the action and lists some arguments, and a body that defines the action’s behavior:</p>
+<pre><code>register (u: URL, t: int, out s: String)
+  s in shorthands - used
+  s.shortFor := u
+  s.expiry := // time now plus secs
+  used += s
+</code></pre>
+<p>The arguments that are marked with the keyword <em>out</em> are outputs that are returned by the action; the others are all inputs. (Using a keyword rather than having a special return value turns out to be more convenient, because it allows more than one output, and introduces names for them).</p>
+<p>The body includes two kinds of statements: preconditions that limit when the action can occur, and postconditions that say what effect the action has.</p>
+<p>Let’s look at each line in turn. The first line</p>
+<pre><code>s in shorthands - used
+</code></pre>
+<p>says that any value can be picked for s that is in the set <em>shorthands - used</em>, that is the set of words that are shorthands but not used.</p>
+<p>The second line</p>
+<pre><code>s.shortFor := u
+</code></pre>
+<p>says that the mapping between shortenings and their URLs is updated so that the new shortening s maps to the given URL u.</p>
+<p>The third line</p>
+<pre><code>s.expiry := // t secs after now
+</code></pre>
+<p>says (informally) that the mapping between shortenings and their expiry times is updated so that the new shortening s maps to the time corresponding to t seconds after the current time.</p>
+<p>And finally</p>
+<pre><code>used += s
+</code></pre>
+<p>says that the set of used shortenings has s added to it.</p>
+<p><strong>A note on notation</strong>. I’ve used a simple notation for the action formulas based on <a href="https://alloytools.org">Alloy</a>, extended with some C-style operators. Given a relation <em>r: A -&gt; B</em>, and variables <em>a</em> and <em>b</em> holding values drawn from the sets A and B, the statement <em>a.r := b</em> makes <em>a</em> map to <em>b</em> in <em>r</em>—that is, adds the pair (a, b) to r.</p>
+<h2 id="non-determinism">Non-determinism<a hidden class="anchor" aria-hidden="true" href="#non-determinism">#</a></h2>
+<p>The register action doesn’t say how the shortening is chosen. It says any shortening is acceptable so long as it’s in the set of shorthands that are not currently being used.</p>
+<p>This is called “non-determinism”. It doesn’t mean that the selection has to be random, or that if you could somehow undo the action and do it again that you might get a different result.</p>
+<p>All it means is that the specification doesn’t say how the shortening is chosen, and whoever implements the concept can decide how it’s done (so some prefer the term “under-determined” to “non-deterministic”).</p>
+<p>For example, the set of shorthands could be represented as a ring with a pointer to the last shorthand issued.  When register is called, it returns the next shorthand in the ring, or skips it if it’s being used, carrying on round the ring until it finds an unused one.</p>
+<h2 id="design-is-in-the-details">Design is in the details<a hidden class="anchor" aria-hidden="true" href="#design-is-in-the-details">#</a></h2>
+<p><em>The details are not the details. They make the design</em>.—Charles Eames</p>
+<p>Being precise about the states and actions helps in several ways. The first is communication: it helps you convey the concept behavior unambiguously to others.</p>
+<p>The second is that it counters <em>wishful thinking</em>. As anyone who’s written software knows, it’s easy to convince yourself that some function is obvious until you actually try and code it, and then you discover you don’t even understand what it should do. Writing a model is like writing code in this respect, except that it’s less work and lets you know sooner that you’re confused.</p>
+<p>The third is that different options come up as you formalize the behavior, prompting you to address design questions you might not even have noticed.</p>
+<p>For example, an alternative specification of the register action might not just <em>add</em> a new shortening for a URL but might <em>replace</em> any existing ones.</p>
+<p>On the one hand, one could argue that it’s not in the spirit of Yellkey to support multiple shortenings for a single URL, and it would also save resources to do this.</p>
+<p>On the other hand, this would open up a potential malicious attack. Suppose a lecturer writes a Yellkey short URL on the board for a class quiz. A naughty student in the class could register a new one for the same URL, causing the old one to stop working.</p>
+<h2 id="concepts-arent-classes">Concepts aren’t classes<a hidden class="anchor" aria-hidden="true" href="#concepts-arent-classes">#</a></h2>
+<p>People are sometimes confused about the difference between concepts and classes in object-oriented languages.  With our concept example in hand, we can now see how different a concept is from a class.</p>
+<ul>
+<li><strong>User-facing, end-to-end functionality</strong>. A concept provides user-facing functionality, in an end-to-end way. A class, in contrast, is usually hidden from users, and provides only a piece of functionality that is combined with functionality in other classes to deliver some value to the user. For example, an implementation of Yellkey might have a <em>Shorthand</em> class each of whose instances holds a shorthand and its associated URL. But this class doesn’t offer lookups; that would have to be in another class.</li>
+<li><strong>No intrinsic dependencies</strong>. Concepts don’t have <a href="../dependency">intrinsic dependencies</a> on other concepts, and can be understood in isolation. Classes almost always use other classes, and can’t operate without making calls to them.</li>
+<li><strong>System actions</strong>. Concepts can have both user and system actions; the methods of a class are called from outside (and if they were called internally, the call would not be visible to the outside).</li>
+<li><strong>Richly associative state</strong>. Concepts hold state that associates different objects and values in rich ways, and allows flexible navigation. Classes, in classic OOP, are more constrained. A class is represented by a set of objects, and each object can contain references to other objects or collections of objects. But this structure does not support querying for particular objects within a class. For example, as I just noted, given a <em>Shorthand</em> class whose objects represent registrations of shorthand/URLs, you can’t ask for the objects that match a particular shorthand. The OOP workaround for this is to introduce another class whose instances are shorthand-to-URL mappings.</li>
+</ul>
+<p>None of this means that concepts can’t be implemented in an object-oriented language. In fact, a reasonable approach is to implement each concept as a class, supported by whatever other classes are needed to fulfill its functionality (but avoiding any references to the classes of other concepts).</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://essenceofsoftware.com/tutorials/design-general/simplicity/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Simplicity</span>
+  </a>
+  <a class="next" href="https://essenceofsoftware.com/tutorials/design-general/levels-of-design/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Levels of design</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+
+    <span>&copy; 2023 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

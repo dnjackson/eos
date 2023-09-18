@@ -1,6 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Levels of design"
+weight: 6
 date: "2022-08-02"
 description: ""
 ShowToc: false

@@ -1,6 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Concept state"
+weight: 7
 date: "2023-05-23"
 description: ""
 ShowToc: false

@@ -14,42 +14,22 @@
     <copyright>Daniel Jackson</copyright>
     <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tutorials/design-general/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Divergent and convergent design</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</link>
-      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</guid>
-      <description>Two modes of design thinking Design, whatever the domain, includes two different modes of thinking. In one, the designer generates ideas freely, often responding only loosely to any given need or problem. In the other, the designer takes some previously articulated design ideas, and attempts to improve them.
-The first mode is expansive, and most successful when critical judgment is suspended; the second is reductive, and calls for focus and analysis.</description>
-    </item>
-    
-    <item>
-      <title>Tactics for divergent design</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</link>
-      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</guid>
-      <description>Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.
-Interviewing stakeholders Talking to potential users and other stakeholders is good not only for identifying needs but also for getting design ideas. You can ask what tools and techniques a user currently finds helpful, and what changes might make them more effective.</description>
-    </item>
-    
-    <item>
-      <title>Beyond the user interface</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</link>
-      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</guid>
-      <description>In the 1980s, there was a revolution in software. The Apple Macintosh came out (building on the invention of the WIMP interface at PARC), Don Norman wrote The Design of Everyday Things, and the first CHI conference was held.
-Now everyone knows how important user interface design is, and there’s no excuse for messing it up. You can find several collections of UI design heuristics (such as Nielsen’s) online, and many companies publish standards for how to use UI widgets consistently (here’s Google’s, for example).</description>
-    </item>
-    
-    <item>
       <title>Design vs. engineering</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</guid>
       <description>What&amp;#39;s the difference between design and engineering?</description>
+    </item>
+    
+    <item>
+      <title>How great design happens</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/great-design/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/design-general/great-design/</guid>
+      <description>Think about your favorite product, whether it’s a photo-editing app or a toaster, and ask yourself: how did it get to be so good?
+With all the hype in the design world about creativity and brainstorming, it’s easy to imagine that great designs simply appear, out of the blue. Someone conjures up a new idea, and it just needs to be translated from sketch to product. Maybe many details need to be added, but the quality of the design was there at the start—like a tiny seed that grows spontaneously into a magnificent tree.</description>
     </item>
     
     <item>
@@ -75,13 +55,13 @@ Efficient: letting users accomplish their goals with no more steps or effort tha
     </item>
     
     <item>
-      <title>How great design happens</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/great-design/</link>
+      <title>Simplicity</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/simplicity/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tutorials/design-general/great-design/</guid>
-      <description>Think about your favorite product, whether it’s a photo-editing app or a toaster, and ask yourself: how did it get to be so good?
-With all the hype in the design world about creativity and brainstorming, it’s easy to imagine that great designs simply appear, out of the blue. Someone conjures up a new idea, and it just needs to be translated from sketch to product. Maybe many details need to be added, but the quality of the design was there at the start—like a tiny seed that grows spontaneously into a magnificent tree.</description>
+      <guid>https://essenceofsoftware.com/tutorials/design-general/simplicity/</guid>
+      <description>Most of us* believe that simplicity is the key to design. I’m a sucker for the best quotes about it. Here are some of my favorites. First, Tony Hoare in his Turing Award lecture lamenting the complexity of Algol-68:
+I conclude that there are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies.</description>
     </item>
     
     <item>
@@ -97,13 +77,33 @@ Physical. If you want to think of levels as low and high, this one is at the bot
     </item>
     
     <item>
-      <title>Simplicity</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/simplicity/</link>
+      <title>Beyond the user interface</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tutorials/design-general/simplicity/</guid>
-      <description>Most of us* believe that simplicity is the key to design. I’m a sucker for the best quotes about it. Here are some of my favorites. First, Tony Hoare in his Turing Award lecture lamenting the complexity of Algol-68:
-I conclude that there are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies.</description>
+      <guid>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</guid>
+      <description>In the 1980s, there was a revolution in software. The Apple Macintosh came out (building on the invention of the WIMP interface at PARC), Don Norman wrote The Design of Everyday Things, and the first CHI conference was held.
+Now everyone knows how important user interface design is, and there’s no excuse for messing it up. You can find several collections of UI design heuristics (such as Nielsen’s) online, and many companies publish standards for how to use UI widgets consistently (here’s Google’s, for example).</description>
+    </item>
+    
+    <item>
+      <title>Divergent and convergent design</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</guid>
+      <description>Two modes of design thinking Design, whatever the domain, includes two different modes of thinking. In one, the designer generates ideas freely, often responding only loosely to any given need or problem. In the other, the designer takes some previously articulated design ideas, and attempts to improve them.
+The first mode is expansive, and most successful when critical judgment is suspended; the second is reductive, and calls for focus and analysis.</description>
+    </item>
+    
+    <item>
+      <title>Tactics for divergent design</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</guid>
+      <description>Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.
+Interviewing stakeholders Talking to potential users and other stakeholders is good not only for identifying needs but also for getting design ideas. You can ask what tools and techniques a user currently finds helpful, and what changes might make them more effective.</description>
     </item>
     
   </channel>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Concept composition and sync | The Essence of Software</title>
+<meta name="keywords" content="">
+<meta name="description" content="In another tutorial, I showed a concept definition for Yellkey, a popular URL shortening service:
+concept Yellkey purpose shorten URLs to common words principle after registering a URL u for t seconds and obtaining a shortening s, looking up s will yield u until the shortening expires t seconds from now state used: set String shortFor: used -&gt; one URL expiry: used -&gt; one Date const shorthands: set String actions // register URL u for t seconds // resulting in shortening s register (u: URL, t: int, out s: String) s in shorthands - used s.">
+<meta name="author" content="Daniel Jackson">
+<link rel="canonical" href="https://essenceofsoftware.com/tutorials/concept-basics/sync/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1eecbf9c7523bd5ac80b32f81ece29e45269e9f1fa42874b4bbc1b722c883eba.css" integrity="sha256-Huy/nHUjvVrICzL4Hs4p5FJp6fH6QodLS7wbciyIPro=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Concept composition and sync" />
+<meta property="og:description" content="In another tutorial, I showed a concept definition for Yellkey, a popular URL shortening service:
+concept Yellkey purpose shorten URLs to common words principle after registering a URL u for t seconds and obtaining a shortening s, looking up s will yield u until the shortening expires t seconds from now state used: set String shortFor: used -&gt; one URL expiry: used -&gt; one Date const shorthands: set String actions // register URL u for t seconds // resulting in shortening s register (u: URL, t: int, out s: String) s in shorthands - used s." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://essenceofsoftware.com/tutorials/concept-basics/sync/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="tutorials" />
+<meta property="article:published_time" content="2022-09-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-14T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
+
+<meta name="twitter:title" content="Concept composition and sync"/>
+<meta name="twitter:description" content="In another tutorial, I showed a concept definition for Yellkey, a popular URL shortening service:
+concept Yellkey purpose shorten URLs to common words principle after registering a URL u for t seconds and obtaining a shortening s, looking up s will yield u until the shortening expires t seconds from now state used: set String shortFor: used -&gt; one URL expiry: used -&gt; one Date const shorthands: set String actions // register URL u for t seconds // resulting in shortening s register (u: URL, t: int, out s: String) s in shorthands - used s."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tutorials",
+      "item": "https://essenceofsoftware.com/tutorials/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Concept basics",
+      "item": "https://essenceofsoftware.com/tutorials/concept-basics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "Concept composition and sync",
+      "item": "https://essenceofsoftware.com/tutorials/concept-basics/sync/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Concept composition and sync",
+  "name": "Concept composition and sync",
+  "description": "In another tutorial, I showed a concept definition for Yellkey, a popular URL shortening service:\nconcept Yellkey purpose shorten URLs to common words principle after registering a URL u for t seconds and obtaining a shortening s, looking up s will yield u until the shortening expires t seconds from now state used: set String shortFor: used -\u0026gt; one URL expiry: used -\u0026gt; one Date const shorthands: set String actions // register URL u for t seconds // resulting in shortening s register (u: URL, t: int, out s: String) s in shorthands - used s.",
+  "keywords": [
+    
+  ],
+  "articleBody": "In another tutorial, I showed a concept definition for Yellkey, a popular URL shortening service:\nconcept Yellkey purpose shorten URLs to common words principle after registering a URL u for t seconds and obtaining a shortening s, looking up s will yield u until the shortening expires t seconds from now state used: set String shortFor: used -\u003e one URL expiry: used -\u003e one Date const shorthands: set String actions // register URL u for t seconds // resulting in shortening s register (u: URL, t: int, out s: String) s in shorthands - used s.shortFor := u s.expiry := // t secs after now used += s // lookup shortening s and get u back lookup (s: String, out u: URL) s in used u := s.shortFor // system action: shorthand s expires expire (out s: String) s.expiry is before now used -= s s.shortFor := none s.expiry := none Although it’s fairly simple and straightforward, there’s something unsatisfying about this concept.\nThe criteria for concepts include being familiar and reusable. The essential functionality that this concept offers—shortening URLs—is common to many different shortening services, some freestanding (such as tinyurl.com) and others embedded in larger applications (eg, Google short URL option in Google Forms). But this concept would not be a good match for those other settings because it includes the expiration functionality.\nWhat’s going on here is that we seem to have two concepts: one about URL shortening and the other about expiry. Can we disentangle these?\nFactoring concepts Here’s how we might factor the Yellkey concept into two more basic and reusable concepts. First, we define a concept that provides shorthands:\nconcept Shorthand [Target] purpose provide access via shorthand strings principle after registering a target t and obtaining a shorthand s, looking up s will yield t: register (t, s); lookup (s, t') {t' = t} state used: set String shortFor: String -\u003e opt Target const shorthands: set String actions register (t: Target, out s: String) s in shorthands - used s.shortFor := t used += s unregister (s: String) s in used used -= s s.shortFor := none lookup (s: String, out t: Target) s in used t := s.shortFor This is just like our Yellkey concept, but the expiry-tracking functionality has been removed. Note also that I’ve made the concept polymorphic: it no longer translates shorthands into URLs, but into objects of some unspecified type Target. This would allow the Shorthand concept to be used in many more contexts; you could have shorthands for file paths in a file system, for example, or for commands in a user interface.\nNow we turn the expiry-tracking functionality into its own concept:\nconcept ExpiringResource [Resource] purpose handle expiration of short-lived resources principle after allocating a resource r for t seconds, after t seconds the resource expires: allocate (r, t); expire (r) state active: set Resource expiry: Resource -\u003e one Date actions allocate (r: Resource, t: int) r not in active active += r r.expiry := // t secs after now deallocate (r: Resource) r in active active -= r r.expiry := none renew (r: Resource, t: int) r in active r.expiry := // t secs after now expire (out r: Resource) r in active r.expiry is before now active -= r r.expiry := none Again, I’ve made this polymorphic, so that any kind of resource can have its expiry tracked. This concept could be used to implement (the rather mean) control that turns off wifi access after the time paid for has passed.\nAnd because I’m anticipating using this concept in a more general setting, I’ve included two additional actions that let you deallocate a resource before it expires, or renew so that its life is extended.\nComposing concepts with syncs Now we need to put our two concepts together to recover the functionality of our original Yellkey concept. We do this by first instantiating the concepts with the appropriate types:\napp YellKey include HTTP include Shorthand [HTTP.URL] include ExpiringResource [HTTP.URL] I’ve included a concept called HTTP that I haven’t specified that defines the URL type. In a fuller description of Yellkey, this concept would allow us to augment the lookup with a redirect.\nWith the concepts in hand, we now associate their actions through synchronizations:\nsync register (url: URL, short: String, life: int) when Shorthand.register (url, short) ExpiringResource.allocate (short, life) sync expire (out short: String) when ExpiringResource.expire (short) Shorthand.unregister (short) sync lookup (short: String, url: URL) Shorthand.lookup (short, url) A synchronization (or “sync”) constrains the executions of the concepts so that whenever one particular action occurs in one concept, some other actions occur in other concepts. So the first one says that when a shorthand is registered (in the Shorthand concept) that same shorthand is allocated as a resource (in the ExpiringResource concept). The second one says that when a shorthand expires (in ExpiringResource) it is unregistered (in Shorthand). The third sync includes only one action; its effect is just to make the lookup action (in Shorthand) available as an application action.\nConcept actions that aren’t mentioned in syncs don’t occur in the application. Actions like Shorthand.unregister are excluded because Yellkey only lets you register shorthands and doesn’t let you unregister them. Similarly, you can’t renew a shorthand (even though the ExpiringResource includes an action to describe that functionality).\nConcept synergy In any design, composing concepts brings to whole (the overall app) the benefits of each of the parts (the constituent concepts). In some designs, something magical happens, and the benefit to the whole is more than the sum of the benefits of the parts. This is compositional synergy.\nSuch a synergy occurs here. You might think that composing with ExpiringResource would add only a limitation from the user’s perspective: that a resource that would otherwise be free is now limited. But in this case, there is a real benefit that comes with this limitation. Because the shorthands have brief lifetimes, it’s possible to serve the same size user base with a much smaller dictionary of possible shorthands (the set-valued shorthands component in Shorthand), and that means that the shorthands can all be familiar words.\nSynchronization properties transactional: all or nothing exposes underlying actions so preserves OPs of concepts explain sync\nThe novelty of Yellkey is that the short URLs it generates use common English words, so you get short URLs like “https://yellkey.com/hello” rather than ones that contains strange sequences of letters that are harder to transcribe.\nAnother example: user sessions Factoring Yellkey into more basic concepts may not seem very surprising since it’s not (yet at least) a design pattern that is used elsewhere. But sometimes even a concept that seems to be a widely used pattern can profitably be broken down into more elemental concepts.\nThe standard functionality that governs website sessions is such a case. Although we could easily describe it as a single concept, we can expose more structure (along with more opportunities for reuse) by treating it as a composition.\nFirst, let’s define the most basic form of user authentication in which a user registers with a username and password and can later authenticate by entering the same username and password:\nconcept User purpose authenticate users principle after a user registers with a username and password, they can authenticate as that user by providing a matching username and password: register (n, p, u); authenticate (n, p, u') {u' = u} state registered: set User username, password: registered -\u003e one String actions register (n, p: String, out u: User) u not in registered registered += u u.username := n u.password := p authenticate (n, p: String, out u: User) u in registered u.username = n and u.password = p The state holds the set of registered users, and for each of them, a username and password. The register action allocates a user identity (which is an output of the action) and associates the provided name and password with it. The authenticate action has no effect on the state; its specification consists only of a precondition that the provided name and password match those of some registered user, whose identity is returned.\nNow we define a separate concept to represent session management:\nconcept Session [User] purpose authenticate user for extended period principle after a session starts (and before it ends), the getUser action returns the user identified at the start: start (u, s); getUser (s, u') {u' = u} state active: set Session user: active -\u003e one User actions start (u: User, out s: Session) s not in active active += s s.user := u getUser (s: Session, out u: User) s in active u := s.user end (s: Session) active -= s The state here holds the set of active sessions, and for each one, the user associated with it. There’s an action to start a session, which takes a user and returns a fresh session identifier; an action to end a session; and an action (performed mid-session that obtains the associated user).\nNow we can assemble the conventional user session by synchronizing these two concepts:\nconcept UserSession include User include Session [User.User] sync register (username, password: String, out user: User) User.register (username, password, user) sync login (username, password: String, out user: User, out s: Session) when User.authenticate (username, password, user) Session.start (user, session) sync authenticate (s: Session, u: User) Session.getUser (s, u) sync logout (s: Session) Session.end (session) The actions of the composition are:\nregister: the user registers with a username and password; this is just the register action of the User concept; login: the user authenticates with a username and password (in the User concept) and a fresh session is allocated (in the Session concept); authenticate: the user is spontaneously authenticated mid-session by the execution of the getUser action of Session; logout: the user closes the session with the end action of Session. Concepts are abstract It’s important to understand that a concept describes a pattern of behaviors that users may observe. It may be implemented in a single computing device, but that is not necessary. The state may be distributed, with even a single component spread across nodes, and the actions likewise can be performed at different locations.\nIn a standard web stack, the User and Session states are both stored on the server. To enable the client to present a session identifier to the server, there is usually an additional piece of distributed state, which could be modeled like this:\ncookies: Client -\u003e opt Session Each client is optionally associated with a session identifier; this information is typically stored in a cookie that the server sends to the client browser that is then set aside and sent back to the server with every request to its domain.\nActions likewise are abstractions, and a single action typically corresponds to a (potentially elaborate) sequence of steps. For example, when the user executes login, the following steps typically occur:\nThe user enters a username and a password in a web form and clicks the submit button; The client program running in the user’s browser makes an HTTP request to the server with this data; A controller method executes in the server, and requests are made to a database, often running on another machine; The session identifier is returned, encrypted, in a cookie to the client, which saves the cookie locally. Why more basic concepts are better To see why factoring this functionality into two concepts makes sense, consider some variant designs:\nBiometric authentication. Suppose the user logs in not with a username and password, but rather using some biometric property. To accommodate this, we can just swap out the password based authentication for a biometric authentication concept. The Session concept remains unchanged. Mid-session authentication. Some apps that have sessions still require an explicit user authentication in the middle of a session for extra security. For example, if you try to execute a large financial transaction on a banking app, you will typically be required to enter your username and password again even if you’re already logged in. This is easily accommodated with the existing authenticate action in User. If we hadn’t had a separate concept, we would have needed to add a new action. Non-session authentication. Some situations use authentication without sessions at all. For example, some apps let you unsubscribe from a service by clicking on a link that opens a browser but then requires you to enter your username and password to perform that one action. This functionality would require the creation of the User concept if it hadn’t already been defined. Making sessions expire It’s regarded as good security practice to terminate sessions automatically after some time has passed. This is especially important when the app is running on a public machine, and if a user forgot to check out, the next user would be able to use their existing session.\nHow can we achieve this? You saw this coming: we can use our friend the ExpiringResource concept. All we need to do is treat sessions as resources, allocating them when sessions start, and ending sessions when the resources expire:\nconcept ExpiringUserSession include User include Session [User.User] include ExpiringResource [Session.Session] sync register (username, password: String, out user: User) User.register (username, password, user) sync login (username, password: String, out user: User, out s: Session) when User.authenticate (username, password, user) Session.start (user, session) ExpiringResource.allocate (session, 360) sync logout (s: Session) when Session.end (session) ExpiringResource.deallocate (session) sync authenticate (s: Session, u: User) Session.getUser (s, u) sync terminate (s: Session) when ExpiringResource.expire (session) Session.end (session) ",
+  "wordCount" : "2242",
+  "inLanguage": "en",
+  "datePublished": "2022-09-14T00:00:00Z",
+  "dateModified": "2022-09-14T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Daniel Jackson"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://essenceofsoftware.com/tutorials/concept-basics/sync/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Essence of Software",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://essenceofsoftware.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
+                    <span>Buy</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/author/" title="Author">
+                    <span>Author</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
+                    <span>Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
+                    <span>Case Studies</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
+                    <span>Subscribe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Concept composition and sync
+    </h1>
+    <div class="post-meta"><span title='2022-09-14 00:00:00 +0000 UTC'>September 14, 2022</span>&nbsp;·&nbsp;11 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="https://forum.softwareconcepts.io" rel="noopener noreferrer" target="_blank">Comments</a>
+
+</div>
+  </header> 
+  <div class="post-content"><p>In another <a href="concepts-are-state-machines">tutorial</a>, I showed a concept definition for <a href="https://yellkey.com">Yellkey</a>, a popular URL shortening service:</p>
+<pre><code>concept Yellkey
+purpose shorten URLs to common words
+principle
+  after registering a URL u for t seconds
+  and obtaining a shortening s, looking up s
+  will yield u until the shortening expires
+  t seconds from now
+state
+  used: set String
+  shortFor: used -&gt; one URL
+  expiry: used -&gt; one Date    
+  const shorthands: set String
+actions
+  // register URL u for t seconds
+  // resulting in shortening s
+  register (u: URL, t: int, out s: String)
+    s in shorthands - used
+    s.shortFor := u
+    s.expiry := // t secs after now
+    used += s
+
+  // lookup shortening s and get u back
+  lookup (s: String, out u: URL)
+    s in used
+    u := s.shortFor
+
+  // system action: shorthand s expires
+  expire (out s: String)
+    s.expiry is before now
+    used -= s
+    s.shortFor := none
+    s.expiry := none
+</code></pre>
+<p>Although it’s fairly simple and straightforward, there’s something unsatisfying about this concept.</p>
+<p>The <a href="criteria">criteria</a> for concepts include being familiar and reusable. The essential functionality that this concept offers—shortening URLs—is common to many different shortening services, some freestanding (such as tinyurl.com) and others embedded in larger applications (eg, Google short URL option in Google Forms). But this concept would not be a good match for those other settings because it includes the expiration functionality.</p>
+<p>What’s going on here is that we seem to have two concepts: one about URL shortening and the other about expiry. Can we disentangle these?</p>
+<h1 id="factoring-concepts">Factoring concepts<a hidden class="anchor" aria-hidden="true" href="#factoring-concepts">#</a></h1>
+<p>Here’s how we might factor the Yellkey concept into two more basic and reusable concepts. First, we define a concept that provides shorthands:</p>
+<pre><code>concept Shorthand [Target]
+purpose provide access via shorthand strings
+principle
+  after registering a target t and obtaining
+  a shorthand s, looking up s will yield t:
+  register (t, s); lookup (s, t') {t' = t}
+state
+  used: set String
+  shortFor: String -&gt; opt Target
+  const shorthands: set String
+actions
+  register (t: Target, out s: String)
+    s in shorthands - used
+    s.shortFor := t
+    used += s
+  unregister (s: String)
+    s in used
+    used -= s
+    s.shortFor := none
+  lookup (s: String, out t: Target)
+    s in used
+    t := s.shortFor
+</code></pre>
+<p>This is just like our Yellkey concept, but the expiry-tracking functionality has been removed. Note also that I’ve made the concept <em>polymorphic</em>: it no longer translates shorthands into URLs, but into objects of some unspecified type <em>Target</em>. This would allow the <em>Shorthand</em> concept to be used in many more contexts; you could have shorthands for file paths in a file system, for example, or for commands in a user interface.</p>
+<p>Now we turn the expiry-tracking functionality into its own concept:</p>
+<pre><code>concept ExpiringResource [Resource]
+purpose handle expiration of short-lived resources
+principle
+  after allocating a resource r for t seconds,
+  after t seconds the resource expires:
+  allocate (r, t); expire (r)
+state
+  active: set Resource
+  expiry: Resource -&gt; one Date    
+actions
+  allocate (r: Resource, t: int)
+    r not in active
+    active += r
+    r.expiry := // t secs after now
+  deallocate (r: Resource)
+    r in active
+    active -= r
+    r.expiry := none
+  renew (r: Resource, t: int)
+    r in active
+    r.expiry := // t secs after now
+  expire (out r: Resource)
+    r in active
+    r.expiry is before now
+    active -= r
+    r.expiry := none
+</code></pre>
+<p>Again, I’ve made this polymorphic, so that any kind of resource can have its expiry tracked. This concept could be used to implement (the rather mean) control that turns off wifi access after the time paid for has passed.</p>
+<p>And because I’m anticipating using this concept in a more general setting, I’ve included two additional actions that let you deallocate a resource before it expires, or renew so that its life is extended.</p>
+<h1 id="composing-concepts-with-syncs">Composing concepts with syncs<a hidden class="anchor" aria-hidden="true" href="#composing-concepts-with-syncs">#</a></h1>
+<p>Now we need to put our two concepts together to recover the functionality of our original Yellkey concept. We do this by first instantiating the concepts with the appropriate types:</p>
+<pre><code>app YellKey
+  include HTTP
+  include Shorthand [HTTP.URL] 
+  include ExpiringResource [HTTP.URL]
+</code></pre>
+<p>I’ve included a concept called HTTP that I haven’t specified that defines the URL type. In a fuller description of Yellkey, this concept would allow us to augment the lookup with a redirect.</p>
+<p>With the concepts in hand, we now associate their actions through <em>synchronizations</em>:</p>
+<pre><code>  sync register (url: URL, short: String, life: int)
+    when Shorthand.register (url, short)
+    ExpiringResource.allocate (short, life)
+
+  sync expire (out short: String)
+    when ExpiringResource.expire (short)
+    Shorthand.unregister (short)
+    
+  sync lookup (short: String, url: URL)
+    Shorthand.lookup (short, url)
+</code></pre>
+<p>A synchronization (or “sync”) constrains the executions of the concepts so that whenever one particular action occurs in one concept, some other actions occur in other concepts. So the first one says that when a shorthand is registered (in the Shorthand concept) that same shorthand is allocated as a resource (in the ExpiringResource concept). The second one says that when a shorthand expires (in ExpiringResource) it is unregistered (in Shorthand). The third sync includes only one action; its effect is just to make the lookup action (in Shorthand) available as an application action.</p>
+<p>Concept actions that aren’t mentioned in syncs don’t occur in the application. Actions like Shorthand.unregister are excluded because Yellkey only lets you register shorthands and doesn’t let you unregister them. Similarly, you can’t renew a shorthand (even though the ExpiringResource includes an action to describe that functionality).</p>
+<h1 id="concept-synergy">Concept synergy<a hidden class="anchor" aria-hidden="true" href="#concept-synergy">#</a></h1>
+<p>In any design, composing concepts brings to whole (the overall app) the benefits of each of the parts (the constituent concepts). In some designs, something magical happens, and the benefit to the whole is more than the sum of the benefits of the parts. This is <em>compositional synergy</em>.</p>
+<p>Such a synergy occurs here. You might think that composing with ExpiringResource would add only a limitation from the user’s perspective: that a resource that would otherwise be free is now limited. But in this case, there is a real benefit that comes with this limitation. Because the shorthands have brief lifetimes, it’s possible to serve the same size user base with a much smaller dictionary of possible shorthands (the set-valued <em>shorthands</em> component in Shorthand), and that means that the shorthands can all be familiar words.</p>
+<h1 id="synchronization-properties">Synchronization properties<a hidden class="anchor" aria-hidden="true" href="#synchronization-properties">#</a></h1>
+<p>transactional: all or nothing
+exposes underlying actions so preserves OPs of concepts
+explain sync</p>
+<p>The novelty of Yellkey is that the short URLs it generates use common English words, so you get short URLs like “https://yellkey.com/hello” rather than ones that contains strange sequences of letters that are harder to transcribe.</p>
+<h1 id="another-example-user-sessions">Another example: user sessions<a hidden class="anchor" aria-hidden="true" href="#another-example-user-sessions">#</a></h1>
+<p>Factoring Yellkey into more basic concepts may not seem very surprising since it’s not (yet at least) a design pattern that is used elsewhere. But sometimes even a concept that seems to be a widely used pattern can profitably be broken down into more elemental concepts.</p>
+<p>The standard functionality that governs website sessions is such a case. Although we could easily describe it as a single concept, we can expose more structure (along with more opportunities for reuse) by treating it as a composition.</p>
+<p>First, let’s define the most basic form of user authentication in which a user registers with a username and password and can later authenticate by entering the same username and password:</p>
+<pre><code>concept User
+purpose authenticate users
+principle
+  after a user registers with a username and password,
+  they can authenticate as that user by providing a matching
+  username and password:
+  register (n, p, u); authenticate (n, p, u') {u' = u}
+state
+  registered: set User
+  username, password: registered -&gt; one String
+actions
+  register (n, p: String, out u: User)
+    u not in registered
+    registered += u
+    u.username := n
+    u.password := p
+  authenticate (n, p: String, out u: User)
+    u in registered
+    u.username = n and u.password = p
+</code></pre>
+<p>The state holds the set of registered users, and for each of them, a username and password. The <em>register</em> action allocates a user identity (which is an output of the action) and associates the provided name and password with it. The <em>authenticate</em> action has no effect on the state; its specification consists only of a precondition that the provided name and password match those of some registered user, whose identity is returned.</p>
+<p>Now we define a separate concept to represent session management:</p>
+<pre><code>concept Session [User]
+purpose authenticate user for extended period
+principle
+  after a session starts (and before it ends), 
+  the getUser action returns the user identified at the start:
+  start (u, s); getUser (s, u') {u' = u}
+state
+  active: set Session
+  user: active -&gt; one User
+actions
+  start (u: User, out s: Session)
+    s not in active
+    active += s
+    s.user := u
+  getUser (s: Session, out u: User)
+    s in active
+    u := s.user
+  end (s: Session)
+    active -= s
+</code></pre>
+<p>The state here holds the set of active sessions, and for each one, the user associated with it. There’s an action to start a session, which takes a user and returns a fresh session identifier; an action to end a session; and an action (performed mid-session that obtains the associated user).</p>
+<p>Now we can assemble the conventional user session by synchronizing these two concepts:</p>
+<pre><code>concept UserSession
+  include User
+  include Session [User.User]
+  
+  sync register (username, password: String, out user: User)
+    User.register (username, password, user)
+
+  sync login (username, password: String, out user: User, out s: Session)
+    when User.authenticate (username, password, user)
+    Session.start (user, session)
+
+  sync authenticate (s: Session, u: User)
+    Session.getUser (s, u)
+
+  sync logout (s: Session)
+    Session.end (session)
+</code></pre>
+<p>The actions of the composition are:</p>
+<ul>
+<li><em>register</em>: the user registers with a username and password; this is just the <em>register</em> action of the User concept;</li>
+<li><em>login</em>: the user authenticates with a username and password (in the User concept) and a fresh session is allocated (in the Session concept);</li>
+<li><em>authenticate</em>: the user is spontaneously authenticated mid-session by the execution of the <em>getUser</em> action of Session;</li>
+<li><em>logout</em>: the user closes the session with the <em>end</em> action of Session.</li>
+</ul>
+<h1 id="concepts-are-abstract">Concepts are abstract<a hidden class="anchor" aria-hidden="true" href="#concepts-are-abstract">#</a></h1>
+<p>It’s important to understand that a concept describes a pattern of behaviors that users may observe. It may be implemented in a single computing device, but that is not necessary. The state may be distributed, with even a single component spread across nodes, and the actions likewise can be performed at different locations.</p>
+<p>In a standard web stack, the User and Session states are both stored on the server. To enable the client to present a session identifier to the server, there is usually an additional piece of distributed state, which could be modeled like this:</p>
+<pre><code>cookies: Client -&gt; opt Session
+</code></pre>
+<p>Each client is optionally associated with a session identifier; this information is typically stored in a cookie that the server sends to the client browser that is then set aside and sent back to the server with every request to its domain.</p>
+<p>Actions likewise are abstractions, and a single action typically corresponds to a (potentially elaborate) sequence of steps. For example, when the user executes <em>login</em>, the following steps typically occur:</p>
+<ul>
+<li>The user enters a username and a password in a web form and clicks the submit button;</li>
+<li>The client program running in the user’s browser makes an HTTP request to the server with this data;</li>
+<li>A controller method executes in the server, and requests are made to a database, often running on another machine;</li>
+<li>The session identifier is returned, encrypted, in a cookie to the client, which saves the cookie locally.</li>
+</ul>
+<h1 id="why-more-basic-concepts-are-better">Why more basic concepts are better<a hidden class="anchor" aria-hidden="true" href="#why-more-basic-concepts-are-better">#</a></h1>
+<p>To see why factoring this functionality into two concepts makes sense, consider some variant designs:</p>
+<ul>
+<li><em>Biometric authentication</em>. Suppose the user logs in not with a username and password, but rather using some biometric property. To accommodate this, we can just swap out the password based authentication for a biometric authentication concept. The Session concept remains unchanged.</li>
+<li><em>Mid-session authentication</em>. Some apps that have sessions still require an explicit user authentication in the middle of a session for extra security. For example, if you try to execute a large financial transaction on a banking app, you will typically be required to enter your username and password again even if you’re already logged in. This is easily accommodated with the existing <em>authenticate</em> action in User. If we hadn’t had a separate concept, we would have needed to add a new action.</li>
+<li><em>Non-session authentication</em>. Some situations use authentication without sessions at all. For example, some apps let you unsubscribe from a service by clicking on a link that opens a browser but then requires you to enter your username and password to perform that one action. This functionality would require the creation of the User concept if it hadn’t already been defined.</li>
+</ul>
+<h1 id="making-sessions-expire">Making sessions expire<a hidden class="anchor" aria-hidden="true" href="#making-sessions-expire">#</a></h1>
+<p>It’s regarded as good security practice to terminate sessions automatically after some time has passed. This is especially important when the app is running on a public machine, and if a user forgot to check out, the next user would be able to use their existing session.</p>
+<p>How can we achieve this? You saw this coming: we can use our friend the ExpiringResource concept. All we need to do is treat sessions as resources, allocating them when sessions start, and ending sessions when the resources expire:</p>
+<pre><code>concept ExpiringUserSession
+  include User
+  include Session [User.User]
+  include ExpiringResource [Session.Session]
+  
+  sync register (username, password: String, out user: User)
+    User.register (username, password, user)
+
+  sync login (username, password: String, out user: User, out s: Session)
+    when User.authenticate (username, password, user)
+    Session.start (user, session)
+    ExpiringResource.allocate (session, 360)
+
+  sync logout (s: Session)
+    when Session.end (session)
+    ExpiringResource.deallocate (session)
+    
+  sync authenticate (s: Session, u: User)
+    Session.getUser (s, u)
+
+  sync terminate (s: Session)
+    when ExpiringResource.expire (session)
+    Session.end (session)
+</code></pre>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://essenceofsoftware.com/tutorials/design-general/diverge-converge/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Divergent and convergent design</span>
+  </a>
+  <a class="next" href="https://essenceofsoftware.com/tutorials/concept-basics/dependency/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Concept dependencies and subsets</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+
+    <span>&copy; 2023 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
