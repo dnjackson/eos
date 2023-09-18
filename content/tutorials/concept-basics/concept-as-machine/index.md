@@ -51,7 +51,7 @@ Here’s the Yellkey concept as a state machine:
 	    u := s.shortFor
 
 	  // system action: shorthand s expires
-	  expire (out s: String)
+	  system expire (out s: String)
 	    s.expiry is before now
 	    used -= s
 	    s.shortFor := none

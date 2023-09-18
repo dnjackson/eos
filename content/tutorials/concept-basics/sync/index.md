@@ -18,7 +18,7 @@ In another [tutorial](concepts-are-state-machines), I showed a concept definitio
 	concept Yellkey
 	purpose shorten URLs to common words
 	principle
-	  after registering a URL u for t seconds
+	  if you register a URL u for t seconds
 	  and obtaining a shortening s, looking up s
 	  will yield u until the shortening expires
 	  t seconds from now
@@ -41,8 +41,8 @@ In another [tutorial](concepts-are-state-machines), I showed a concept definitio
 	    s in used
 	    u := s.shortFor
 
-	  // system action: shorthand s expires
-	  expire (out s: String)
+	  // shorthand s expires
+	  system expire (out s: String)
 	    s.expiry is before now
 	    used -= s
 	    s.shortFor := none
@@ -106,7 +106,7 @@ Now we turn the expiry-tracking functionality into its own concept:
 	  renew (r: Resource, t: int)
 	    r in active
 	    r.expiry := // t secs after now
-	  expire (out r: Resource)
+	  system expire (out r: Resource)
 	    r in active
 	    r.expiry is before now
 	    active -= r
@@ -278,7 +278,7 @@ How can we achieve this? You saw this coming: we can use our friend the Expiring
 	  sync login (username, password: String, out user: User, out s: Session)
 	    when User.authenticate (username, password, user)
 	    Session.start (user, session)
-	    ExpiringResource.allocate (session, 360)
+	    ExpiringResource.allocate (session, 300) // see expiration to 5 mins
 
 	  sync logout (s: Session)
 	    when Session.end (session)

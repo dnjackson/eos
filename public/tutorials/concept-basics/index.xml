@@ -90,7 +90,7 @@ Using the notion of a state machine, we can define how a concept will behave in 
       
       <guid>https://essenceofsoftware.com/tutorials/concept-basics/sync/</guid>
       <description>In another tutorial, I showed a concept definition for Yellkey, a popular URL shortening service:
-concept Yellkey purpose shorten URLs to common words principle after registering a URL u for t seconds and obtaining a shortening s, looking up s will yield u until the shortening expires t seconds from now state used: set String shortFor: used -&amp;gt; one URL expiry: used -&amp;gt; one Date const shorthands: set String actions // register URL u for t seconds // resulting in shortening s register (u: URL, t: int, out s: String) s in shorthands - used s.</description>
+concept Yellkey purpose shorten URLs to common words principle if you register a URL u for t seconds and obtaining a shortening s, looking up s will yield u until the shortening expires t seconds from now state used: set String shortFor: used -&amp;gt; one URL expiry: used -&amp;gt; one Date const shorthands: set String actions // register URL u for t seconds // resulting in shortening s register (u: URL, t: int, out s: String) s in shorthands - used s.</description>
     </item>
     
     <item>
