@@ -149,14 +149,6 @@ Concept actions that aren’t mentioned in syncs don’t occur in the applicatio
 In any design, composing concepts brings to whole (the overall app) the benefits of each of the parts (the constituent concepts). In some designs, something magical happens, and the benefit to the whole is more than the sum of the benefits of the parts. This is *compositional synergy*.
 
 Such a synergy occurs here. You might think that composing with ExpiringResource would add only a limitation from the user’s perspective: that a resource that would otherwise be free is now limited. But in this case, there is a real benefit that comes with this limitation. Because the shorthands have brief lifetimes, it’s possible to serve the same size user base with a much smaller dictionary of possible shorthands (the set-valued *shorthands* component in Shorthand), and that means that the shorthands can all be familiar words.
-	  
-# Synchronization properties
-
-transactional: all or nothing
-exposes underlying actions so preserves OPs of concepts
-explain sync  
-
- The novelty of Yellkey is that the short URLs it generates use common English words, so you get short URLs like “https://yellkey.com/hello” rather than ones that contains strange sequences of letters that are harder to transcribe.  
 
 # Another example: user sessions
 	    
@@ -259,7 +251,7 @@ To see why factoring this functionality into two concepts makes sense, consider 
 
 - *Biometric authentication*. Suppose the user logs in not with a username and password, but rather using some biometric property. To accommodate this, we can just swap out the password based authentication for a biometric authentication concept. The Session concept remains unchanged.
 - *Mid-session authentication*. Some apps that have sessions still require an explicit user authentication in the middle of a session for extra security. For example, if you try to execute a large financial transaction on a banking app, you will typically be required to enter your username and password again even if you’re already logged in. This is easily accommodated with the existing *authenticate* action in User. If we hadn’t had a separate concept, we would have needed to add a new action.
-- *Non-session authentication*. Some situations use authentication without sessions at all. For example, some apps let you unsubscribe from a service by clicking on a link that opens a browser but then requires you to enter your username and password to perform that one action. This functionality would require the creation of the User concept if it hadn’t already been defined.
+- *Non-session authentication*. Some situations use authentication without sessions at all. For example, some apps let you unsubscribe from a service by clicking on a link that opens a browser but then requires you to enter your username and password to perform that one action. And operating systems often require you to authenticate for certain actions: MacOS requires authentication for opening apps for the first time, for example, and for any action that requires superuser status. This functionality would require the creation of the User concept if it hadn’t already been defined.
 
 # Making sessions expire
 
