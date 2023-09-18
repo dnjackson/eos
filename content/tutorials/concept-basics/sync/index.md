@@ -278,7 +278,7 @@ How can we achieve this? You saw this coming: we can use our friend the Expiring
 	  sync login (username, password: String, out user: User, out s: Session)
 	    when User.authenticate (username, password, user)
 	    Session.start (user, session)
-	    ExpiringResource.allocate (session, 300) // see expiration to 5 mins
+	    ExpiringResource.allocate (session, 300) // set expiration to 5 mins
 
 	  sync logout (s: Session)
 	    when Session.end (session)
