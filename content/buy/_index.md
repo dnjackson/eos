@@ -19,12 +19,20 @@ ShowBreadCrumbs: false
 
 #### Book details
 
-Hardcover  
+Hardcover
 List Price: $29.95 / £25.00  
 ISBN: 9780691225388  
 Published (US): Nov 16, 2021  
 Published (UK): Jan 25, 2022  
 Copyright: 2021  
+336 pages with 84 b/w illustrations
+6.13 x 9.25 in.
+
+Paperback
+List Price: $23.95 / £20.00
+ISBN: 9780691230832 
+Published (US): Jun 20, 2023
+Published (UK): Aug 15, 2023
 336 pages with 84 b/w illustrations
 6.13 x 9.25 in.
 
