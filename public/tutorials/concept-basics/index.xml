@@ -103,5 +103,15 @@ concept Yellkey purpose shorten URLs to common words principle if you register a
 Program families. Following on from an earlier paper that introduced the idea of “program families”&amp;mdash;that when you design software you should realize that you’re designing a whole family of programs, not just one&amp;mdash;this paper addresses the question of how to do this.</description>
     </item>
     
+    <item>
+      <title>Concept modularity</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/modularity/</link>
+      <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/modularity/</guid>
+      <description>Why modularity matters To see why modularity is so critical in software design, consider what goes wrong when it’s missing.
+For the programmer, life becomes miserable. Whenever you need to understand or modify some piece of functionality, there’s no single place in the code to go to, and you may have to visit many widely separated locations (and just finding them can be a major challenge). Even removing (let alone adding) functionality is hard, because the parts of the codebase are all interconnected in subtle ways, and taking anything away risks breaking the parts that remain.</description>
+    </item>
+    
   </channel>
 </rss>

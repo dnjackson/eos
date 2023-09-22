@@ -197,6 +197,16 @@ Interviewing stakeholders Talking to potential users and other stakeholders is g
     </item>
     
     <item>
+      <title>Concept modularity</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/modularity/</link>
+      <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/modularity/</guid>
+      <description>Why modularity matters To see why modularity is so critical in software design, consider what goes wrong when it’s missing.
+For the programmer, life becomes miserable. Whenever you need to understand or modify some piece of functionality, there’s no single place in the code to go to, and you may have to visit many widely separated locations (and just finding them can be a major challenge). Even removing (let alone adding) functionality is hard, because the parts of the codebase are all interconnected in subtle ways, and taking anything away risks breaking the parts that remain.</description>
+    </item>
+    
+    <item>
       <title>LLM Coders: The End of Agile?</title>
       <link>https://essenceofsoftware.com/posts/llm-coding/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>

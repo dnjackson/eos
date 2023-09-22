@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Concept modularity | The Essence of Software</title>
+<meta name="keywords" content="">
+<meta name="description" content="Why modularity matters To see why modularity is so critical in software design, consider what goes wrong when it’s missing.
+For the programmer, life becomes miserable. Whenever you need to understand or modify some piece of functionality, there’s no single place in the code to go to, and you may have to visit many widely separated locations (and just finding them can be a major challenge). Even removing (let alone adding) functionality is hard, because the parts of the codebase are all interconnected in subtle ways, and taking anything away risks breaking the parts that remain.">
+<meta name="author" content="Daniel Jackson">
+<link rel="canonical" href="https://essenceofsoftware.com/tutorials/concept-basics/modularity/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1eecbf9c7523bd5ac80b32f81ece29e45269e9f1fa42874b4bbc1b722c883eba.css" integrity="sha256-Huy/nHUjvVrICzL4Hs4p5FJp6fH6QodLS7wbciyIPro=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Concept modularity" />
+<meta property="og:description" content="Why modularity matters To see why modularity is so critical in software design, consider what goes wrong when it’s missing.
+For the programmer, life becomes miserable. Whenever you need to understand or modify some piece of functionality, there’s no single place in the code to go to, and you may have to visit many widely separated locations (and just finding them can be a major challenge). Even removing (let alone adding) functionality is hard, because the parts of the codebase are all interconnected in subtle ways, and taking anything away risks breaking the parts that remain." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://essenceofsoftware.com/tutorials/concept-basics/modularity/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="tutorials" />
+<meta property="article:published_time" content="2022-09-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-22T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
+
+<meta name="twitter:title" content="Concept modularity"/>
+<meta name="twitter:description" content="Why modularity matters To see why modularity is so critical in software design, consider what goes wrong when it’s missing.
+For the programmer, life becomes miserable. Whenever you need to understand or modify some piece of functionality, there’s no single place in the code to go to, and you may have to visit many widely separated locations (and just finding them can be a major challenge). Even removing (let alone adding) functionality is hard, because the parts of the codebase are all interconnected in subtle ways, and taking anything away risks breaking the parts that remain."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tutorials",
+      "item": "https://essenceofsoftware.com/tutorials/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Concept basics",
+      "item": "https://essenceofsoftware.com/tutorials/concept-basics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "Concept modularity",
+      "item": "https://essenceofsoftware.com/tutorials/concept-basics/modularity/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Concept modularity",
+  "name": "Concept modularity",
+  "description": "Why modularity matters To see why modularity is so critical in software design, consider what goes wrong when it’s missing.\nFor the programmer, life becomes miserable. Whenever you need to understand or modify some piece of functionality, there’s no single place in the code to go to, and you may have to visit many widely separated locations (and just finding them can be a major challenge). Even removing (let alone adding) functionality is hard, because the parts of the codebase are all interconnected in subtle ways, and taking anything away risks breaking the parts that remain.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Why modularity matters To see why modularity is so critical in software design, consider what goes wrong when it’s missing.\nFor the programmer, life becomes miserable. Whenever you need to understand or modify some piece of functionality, there’s no single place in the code to go to, and you may have to visit many widely separated locations (and just finding them can be a major challenge). Even removing (let alone adding) functionality is hard, because the parts of the codebase are all interconnected in subtle ways, and taking anything away risks breaking the parts that remain.\nFor the user, things are bad too. It’s possible that the code has no modularity but that, viewed from the user’s perspective, the app is perfectly modular. But this is unlikely, and poor modularity in the code is usually reflects a lack of structure in the app’s functionality. Consequently, users have trouble understanding how the software works, because the individual functions aren’t separable. Everything is interconnected, and to understand one part you have to understand another, and then another…\nModularity: the holy grail of software Not surprisingly, then, achieving modularity has been a central goal of programming practice, and a primary motivation in software engineering and programming language research for decades.\nWe’ve invented a host of new abstractions (functions, closures, abstract types, objects/classes, streams, etc), new programming paradigms (functional, object-oriented, aspect-oriented, subject-oriented, role-oriented, process-oriented, reactive, prototype-based, actor-based, …), principles (information hiding, representation independence, the Liskov substitution principle, the Law of Demeter), and patterns (for object-oriented code, enterprise architectures and more)—all of which are motivated by improvements in modularity.\nAnd it’s not just in software; modularity may be the most valuable asset in design.\nWhere concept design comes in The new idea in concept design is that modularity is born not in the code, but in the function of the software. If you can structure an app’s functionality in a modular way, then you can carry over that modularity to the code.\nAnd because the function is modular, users will be able to understand it in a modular way. This is essential for usability, because it lets users learn how to use an app in pieces incrementally, and reuse their knowledge across systems.\nA concept is a bundling of functionality that meets three modularity criteria:\nSpecificity: The concept fulfills a specific purpose that brings real value to the user, and does not mix, multiple separable purposes. Completeness: The concept’s functionality meets its purpose fully. Independence: The concept stands by itself, without reference to other concepts. Let’s now look at each of these criteria in turn, see why they’re needed, how they might be violated, and what you have to do make them hold.\nSpecificity Having a specific purpose includes having enough function to bring real value, but not so much that separable purposes are being mixed.\nFor example, consider a User concept whose purpose is to provide authentication of users. Almost all web-based apps include this concept. Suppose the concept just included registration, in which a user creates an identity by providing a username and a password.\nThis might be regarded as a reasonable increment of functionality in some approaches. As a user story, it might be expressed like this: “As a customer, I can create register as a user so that I can go shopping.”\nBut in fact registering brings no real value to the user, because without the functionality associated with the subsequent authentication check, registration does nothing useful. The value that the user receives (which is more about other users bring prevented from acting on their behalf) is provided by the authentication mechanism in its entirety. So the purpose must be user authentication, and not user registration alone.\nThis would be apparent if you tried to write an operational principle:\nconcept User purpose help users register for services principle after a user registers... ??? actions register (name, password: String, out u: User) There’s no way to complete the scenario because there aren’t any other actions to include! And when you start trying to figure out what action you might add, you’ll see that the one you need is the authentication checking action.\nYou might be tempted to expand the purpose to include all user-specific settings. For example, perhaps each user has a display name, and an avatar. These are not relevant to the purpose of authentication, however; they serve a different purpose (letting users choose how to present their identities to others), and should be part of a different concept.\nEnsuring that a concept has a single, specific purpose makes it more understandable. If User included the avatar feature, you might start wondering whether that plays a role in authentication somehow. And it makes it more reusable by unbundling features: you might want authentication without avatars, for example.\nIn practice, formulating a suitably narrow purpose can be tricky, and often the easiest way to do it is to consider which particular features would be included in the concept’s functionality. Then, as you realize that certain features should be included (both registering and checking) and that others should be excluded (display names and avatars), you can refine your purpose accordingly (in this case, that the purpose is simply authentication and nothing more).\nCompleteness Completeness just means that the concept includes all the functionality needed to fulfill the purpose. So if the purpose of User is authentication, then offering registering without checking is obviously insufficient.\nA concept may fail to be complete for more subtle reasons. Suppose our User concept supported checking by offering an action that, given a user id, username and password, returns an indication of whether or not the username and password are correct for that user. This design fails to fulfill the purpose completely, because when the check is applied, the identity of the purported user isn’t known! Instead, the concept must include a lookup, for example by having the action take the username and password and return the user identity (if a matching one exists).\nThis example might seem silly and pedantic, but it illustrates a key difference between concepts and classes in object-oriented languages. In an object-oriented implementation of user authentication, you might have a User class with each instance holding a username and password. The functionality I just mentioned would be exactly what such a class provides, and it wouldn’t support the lookup. For that, you’d need to add a static component to the class that maps usernames to User objects. Using static state isn’t really in the spirit of object-oriented programming through, so you might instead create a Registry class each instance of which holds such a mapping. Thus a single concept becomes several classes that are tightly coupled together.\nFinally, it’s worth noting that completeness only means that the purpose is minimally satisfied. There are always additional features that might be desirable; for example, it would be useful for users to be able to change their passwords (and even their usernames).\nBeing complete ensures that all the functionality associated with the concept’s purpose is in one place, encapsulated within the concept.\nIndependence A concept not only has to meet its purpose completely, but it has to do it without the help of other concepts.\nRecognizing that storing and checking passwords involves some non-trivial functionality (notably encrypting and salting), you might think to put it in its own concept.\nThat would be mistake, however. First, encrypting and salting passwords is not user-facing functionality, so it doesn’t make a good concept. Second, suppose you did factor it out, say into a Password concept, assuming the User concept could delegate some functionality to it. Now your User concept would fail the independence test, since it would require the Password concept to operate.\nConcepts have no dependencies of this sort, and have to self-contained. As a result a concept can’t fail because of a bug in another concept, and functionality is truly localized.\nYou may wonder whether this rule undermines some modularity in the code. It doesn’t, because nothing prevents you from implementing password salting and encryption in a separate module, which can be one of several modules realizing the concept.\nConcept implementations will also inevitably depend on libraries for general services (such as string manipulation, arithmetic, file management, etc). So concept structuring won’t spare you entirely from the problem that fixing a bug in a function may require looking in multiple places. For example, your password encryption might fail because of a bug in a mathematical library.\nBut, in contrast to conventional design approaches, there won’t be pieces of connected functionality at the same level in scattered locations (for example, passwords being encrypted in one place and decrypted in another, far away).\nGenericity A concept may be functionally independent of other concepts while still mentioning them in its design.\nHere, for example is a very rudimentary Email concept:\nconcept Email purpose exchange of messages principle after a user sends a message to another user, they can receive that message state from, to: Msg -\u003e one User body: Msg -\u003e one String actions send (from, to: User, body: String, out m: Msg) recv (u: User, m: Msg) This is obviously very simplified; the state is a global set of messages each of which is associated with the users it’s from and to, and some body. A more realistic description might include state components for holding sent and received messages, and an explicit system action for transferring messages from one to the other.\nHere’s another concept, commonly used in mail clients:\nconcept Label purpose organize and filter messages principle after adding a label to a message m, if you get messages with that label, the message m will be included in the results state labels: Msg -\u003e set String actions addLabel (msg: Msg, l: String) // return messages that have all labels in ls getMessages (ls: set String, out msgs: set Msg) Again, this is obviously simplified: the concept would usually support rich queries over label combinations.\nNotice that the Label concept appears to depend on the Email concept, because it mentions the Msg type that it generates. But if you think about the behavior of Label, since it involves only the identity of the messages (and not their content), the fact that the labeled items are messages is completely irrelevant. It matters only in understanding the role that the concept plays in the application as a whole.\nSo to make this clear and improve the concept, we can eliminate the reference to messages, and make it generic over some unspecified Item type:\nconcept Label [Item] purpose organize and filter items principle after adding a label to an item i, if you get items with that label, the item i will be included in the results state labels: Item -\u003e set String actions addLabel (i: Item, l: String) // return items that have all labels in ls getItems (ls: set String, out items: set Item) This is much better because it makes it clear that Label is a more general concept that allows the organization and filtering of any kind of item.\nMore subtly, our Email concept has the same problem, because it refers to the type User, which presumably is the type of user objects generated by our User concept. But again, the concept does not depend on the user objects having any particular properties, so we can make the User type a parameter:\nconcept Email [User] In this case, we could keep the references to “users” in the description of the concept, but if we wanted to be really pedantic we could replace it by a name (such as Principal or Account) that makes it clearer that a human user might not be involved.\nWith all these generic concepts in hand, to describe our application we need to instantiate the type parameters:\napp EmailClient includes User Email [User.User] Label [Email.Msg] This says that the type of users in the Email concept will be the User type from the User concept, and the type of the targets in the Label concept will be the Msg type from the Email concept.\nPermutation invariant: for experts We can make precise this idea that a type is generic with the notion of permutation invariance. Suppose there is some execution of the concept comprising a sequence of actions interleaved with the resulting states. Now imagine taking the elements of the set in a given type, for example all the user objects in the set User, and permuting them, swapping u0 and u1, swapping u2 and u5, and so on. If you applied this permutation to the execution, would the result also be a valid execution? This is just a fancy way of saying that all that matters is the identity of the objects. If the answer is yes, then this permuted type is being treated generically.\nThis reasoning will tell you that the Msg type in Label and the User type in Email are generic. But it will also tell you that the String type in both concepts is generic! That’s because the concepts don’t do any string-specific operations: they just store the strings. So the Email concept, for example, could be written even more generically like this\nconcept Email [User, Content] purpose exchange of messages principle after a user sends a message to another user, they can receive that message state from, to: Msg -\u003e one User body: Msg -\u003e one Content actions send (from, to: User, body: Content, out m: Msg) recv (u: User, m: Msg) making it clear that the concept works with any kind of content. For email this might seem a bit artificial, since email messages are always textual, But for a social media post concept the genericity is more important (since a post’s body might be text, image or a combination), and factoring out the content into specialized concepts (such as a concept for creating and formatting rich text) would be helpful.\nWow, this is hard! This may seem pretty challenging to you. And you’d be right. Designing modular concepts is not at all easy. But that’s because design is hard, and it’s even harder when you’re trying to be modular.\nWith practice, you’ll develop this skill. You’ll see immediately when a concept isn’t modular and what you need to do to fix it. And you’ll begin to think naturally in terms of modular concepts.\nAnd it’s worth the effort! Your designs will be more understandable, more focused and more … well, modular. When you come to implement them, you’ll be able to translate them very directly into code and you’ll be unlikely to hit structural obstacles. And you’ll be spared all the refactoring that is often needed when programmers build an app before they’ve really understood what they’re trying to do.\n",
+  "wordCount" : "2455",
+  "inLanguage": "en",
+  "datePublished": "2022-09-22T00:00:00Z",
+  "dateModified": "2022-09-22T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Daniel Jackson"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://essenceofsoftware.com/tutorials/concept-basics/modularity/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Essence of Software",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://essenceofsoftware.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
+                    <span>Buy</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/author/" title="Author">
+                    <span>Author</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
+                    <span>Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
+                    <span>Case Studies</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
+                    <span>Subscribe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Concept modularity
+    </h1>
+    <div class="post-meta"><span title='2022-09-22 00:00:00 +0000 UTC'>September 22, 2022</span>&nbsp;·&nbsp;12 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="https://forum.softwareconcepts.io" rel="noopener noreferrer" target="_blank">Comments</a>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="why-modularity-matters">Why modularity matters<a hidden class="anchor" aria-hidden="true" href="#why-modularity-matters">#</a></h2>
+<p>To see why modularity is so critical in software design, consider what goes wrong when it’s missing.</p>
+<p>For the programmer, life becomes miserable. Whenever you need to understand or modify some piece of functionality, there’s no single place in the code to go to, and you may have to visit many widely separated locations (and just finding them can be a major challenge). Even removing (let alone adding) functionality is hard, because the parts of the codebase are all interconnected in subtle ways, and taking anything away risks breaking the parts that remain.</p>
+<p>For the user, things are bad too. It’s possible that the code has no modularity but that, viewed from the user’s perspective, the app is perfectly modular. But this is unlikely, and poor modularity in the code is usually reflects a lack of structure in the app’s functionality. Consequently, users have trouble understanding how the software works, because the individual functions aren’t separable. Everything is interconnected, and to understand one part you have to understand another, and then another&hellip;</p>
+<h2 id="modularity-the-holy-grail-of-software">Modularity: the holy grail of software<a hidden class="anchor" aria-hidden="true" href="#modularity-the-holy-grail-of-software">#</a></h2>
+<p>Not surprisingly, then, achieving modularity has been a central goal of programming practice, and a primary motivation in software engineering and programming language research for decades.</p>
+<p>We’ve invented a host of new abstractions (functions, closures, abstract types, objects/classes, streams, etc), new programming paradigms (functional, object-oriented, <a href="https://en.wikipedia.org/wiki/Aspect-oriented_programming">aspect-oriented</a>, <a href="https://en.wikipedia.org/wiki/Subject-oriented_programming">subject-oriented</a>, <a href="https://en.wikipedia.org/wiki/Role-oriented_programming">role-oriented</a>, <a href="https://en.wikipedia.org/wiki/Process-oriented_programming">process-oriented</a>, <a href="https://en.wikipedia.org/wiki/Reactive_programming">reactive</a>, <a href="https://en.wikipedia.org/wiki/Prototype-based_programming">prototype-based</a>, <a href="https://en.wikipedia.org/wiki/Actor_model">actor-based</a>, &hellip;), principles (<a href="https://en.wikipedia.org/wiki/Information_hiding">information hiding</a>, <a href="https://web.mit.edu/6.031/www/sp17/classes/12-abstract-data-types">representation independence</a>, the <a href="https://en.wikipedia.org/wiki/Liskov_substitution_principle">Liskov substitution principle</a>, the <a href="https://en.wikipedia.org/wiki/Law_of_Demeter">Law of Demeter</a>), and patterns (for <a href="https://www.oreilly.com/library/view/design-patterns-elements/0201633612/">object-oriented code</a>, <a href="https://www.oreilly.com/library/view/patterns-of-enterprise/0321127420/">enterprise architectures</a> and more)&mdash;all of which are motivated by improvements in modularity.</p>
+<p>And it’s not just in software; modularity may be the <a href="https://direct.mit.edu/books/book/1856/Design-RulesThe-Power-of-Modularity">most valuable asset</a> in design.</p>
+<h2 id="where-concept-design-comes-in">Where concept design comes in<a hidden class="anchor" aria-hidden="true" href="#where-concept-design-comes-in">#</a></h2>
+<p>The new idea in concept design is that modularity is born not in the code, but in the <em>function</em> of the software. If you can structure an app’s functionality in a modular way, then you can carry over that modularity to the code.</p>
+<p>And because the function is modular, users will be able to understand it in a modular way. This is essential for usability, because it lets users learn how to use an app in pieces incrementally, and reuse their knowledge across systems.</p>
+<p>A concept is a bundling of functionality that meets three modularity criteria:</p>
+<ul>
+<li><em>Specificity</em>: The concept fulfills a specific <a href="https://essenceofsoftware.com/tutorials/concept-basics/purpose/">purpose</a> that brings real value to the user, and does not mix, multiple separable purposes.</li>
+<li><em>Completeness</em>: The concept’s functionality meets its purpose fully.</li>
+<li><em>Independence</em>: The concept stands by itself, without reference to other concepts.</li>
+</ul>
+<p>Let’s now look at each of these criteria in turn, see why they’re needed, how they might be violated, and what you have to do make them hold.</p>
+<h2 id="specificity">Specificity<a hidden class="anchor" aria-hidden="true" href="#specificity">#</a></h2>
+<p>Having a specific purpose includes having enough function to bring real value, but not so much that separable purposes are being mixed.</p>
+<p>For example, consider a <em>User</em> concept whose purpose is to provide authentication of users. Almost all web-based apps include this concept. Suppose the concept just included registration, in which a user creates an identity by providing a username and a password.</p>
+<p>This might be regarded as a reasonable increment of functionality in some approaches. As a <a href="https://en.wikipedia.org/wiki/User_story">user story</a>, it might be expressed like this: “As a customer, I can create register as a user so that I can go shopping.”</p>
+<p>But in fact registering brings no real value to the user, because without the functionality associated with the subsequent authentication check, registration does nothing useful. The value that the user receives (which is more about other users bring prevented from acting on their behalf) is provided by the authentication mechanism in its entirety. So the purpose must be user authentication, and not user registration alone.</p>
+<p>This would be apparent if you tried to write an <a href="https://essenceofsoftware.com/tutorials/concept-basics/principle/">operational principle</a>:</p>
+<pre><code>concept User
+purpose
+  help users register for services
+principle
+  after a user registers... ???
+actions
+  register (name, password: String, out u: User)
+</code></pre>
+<p>There’s no way to complete the scenario because there aren’t any other actions to include! And when you start trying to figure out what action you might add, you’ll see that the one you need is the authentication checking action.</p>
+<p>You might be tempted to expand the purpose to include all user-specific settings. For example, perhaps each user has a display name, and an avatar. These are not relevant to the purpose of authentication, however; they serve a different purpose (letting users choose how to present their identities to others), and should be part of a different concept.</p>
+<p>Ensuring that a concept has a single, specific purpose makes it more understandable. If <em>User</em> included the avatar feature, you might start wondering whether that plays a role in authentication somehow. And it makes it more reusable by unbundling features: you might want authentication without avatars, for example.</p>
+<p>In practice, formulating a suitably narrow purpose can be tricky, and often the easiest way to do it is to consider which particular features would be included in the concept’s functionality. Then, as you realize that certain features should be included (both registering and checking) and that others should be excluded (display names and avatars), you can refine your purpose accordingly (in this case, that the purpose is simply authentication and nothing more).</p>
+<h2 id="completeness">Completeness<a hidden class="anchor" aria-hidden="true" href="#completeness">#</a></h2>
+<p>Completeness just means that the concept includes all the functionality needed to fulfill the purpose. So if the purpose of <em>User</em> is authentication, then offering registering without checking is obviously insufficient.</p>
+<p>A concept may fail to be complete for more subtle reasons. Suppose our <em>User</em> concept supported checking by offering an action that, given a user id, username and password, returns an indication of whether or not the username and password are correct for that user. This design fails to fulfill the purpose completely, because when the check is applied, the identity of the purported user isn&rsquo;t known! Instead, the concept must include a lookup, for example by having the action take the username and password and return the user identity (if a matching one exists).</p>
+<p>This example might seem silly and pedantic, but it illustrates a key difference between concepts and classes in object-oriented languages. In an object-oriented implementation of user authentication, you might have a <em>User</em> class with each instance holding a username and password. The functionality I just mentioned would be exactly what such a class provides, and it wouldn’t support the lookup. For that, you’d need to add a static component to the class that maps usernames to <em>User</em> objects. Using static state isn’t really in the spirit of object-oriented programming through, so you might instead create a <em>Registry</em> class each instance of which holds such a mapping. Thus a single concept becomes several classes that are tightly coupled together.</p>
+<p>Finally, it’s worth noting that completeness only means that the purpose is <em>minimally</em> satisfied. There are always additional features that might be desirable; for example, it would be useful for users to be able to change their passwords (and even their usernames).</p>
+<p>Being complete ensures that all the functionality associated with the concept’s purpose is in one place, encapsulated within the concept.</p>
+<h2 id="independence">Independence<a hidden class="anchor" aria-hidden="true" href="#independence">#</a></h2>
+<p>A concept not only has to meet its purpose completely, but it has to do it without the help of other concepts.</p>
+<p>Recognizing that storing and checking passwords involves some non-trivial functionality (notably encrypting and salting), you might think to put it in its own concept.</p>
+<p>That would be mistake, however. First, encrypting and salting passwords is not user-facing functionality, so it doesn’t make a good concept. Second, suppose you did factor it out, say into a Password concept, assuming the <em>User</em> concept could delegate some functionality to it. Now your <em>User</em> concept would fail the independence test, since it would require the Password concept to operate.</p>
+<p>Concepts have no <a href="https://essenceofsoftware.com/tutorials/concept-basics/dependency/">dependencies</a> of this sort, and have to self-contained. As a result a concept can’t fail because of a bug in another concept, and functionality is truly localized.</p>
+<p>You may wonder whether this rule undermines some modularity in the code. It doesn’t, because nothing prevents you from implementing password salting and encryption in a separate module, which can be one of several modules realizing the concept.</p>
+<p>Concept implementations will also inevitably depend on libraries for general services (such as string manipulation, arithmetic, file management, etc). So concept structuring won’t spare you entirely from the problem that fixing a bug in a function may require looking in multiple places. For example, your password encryption might fail because of a bug in a mathematical library.</p>
+<p>But, in contrast to conventional design approaches, there won’t be pieces of connected functionality at the same <em>level</em> in scattered locations (for example, passwords being encrypted in one place and decrypted in another, far away).</p>
+<h2 id="genericity">Genericity<a hidden class="anchor" aria-hidden="true" href="#genericity">#</a></h2>
+<p>A concept may be functionally independent of other concepts while still mentioning them in its design.</p>
+<p>Here, for example is a very rudimentary <em>Email</em> concept:</p>
+<pre><code>concept Email
+  purpose exchange of messages
+  principle
+    after a user sends a message to another user,
+    they can receive that message
+  state
+    from, to: Msg -&gt; one User
+    body: Msg -&gt; one String
+  actions
+    send (from, to: User, body: String, out m: Msg)
+    recv (u: User, m: Msg)
+</code></pre>
+<p>This is obviously very simplified; the state is a global set of messages each of which is associated with the users it’s from and to, and some body. A more realistic description might include state components for holding sent and received messages, and an explicit system action for transferring messages from one to the other.</p>
+<p>Here’s another concept, commonly used in mail clients:</p>
+<pre><code>concept Label
+  purpose organize and filter messages
+  principle after adding a label to a message m, 
+  if you get messages with that label, the message m will be included in the results
+  state
+    labels: Msg -&gt; set String
+  actions
+    addLabel (msg: Msg, l: String)
+    // return messages that have all labels in ls
+    getMessages (ls: set String, out msgs: set Msg)
+</code></pre>
+<p>Again, this is obviously simplified: the concept would usually support rich queries over label combinations.</p>
+<p>Notice that the <em>Label</em> concept appears to depend on the <em>Email</em> concept, because it mentions the <em>Msg</em> type that it generates. But if you think about the behavior of <em>Label</em>, since it involves only the <em>identity</em> of the messages (and not their content), the fact that the labeled items are messages is completely irrelevant. It matters only in understanding the role that the concept plays in the application as a whole.</p>
+<p>So to make this clear and improve the concept, we can eliminate the reference to messages, and make it generic over some unspecified <em>Item</em> type:</p>
+<pre><code>concept Label [Item]
+  purpose organize and filter items
+  principle after adding a label to an item i, 
+  if you get items with that label, the item i will be included in the results
+  state
+    labels: Item -&gt; set String
+  actions
+    addLabel (i: Item, l: String)
+    // return items that have all labels in ls
+    getItems (ls: set String, out items: set Item)
+</code></pre>
+<p>This is much better because it makes it clear that <em>Label</em> is a more general concept that allows the organization and filtering of any kind of item.</p>
+<p>More subtly, our <em>Email</em> concept has the same problem, because it refers to the type <em>User</em>, which presumably is the type of user objects generated by our <em>User</em> concept. But again, the concept does not depend on the user objects having any particular properties, so we can make the <em>User</em> type a parameter:</p>
+<pre><code>concept Email [User]
+</code></pre>
+<p>In this case, we could keep the references to “users” in the description of the concept, but if we wanted to be really pedantic we could replace it by a name (such as <em>Principal</em> or <em>Account</em>) that makes it clearer that a human user might not be involved.</p>
+<p>With all these generic concepts in hand, to describe our application we need to instantiate the type parameters:</p>
+<pre><code>app EmailClient
+includes
+  User
+  Email [User.User]
+  Label [Email.Msg]
+</code></pre>
+<p>This says that the type of users in the <em>Email</em> concept will be the <em>User</em> type from the User concept, and the type of the targets in the <em>Label</em> concept will be the <em>Msg</em> type from the <em>Email</em> concept.</p>
+<h2 id="permutation-invariant-for-experts">Permutation invariant: for experts<a hidden class="anchor" aria-hidden="true" href="#permutation-invariant-for-experts">#</a></h2>
+<p>We can make precise this idea that a type is generic with the notion of <em>permutation invariance</em>. Suppose there is some execution of the concept comprising a sequence of actions interleaved with the resulting states. Now imagine taking the elements of the set in a given type, for example all the user objects in the set <em>User</em>, and permuting them, swapping <em>u0</em> and <em>u1</em>, swapping <em>u2</em> and <em>u5</em>, and so on. If you applied this permutation to the execution, would the result also be a valid execution? This is just a fancy way of saying that all that matters is the <em>identity</em> of the objects. If the answer is yes, then this permuted type is being treated generically.</p>
+<p>This reasoning will tell you that the <em>Msg</em> type in <em>Label</em> and the <em>User</em> type in <em>Email</em> are generic. But it will also tell you that the <em>String</em> type in both concepts is generic! That’s because the concepts don’t do any string-specific operations: they just store the strings. So the <em>Email</em> concept, for example, could be written even more generically like this</p>
+<pre><code>concept Email [User, Content]
+  purpose exchange of messages
+  principle
+    after a user sends a message to another user,
+    they can receive that message
+  state
+    from, to: Msg -&gt; one User
+    body: Msg -&gt; one Content
+  actions
+    send (from, to: User, body: Content, out m: Msg)
+    recv (u: User, m: Msg)
+</code></pre>
+<p>making it clear that the concept works with any kind of content. For email this might seem a bit artificial, since email messages are always textual, But for a social media post concept the genericity is more important (since a post’s body might be text, image or a combination), and factoring out the content into specialized concepts (such as a concept for creating and formatting rich text) would be helpful.</p>
+<h2 id="wow-this-is-hard">Wow, this is hard!<a hidden class="anchor" aria-hidden="true" href="#wow-this-is-hard">#</a></h2>
+<p>This may seem pretty challenging to you. And you’d be right. Designing modular concepts is not at all easy. But that’s because design is hard, and it’s even harder when you’re trying to be modular.</p>
+<p>With practice, you’ll develop this skill. You’ll see immediately when a concept isn’t modular and what you need to do to fix it. And you’ll begin to think naturally in terms of modular concepts.</p>
+<p>And it’s worth the effort! Your designs will be more understandable, more focused and more &hellip; well, modular. When you come to implement them, you’ll be able to translate them very directly into code and you’ll be unlikely to hit structural obstacles. And you’ll be spared all the refactoring that is often needed when programmers build an app before they’ve really understood what they’re trying to do.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Tactics for divergent design</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+
+    <span>&copy; 2023 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
