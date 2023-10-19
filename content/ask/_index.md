@@ -8,7 +8,7 @@ ShowBreadCrumbs: false
 
 ### Where can I learn more?
 
-From the book, of course! But also a [sample chapter](/posts/sample-chapter), my [ACM tech talk](/posts/acm-tech-talk), and this [summary](/posts/distillation). Questions about the book or concept design? Feedback? Join us at the [software concept forum](http://forum.softwareconcepts.io)!
+From the book, of course! But also a [sample chapter](/posts/sample-chapter), my [ACM tech talk](/posts/acm-tech-talk), and this [summary](/posts/distillation). Questions about the book or concept design? Feedback? Join us at the [software concept forum](http://forum.essenceofsoftware.com)!
 
 ### Why did you write this book?
 
