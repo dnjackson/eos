@@ -35,7 +35,7 @@ Perhaps the most pervasive misconception is one that is rarely articulated expli
 
 ## When creativity happens
 
-Related to this misconception is the assumption that creativity happens mostly during the divergent phase: some people even seem to equate creativity with ideation. But as Barbara Boden explains in a widely cited [article](), there are different kinds of creativity. She calls one of the kinds of creativity *combinational creativity*, which involves producing unfamiliar combinations of existing ideas and making associations between ideas that were previously only indirectly linked. This kind of creativity arises more often in convergent design, when existing ideas have been articulated and the designer is exploring how they might be coalesced.
+Related to this misconception is the assumption that creativity happens mostly during the divergent phase: some people even seem to equate creativity with ideation. But as Barbara Boden explains in a widely cited [article](https://www.researchgate.net/publication/220605190_Computer_Models_of_Creativity), there are different kinds of creativity. She calls one of the kinds of creativity *combinational creativity*, which involves producing unfamiliar combinations of existing ideas and making associations between ideas that were previously only indirectly linked. This kind of creativity arises more often in convergent design, when existing ideas have been articulated and the designer is exploring how they might be coalesced.
 
 ## Where simplicity comes from
 
