@@ -15,7 +15,8 @@ ShowBreadCrumbs: false
 [Amazon](https://www.amazon.com/Essence-Software-Concepts-Matter-Design/dp/0691225389)  
 [Barnes & Noble](https://www.barnesandnoble.com/w/the-essence-of-software-daniel-jackson/1139308059)  
 [Powell's](https://www.powells.com/book/the-essence-of-software-9780691225388)  
-[Amazon UK](https://www.amazon.co.uk/Essence-Software-Concepts-Matter-Design/dp/0691225389)
+[Amazon UK](https://www.amazon.co.uk/Essence-Software-Concepts-Matter-Design/dp/0691225389)  
+[Maruzen](https://www.maruzen-publishing.co.jp/item/?book_no=304995) (Japanese)
 
 #### Book details
 
@@ -28,18 +29,22 @@ Copyright: 2021
 336 pages with 84 b/w illustrations
 6.13 x 9.25 in.
 
-Paperback
-List Price: $23.95 / £20.00
-ISBN: 9780691230832 
-Published (US): Jun 20, 2023
-Published (UK): Aug 15, 2023
-336 pages with 84 b/w illustrations
-6.13 x 9.25 in.
+Paperback  
+List Price: $23.95 / £20.00  
+ISBN: 9780691230832  
+Published (US): Jun 20, 2023  
+Published (UK): Aug 15, 2023  
+336 pages with 84 b/w illustrations  
+6.13 x 9.25 in.  
 
 Kindle edition  
 ISBN: 9780691230542  
 Published: Nov 16, 2021  
-With 84 b/w illustrations
+With 84 b/w illustrations  
+
+Japanese edition  
+Published June 2023  
+[Maruzen Publishing](https://www.maruzen-publishing.co.jp/item/?book_no=304995)
 
 
 
