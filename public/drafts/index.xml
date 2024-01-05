@@ -12,16 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Mon, 22 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/drafts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Notes on design of a GPT-powered tutor</title>
-      <link>https://essenceofsoftware.com/drafts/ai-tutor-v3/</link>
-      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/drafts/ai-tutor-v3/</guid>
-      <description>Notes on design of a GPT-powered tutor</description>
-    </item>
-    
+    <lastBuildDate>Thu, 11 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/drafts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes on design of a GPT-powered tutor</title>
       <link>https://essenceofsoftware.com/drafts/ai-tutor-v1/</link>
@@ -47,6 +38,25 @@
       
       <guid>https://essenceofsoftware.com/drafts/noosphere-v1/</guid>
       <description>A Concept Exploration of Noosphere</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/how-software-succeeds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/how-software-succeeds/</guid>
+      <description>How to Design Software A new year, a new take It’s been just over two years since the publication of The Essence of Software (EOS). In that time, engaging with readers, consulting and teaching to students and practitioners has given me a new perspective on concept design.
+In this series of notes, I hope to share some of the respects in which my understanding has evolved. In addition to having a better sense of what matters most, I think I have a greater appreciation of the obstacles that make concept design seem (at the same time!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://essenceofsoftware.com/drafts/deemph-data-model-and-action-definitions-for-coding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/deemph-data-model-and-action-definitions-for-coding/</guid>
+      <description>deemph: data model and action definitions for coding. extending: modularity, but probably needs data. essence: OPs. relevance: LLMs</description>
     </item>
     
     <item>
