@@ -2,16 +2,16 @@
 author: "Daniel Jackson"
 title: "ACM tech talk"
 date: "2021-11-14"
-# description: "Online seminar hosted by ACM on Dec 1, 2021"
+description: "Online seminar hosted by ACM on Dec 1, 2021"
 description: ""
-# tags: ["markdown", "css", "html", "themes"]
-# categories: ["themes", "syntax"]
-# series: ["Themes Guide"]
+tags: ["markdown", "css", "html", "themes"]
+categories: ["themes", "syntax"]
+series: ["Themes Guide"]
 ShowToc: false
-# TocOpen: true
+TocOpen: true
 hideMeta: false # removes date etc from post
-# hideSummary: true
-summary: "Now updated with talk recording."
+hideSummary: false
+summary: "Daniel explains concept design in a single video."
 editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text

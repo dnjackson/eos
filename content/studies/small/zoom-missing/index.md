@@ -22,7 +22,7 @@ In this example, Apple is not to blame (although the design could surely be impr
 
 It’s more surprising when a crucial concept is missing for no apparent reason. I’ve been thinking about Zoom recently and how, despite being a generally wonderful service, it has some design flaws that make the entire experience of using it much less pleasant.
 
-## A new concept for Zoom
+# A new concept for Zoom
 
 The missing concept that I have in mind might be called *MeetingList*. Its purpose would be to let you join meetings more easily, without having to store and recall a meeting identifier externally. The operational principles might be:
 
@@ -44,7 +44,7 @@ The fuller concept would offer many advantages:
 
 This concept would be easy for users to understand; it’s a simple extension of the familiar *CallHistory* concept used by all communication apps (and by Zoom itself for its phone call feature).
 
-## An Achilles heel for Zoom?
+# An Achilles heel for Zoom?
 
 Including this concept might be important not only because it makes Zoom easier to use. Without it, Zoom is more vulnerable to competition from related products (such as Microsoft Teams, Google Meet and Apple FaceTime).
 

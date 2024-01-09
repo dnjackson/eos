@@ -14,6 +14,36 @@
     <copyright>Daniel Jackson</copyright>
     <lastBuildDate>Thu, 11 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/drafts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>A new take on concept design</title>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/new-take/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/new-take/</guid>
+      <description>It’s been just over two years since the publication of The Essence of Software (EOS). In that time, engaging with readers, consulting and teaching to students and practitioners has given me a new perspective on concept design.
+In a series of notes (of which this is the first), I hope to share some of the respects in which my understanding has evolved. In addition to having a better sense of what matters most, I think I have a greater appreciation of the obstacles that make concept design seem (at the same time!</description>
+    </item>
+    
+    <item>
+      <title>What is software design?</title>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/what-is-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/what-is-design/</guid>
+      <description>As I explain in EOS, I’ve coopted the term “software design” to mean something different from what most people in the software world expect. To me, it means designing function: how the software will behave and interact with its users and the world.
+So the design of the software is what determines whether or not it fulfills the user’s needs, because if the function is wrong (or confusing), the user won’t be happy.</description>
+    </item>
+    
+    <item>
+      <title>Building on good ideas</title>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/</guid>
+      <description>Concept design builds on many familiar ideas. To mention a few:
+From use cases and user stories, concept design takes the idea that software interacts with the world through scenarios that deliver value. From user-centered design (as taught by Don Norman in The Design of Everyday Things), concept design takes the idea that the user interface is a kind of apparition (a “system image” in Norman’s phrasing) that stands between the user and the system, revealing only indirectly the underlying reality.</description>
+    </item>
+    
+    <item>
       <title>Notes on design of a GPT-powered tutor</title>
       <link>https://essenceofsoftware.com/drafts/ai-tutor-v1/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
@@ -42,12 +72,13 @@
     
     <item>
       <title></title>
-      <link>https://essenceofsoftware.com/drafts/concepts-redux/how-software-succeeds/</link>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/drafts/concepts-redux/how-software-succeeds/</guid>
-      <description>How to Design Software A new year, a new take It’s been just over two years since the publication of The Essence of Software (EOS). In that time, engaging with readers, consulting and teaching to students and practitioners has given me a new perspective on concept design.
-In this series of notes, I hope to share some of the respects in which my understanding has evolved. In addition to having a better sense of what matters most, I think I have a greater appreciation of the obstacles that make concept design seem (at the same time!</description>
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/</guid>
+      <description>The operational principle Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its operational principle (OP).
+The operational principle is just a sample scenario, but it includes enough richness to convey typical usages. The example I gave above for Zoom could be written in a more textual way like this
+&amp;lt;create, start, join+, end&amp;gt; where join+ means one or more join actions.</description>
     </item>
     
     <item>

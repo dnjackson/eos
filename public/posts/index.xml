@@ -14,21 +14,21 @@
     <copyright>Daniel Jackson</copyright>
     <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LLM Coders: The End of Agile?</title>
-      <link>https://essenceofsoftware.com/posts/llm-coding/</link>
+      <title>The End of Agile</title>
+      <link>https://essenceofsoftware.com/posts/end-of-agile/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/posts/llm-coding/</guid>
-      <description>How LLMs will change programming and the role concepts can play</description>
+      <guid>https://essenceofsoftware.com/posts/end-of-agile/</guid>
+      <description>Why agile no longer makes sense in the LLM era.</description>
     </item>
     
     <item>
-      <title>An Experiment in Concept Design at Palantir</title>
+      <title>A Concept Experiment at Palantir</title>
       <link>https://essenceofsoftware.com/posts/palantir/</link>
       <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/posts/palantir/</guid>
-      <description>Lessons learned from deploying concepts at scale</description>
+      <description>Lessons learned from deploying concepts at scale.</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/posts/three-stages/</guid>
-      <description>A brief intro to concept design in three parts</description>
+      <description>A brief intro to concept design in three parts.</description>
     </item>
     
     <item>
@@ -109,16 +109,16 @@
       <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/posts/acm-tech-talk/</guid>
-      <description>Now updated with talk recording.</description>
+      <description>Daniel explains concept design in a single video.</description>
     </item>
     
     <item>
-      <title>Sample book chapter</title>
-      <link>https://essenceofsoftware.com/posts/sample-chapter/</link>
+      <title>Sample book chapters</title>
+      <link>https://essenceofsoftware.com/posts/sample-chapters/</link>
       <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/posts/sample-chapter/</guid>
-      <description>Why I Wrote This Book</description>
+      <guid>https://essenceofsoftware.com/posts/sample-chapters/</guid>
+      <description>Download free sample chapters.</description>
     </item>
     
   </channel>

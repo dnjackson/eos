@@ -1,13 +1,13 @@
 ---
 author: "Daniel Jackson"
-title: "An Experiment in Concept Design at Palantir"
+title: "A Concept Experiment at Palantir"
 date: "2023-06-26"
-description: "Lessons learned from deploying concepts at scale"
+description: "Lessons learned from deploying concepts at scale."
 ShowToc: false
 TocOpen: false
 hideMeta: false # removes date etc from post
-# hideSummary: true
-summary: "Deploying concepts at scale"
+hideSummary: false
+summary: "Lessons learned from deploying concepts at scale."
 editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text

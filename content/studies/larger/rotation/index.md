@@ -13,7 +13,7 @@ editPost:
   appendFilePath: false # to append file path to Edit link
 ---
 
-## API Design at Google
+# API Design at Google
 
 Concept design was developed for shaping the functionality of apps, and  because it emphasizes the underlying semantics behind the user interface, it should be straightforward to apply it to the design of services. But can it be applied to APIs?
 
@@ -25,7 +25,7 @@ One of the heuristics is called *closeness of mapping* and suggests that  a nota
 
 As an example of an API that programmers find hard to understand, Meital pointed me to the [Android Camera API](https://developer.android.com/training/camerax). I decided to focus for a small case study on the [Rotation API](https://developer.android.com/training/camerax/orientation-rotation), because it’s small and seems to have some complexities that concepts can address. I’ve developed a concept model of this API which I believe resolves some of the problems in understanding it, but the model is not complete and it may well contain errors that reflect my own misunderstandings. I’ve also not done the hard work of mapping the concept actions and states to the programmatic components of the API.
 
-## Why the Rotation API is tricky
+# Why the Rotation API is tricky
 
 Before showing you the concepts I came up with, I need to explain why the Rotation API isn’t so easy to understand. I’ll do this by pointing to explanations within the official API documentation.
 
@@ -55,7 +55,7 @@ The next section introduces two new terms: *sensor orientation*, “a constant v
 
 This puzzled me. How can the sensor be rotated and not be aligned with the phone? If the Pixel 3XL indeed has a sensor that is rotated 90 degrees, that would mean that the sensor would be in landscape mode when the phone is held upright in portrait mode.
 
-## A Conceptual Take
+# A Conceptual Take
 
 Here is my attempt to resolve these issues and explain what I believe is going on here.
 
@@ -144,7 +144,7 @@ There are three actions:
 
 This last action embodies whatever (arbitrary) decision we make on when to switch between orientations.
 
-## Synchronizing the concepts
+# Synchronizing the concepts
 
 Now we can put the concepts together:
 
@@ -164,7 +164,7 @@ and connect their behaviors with synchronization. The essential one occurs when 
 
 When the accelerometer reports a change in the rotation of the device, a new inferred orientation is obtained from the new angle, and the additional rotation in the camera is updated accordingly.
 
-## A diagram
+# A diagram
 
 Here is a diagrammatic depiction that shows more directly the causal flow, from the rotation being updated in *DeviceRotation* to the device angle being updated in *UserOrientation* and then finally the additional rotation being set in *Camera*:
 
@@ -174,7 +174,7 @@ The diagrammatic notation is explained [here](http://essenceofsoftware/studies/l
 
 Note that some causal steps are still implicit, in particular how the updating of *additionalRotation* in *Camera* affects the rotation of the image produced by *capture*.
 
-## Connecting back to the API
+# Connecting back to the API
 
 Now looking back at the API code sample we can understand it more readily:
 
@@ -188,7 +188,7 @@ In the alternative code sample,
 
 my guess is that the following is going on. There is a separate and fuller implementation of the *UserOrientation* concept that rotates the display for apps in general (and is appropriately sync’d with the other concepts as above). The camera can use the  orientation reported directly by this module, obtaining the *rotation* field of the *display* object. This presumably is affected by whether the orientation lock is on, and perhaps also by whether the app in question is using this feature. 
 
-## Summary
+# Summary
 
 In summary, we’ve resolved our initial questions as follows:
 - The word “orientation” seems to be used in two distinct ways: for the device rotation, and for the inferred orientation.

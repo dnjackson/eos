@@ -13,6 +13,7 @@ editPost:
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---
+# Tactics for divergence
 Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.
 
 ## Interviewing stakeholders
@@ -45,7 +46,8 @@ Think about apps that serve similar purposes, or that address some of the same s
 Scan some lists of features of existing apps. Some features might fit your app directly; others might be useful if adapted; and just considering a large number of features might spur new ideas. Places to look for feature lists include: company webpages (such as a page from Apple listing features of [MacOS Ventura](https://www.apple.com/macos/ventura/features/)), Wikipedia articles (such as this [list of Facebook features](https://en.wikipedia.org/wiki/List_of_Facebook_features)), and blog posts in which users talk about features they wish apps had (such as [this list for browsers](https://www.hongkiat.com/blog/browser-features-most-wanted/)).
 - *Example*: I looked at a list of [essential travel app features](https://www.miquido.com/blog/tourism-leisure-mobile-apps/). The first listed feature was booking for flights and other things, and it occurred to me that it would be good to know if any buildings on the walking tour allowed visits, but only at certain hours or with booking in advance.
 
-**Using an LLM**. Large language models such as GPT  are very effective at generating features ideas for an app. The only thing to be wary of is that they can be so fast and seemingly comprehensive that it’s easy  to be intimidated and not go to brainstorm your own, more creative, features.
+## Using an LLM
+Large language models such as GPT  are very effective at generating features ideas for an app. The only thing to be wary of is that they can be so fast and seemingly comprehensive that it’s easy  to be intimidated and not go to brainstorm your own, more creative, features.
 - *Example*: I gave GPT 3.5 the following prompt: “I’m designing an app to support architectural walking tours. It would help people walking around a city identify buildings and learn about them. Can you help me by suggesting some features that such an app might have?”. It generated a list of about 20 features, including ones I’d already thought of (such as augmented reality integration) and ones I hadn’t (such as showing original blueprints and building plans).
 
 # Exploring Values during Divergent Design

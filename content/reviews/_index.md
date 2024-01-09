@@ -5,7 +5,7 @@ url: "/reviews"
 ShowBreadCrumbs: false
 ---
 
-### Praise for Essence of Software
+# Praise for Essence of Software
 
 “Hard to contain my excitement about this book... Its ideas are fresh yet familiar, radical yet obvious, deep yet simple. I will be reading it repeatedly for years to come. A profound landmark in our discipline.”—_[Bashar Nuseibeh](https://www.ul.ie/research/professor-bashar-nuseibeh), University of Limerick, and Chief Scientist, LERO_
 

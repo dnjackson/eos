@@ -12,7 +12,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A new take on concept design</title>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/new-take/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/new-take/</guid>
+      <description>It’s been just over two years since the publication of The Essence of Software (EOS). In that time, engaging with readers, consulting and teaching to students and practitioners has given me a new perspective on concept design.
+In a series of notes (of which this is the first), I hope to share some of the respects in which my understanding has evolved. In addition to having a better sense of what matters most, I think I have a greater appreciation of the obstacles that make concept design seem (at the same time!</description>
+    </item>
+    
+    <item>
+      <title>What is software design?</title>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/what-is-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/what-is-design/</guid>
+      <description>As I explain in EOS, I’ve coopted the term “software design” to mean something different from what most people in the software world expect. To me, it means designing function: how the software will behave and interact with its users and the world.
+So the design of the software is what determines whether or not it fulfills the user’s needs, because if the function is wrong (or confusing), the user won’t be happy.</description>
+    </item>
+    
+    <item>
+      <title>Building on good ideas</title>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/</guid>
+      <description>Concept design builds on many familiar ideas. To mention a few:
+From use cases and user stories, concept design takes the idea that software interacts with the world through scenarios that deliver value. From user-centered design (as taught by Don Norman in The Design of Everyday Things), concept design takes the idea that the user interface is a kind of apparition (a “system image” in Norman’s phrasing) that stands between the user and the system, revealing only indirectly the underlying reality.</description>
+    </item>
+    
     <item>
       <title>Software = concepts</title>
       <link>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</link>
@@ -192,8 +222,17 @@ Program families. Following on from an earlier paper that introduced the idea of
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</guid>
-      <description>Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.
+      <description>Tactics for divergence Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.
 Interviewing stakeholders Talking to potential users and other stakeholders is good not only for identifying needs but also for getting design ideas. You can ask what tools and techniques a user currently finds helpful, and what changes might make them more effective.</description>
+    </item>
+    
+    <item>
+      <title>How software succeeds</title>
+      <link>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</link>
+      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</guid>
+      <description>The first step to great software: diagnosing success</description>
     </item>
     
     <item>
@@ -207,12 +246,12 @@ For the programmer, life becomes miserable. Whenever you need to understand or m
     </item>
     
     <item>
-      <title>LLM Coders: The End of Agile?</title>
-      <link>https://essenceofsoftware.com/posts/llm-coding/</link>
+      <title>The End of Agile</title>
+      <link>https://essenceofsoftware.com/posts/end-of-agile/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/posts/llm-coding/</guid>
-      <description>How LLMs will change programming and the role concepts can play</description>
+      <guid>https://essenceofsoftware.com/posts/end-of-agile/</guid>
+      <description>Why agile no longer makes sense in the LLM era.</description>
     </item>
     
     <item>
@@ -234,12 +273,12 @@ For the programmer, life becomes miserable. Whenever you need to understand or m
     </item>
     
     <item>
-      <title>An Experiment in Concept Design at Palantir</title>
+      <title>A Concept Experiment at Palantir</title>
       <link>https://essenceofsoftware.com/posts/palantir/</link>
       <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/posts/palantir/</guid>
-      <description>Lessons learned from deploying concepts at scale</description>
+      <description>Lessons learned from deploying concepts at scale.</description>
     </item>
     
     <item>
@@ -275,7 +314,7 @@ For the programmer, life becomes miserable. Whenever you need to understand or m
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/posts/three-stages/</guid>
-      <description>A brief intro to concept design in three parts</description>
+      <description>A brief intro to concept design in three parts.</description>
     </item>
     
     <item>
@@ -410,26 +449,27 @@ For the programmer, life becomes miserable. Whenever you need to understand or m
       <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/posts/acm-tech-talk/</guid>
-      <description>Now updated with talk recording.</description>
+      <description>Daniel explains concept design in a single video.</description>
     </item>
     
     <item>
-      <title>Sample book chapter</title>
-      <link>https://essenceofsoftware.com/posts/sample-chapter/</link>
+      <title>Sample book chapters</title>
+      <link>https://essenceofsoftware.com/posts/sample-chapters/</link>
       <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/posts/sample-chapter/</guid>
-      <description>Why I Wrote This Book</description>
+      <guid>https://essenceofsoftware.com/posts/sample-chapters/</guid>
+      <description>Download free sample chapters.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://essenceofsoftware.com/drafts/concepts-redux/how-software-succeeds/</link>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/drafts/concepts-redux/how-software-succeeds/</guid>
-      <description>How to Design Software A new year, a new take It’s been just over two years since the publication of The Essence of Software (EOS). In that time, engaging with readers, consulting and teaching to students and practitioners has given me a new perspective on concept design.
-In this series of notes, I hope to share some of the respects in which my understanding has evolved. In addition to having a better sense of what matters most, I think I have a greater appreciation of the obstacles that make concept design seem (at the same time!</description>
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/</guid>
+      <description>The operational principle Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its operational principle (OP).
+The operational principle is just a sample scenario, but it includes enough richness to convey typical usages. The example I gave above for Zoom could be written in a more textual way like this
+&amp;lt;create, start, join+, end&amp;gt; where join+ means one or more join actions.</description>
     </item>
     
     <item>

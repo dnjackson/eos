@@ -13,7 +13,7 @@ editPost:
   appendFilePath: false # to append file path to Edit link
 ---
 
-## Overview
+# Overview
 
 **About this case study**. This case study presents a concept design for a GPT-powered tutor that we built in May 2023 for experimental use in the MIT class [6.1040: Software Studio](https://61040-fa23.github.io) this coming fall. Geoffrey Litt had the idea for the tutor and implemented it; the concept design was a joint effort. In [this video](https://share.cleanshot.com/P0VybXyY) Geoffrey demonstrates the tutor in action.
 
@@ -24,7 +24,7 @@ editPost:
 
 **Modular implementation**. Geoffrey used this case study also as a chance to explore the use of concepts as a modularity mechanism in the code. He implemented the tutor in his [Riffle](riffle.systems) framework, and used the concept design to guide the structure of the relational tables and code, so that each Riffle component corresponds to a concept. The results seem to be promising, bringing more clarity and modularity than a traditional design might have produced. I hope that Geoffrey will write something about this at some point.
 
-## Design Goals and Principles
+# Design Goals and Principles
 
 **Goals**. The goals of building and deploying the tutor are:
 
@@ -43,7 +43,7 @@ editPost:
 
 **Choice of tech stack**. Initially, one of our principles was to implement the tutor using the tech stack taught in the class (Node/Express/Vue) so that the implementation might serve as a pedagogical example for students, but we decided in the end to use [Riffle](riffle.systems) instead, both to "eat our own dog food", exercising our research on that platform, and taking advantage of Riffle’s benefits, both in ease of development and to the user (most notably the full history of the user's interactions being persisted locally in a SQL database inside the browser, giving the appearance of a backend storage without the need to implement it or compromise the user's privacy).
 
-## Initial design
+# Initial design
 
 **Basic conception**. We started with the simple idea that the student would be presented with a collection of structured exercises. Attempted solutions to the exercises would be graded by GPT, providing feedback to the student, and allowing repeated submissions until the student was able to submit a solution for which GPT reported no evident flaws.
 
@@ -63,7 +63,7 @@ Here’s a screenshot of the running app, showing the exercises on the left (wit
 
 ![](screenshot-with-help.png)
 
-## Design Challenges
+# Design Challenges
 
 We pursued the design of these concepts in the light of several key challenges that we identified.
 
@@ -137,7 +137,7 @@ Here’s a screenshot showing the chat panel:
 
 ![](screenshot-with-chat.png)
 
-## Final Concept Design
+# Final Concept Design
 
 We now outline the concepts in detail. The *Exercise* concept manages the exercise texts, and associates parts of exercises with competences:
 
@@ -214,7 +214,7 @@ Finally, the concept that captures the protocol of interacting with LLMs like GP
 
 This is almost the simplest form this concept might take, with the prompts included in the question text. A richer concept would allow prompts to be registered upfront. The API version of GPT is actually stateless, so even the question and answer sequences are not strictly necessary.
 
-## Concept Composition
+# Concept Composition
 
 The app as a whole is a composition of concepts:
 
@@ -234,7 +234,7 @@ There are two instantiations of the *Advice* concept, one holding advice for eac
 
 The *Chat* concept is instantiated in two dimensions, over users and exercise parts, so each user has a separate chat for each exercise part they are working on. The *Party* parameter of the *Chat* concept is instantiated with a type consisting of two simple constant values: *USER* representing the user, and *BOT* representing the LLM bot. Don’t be confused by the *User* vs. *Party* types: the users of the app as a whole are not the parties to the chats, since each chat involves only one user (and the bot).
 
-## Concept Synchronizations
+# Concept Synchronizations
 
 Almost all of the actions of the concepts are executed independently but there are a few key synchronizations.
 
@@ -265,7 +265,7 @@ for example. I prefer to treat the out parameters more like other arguments so t
 
 A similar but simpler sync is needed when the user posts a question to the LLM in the chat.
 
-## The design as a diagram
+# The design as a diagram
 
 The entire concept design can be shown as a diagram. Here it is:
 
@@ -295,7 +295,7 @@ A few more details about the diagrammatic notation:
 
 I plan to write a tutorial soon explaining the notation in more detail.
 
-## State Queries and Concept Mapping
+# State Queries and Concept Mapping
 
 A simple action involving one concept can still result in a variety of effects in the user interface. Note in particular that when the action
 

@@ -15,6 +15,7 @@ editPost:
 
 _Now [translated into Japanese](https://bonotake.hatenablog.com/entry/2023/08/09/194410) by Takeo Imai! You can also read his book review in [English](https://bonotake.github.io/software%20engineering/2022/06/22/reviewing-the-essence-of-software.html) or [Japanese](https://note.com/idein/n/ncdb32616e738)._
 
+# Rereading a great book
 Don Norman’s influential book, *The Design of Everyday Things*, talked about doors, light switches and refrigerators, and had little to say about software. But many of Norman’s diagnoses and prescriptions applied nicely in our domain too.
 
 We recognized, for example, that in software the gulfs of execution and evaluation—which separate the user’s intent and interpretation from the system’s actions and outputs—are especially troublesome, and we took on Norman’s notion of affordances for guiding the selection of user interface widgets.
@@ -27,7 +28,7 @@ Rereading the book, however, I’ve come to think that its prescriptions are in 
 
 But design is not just about people; it’s about technology too, and what happens at the meeting point of people and their artifacts. Different artifacts present radically different challenges. Urban design, graphic design, industrial design and software design   might all be forms of design, but they require different skills and sensibilities.
 
-## Norman’s fridge
+# Norman’s fridge
 
 I’ve always been puzzled by Norman’s fridge example. In a section on conceptual models, he explains how users misunderstand the temperature controls on the standard American fridge. The two controls, often labeled “freezer” and “fresh food,” seem to offer independent temperature adjustments. But it turns out that one sets the level of the compressor and the other changes the ratio of cold air that flows to each of the compartments.
 
@@ -39,7 +40,7 @@ Throughout the discussion, however, Norman hints repeatedly that the problem isn
 
 This strikes me as a very strange statement. The reason the temperature is hard to regulate is that it doesn’t provide suitable controls. It’s true that the controls suggest a false model, but if that were the problem, one could fix it by changing the labels, for example to “overall coldness” and “fridge/freezer ratio.” That’s not easy to understand, but it’s arguably no longer false. Does it help? Not at all.
 
-## The assumption behind conceptual models
+# The assumption behind conceptual models
 There is a fundamental assumption at play here that bears more explicit articulation. Norman is willing to take the design of the underlying mechanism largely for granted. His interest is not in reshaping mechanisms—he leaves that to engineers—but to improve the *interface*, through which the mechanism is presented to users. Here’s a diagram from the book showing how the interface projects a “system image” of the designer’s conceptual model, in turn generating the model in the user’s head:
 
 ![](system-image-norman.jpg)
@@ -50,7 +51,7 @@ To Norman, a conceptual model is a psychological construct distinct from any con
 
 An [online lecture](https://www.youtube.com/watch?v=shSCUNxtn18) that Norman appears in makes this point abundantly clear. The canonical example it gives of a conceptual model? The rain cycle.
 
-## Thermostats revisited
+# Thermostats revisited
 A classic example of a confused conceptual model: the traditional thermostat. Many people incorrectly believe that if the room isn’t warm enough, you should turn the dial all the way up to the top. But this won’t cause the heating system to generate more or hotter air. The setting on the thermostat simply governs the temperature at which the heating will turn off. So you’ll get warm just as quickly by setting the actual desired temperature.
 
 ![](honeywell-thermostat.jpg)
@@ -65,7 +66,7 @@ But now consider a modern thermostat, such as the Google Nest. This device has a
 
 These behaviors can be organized into concepts (schedule, vacation mode, zone, etc), but these concepts are not psychological abstractions. They’re not part of a model. They are the *reality* of the software design, and are just as mutable as the user interface.
 
-## Software conceptual design
+# Software conceptual design
 
 To speak of a software system or app as having a “conceptual model” is misleading. It suggests there is some model distinct from the reality of the software itself. On the contrary, the conceptual design *is* the design of the software. So I prefer instead to talk not of the software’s “conceptual model” but rather its “conceptual design.”
 

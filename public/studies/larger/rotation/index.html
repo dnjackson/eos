@@ -10,7 +10,7 @@
 <meta name="description" content="Applying concept design to the camera rotation API">
 <meta name="author" content="Daniel Jackson">
 <link rel="canonical" href="https://essenceofsoftware.com/studies/larger/rotation/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.1eecbf9c7523bd5ac80b32f81ece29e45269e9f1fa42874b4bbc1b722c883eba.css" integrity="sha256-Huy/nHUjvVrICzL4Hs4p5FJp6fH6QodLS7wbciyIPro=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0c5ed6ebd2dfbeba53b78418190f5b01d42289c40be1afa56cc706f62aaa5b23.css" integrity="sha256-DF7W69LfvrpTt4QYGQ9bAdQiicQL4a&#43;lbMcG9iqqWyM=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
@@ -242,13 +242,13 @@ if (!doNotTrack) {
     </details>
 </div>
 
-  <div class="post-content"><h2 id="api-design-at-google">API Design at Google<a hidden class="anchor" aria-hidden="true" href="#api-design-at-google">#</a></h2>
+  <div class="post-content"><h1 id="api-design-at-google">API Design at Google<a hidden class="anchor" aria-hidden="true" href="#api-design-at-google">#</a></h1>
 <p>Concept design was developed for shaping the functionality of apps, and  because it emphasizes the underlying semantics behind the user interface, it should be straightforward to apply it to the design of services. But can it be applied to APIs?</p>
 <p>Recently, inspired by discussions with Meital Tagor Sbero, a UX research manager at Google, I’ve started looking into whether it might be useful in the design of APIs.</p>
 <p>Meital runs a team working on making APIs easier for programmers to use. They have been applying <a href="https://en.wikipedia.org/wiki/Cognitive_dimensions_of_notations">cognitive dimensions of notations</a>, a  collection of heuristic principles for  usability (due to Thomas Green and Marian Petre) to the design of Android APIs.</p>
 <p>One of the heuristics is called <em>closeness of mapping</em> and suggests that  a notation (or in this case an API) should correspond closely to the problem world. Concept design seems to offer a way to pursue this goal.</p>
 <p>As an example of an API that programmers find hard to understand, Meital pointed me to the <a href="https://developer.android.com/training/camerax">Android Camera API</a>. I decided to focus for a small case study on the <a href="https://developer.android.com/training/camerax/orientation-rotation">Rotation API</a>, because it’s small and seems to have some complexities that concepts can address. I’ve developed a concept model of this API which I believe resolves some of the problems in understanding it, but the model is not complete and it may well contain errors that reflect my own misunderstandings. I’ve also not done the hard work of mapping the concept actions and states to the programmatic components of the API.</p>
-<h2 id="why-the-rotation-api-is-tricky">Why the Rotation API is tricky<a hidden class="anchor" aria-hidden="true" href="#why-the-rotation-api-is-tricky">#</a></h2>
+<h1 id="why-the-rotation-api-is-tricky">Why the Rotation API is tricky<a hidden class="anchor" aria-hidden="true" href="#why-the-rotation-api-is-tricky">#</a></h1>
 <p>Before showing you the concepts I came up with, I need to explain why the Rotation API isn’t so easy to understand. I’ll do this by pointing to explanations within the official API documentation.</p>
 <p>The documentation starts by introducing some key terms:</p>
 <p><img loading="lazy" src="rotation-terms.png" alt=""  />
@@ -276,7 +276,7 @@ if (!doNotTrack) {
 <p><img loading="lazy" src="image-rotation.png" alt=""  />
 </p>
 <p>This puzzled me. How can the sensor be rotated and not be aligned with the phone? If the Pixel 3XL indeed has a sensor that is rotated 90 degrees, that would mean that the sensor would be in landscape mode when the phone is held upright in portrait mode.</p>
-<h2 id="a-conceptual-take">A Conceptual Take<a hidden class="anchor" aria-hidden="true" href="#a-conceptual-take">#</a></h2>
+<h1 id="a-conceptual-take">A Conceptual Take<a hidden class="anchor" aria-hidden="true" href="#a-conceptual-take">#</a></h1>
 <p>Here is my attempt to resolve these issues and explain what I believe is going on here.</p>
 <p>First, the phone contains an accelerometer that gives its rotation from the upright position. I’ll model this in a simple concept with just one state component (holding the current rotation) and an action that is called whenever the rotation changes:</p>
 <pre><code>concept DeviceRotation
@@ -351,7 +351,7 @@ action
 <li><em>getInferredOrientation</em> returns as outputs the inferred orientation, and its equivalent in degrees.</li>
 </ul>
 <p>This last action embodies whatever (arbitrary) decision we make on when to switch between orientations.</p>
-<h2 id="synchronizing-the-concepts">Synchronizing the concepts<a hidden class="anchor" aria-hidden="true" href="#synchronizing-the-concepts">#</a></h2>
+<h1 id="synchronizing-the-concepts">Synchronizing the concepts<a hidden class="anchor" aria-hidden="true" href="#synchronizing-the-concepts">#</a></h1>
 <p>Now we can put the concepts together:</p>
 <pre><code>app Camera
 include
@@ -367,13 +367,13 @@ include
     Camera.setAdditionalRotation (o)
 </code></pre>
 <p>When the accelerometer reports a change in the rotation of the device, a new inferred orientation is obtained from the new angle, and the additional rotation in the camera is updated accordingly.</p>
-<h2 id="a-diagram">A diagram<a hidden class="anchor" aria-hidden="true" href="#a-diagram">#</a></h2>
+<h1 id="a-diagram">A diagram<a hidden class="anchor" aria-hidden="true" href="#a-diagram">#</a></h1>
 <p>Here is a diagrammatic depiction that shows more directly the causal flow, from the rotation being updated in <em>DeviceRotation</em> to the device angle being updated in <em>UserOrientation</em> and then finally the additional rotation being set in <em>Camera</em>:</p>
 <p><img loading="lazy" src="android-camera-diagram.png" alt=""  />
 </p>
 <p>The diagrammatic notation is explained <a href="http://essenceofsoftware/studies/larger/tutor/#the-design-as-a-diagram">here</a> (and will be explained more fully in an upcoming tutorial).</p>
 <p>Note that some causal steps are still implicit, in particular how the updating of <em>additionalRotation</em> in <em>Camera</em> affects the rotation of the image produced by <em>capture</em>.</p>
-<h2 id="connecting-back-to-the-api">Connecting back to the API<a hidden class="anchor" aria-hidden="true" href="#connecting-back-to-the-api">#</a></h2>
+<h1 id="connecting-back-to-the-api">Connecting back to the API<a hidden class="anchor" aria-hidden="true" href="#connecting-back-to-the-api">#</a></h1>
 <p>Now looking back at the API code sample we can understand it more readily:</p>
 <p><img loading="lazy" src="orientation-changed.png" alt=""  />
 </p>
@@ -382,7 +382,7 @@ include
 <p><img loading="lazy" src="display-listener.png" alt=""  />
 </p>
 <p>my guess is that the following is going on. There is a separate and fuller implementation of the <em>UserOrientation</em> concept that rotates the display for apps in general (and is appropriately sync’d with the other concepts as above). The camera can use the  orientation reported directly by this module, obtaining the <em>rotation</em> field of the <em>display</em> object. This presumably is affected by whether the orientation lock is on, and perhaps also by whether the app in question is using this feature.</p>
-<h2 id="summary">Summary<a hidden class="anchor" aria-hidden="true" href="#summary">#</a></h2>
+<h1 id="summary">Summary<a hidden class="anchor" aria-hidden="true" href="#summary">#</a></h1>
 <p>In summary, we’ve resolved our initial questions as follows:</p>
 <ul>
 <li>The word “orientation” seems to be used in two distinct ways: for the device rotation, and for the inferred orientation.</li>

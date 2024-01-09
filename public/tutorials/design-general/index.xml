@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>On software design on The Essence of Software</title>
+    <title>On software design generally on The Essence of Software</title>
     <link>https://essenceofsoftware.com/tutorials/design-general/</link>
-    <description>Recent content in On software design on The Essence of Software</description>
+    <description>Recent content in On software design generally on The Essence of Software</description>
     <image>
       <title>The Essence of Software</title>
       <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
@@ -102,7 +102,7 @@ The first mode is expansive, and most successful when critical judgment is suspe
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</guid>
-      <description>Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.
+      <description>Tactics for divergence Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.
 Interviewing stakeholders Talking to potential users and other stakeholders is good not only for identifying needs but also for getting design ideas. You can ask what tools and techniques a user currently finds helpful, and what changes might make them more effective.</description>
     </item>
     

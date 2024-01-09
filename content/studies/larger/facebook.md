@@ -20,17 +20,17 @@ aliases:
 
 But what exactly makes a pattern dark? Where is the line between an aggressive but legitimate sales tactic and an immoral or illegal scheme?
 
-## A new project
+# A new project
 
 In a research project funded by a new [NSF program](https://beta.nsf.gov/funding/opportunities/designing-accountable-software-systems-dass) about designing accountable software systems, I'm working with my students [Geoffrey Litt](https://www.geoffreylitt.com) and [Josh Pollock](https://joshmpollock.com) (and my co-PIs [Danny Weitzner](https://internetpolicy.mit.edu/daniel-weitzner/) and [Joan Feigenbaum](http://www.cs.yale.edu/homes/jf/) and their students) on answering this question.
 
 Our initial take involves—surprise!—software concepts. To date, dark patterns work has focused on user interface tricks: getting you to click the big green button, for example, when it's really that small text field that doesn't even look like a button that you want to click instead. But the more serious dark patterns run deeper, and are conceptual in nature. 
 
-## As bad as it gets
+# As bad as it gets
 
 For example, in one of the most egregious scams I've ever seen (thanks so Eunsuk Kang for telling me about this), Intuit advertises a version of the Turbotax tax filing app as "guaranteed free." In fact, however, as Propublica has [documented](https://www.propublica.org/article/turbotax-just-tricked-you-into-paying-to-file-your-taxes), the app is far from free, and if you fail to fall within a narrow range of cases, you will be required to pay (after, of course, you've taken all the trouble to enter your private and personal tax data). Intuit and other tax software companies had lobbied to prevent the IRS from offering its own free solution (as the revenue agency does in many other countries), and in return promised to provide one itself. The free one, it turns out, is not called the "Free Edition," but rather the "Freedom Edition," and is not reachable from the Turbotax website.
 
-## Dark patterns in Facebook
+# Dark patterns in Facebook
 
 Most cases of dark patterns are more subtle. Take Facebook, for example. Suppose Alice posts a photo of Bob, and Carol (a friend of them both) then tags Bob in the photo. This seemingly innocent action has an unexpected and pernicious consequence: it makes the photo visible to all of Bob's friends, even those who are not friends of Alice or Carol. Perhaps the photo shows Bob at a job fair talking to a competitor and his friends include his work colleagues. There are all kinds of reasons that Bob might not want the photo to be shared in this way.
 
@@ -38,13 +38,13 @@ Now Facebook would likely respond that its users should know how the app behaves
 
 (I've written a piece for a lay audience about how Facebook uses "dark concepts" to further its sometimes nefarious business practices: you can find it [here](https://press.princeton.edu/ideas/facebooks-dark-design-its-not-just-the-algorithms).)
 
-## The key idea
+# The key idea
 
 Here's our idea. What's wrong with simple UI dark patterns is that they *confound the expectations* of the user: you think that big green button is the normal approval of your purchase, but it turns out to be the one that signs you up with extra insurance that you didn't want to buy. Patterns that operate more deeply also confound expectations, not about the meaning of user interface widgets, but about the very behavior of the concept at hand. When you see a familiar concept like a shopping cart, you bring with you all your prior experiences of shopping carts, so you assume this shopping cart will be no different. You don't expect items to be added to the cart spontaneously without your approval; shopping carts just don't do that.
 
 The use of a common concept thus establishes a kind of implicit contract between the company and the consumer. In exactly the same way, if an employee of a supermarket came and dropped items into your cart because they "thought you might like them," your grounds for objection should not be that such an action is inherently evil. It's that shopping carts just don't work that way.
 
-## Facebook's concepts
+# Facebook's concepts
 
 Let's apply this idea to Facebook. Our task is to come up with plausible concept definitions that capture our expectations of activities such as posting, friending and tagging. This will not be easy because apps like Facebook are so baroque that arguably our expectations are uncertain and inconsistent. So instead we'll try to imagine how an app like Facebook *might* work if it were designed to be as simple and clear as possible.
 
@@ -72,7 +72,7 @@ As we enumerate these concepts and their roles, we realize that we have covered 
 
 that will determine who is allowed to delete which items.
 
-## Defining states
+# Defining states
 
 Our next task is to outline the behavior of the individual concepts. The interesting case is Friend. We start with the state components (aka the data model):
 
@@ -86,7 +86,7 @@ Note also that the Friend concept maintains its own record of which item was pub
 
 Finally, the *sees* relation defines which items a particular user can see. It is not a state component that can be independently updated, but is instead *defined* in terms of the other state components. The expression *friend.publishes* uses the Alloy join operator, and associates with a user the set of items published by that user's friends.
 
-## Defining actions
+# Defining actions
 
 To complete the behavior of the individual concepts, we define actions. For Friend, for example, we might have the following actions, each with a comment giving its effect on the state:
 
@@ -107,7 +107,7 @@ To complete the behavior of the individual concepts, we define actions. For Frie
 	
 Of course these specs can be written precisely in a language like [Alloy](alloytools.org) and—in addition to being precise—that would let you do automatic simulation and analysis. But that's a story for another day. The important things to note here are: (a) that the *read* action is a kind of placeholder; it doesn't really do anything except block if the user isn't allowed to see the item; and (b) that the *publish* action is not called "post" or anything that like, because it will be in the composition with other concepts that we get to decide what comprises publishing.
 
-## Defining synchronizations
+# Defining synchronizations
 
 Now we can put things together, and define the overall behavior by synchronizing the actions of the individual concepts. I've only shown you the actions of the Friend concept, but I think you'll be able to figure out what the actions of the other concepts do from their names.
 
@@ -140,7 +140,7 @@ As a result of these actions, when Alice adds a comment to Bob's post, only Alic
 
 The second sync says what happens when a user tags an item. Both the tagger and the tagged person are owners, so the tagged person can delete the tag if they don't like it. More interestingly, the effect of tagging includes making the tag published by the publisher of the item. So this means that the tag is visible to the same set of users as the item it's attached to.
 
-## Modeling the way Facebook really is
+# Modeling the way Facebook really is
 
 This is not how Facebook works by default, although you can get this behavior by tightening your privacy settings. Here is a sync that describes Facebook's default behavior:
 
@@ -156,7 +156,7 @@ This is not how Facebook works by default, although you can get this behavior by
 
 In this variant, the person tagged (*m*) additionally becomes a publisher of both the tag and the item tagged: that means that all their friends will see the tagging.
 
-## What have we gained?
+# What have we gained?
 
 By describing the Facebook design in terms of concepts, we've achieved a few things:
 
@@ -168,7 +168,7 @@ By describing the Facebook design in terms of concepts, we've achieved a few thi
 
 3. We can now judge the various design options, distinguishing sane and straightforward designs from those that are at best baroque and at worst malicious. For example, the case for arguing that any follow-up to a post is treated as published by the author of the post is straightforward, and corresponds to the idea of the whole discussion being "hosted" by that author. The case for the actual Facebook design, in which a tagged person is deemed to republish the post as a whole, seems much harder to defend.
 
-## Where does this all go?
+# Where does this all go?
 
 The upshot of this rather lengthy (and in places complicated) discussion can be stated simply. A user interacts with a software system by executing a series of actions. In an honest design free of dark patterns, which actions occur, and the effect of those actions, align with the user's expectations. Those expectations are set by the assumptions that the user brings to the interaction, based on prior experiences with similar systems. They include simple expectations about the user interface itself (for example, that green means go and red means stop), and deeper expectations about the underlying functionality (for example, that items don't spontaneously get added to a shopping cart). Concepts provide a way to identify recurring units of functionality, and thus to articulate these assumptions.
 

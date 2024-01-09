@@ -6,14 +6,14 @@ description: "A new way to think about concept design"
 ShowToc: false
 TocOpen: false
 hideMeta: false # removes date etc from post
-# hideSummary: true
+hideSummary: false
 summary: "Or how to become a great software designer."
 editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---
-### The secret of great design
+# The secret of great design
 
 Watch great designers at work, or study their designs, and you may wonder: what's their secret? Are they preternaturally inventive? Do they have better taste and judgment than the rest of us? Perhaps, but I don't believe that this can account for the best designs. Based on my own experience studying design and designers (mostly but not exclusively for software), I'd attribute the success of great designers to two factors.
 
@@ -21,7 +21,7 @@ First, *they've done it before*. Contrary to the picture of design implicit in t
 
 Second, *they refine their work*. Nobody can solve a challenging problem in one step. What distinguishes great designers from mediocre ones isn't that their first attempts are so much better, but that they critique their work ruthlessly, and keep polishing it until no more improvement seems possible. This observation is not unique to design; George Saunders says it's the secret of great writing too (and perhaps it's a [general life strategy](https://mailchi.mp/cf485ce039e0/orchid-4745217)).
 
-### Implications for software design
+# Implications for software design
 
 Each of these has its implications. The first suggests we might codify a collection of reusable design ideas—both patterns (reusable solutions) and design moves (reusable tactics)—for software. Patterns have been very influential in software engineering (that is, in shaping implementation structures), and concept design is an attempt to find patterns in software design (that is, in shaping behavioral structures). Design moves have been discussed less but are no less important.
 
@@ -29,7 +29,7 @@ The second suggests that we need language, structures and design criteria for ex
 
 Although design thinking has done good things, raising awareness of design and encouraging people in all walks of life to see new opportunities for design, it has also tended—perhaps because of its emphasis on democratization of design—to undermine expertise and the value of critique. Natasha Jen, a Pentagram designer,  [pokes fun](https://www.youtube.com/watch?v=_raleGrTdUg) at design thinking for these flaws.
 
-### Concept design moves
+# Concept design moves
 
 Thinking about design moves, I came to realize that many of the case studies that I analyze in [EOS](https://essenceofsoftware.com) involve one or more simple tactics. I've classified them into 3 pairs of design moves, each pair comprising a move and its dual. A design move isn't a panacea; it trades off one quality of the design for another. If applied skillfully though, a single move can transform a design from good to great.
 
@@ -41,7 +41,7 @@ I outline the design moves and give examples of their application in a [paper](h
 
 3. **Tighten/loosen**. Tighten increases the synchronization between concepts; loosen weakens it. The tradeoff here is between automation and flexibility. With tight synchronization, the user does less but also has fewer options.
 
-### A language of design: an example
+# A language of design: an example
 
 Design moves—and concepts—don't guarantee that your designs will be good. But they give you a language for thinking about design, and a way to turn what might otherwise be an intimidating pile of seemingly arbitrary design options into a structured design space that can be navigated more systematically.
 
@@ -55,7 +55,7 @@ This second approach suggests to me that the Mute concept might be serving two d
 
 As always, the challenge will be to balance richness of functionality and automation on the one hand with maintaining simplicity and not overwhelming the user with controls on the other.
 
-### Let's help Zoom!
+# Let's help Zoom!
 
 Here's an experiment in community design. Let's together develop a design to address the Zoom raised-hands problem in the [concept forum](https://forum.softwareconcepts.io/t/lets-help-zoom-with-their-design/113). I'll post these initial ideas to get the topic going.
 

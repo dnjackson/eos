@@ -1,3 +1,3 @@
 ---
-title: "Concept basics"
+title: "On concept design"
 ---

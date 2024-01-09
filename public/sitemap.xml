@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://essenceofsoftware.com/drafts/concepts-redux/new-take/</loc>
+  </url><url>
+    <loc>https://essenceofsoftware.com/drafts/concepts-redux/what-is-design/</loc>
+  </url><url>
+    <loc>https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/</loc>
+  </url><url>
+    <loc>https://essenceofsoftware.com/studies/small/</loc>
+    <lastmod>2023-04-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</loc>
     <lastmod>2022-08-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -56,25 +65,31 @@
     <loc>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/modularity/</loc>
     <lastmod>2022-09-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/</loc>
-    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+    <loc>https://essenceofsoftware.com/tutorials/gentle-intro/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/</loc>
-    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/posts/llm-coding/</loc>
+    <loc>https://essenceofsoftware.com/posts/</loc>
     <lastmod>2023-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/</loc>
+    <loc>https://essenceofsoftware.com/posts/end-of-agile/</loc>
     <lastmod>2023-07-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/studies/larger/tutor/</loc>
@@ -110,9 +125,6 @@
     <loc>https://essenceofsoftware.com/studies/small/broken-integrity/</loc>
     <lastmod>2023-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/small/</loc>
-    <lastmod>2023-04-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://essenceofsoftware.com/posts/dark-concepts/</loc>
     <lastmod>2023-03-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -146,26 +158,50 @@
     <loc>https://essenceofsoftware.com/studies/small/class-numbers/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://essenceofsoftware.com/tags/css/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tags/html/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tags/markdown/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/categories/syntax/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tags/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://essenceofsoftware.com/posts/distillation/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tags/themes/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/categories/themes/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/sketchnote/</loc>
     <lastmod>2021-11-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://essenceofsoftware.com/series/</loc>
+    <lastmod>2021-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/series/themes-guide/</loc>
+    <lastmod>2021-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tags/catalog/</loc>
+    <lastmod>2021-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tags/concept/</loc>
+    <lastmod>2021-11-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://essenceofsoftware.com/posts/subscribe/</loc>
     <lastmod>2021-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tags/catalog/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tags/concept/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tags/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://essenceofsoftware.com/tags/upvote/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/studies/small/upvote/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
@@ -173,14 +209,16 @@
     <loc>https://essenceofsoftware.com/posts/acm-tech-talk/</loc>
     <lastmod>2021-11-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/sample-chapter/</loc>
+    <loc>https://essenceofsoftware.com/posts/sample-chapters/</loc>
     <lastmod>2021-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/concepts-redux/how-software-succeeds/</loc>
+    <loc>https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/</loc>
   </url><url>
     <loc>https://essenceofsoftware.com/drafts/deemph-data-model-and-action-definitions-for-coding/</loc>
   </url><url>
     <loc>https://essenceofsoftware.com/drafts/noosphere-v2/</loc>
+  </url><url>
+    <loc>https://essenceofsoftware.com//rude/</loc>
   </url><url>
     <loc>https://essenceofsoftware.com/about/</loc>
   </url><url>
@@ -195,8 +233,6 @@
     <loc>https://essenceofsoftware.com/reviews/</loc>
   </url><url>
     <loc>https://essenceofsoftware.com/search/</loc>
-  </url><url>
-    <loc>https://essenceofsoftware.com/series/</loc>
   </url><url>
     <loc>https://essenceofsoftware.com/subscribe/</loc>
   </url><url>

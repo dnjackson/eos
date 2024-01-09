@@ -85,15 +85,19 @@ h1.post-title {
 }
 
 .post-content h1 {
-    margin: 40px auto 32px;
-    font-size:32px
+    margin: 40px auto 16px;
+    font-size:24px
 }
 
 .post-content h2 {
-    margin: 24px auto 24px;
-    font-size:28px
+    margin: 28px auto 12px;
+    font-size:18px
 }
 
 .post-content h3 {
     font-size:18px
+}
+
+.entry-content p {
+    font-size:16px
 }

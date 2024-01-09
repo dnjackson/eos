@@ -22,7 +22,7 @@ When integrity violations do occur, however, they can cause major trouble for us
 
 Recently, I've come across three more examples of integrity violation, causing varying degrees of surprise.
 
-## Violation of Undo in Apple Mail
+# Violation of Undo in Apple Mail
 
 In a recent update to macOS, Apple extended the basic *Message* concept with an *undo send* action. This is handy: it gives you 30 seconds after you've sent a message to change you mind. 
 
@@ -36,7 +36,7 @@ I noticed this because I have a standard way of dealing with messages in my inbo
 
 Initially, I thought that the effect of the undo was to pop the undo-stack all the way back to the *send*. In fact, it's not that bad, and what it does instead is to keep the *send* action on the top of the stack even as other actions are performed. Either way, this violates the simple and intuitive operational principle of *Undo* that executing *undo* reverses the last action performed.
 
-## Violation of Playlist in Spotify
+# Violation of Playlist in Spotify
 
 The operational principle of the *Playlist* concept says that if you start playing the playlist by selecting a song and clicking play then, until you stop playing, it will play the tracks of the playlist in order from that song onwards.
 
@@ -48,7 +48,7 @@ Nevertheless, the app shows signs of some design struggles here. Strangely, if t
 
 ![Spotify's queue](spotify-queue-screenshot.png)
 
-## Violation of Ride in Uber
+# Violation of Ride in Uber
 
 An operational principle may have caveats: that the typical outcome may not follow in extraordinary circumstances. For example, The *Order* concept promises that if you order some items, they will eventually be shipped and delivered. But customers understand that this principle cannot be a cast iron promise, and an inventory glitch may prevent its fulfillment. 
 
@@ -60,7 +60,7 @@ Using Uber's ride service, I've noticed that rides are increasingly canceled. Yo
 
 The driver must surely have the ability to cancel a confirmed ride in some circumstances (such as unexpected traffic). But it seems that drivers are canceling more frequently than necessary, presumably so that they can switch to more lucrative rides.
 
-## When integrity is lost
+# When integrity is lost
 
 How do typical users respond to broken integrity? I doubt they say to themselves "ah, this app seems to be violating the essential integrity of this concept." I suspect that instead they just get confused: they don't really know what to expect when they order an Uber, what happens when they queue songs in Spotify, or what undo actually does in Apple Mail. 
 

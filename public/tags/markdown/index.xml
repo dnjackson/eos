@@ -1,23 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>markdown on Essence of Software</title>
+    <title>markdown on The Essence of Software</title>
     <link>https://essenceofsoftware.com/tags/markdown/</link>
-    <description>Recent content in markdown on Essence of Software</description>
+    <description>Recent content in markdown on The Essence of Software</description>
     <image>
+      <title>The Essence of Software</title>
       <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
       <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Concepts: A Brief Intro</title>
-      <link>https://essenceofsoftware.com/posts/intro/</link>
-      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      <title>The Essence of the Essence</title>
+      <link>https://essenceofsoftware.com/posts/distillation/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/posts/intro/</guid>
-      <description>A brief introduction to concepts</description>
+      <guid>https://essenceofsoftware.com/posts/distillation/</guid>
+      <description>A short(ish) summary of the book</description>
+    </item>
+    
+    <item>
+      <title>Concept Design Sketchnote</title>
+      <link>https://essenceofsoftware.com/posts/sketchnote/</link>
+      <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/posts/sketchnote/</guid>
+      <description>A graphical summary of concept design ideas</description>
+    </item>
+    
+    <item>
+      <title>ACM tech talk</title>
+      <link>https://essenceofsoftware.com/posts/acm-tech-talk/</link>
+      <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/posts/acm-tech-talk/</guid>
+      <description>Daniel explains concept design in a single video.</description>
+    </item>
+    
+    <item>
+      <title>Sample book chapters</title>
+      <link>https://essenceofsoftware.com/posts/sample-chapters/</link>
+      <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/posts/sample-chapters/</guid>
+      <description>Download free sample chapters.</description>
     </item>
     
   </channel>

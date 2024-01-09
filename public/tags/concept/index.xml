@@ -12,7 +12,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tags/concept/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tags/concept/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Design Updates in Your Mailbox</title>
+      <link>https://essenceofsoftware.com/posts/subscribe/</link>
+      <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/posts/subscribe/</guid>
+      <description>Join an ultra-low-volume email list to hear new ideas about concepts and design.</description>
+    </item>
+    
     <item>
       <title>Upvote: An Example Concept</title>
       <link>https://essenceofsoftware.com/studies/small/upvote/</link>

@@ -6,9 +6,9 @@ summary: "buy"
 ShowBreadCrumbs: false
 ---
 
-### Where to buy the book
+# Where to buy the book
 
-#### Sources
+## Sources
 
 [Princeton University Press](https://press.princeton.edu/books/hardcover/9780691225388/the-essence-of-software)  
 [Independent bookstores](https://www.indiebound.org/book/9780691225388)  
@@ -18,7 +18,7 @@ ShowBreadCrumbs: false
 [Amazon UK](https://www.amazon.co.uk/Essence-Software-Concepts-Matter-Design/dp/0691225389)  
 [Maruzen](https://www.maruzen-publishing.co.jp/item/?book_no=304995) (Japanese)
 
-#### Book details
+## Book details
 
 Hardcover
 List Price: $29.95 / £25.00  

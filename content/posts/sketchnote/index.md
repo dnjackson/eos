@@ -3,11 +3,11 @@ author: "Daniel Jackson"
 title: "Concept Design Sketchnote"
 date: "2021-11-20"
 description: "A graphical summary of concept design ideas"
-# tags: ["markdown", "css", "html", "themes"]
-# categories: ["themes", "syntax"]
-# series: ["Themes Guide"]
-# ShowToc: true
-# TocOpen: true
+tags: ["markdown", "css", "html", "themes"]
+categories: ["themes", "syntax"]
+series: ["Themes Guide"]
+ShowToc: true
+TocOpen: true
 hideMeta: false # removes date etc from post
 summary: "Early concept design ideas, drawn by MJ Broadbent."
 editPost:

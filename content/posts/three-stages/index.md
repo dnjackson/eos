@@ -2,11 +2,11 @@
 author: "Daniel Jackson"
 title: "Three Stages of Enlightenment"
 date: "2023-05-02"
-description: "A brief intro to concept design in three parts"
+description: "A brief intro to concept design in three parts."
 ShowToc: true
 TocOpen: true
 hideMeta: false # removes date etc from post
-summary: "A brief intro to concept design in three parts"
+summary: "A brief intro to concept design in three parts."
 editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text
@@ -14,7 +14,7 @@ editPost:
 ---
 I originally wrote this post in response to a lovely invitation from Gordon Brander to contribute a [post](https://subconscious.substack.com/p/concept-design-in-three-easy-steps) to his [blog](https://subconscious.substack.com) (which I thoroughly recommend—it’s full of provocative ideas). 
 
-## Introduction
+# Introduction
 
 I've spent the last ten years or so looking at hundreds of apps, trying to figure out what software design is all about. The result of my explorations is *concept design*: a new lens for thinking about software, how it’s designed, constructed and used.
 
@@ -24,7 +24,7 @@ I call it a “new” lens, because adopting it dramatically changes the way mos
 
 I’ll explain concept design in three stages, each of which suggests adopting a different perspective on design from the conventional one. 
 
-## Stage One: Design = Functionality
+# Stage One: Design = Functionality
 
 Stage One is the least radical, but it’s important to grasp it before moving on: _view the design of software as the shaping of its functionality_.
 
@@ -46,7 +46,7 @@ The state also acts as a measure of complexity: sometimes you’ll consider some
 
 Describing an app in terms of [states and actions](https://essenceofsoftware.com/tutorials/concept-basics/apps-are-state-machines/) is pretty challenging, and the work is often worth it. But doing it for the whole app still seems like a daunting task. Is there any way to break the task down and make it simpler?
 
-## Stage Two: Concepts
+# Stage Two: Concepts
 
 Stage Two involves the most fundamental move, in which we bring some modular structure to an app’s functionality.
 
@@ -80,7 +80,7 @@ You might wonder if this makes design less creative. I’d argue that it makes i
 
 Concept design helps you identify what makes apps distinct, and what a company’s true assets are. Photoshop succeeded because of the Layer concept; TBL’s invention of the web rests not on hypertext or markup or HTTP (none of which were novel) but on the *URL* concept; Microsoft Word introduced *Style*, the concept that almost defines desktop publishing; Dan Bricklin’s VisiCalc had *RelativeReference*, the concept that makes spreadsheets work.
 
-## Stage Three: Independence
+# Stage Three: Independence
 
 The full benefit of concepts comes when they can be designed (and even implemented) fully independently of one another.
 
@@ -114,7 +114,7 @@ And sometimes even clever syncs can’t make a concept composition work. Gmail�
 
 Finally, in some cases, a synchronization is so powerful that it enables all kinds of new workflows. Photoshop, for example, syncs *Channel*, *Selection* and *Image* in a way that only experts fully understand but which brings amazing opportunities (you’ll know what I mean if you’ve ever extracted the edges from an image and applied sharpening just to them).
 
-## So what can you do with all this?
+# So what can you do with all this?
 
 As an **individual designer**, a concept design lens can change how you work:
 - **App = concepts**. Viewing apps as compositions of concepts brings a new clarity: now you can explain how a word processor differs from a text editor (it has *Paragraph*, *Style* and *Format* concepts, but usually no robust *Line* concept) and from a desktop publishing app (it has a *TextFlow* concept and a real *Page* concept).

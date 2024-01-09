@@ -10,7 +10,7 @@
 <meta name="description" content="Notes on designing a GPT-powered tutor using concepts">
 <meta name="author" content="Daniel Jackson">
 <link rel="canonical" href="https://essenceofsoftware.com/studies/larger/tutor/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.1eecbf9c7523bd5ac80b32f81ece29e45269e9f1fa42874b4bbc1b722c883eba.css" integrity="sha256-Huy/nHUjvVrICzL4Hs4p5FJp6fH6QodLS7wbciyIPro=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0c5ed6ebd2dfbeba53b78418190f5b01d42289c40be1afa56cc706f62aaa5b23.css" integrity="sha256-DF7W69LfvrpTt4QYGQ9bAdQiicQL4a&#43;lbMcG9iqqWyM=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
@@ -221,7 +221,7 @@ if (!doNotTrack) {
             <span class="details">Table of Contents</span>
         </summary>
 
-        <div class="inner"><ul><ul>
+        <div class="inner"><ul>
                 <li>
                     <a href="#overview" aria-label="Overview">Overview</a></li>
                 <li>
@@ -239,8 +239,7 @@ if (!doNotTrack) {
                 <li>
                     <a href="#the-design-as-a-diagram" aria-label="The design as a diagram">The design as a diagram</a></li>
                 <li>
-                    <a href="#state-queries-and-concept-mapping" aria-label="State Queries and Concept Mapping">State Queries and Concept Mapping</a></li></ul>
-                    
+                    <a href="#state-queries-and-concept-mapping" aria-label="State Queries and Concept Mapping">State Queries and Concept Mapping</a></li>
                 <li>
                     <a href="#summary-of-concept-design-principles" aria-label="Summary of Concept Design Principles">Summary of Concept Design Principles</a>
                 </li>
@@ -249,7 +248,7 @@ if (!doNotTrack) {
     </details>
 </div>
 
-  <div class="post-content"><h2 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
+  <div class="post-content"><h1 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h1>
 <p><strong>About this case study</strong>. This case study presents a concept design for a GPT-powered tutor that we built in May 2023 for experimental use in the MIT class <a href="https://61040-fa23.github.io">6.1040: Software Studio</a> this coming fall. Geoffrey Litt had the idea for the tutor and implemented it; the concept design was a joint effort. In <a href="https://share.cleanshot.com/P0VybXyY">this video</a> Geoffrey demonstrates the tutor in action.</p>
 <p><strong>Primary motivations</strong>. From a concept design perspective, the case study offered an opportunity to:</p>
 <ul>
@@ -258,7 +257,7 @@ if (!doNotTrack) {
 <li>Illustrate how concepts can help you address the kinds of design challenges that arise even in simple apps.</li>
 </ul>
 <p><strong>Modular implementation</strong>. Geoffrey used this case study also as a chance to explore the use of concepts as a modularity mechanism in the code. He implemented the tutor in his <a href="riffle.systems">Riffle</a> framework, and used the concept design to guide the structure of the relational tables and code, so that each Riffle component corresponds to a concept. The results seem to be promising, bringing more clarity and modularity than a traditional design might have produced. I hope that Geoffrey will write something about this at some point.</p>
-<h2 id="design-goals-and-principles">Design Goals and Principles<a hidden class="anchor" aria-hidden="true" href="#design-goals-and-principles">#</a></h2>
+<h1 id="design-goals-and-principles">Design Goals and Principles<a hidden class="anchor" aria-hidden="true" href="#design-goals-and-principles">#</a></h1>
 <p><strong>Goals</strong>. The goals of building and deploying the tutor are:</p>
 <ul>
 <li>To get some initial experience using GPT-like tools in education;</li>
@@ -275,7 +274,7 @@ if (!doNotTrack) {
 <li>Making maintenance and deployment easy for course staff, and ensuring that adding new questions and advice was straightforward, which suggested making a serverless app (the implementation requiring only a tiny lambda function to proxy API requests to GPT) and not implementing a web-based UI for staff, but instead taking questions and advice from a table-structured file that is easily edited.</li>
 </ul>
 <p><strong>Choice of tech stack</strong>. Initially, one of our principles was to implement the tutor using the tech stack taught in the class (Node/Express/Vue) so that the implementation might serve as a pedagogical example for students, but we decided in the end to use <a href="riffle.systems">Riffle</a> instead, both to &ldquo;eat our own dog food&rdquo;, exercising our research on that platform, and taking advantage of Riffle’s benefits, both in ease of development and to the user (most notably the full history of the user&rsquo;s interactions being persisted locally in a SQL database inside the browser, giving the appearance of a backend storage without the need to implement it or compromise the user&rsquo;s privacy).</p>
-<h2 id="initial-design">Initial design<a hidden class="anchor" aria-hidden="true" href="#initial-design">#</a></h2>
+<h1 id="initial-design">Initial design<a hidden class="anchor" aria-hidden="true" href="#initial-design">#</a></h1>
 <p><strong>Basic conception</strong>. We started with the simple idea that the student would be presented with a collection of structured exercises. Attempted solutions to the exercises would be graded by GPT, providing feedback to the student, and allowing repeated submissions until the student was able to submit a solution for which GPT reported no evident flaws.</p>
 <p><strong>Prompt contents</strong>. We assumed that we would not fine-tune the LLM, but would use GPT out of the box with appropriate prompts. We planned to include in the GPT prompt for a particular exercise the following elements:</p>
 <ul>
@@ -294,7 +293,7 @@ if (!doNotTrack) {
 <p>Here’s a screenshot of the running app, showing the exercises on the left (with the selected exercise part highlighted); the submission and feedback boxes the middle; and the advice and chat panels on the right (explained in more detail below):</p>
 <p><img loading="lazy" src="screenshot-with-help.png" alt=""  />
 </p>
-<h2 id="design-challenges">Design Challenges<a hidden class="anchor" aria-hidden="true" href="#design-challenges">#</a></h2>
+<h1 id="design-challenges">Design Challenges<a hidden class="anchor" aria-hidden="true" href="#design-challenges">#</a></h1>
 <p>We pursued the design of these concepts in the light of several key challenges that we identified.</p>
 <p><strong>Saving student solutions</strong>. We intended to include a simple way for students solutions to be saved, both so that students themselves could review their work and so that we could evaluate which exercises were the most useful, what students were able or not able to do, and so on.</p>
 <p>Initially, we thought to include this functionality in the <em>Exercise</em> concept. This would result in a nice operational principle (OP) for the concept, with the student selecting an exercise and submitting a series of solutions. If this functionality were instead factored out into another concept, the <em>Exercise</em> concept would be little more than a data structure containing the exercises, and would lack a compelling OP.</p>
@@ -343,7 +342,7 @@ state
 <p>Here’s a screenshot showing the chat panel:</p>
 <p><img loading="lazy" src="screenshot-with-chat.png" alt=""  />
 </p>
-<h2 id="final-concept-design">Final Concept Design<a hidden class="anchor" aria-hidden="true" href="#final-concept-design">#</a></h2>
+<h1 id="final-concept-design">Final Concept Design<a hidden class="anchor" aria-hidden="true" href="#final-concept-design">#</a></h1>
 <p>We now outline the concepts in detail. The <em>Exercise</em> concept manages the exercise texts, and associates parts of exercises with competences:</p>
 <pre><code>concept Exercise
 purpose construct and present structured exercises
@@ -411,7 +410,7 @@ actions
   ask (query: Text, out response: Text)
 </code></pre>
 <p>This is almost the simplest form this concept might take, with the prompts included in the question text. A richer concept would allow prompts to be registered upfront. The API version of GPT is actually stateless, so even the question and answer sequences are not strictly necessary.</p>
-<h2 id="concept-composition">Concept Composition<a hidden class="anchor" aria-hidden="true" href="#concept-composition">#</a></h2>
+<h1 id="concept-composition">Concept Composition<a hidden class="anchor" aria-hidden="true" href="#concept-composition">#</a></h1>
 <p>The app as a whole is a composition of concepts:</p>
 <pre><code>app ConceptTutor
 include
@@ -426,7 +425,7 @@ include
 <p>We haven’t specified the <em>User</em> concept, since it could take many forms; all that matters for tracking completed exercises is that it provide some identifiers, given by the type <em>User.User</em>, which indexes the <em>Drill</em> concept, so there is one instance of <em>Drill</em> for each user. In our implementation, the browser naturally provides a distinct identifier for each user and no explicit implementation of such a concept is needed. We currently aren’t recording completed exercises, but could easily do that by labeling them with a browser identifier, for example.</p>
 <p>There are two instantiations of the <em>Advice</em> concept, one holding advice for each competence and one holding specific advice for each exercise part.</p>
 <p>The <em>Chat</em> concept is instantiated in two dimensions, over users and exercise parts, so each user has a separate chat for each exercise part they are working on. The <em>Party</em> parameter of the <em>Chat</em> concept is instantiated with a type consisting of two simple constant values: <em>USER</em> representing the user, and <em>BOT</em> representing the LLM bot. Don’t be confused by the <em>User</em> vs. <em>Party</em> types: the users of the app as a whole are not the parties to the chats, since each chat involves only one user (and the bot).</p>
-<h2 id="concept-synchronizations">Concept Synchronizations<a hidden class="anchor" aria-hidden="true" href="#concept-synchronizations">#</a></h2>
+<h1 id="concept-synchronizations">Concept Synchronizations<a hidden class="anchor" aria-hidden="true" href="#concept-synchronizations">#</a></h1>
 <p>Almost all of the actions of the concepts are executed independently but there are a few key synchronizations.</p>
 <p>One occurs when the student submits a solution to an exercise part:</p>
 <pre><code>sync userSubmitsPart (u: User)	
@@ -450,7 +449,7 @@ include
 </code></pre>
 <p>for example. I prefer to treat the out parameters more like other arguments so they can be named (which matters more when an action has more than one of them). Also, I haven’t included the extra prefixes that are added to the chat posts (“You submitted: “, “Feedback: “).</p>
 <p>A similar but simpler sync is needed when the user posts a question to the LLM in the chat.</p>
-<h2 id="the-design-as-a-diagram">The design as a diagram<a hidden class="anchor" aria-hidden="true" href="#the-design-as-a-diagram">#</a></h2>
+<h1 id="the-design-as-a-diagram">The design as a diagram<a hidden class="anchor" aria-hidden="true" href="#the-design-as-a-diagram">#</a></h1>
 <p>The entire concept design can be shown as a diagram. Here it is:</p>
 <p><img loading="lazy" src="tutor-diagram.png" alt=""  />
 </p>
@@ -473,7 +472,7 @@ include
 <li><strong>Instantiations</strong>. I’ve only shown one instantiation of <em>Advice</em>, and the indexing of <em>Drill</em> and <em>Chat</em> isn’t shown.</li>
 </ul>
 <p>I plan to write a tutorial soon explaining the notation in more detail.</p>
-<h2 id="state-queries-and-concept-mapping">State Queries and Concept Mapping<a hidden class="anchor" aria-hidden="true" href="#state-queries-and-concept-mapping">#</a></h2>
+<h1 id="state-queries-and-concept-mapping">State Queries and Concept Mapping<a hidden class="anchor" aria-hidden="true" href="#state-queries-and-concept-mapping">#</a></h1>
 <p>A simple action involving one concept can still result in a variety of effects in the user interface. Note in particular that when the action</p>
 <pre><code>UserDrill[u].selectTask(p)
 </code></pre>

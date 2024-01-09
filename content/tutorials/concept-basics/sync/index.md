@@ -13,7 +13,7 @@ editPost:
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---
-In another [tutorial](concepts-are-state-machines), I showed a concept definition for [Yellkey](https://yellkey.com), a popular URL shortening service:
+In another [tutorial](../concept-as-machine), I showed a concept definition for [Yellkey](https://yellkey.com), a popular URL shortening service:
 
 	concept Yellkey
 	purpose shorten URLs to common words

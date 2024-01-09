@@ -1,24 +1,23 @@
 ---
 author: "Daniel Jackson"
-title: "LLM Coders: The End of Agile?"
+title: "The End of Agile"
 date: "2023-07-18"
-description: "How LLMs will change programming and the role concepts can play"
+description: "Why agile no longer makes sense in the LLM era."
 ShowToc: false
 TocOpen: false
 hideMeta: false # removes date etc from post
-# hideSummary: true
-summary: "How LLMs will change programming and the role concepts can play"
+summary: "Why agile no longer makes sense in the LLM era."
 editPost:
     URL: "https://forum.softwareconcepts.io"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---
-
+# Feeling like Cinderella
 To celebrate my lab’s 60th birthday, we put on a two-day bash: one day of talks [from alumni](https://www.csail.mit.edu/CSAIL_20_60) and one day or talks [from the faculty](https://www.imaginationinaction.co). I started my talk by noting that the title of the event was “AI Frontiers & Implications”, and that I felt like Cinderella, being a plain old computer scientist gatecrashing an AI ball.
 
 Our lab’s name ([CSAIL](http://csail.mit.edu)) stands for “Computer Science and Artificial Intelligence Laboratory,” but of course nowadays it’s all about AI. Like many of us, I’ve sometimes wondered if AI will make everything I’ve worked on irrelevant. After all, won’t GPT-N (for some sufficiently large N) be able to design and code all our software without human intervention?
 
-## Why AI will never make a great programmer
+# Why AI will never make a great programmer
 
 For now, I’ve come to the conclusion that there’s no risk of this in the near future. I noted in another [recent talk](http://people.csail.mit.edu/dnj/talks/index.html#alliances-2023) that there are three predictions you should never make: (3) that the stock market will crash this year; (2) that a certain politician is too stupid and corrupt to win election; and (1) that GPT won’t ever be able to do X (for any X). Nevertheless, despite all of GPT’s amazing capabilities, there’s good reason for skepticism:
 
@@ -26,7 +25,7 @@ For now, I’ve come to the conclusion that there’s no risk of this in the nea
 - GPT is really good at writing code that’s like all the code that’s been written before. Nobody’s shown any examples of it inventing new and better ways to write code, so if we just leave it to GPT-4, our code will be stuck with the knowledge that StackOverflow had in 2021, when GPT-4’s training ended. And if we stop innovating, a future version of GPT won’t know any more. I think of this as a kind of [vigilance decrement](https://en.wikipedia.org/wiki/Vigilance_(psychology)#:~:text=Vigilance%20decrement%20is%20defined%20as,detect%20a%20weak%20target%20signal.) writ large: just as a human driver can’t take over when a self-driving car gets in a pickle, so we human coders won’t be able to fix a massive software mess that LLMs create if we don’t continue to hone our skills.
 - Sometimes it’s OK if software mostly works. But this is less common than you might imagine, and software has a habit of becoming critical the more useful it is. We just won’t tolerate software that has occasional but devastating failures.
 
-## Are LLMs like compilers?
+# Are LLMs like compilers?
 
 Some people say LLMs will be like compilers. Initially, there were skeptical programmers who believed they could write better machine code themselves. But eventually people realized that compilers saved so much trouble that it was rarely worth the effort of writing low level code yourself.
 
@@ -36,7 +35,7 @@ But this analogy misses a crucial point. The reason that high-level languages to
 
 What’s so great about LLMs as coders, in contrast, is that they take a vague specification and fill in the implicit details from the context. This is what makes  using an LLM to generate code so compelling: you just nudge a bit, offer some hints, and if you’re lucky, you get what you wanted. The downside is that there’s no guarantee that the ambiguities will be resolved the way you expected.
 
-## An impressive example of LLM coding
+# An impressive example of LLM coding
 
 Here’s an example of a coding task that I gave ChatGPT last week that illustrates its amazing ability to fill in the gaps in a vague specification.
 
@@ -65,7 +64,7 @@ meant that the person with ID 0001 has a second child with ID number 0505 who wa
 
 I then gave GPT a series of additional instructions: to extend this function across the whole file; to handle some new fields it hadn’t seen before; and to generate a graph in DOT format. All this worked fine and the resulting 100 or so lines of code had no bugs, as far as I could tell.
 
-## Domain knowledge is critical
+# Domain knowledge is critical
 
 My takeaway from the family tree experiment is that domain knowledge is GPT’s secret sauce. It’s indeed impressive that it can write routine code (such as a basic parser) so effectively, but its ability to fill in the gaps in a spec is even more remarkable.
 
@@ -100,7 +99,7 @@ The code GPT produced for this prompt was much better. What was most exciting wa
 
 GPT has correctly inserted a special case: that even though you’re not friends with yourself, you should be able to read your own posts.
 
-## The future of programming: unremarkable observations
+# The future of programming: unremarkable observations
 
 What are the implications of all this for the future of programming? First, some unremarkable observations that others have made many times before:
 - GPT is amazing at writing routine code. It can save you tons of time and relieve the tedium of writing basic functions.
@@ -110,7 +109,7 @@ What are the implications of all this for the future of programming? First, some
 
 These facts alone mean that the way you program (and teach programming) will change a lot. I’m particularly intrigued by the new role that code review will play, and how classic ideas about invariants and verification might become more relevant than ever.
 
-## The end of agile?
+# The end of agile?
 
 I’m most excited by the ways in which GPT differs from all software engineering tools we’ve previously encountered.
 
@@ -120,7 +119,7 @@ What does agile development tell you to do? Roughly, to put all your effort into
 
 LLMs have turned all this on its head. Now the focus of our work is writing thoughtful “documentation”: prompts that we give to GPT that hold our specs and all the background knowledge we’d like it to exploit. Coding matters less than ever before.
 
-## Granular domain knowledge and concepts
+# Granular domain knowledge and concepts
 
 My two little experiments suggest that GPT’s coding ability is dramatically amplified if it has appropriate domain knowledge. In these cases, the domains (family trees and social media) were presumably well represented in GPT’s training set.
 
@@ -130,7 +129,7 @@ Here’s where I believe concepts have a vital role to play. Concepts embody dom
 
 My intuition is that GPT already has a large number of concepts represented implicitly in its training set. I’m excited to explore what would happen if we made concepts explicit. Perhaps GPT could fill in subtle aspects of a specification more effectively if it had a fuller representation of the concept at hand. And perhaps it could replicate the kind of “common sense exception” that we saw (in the Friend example, for reading your own post) in much more novel and unfamiliar domains.
 
-## Design still matters
+# Design still matters
 
 My family tree story actually had a disappointing ending. Sadly, I wasn’t able to draw a nice tree. It was so big and had so many crossing edges that it was impossible to read. I tried to improve the layout by having GPT write code to assign each person to a generation, and then to layer the output so that each generation occupied one horizontal layer.
 

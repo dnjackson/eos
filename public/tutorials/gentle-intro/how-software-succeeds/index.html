@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>How software succeeds | The Essence of Software</title>
+<meta name="keywords" content="">
+<meta name="description" content="The first step to great software: diagnosing success">
+<meta name="author" content="Daniel Jackson">
+<link rel="canonical" href="https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0c5ed6ebd2dfbeba53b78418190f5b01d42289c40be1afa56cc706f62aaa5b23.css" integrity="sha256-DF7W69LfvrpTt4QYGQ9bAdQiicQL4a&#43;lbMcG9iqqWyM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="How software succeeds" />
+<meta property="og:description" content="The first step to great software: diagnosing success" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="tutorials" />
+<meta property="article:published_time" content="2024-01-08T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-01-08T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
+
+<meta name="twitter:title" content="How software succeeds"/>
+<meta name="twitter:description" content="The first step to great software: diagnosing success"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tutorials",
+      "item": "https://essenceofsoftware.com/tutorials/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "A gentle introduction",
+      "item": "https://essenceofsoftware.com/tutorials/gentle-intro/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "How software succeeds",
+      "item": "https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How software succeeds",
+  "name": "How software succeeds",
+  "description": "The first step to great software: diagnosing success",
+  "keywords": [
+    
+  ],
+  "articleBody": "Scenarios of software success If we want to make software that’s successful, it helps to start by looking at examples of success. So we’ll consider some well known examples and try and identify what made them succeed: their secret sauce.\nWhen you try to figure what made some app super successful, and you ask users why they like it, they’ll often say “because it just works.” Uncovering what this is about—what “just working” really means—is not so easy, but I think it’s possible to identify the key elements of “just working” and I’ll lay them out here.\nHow Zoom killed Skype In 2019, Skype had four billion registered users, and about a third of the video call market. Then the pandemic hit. Zoom, a product few had even heard of, took off and “zooming” became a household word. By 2021, Zoom had half the video call market and almost a billion dollars in revenue, and Skype has receded out of view.\nZoom is one of those apps that people say “just works.” Let’s think about how Zoom works, from a user’s perspective. You create a meeting, which generates a link you share with your friends. Then, you start the meeting and your friends can join in their own time, using the link you gave them. When you’re done, you end the meeting. We can depict this scenario in a diagram showing the actions taken, with forking arrows in the joining step to suggest that multiple people can join in whatever order:\nNow compare this to using Skype. To set up a group video call in Skype, you add each of your friends to the group, then you call, some of them answer, and then you hangup:\nAt first blush, this doesn’t look any worse. It’s not more complicated in terms of the number of steps or the structure of the scenario. The problem is that some of the steps, which I’ve outlined with red boxes, are painful. Adding your friends means going through your contact list and finding them one at a time. If one of your friends isn’t in your contact list, you’ll have to get their contact info and include it. Even worse, if one of your friends isn’t a Skype user, you won’t be able to invite them at all. The answer step isn’t so easy either. Your friend has to open the app and either be there at the moment that your call comes in, or has to find a notification that they missed.\nNow, you might say this is all silly. If you just want to talk to two friends and they’re already on Skype, it will work just fine. And you’re probably right. But what happened in the pandemic was that things changed, and suddenly people wanted to talk to all kinds of different groups of people—friends, colleagues, neighbors—and in larger numbers than before. So the small annoyances of Skype became huge barriers.\nIn that context, Zoom’s solution was what my colleague Merrick Furst calls a “not not.” It was not OK to not have the Zoom scenario, which allowed you to organize a meeting merely by sharing a link, and to join a meeting just by clicking on it, whether or not you had a Zoom account.\nNot quite so simple Now you may be thinking: that’s not the whole story. And you’d be right. The switch from Skype’s video call scenario to Zoom’s meeting scenario wasn’t so sudden or clear cut.\nThe Zoom idea (having a meeting link created asynchronously in advance) might have originated with LogMeIn in 2010, a company that built a video conferencing solution that was aiming to be much more lightweight than existing offerings from companies like Citrix. Zoom used this idea from its founding in 2012, but by 2020, it wasn’t the only company to have recognized its value. Skype added meeting links in 2015, and Google Hangouts had them a year later.\nBut in both those cases, the idea was integrated half-heartedly. It wasn’t the default way to start a meeting. In Skype you couldn’t link to a video call directly (but only to a chat, from which a video call could be launched). And in Hangouts, although the host could admit users without accounts, they had to be approved (as in Zoom’s “waiting room”), a nuisance for a large (and not private) meeting.\nThere are other complications too. Zoom’s success undoubtedly benefited from the ease of installing the app, which relied in part on disreputable techniques (learned these from malware developers) for working around operating system protections that would have required additional approval steps from the user. Zoom also lied about end-to-end encryption. These factors seems smaller, however, than the others.\nWhat “just works” means With all this in mind, we can now pose the question: what did people mean when they said that they switched to Zoom because it “just works”?\nFirst, it seems to me, “just working” applies to products that one expects to be targeted at a relatively simple purpose and to work in a (correspondingly) uncomplicated way. A video calling app fits these criteria, but not a photo editing app. I don’t think anyone expects that Photoshop should “just work.”\nSecond, it means that the product should have a clear and compelling usage scenario: that it’s obvious what steps you have to take, and in what order. Zoom makes this very easy, because there are so few steps, and at any time, you have very few options. So having created meeting, you can’t do much except start it; and having started or joined it, there’s nothing to do except leave. (Of course, there are other actions you can take, like muting your microphone, but it’s pretty obvious that those are orthogonal to the main meeting scenario).\nThird, when you execute the scenario you shouldn’t encounter pain points, like having to find contacts to add to a group call in Skype, or having to open an account to respond to a call invitation.\nJust So Stories Merrick Furst, whom I mentioned earlier for his idea of “not nots” is skeptical of what he calls “just so stories” that present supposedly compelling explanations of why some innovation succeeded or failed. It’s a great term, harking back to Rudyard Kipling’s children’s stories that according to the biologist Lewis Held “offered fabulous tales about how the leopard got its spots, how the elephant got its trunk, and so forth” and that, despite being wonderfully entertaining, were “poor substitutes for real understanding.”\nIt’s possible that my explanation of Zoom’s dominance is a just so story, and in giving some of the more complex background, I’ve suggested that the real story isn’t as simple as it might first seem to be. It’s possible that Zoom simply reached a tipping point and became dominant due to the network effect, for example.\nBut here’s the nub of it. This would be more of a problem if my goal were to give you a way to determine reliably whether a particular company’s innovation will fail or succeed in the marketplace.\nMy goal instead is to find ways to improve the design of software, and from that perspective the Zoom vs Skype story seems to me on much more solid ground. Whether or not Zoom succeeded with its meeting scenario is not so crucial. What matters is that this design, in which a link is sent asynchronously, must be recognized—in the context of the emergence of larger, ad hoc video calls—as hugely superior to the design in which participants are invited directly as existing users of a platform.\nDesign is necessary but not sufficient One final response to another possible skepticism. Some might say that none of this design stuff matters if the software isn’t reliable, scalable, performant, etc.\nThe answer to this objection is easy: yes. Design is necessary but not sufficient. Just as great architecture won’t make a building successful if the civil engineers fail to ensure that it can withstand the wind, so a well-designed software product can’t succeed without good software engineering.\nThat doesn’t mean design doesn’t matter, or that design doesn’t have a big impact on these other factors; it just means that design isn’t everything. But to those of us who are designers, it might be still be the most enjoyable and exciting thing…\n",
+  "wordCount" : "1389",
+  "inLanguage": "en",
+  "datePublished": "2024-01-08T00:00:00Z",
+  "dateModified": "2024-01-08T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Daniel Jackson"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Essence of Software",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://essenceofsoftware.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
+                    <span>Buy</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/author/" title="Author">
+                    <span>Author</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
+                    <span>Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
+                    <span>Case Studies</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
+                    <span>Subscribe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      How software succeeds
+    </h1>
+    <div class="post-description">
+      The first step to great software: diagnosing success
+    </div>
+    <div class="post-meta"><span title='2024-01-08 00:00:00 +0000 UTC'>January 8, 2024</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="https://forum.softwareconcepts.io" rel="noopener noreferrer" target="_blank">Comments</a>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="scenarios-of-software-success">Scenarios of software success<a hidden class="anchor" aria-hidden="true" href="#scenarios-of-software-success">#</a></h1>
+<p>If we want to make software that’s successful, it helps to start by looking at examples of success. So we’ll consider some well known examples and try and identify what made them succeed: their secret sauce.</p>
+<p>When you try to figure what made some app super successful, and you ask users why they like it, they’ll often say “because it just works.” Uncovering what this is about&mdash;what “just working” really means&mdash;is not so easy, but I think it’s possible to identify the key elements of “just working” and I’ll lay them out here.</p>
+<h1 id="how-zoom-killed-skype">How Zoom killed Skype<a hidden class="anchor" aria-hidden="true" href="#how-zoom-killed-skype">#</a></h1>
+<p>In 2019, Skype had four billion registered users, and about a third of the video call market. Then the pandemic hit. Zoom, a product few had even heard of, took off and “zooming” became a household word. By 2021, Zoom had half the video call market and almost a billion dollars in revenue, and Skype has receded out of view.</p>
+<p>Zoom is one of those apps that people say “just works.” Let’s think about how Zoom works, from a user’s perspective. You <em>create</em> a meeting, which generates a link you share with your friends. Then, you <em>start</em> the meeting and your friends can <em>join</em> in their own time, using the link you gave them. When you’re done, you <em>end</em> the meeting. We can depict this scenario in a diagram showing the actions taken, with forking arrows in the joining step to suggest that multiple people can join in whatever order:</p>
+<p><img loading="lazy" src="zoom-op.jpg" alt=""  />
+</p>
+<p>Now compare this to using Skype. To set up a group video call in Skype, you <em>add</em> each of your friends to the group, then you <em>call</em>, some of them <em>answer</em>, and then you <em>hangup</em>:</p>
+<p><img loading="lazy" src="skype-op.jpg" alt=""  />
+</p>
+<p>At first blush, this doesn’t look any worse. It’s not more complicated in terms of the number of steps or the structure of the scenario. The problem is that some of the steps, which I’ve outlined with red boxes, are painful. Adding your friends means going through your contact list and finding them one at a time. If one of your friends isn’t in your contact list, you’ll have to get their contact info and include it. Even worse, if one of your friends isn’t a Skype user, you won’t be able to invite them at all. The answer step isn’t so easy either. Your friend has to open the app and either be there at the moment that your call comes in, or has to find a notification that they missed.</p>
+<p>Now, you might say this is all silly. If you just want to talk to two friends and they’re already on Skype, it will work just fine. And you’re probably right. But what happened in the pandemic was that things changed, and suddenly people wanted to talk to all kinds of different groups of people&mdash;friends, colleagues, neighbors&mdash;and in larger numbers than before. So the small annoyances of Skype became huge barriers.</p>
+<p>In that context, Zoom’s solution was what my colleague Merrick Furst <a href="https://www.amazon.com/Heart-Innovation-Navigating-Authentic-Demand/dp/152300570X">calls</a> a “not not.” It was <em>not</em> OK to <em>not</em> have the Zoom scenario, which allowed you to organize  a meeting merely by sharing a link, and to join a meeting just by clicking on it, whether or not you had a Zoom account.</p>
+<h1 id="not-quite-so-simple">Not quite so simple<a hidden class="anchor" aria-hidden="true" href="#not-quite-so-simple">#</a></h1>
+<p>Now you may be thinking: that’s not the whole story. And you’d be right. The switch from Skype’s <em>video call</em> scenario to Zoom’s <em>meeting</em> scenario wasn’t so sudden or clear cut.</p>
+<p>The Zoom idea (having a meeting link created asynchronously in advance) might have originated with LogMeIn in 2010, a company that built a video conferencing solution that was aiming to be much more lightweight than existing offerings from companies like Citrix. Zoom used this idea from its founding in 2012, but by 2020, it wasn’t the only company to have recognized its value. Skype added meeting links in 2015, and Google Hangouts had them a year later.</p>
+<p>But in both those cases, the idea was integrated half-heartedly. It wasn’t the default way to start a meeting. In Skype you couldn’t link to a video call directly (but only to a chat, from which a video call could be launched). And in Hangouts, although the host could admit users without accounts, they had to be approved (as in Zoom’s “waiting room”), a nuisance for a large (and not private) meeting.</p>
+<p>There are other complications too. Zoom’s success undoubtedly benefited from the ease of installing the app, which relied in part on disreputable techniques (learned these from malware developers) for working around operating system protections that would have required additional approval steps from the user. Zoom also lied about end-to-end encryption. These factors seems smaller, however, than the others.</p>
+<h1 id="what-just-works-means">What “just works” means<a hidden class="anchor" aria-hidden="true" href="#what-just-works-means">#</a></h1>
+<p>With all this in mind, we can now pose the question: what did people mean when they said that they switched to Zoom because it “just works”?</p>
+<p>First, it seems to me, “just working” applies to products that one expects to be targeted at a relatively simple purpose and to work in a (correspondingly) uncomplicated way. A video calling app fits these criteria, but not a photo editing app. I don’t think anyone expects that Photoshop should “just work.”</p>
+<p>Second, it means that the product should have a clear and compelling usage scenario: that it’s obvious what steps you have to take, and in what order. Zoom makes this very easy, because there are so few steps, and at any time, you have very few options. So having created meeting, you can’t do much except start it; and having started or joined it, there’s nothing to do except leave. (Of course, there are other actions you can take, like muting your microphone, but it’s pretty obvious that those are orthogonal to the main meeting scenario).</p>
+<p>Third, when you execute the scenario you shouldn’t encounter pain points, like having to find contacts to add to a group call in Skype, or having to open an account to respond to a call invitation.</p>
+<h1 id="just-so-stories">Just So Stories<a hidden class="anchor" aria-hidden="true" href="#just-so-stories">#</a></h1>
+<p>Merrick Furst, whom I mentioned earlier for his idea of “not nots” is skeptical of what he calls “just so stories” that present supposedly compelling explanations of why some innovation succeeded or failed. It’s a great term, harking back to Rudyard Kipling’s children’s stories that <a href="https://en.wikipedia.org/wiki/Just_So_Stories">according to</a> the biologist Lewis Held “offered fabulous tales about how the leopard got its spots, how the elephant got its trunk, and so forth” and that, despite being wonderfully entertaining, were “poor substitutes for real understanding.”</p>
+<p>It’s possible that my explanation of Zoom’s dominance is a just so story, and in giving some of the more complex background, I’ve suggested that the real story isn’t as simple as it might first seem to be. It’s possible that Zoom simply reached a tipping point and became dominant due to the <a href="https://en.wikipedia.org/wiki/Network_effect">network effect</a>, for example.</p>
+<p>But here’s the nub of it. This would be more of a problem if my goal were to give you a way to determine reliably whether a particular company’s innovation will fail or succeed in the marketplace.</p>
+<p>My goal instead is to find ways to improve the design of software, and from that perspective the Zoom vs Skype story seems to me on much more solid ground. Whether or not Zoom succeeded with its meeting scenario is not so crucial. What matters is that this design, in which a link is sent asynchronously, must be recognized&mdash;in the context of the emergence of larger, ad hoc video calls&mdash;as hugely superior to the design in which participants are invited directly as existing users of a platform.</p>
+<h1 id="design-is-necessary-but-not-sufficient">Design is necessary but not sufficient<a hidden class="anchor" aria-hidden="true" href="#design-is-necessary-but-not-sufficient">#</a></h1>
+<p>One final response to another possible skepticism. Some might say that none of this design stuff matters if the software isn’t reliable, scalable, performant, etc.</p>
+<p>The answer to this objection is easy: yes. Design is necessary but not sufficient. Just as great architecture won’t make a building successful if the civil engineers fail to ensure that it can withstand the wind, so a well-designed software product can’t succeed without good software engineering.</p>
+<p>That doesn’t mean design doesn’t matter, or that design doesn’t have a big impact on these other factors; it just means that design isn’t everything. But to those of us who are designers, it might be still be the most enjoyable and exciting thing&hellip;</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Tactics for divergent design</span>
+  </a>
+  <a class="next" href="https://essenceofsoftware.com/tutorials/concept-basics/modularity/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Concept modularity</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+
+    <span>&copy; 2024 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

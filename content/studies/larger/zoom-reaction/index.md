@@ -21,7 +21,7 @@ It struck me as a perfect metaphor for software design: that so often the real w
 
 Concept design offers a new way to control irregularities, the rough edges of software. In this post, using Zoom as an example, I'll explain some simple tactics for identifying and then eliminating them.
 
-## Zoom's Reaction Concept
+# Zoom's Reaction Concept
 When analyzing an existing application, its concepts may not be readily apparent. In a well-designed app, the concepts will be _mapped_ directly to user interface elements, but this is not always so (especially for subtle concepts). Nevertheless, when evaluating an app, it makes sense to start by assuming that the key concepts are aligned with the primary features as they present themselves to users.
 
 So we'll assume for now that the prominent button labeled _Reactions_ corresponds to a concept, and we'll treat it as such for now. 
@@ -30,7 +30,7 @@ So we'll assume for now that the prominent button labeled _Reactions_ correspond
 
 Notice that there are three rows of buttons: (a) the top row, comprising emojis such as clapping, thumbs up, etc; (b) the middle row with yes and no buttons, left and right arrows, and a coffee cup; and (c) the bottom row with a single "raise hand" button.
 
-## Irregularities in Reactions
+# Irregularities in Reactions
 
 Clicking on any button, in any row, causes the corresponding icon to appear, as you'd expect. It actually appears in multiple places in the user interface, most prominently in the top-left-hand corner of your box in the meeting grid.
 
@@ -42,7 +42,7 @@ Second, some have an undo action. Clicking any button also produces a small icon
 
 Third, the buttons enforce some disjointness rules. The top row buttons operate as a radio button group; clicking any one replaces another (if it hasn't yet disappeared). Likewise, the middle row is a group. Surprisingly, the Raise Hand button in the bottom row belongs to this group: if you've clicked the check mark, for example, clicking the Raise Hand button will make it go away.
 
-## In Search of Purposes
+# In Search of Purposes
 Having identified these irregularities, our next step is to try and justify them—essentially reverse engineering the designer's rationale.
 
 Let's think about purposes. The Reactions concept as a whole has a simple purpose: to allow users to convey certain common feelings in a lightweight fashion. Digging more deeply, though, we can identify different sub purposes with each row. 
@@ -79,7 +79,7 @@ And a table showing disjointness between reaction types:
 
 The large number of red marks in these tables suggests we have work to do!
 
-## Fixing Irregularities
+# Fixing Irregularities
 The complicated differences between reactions are no doubt intended to save the user trouble (so you don't need to unclap your hands, for example, or turn off slow down when you want the speaker to speed up). But like any automation, they come at the expense of reduced flexibility.
 
 In some cases, the flexibility is minor: being able to send more than one emoji at a time, for example. But in others, it's more significant. I can't imagine  that any speaker really wants the yes/no responses to a question to disappear when participants raise their hands.
@@ -101,7 +101,7 @@ and _transientReaction (reaction)_, which shows a reaction for ten seconds or ex
 
 Of course, such a design introduces its own complications. I'm not recommending it, but just illustrating the range of possibilities.
 
-## Doubling Down: Expanding Differences
+# Doubling Down: Expanding Differences
 
 When you encounter an irregularity in a design, one response is to try and minimize it or even eliminate it. But the opposite may be plausible too: to actually expand the irregularity. If differences are justified by purposes, then distinct purposes may call for amplifying differences amongst the functions that fulfill them.
 
@@ -125,7 +125,7 @@ Readers familiar with concept design will detect a bad smell in this discussion.
 
 These irregularities have arisen because a single concept is now serving multiple purposes—and those purposes are to some degree in conflict with each other. This is what I call _overloading_, and it suggests that we should consider splitting Reaction into multiple concepts.
 
-## Even Larger Differences: Concept Splitting
+# Even Larger Differences: Concept Splitting
 
 Once the possibility of concept splitting comes up, we start to see opportunities for even larger differences between the reactions (and we'll be reaching the point where it will no longer make sense to even talk of them as "reactions" as if they were a uniform set with a single purpose).
 
@@ -141,7 +141,7 @@ As to the yes/no, slow down/speed up buttons: they too suggest a separate Feedba
 
 One might also wonder whether the yes/no buttons are intended to provide a kind of ad hoc poll. If so, perhaps they should be integrated into Zoom's Poll concept. This concept is rather heavyweight: you have to create questions in advance, give a title to the poll as a whole, and only multiple-choice (and not yes/no) questions are supported.
 
-## A User Interface Mockup
+# A User Interface Mockup
 Our concept analysis of the Reaction concept has led us to a realization that there are actually multiple concepts behind this one dialog. Ideally, concepts are mapped directly to the user interface. Here's a mockup of how things might look, with tooltips showing all at once:
 
 ![A speculative UI change for Zoom](zoom-mockup.jpg)
@@ -152,7 +152,7 @@ The emoji reactions have been moved into the Chat concept, which is now directly
 
 Of course, this is all speculative, and this design undoubtedly has flaws yet to be discovered. My intent in showing this mockup is not to claim that it would necessarily work better than Zoom's current arrangement, but simply to show the way in which concept analysis can drive user interface design.
 
-## Summary of principles
+# Summary of principles
 The approach I've described here is guided by a few basic principles:
 1. Irregularities, or differences between similar features, usually impose a cognitive burden, because there's more to understand than when things behave the same way. Simplicity therefore suggests eliminating irregularities and a preference for uniformity.
 2. An irregularity may, however, serve a legitimate purpose, and its value may exceed the cost. So any evaluation of irregularities must make purposes explicit.
@@ -160,7 +160,7 @@ The approach I've described here is guided by a few basic principles:
 4. A concept can accommodate a certain amount of irregularity in its design, but the irregularity can be organized in a systematic and generic way. 
 5. Once purposes diverge significantly, it is better to split into multiple concepts for each of the variant forms of behavior, rather than attempting to contain them within a single concept. Paradoxically, this final extension of differences typically reduces irregularities, because each concept is now more regular. If the new concepts already exist in the app, or are familiar from other apps, the perceived gain in simplicity is even greater.
 
-## Summary of tactics
+# Summary of tactics
 The process I've outlined here is summarized in the diagram below:
 
 ![Process for reducing irregularities](process.png)
@@ -173,7 +173,7 @@ The next phase involves a design intervention: refining the concept at hand (eg,
 
 The outcome of the phase is a modified design. Hopefully it's an improvement, but we might have introduced new problems, or failed to solve the initial misfit. Some evaluation is called for, whether by user studies, design review or some combination. As with any design process, some iteration is inevitable.
 
-## How Concepts Help
+# How Concepts Help
 
 The basic idea of identifying and eliminating irregularities is not specific to concept design. But concepts help in some key respects:
 1. The task of reviewing a design for irregularities is eased by considering one concept at a time.
@@ -181,9 +181,9 @@ The basic idea of identifying and eliminating irregularities is not specific to 
 3. Concepts give modular boundaries within which to add new functionality (such as the _addToGroup_ configuring action).
 4. Concepts help structure refactorings in which functionality is moved (eg, emojis becoming part of the Chat concept).
 
-## An Invitation
+# An Invitation
 
 I'm sure many of my readers have conducted analyses similar to the one I describe here. If you have one you can share, please post it in the [concept forum](http://forum.softwareconcepts.io). And as always, comments, criticisms and reactions (!) welcome.
 
-## A Concept Integrity Violation
+# A Concept Integrity Violation
 You may wonder why I included parens around the red checkmarks in the tables. Winter Ferguson [pointed out](https://forum.softwareconcepts.io/t/concept-design-tutorials/129/2) that those checkmarks appear uncolored on Android phones. Android automatically converts text characters to corresponding emoji, on which CSS colors are then ineffective. This is a nice example of a concept integrity violation and is a [known problem](https://stackoverflow.com/questions/32915485/how-to-prevent-unicode-characters-from-rendering-as-emoji-in-html-from-javascrip).

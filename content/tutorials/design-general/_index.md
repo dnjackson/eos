@@ -1,3 +1,3 @@
 ---
-title: "On software design"
+title: "On software design generally"
 ---

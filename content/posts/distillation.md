@@ -3,9 +3,8 @@ author: "Daniel Jackson"
 title: "The Essence of the Essence"
 date: "2022-01-31"
 description: "A short(ish) summary of the book"
-# tags: ["markdown", "css", "html", "themes"]
-# categories: ["themes", "syntax"]
-# series: ["Themes Guide"]
+tags: ["markdown", "css", "html", "themes"]
+categories: ["themes", "syntax"]
 ShowToc: true
 TocOpen: true
 hideMeta: false # removes date etc from post

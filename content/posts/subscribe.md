@@ -3,9 +3,9 @@ author: "Daniel Jackson"
 title: "Design Updates in Your Mailbox"
 date: "2021-11-19"
 description: ""
-# tags: ["upvote", "catalog", "concept"]
-# categories: ["themes", "syntax"]
-# series: ["Themes Guide"]
+tags: ["upvote", "catalog", "concept"]
+categories: ["themes", "syntax"]
+series: ["Themes Guide"]
 ShowToc: false
 TocOpen: false
 comments: false
