@@ -9,7 +9,7 @@ hideMeta: false # removes date etc from post
 # hideSummary: true
 summary: "The building blocks that social media apps use to control us."
 editPost:
-    URL: "https://forum.softwareconcepts.io"
+    URL: "https://forum.essenceofsoftware.com"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---

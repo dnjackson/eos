@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The Essence of Software</title>
+<meta name="keywords" content="">
+<meta name="description" content="Design is necessary but not sufficient One final response to another possible skepticism. Some might say that none of this design stuff matters if the software isn’t reliable, scalable, performant, etc.
+The answer to this objection is easy: yes. Design is necessary but not sufficient. Just as great architecture won’t make a building successful if the civil engineers fail to ensure that it can withstand the wind, so a well-designed software product can’t succeed without good software engineering.">
+<meta name="author" content="Daniel Jackson">
+<link rel="canonical" href="https://essenceofsoftware.com/drafts/design-is-necessary-but-not-sufficient/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0c5ed6ebd2dfbeba53b78418190f5b01d42289c40be1afa56cc706f62aaa5b23.css" integrity="sha256-DF7W69LfvrpTt4QYGQ9bAdQiicQL4a&#43;lbMcG9iqqWyM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="" />
+<meta property="og:description" content="Design is necessary but not sufficient One final response to another possible skepticism. Some might say that none of this design stuff matters if the software isn’t reliable, scalable, performant, etc.
+The answer to this objection is easy: yes. Design is necessary but not sufficient. Just as great architecture won’t make a building successful if the civil engineers fail to ensure that it can withstand the wind, so a well-designed software product can’t succeed without good software engineering." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://essenceofsoftware.com/drafts/design-is-necessary-but-not-sufficient/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="drafts" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
+
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Design is necessary but not sufficient One final response to another possible skepticism. Some might say that none of this design stuff matters if the software isn’t reliable, scalable, performant, etc.
+The answer to this objection is easy: yes. Design is necessary but not sufficient. Just as great architecture won’t make a building successful if the civil engineers fail to ensure that it can withstand the wind, so a well-designed software product can’t succeed without good software engineering."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Drafts",
+      "item": "https://essenceofsoftware.com/drafts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "",
+      "item": "https://essenceofsoftware.com/drafts/design-is-necessary-but-not-sufficient/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Design is necessary but not sufficient One final response to another possible skepticism. Some might say that none of this design stuff matters if the software isn’t reliable, scalable, performant, etc.\nThe answer to this objection is easy: yes. Design is necessary but not sufficient. Just as great architecture won’t make a building successful if the civil engineers fail to ensure that it can withstand the wind, so a well-designed software product can’t succeed without good software engineering.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Design is necessary but not sufficient One final response to another possible skepticism. Some might say that none of this design stuff matters if the software isn’t reliable, scalable, performant, etc.\nThe answer to this objection is easy: yes. Design is necessary but not sufficient. Just as great architecture won’t make a building successful if the civil engineers fail to ensure that it can withstand the wind, so a well-designed software product can’t succeed without good software engineering.\nThat doesn’t mean design doesn’t matter, or that design doesn’t have a big impact on these other factors; it just means that design isn’t everything. But to those of us who are designers, it might be still be the most enjoyable and exciting thing…\n",
+  "wordCount" : "122",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Daniel Jackson"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://essenceofsoftware.com/drafts/design-is-necessary-but-not-sufficient/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Essence of Software",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://essenceofsoftware.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
+                    <span>Buy</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/author/" title="Author">
+                    <span>Author</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
+                    <span>Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
+                    <span>Case Studies</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
+                    <span>Subscribe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      
+    </h1>
+    <div class="post-meta">1 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="discourse.org" rel="noopener noreferrer" target="_blank">Comments</a>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#design-is-necessary-but-not-sufficient" aria-label="Design is necessary but not sufficient">Design is necessary but not sufficient</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="design-is-necessary-but-not-sufficient">Design is necessary but not sufficient<a hidden class="anchor" aria-hidden="true" href="#design-is-necessary-but-not-sufficient">#</a></h1>
+<p>One final response to another possible skepticism. Some might say that none of this design stuff matters if the software isn’t reliable, scalable, performant, etc.</p>
+<p>The answer to this objection is easy: yes. Design is necessary but not sufficient. Just as great architecture won’t make a building successful if the civil engineers fail to ensure that it can withstand the wind, so a well-designed software product can’t succeed without good software engineering.</p>
+<p>That doesn’t mean design doesn’t matter, or that design doesn’t have a big impact on these other factors; it just means that design isn’t everything. But to those of us who are designers, it might be still be the most enjoyable and exciting thing&hellip;</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+
+    <span>&copy; 2024 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

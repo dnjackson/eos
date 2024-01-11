@@ -11,7 +11,7 @@ hideMeta: false # removes date etc from post
 # hideSummary: true
 summary: "Save yourself the trouble of actually reading the book."
 editPost:
-    URL: "https://forum.softwareconcepts.io"
+    URL: "https://forum.essenceofsoftware.com"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 aliases: "/distillation/"
@@ -282,5 +282,5 @@ and also include some lighter topics such as:
 
 ### Comments & reactions?
 
-Join the discussion at [forum.softwareconcepts.io](https://forum.softwareconcepts.io)!
+Join the discussion at [forum.essenceofsoftware.com](https://forum.essenceofsoftware.com)!
 

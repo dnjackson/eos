@@ -232,7 +232,7 @@ Interviewing stakeholders Talking to potential users and other stakeholders is g
       <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</guid>
-      <description>The first step to great software: diagnosing success</description>
+      <description>The first step to great software: scenarios of success</description>
     </item>
     
     <item>
@@ -463,6 +463,15 @@ For the programmer, life becomes miserable. Whenever you need to understand or m
     
     <item>
       <title></title>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/</guid>
+      <description>Strong concepts. Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept. Conceptual clarity. The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, video call and meeting) for the same function.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -479,6 +488,16 @@ The operational principle is just a sample scenario, but it includes enough rich
       
       <guid>https://essenceofsoftware.com/drafts/deemph-data-model-and-action-definitions-for-coding/</guid>
       <description>deemph: data model and action definitions for coding. extending: modularity, but probably needs data. essence: OPs. relevance: LLMs</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://essenceofsoftware.com/drafts/design-is-necessary-but-not-sufficient/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/design-is-necessary-but-not-sufficient/</guid>
+      <description>Design is necessary but not sufficient One final response to another possible skepticism. Some might say that none of this design stuff matters if the software isn’t reliable, scalable, performant, etc.
+The answer to this objection is easy: yes. Design is necessary but not sufficient. Just as great architecture won’t make a building successful if the civil engineers fail to ensure that it can withstand the wind, so a well-designed software product can’t succeed without good software engineering.</description>
     </item>
     
     <item>

@@ -9,7 +9,7 @@ hideMeta: false # removes date etc from post
 # hideSummary: true
 summary: "Who knew such a simple thing could be so challenging?"
 editPost:
-    URL: "https://forum.softwareconcepts.io"
+    URL: "https://forum.essenceofsoftware.com"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 aliases:

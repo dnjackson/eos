@@ -12,7 +12,7 @@ hideMeta: false # removes date etc from post
 summary: "An example of a concept catalog entry that defines a concept's 
 purpose, behavior and design issues."
 editPost:
-    URL: "https://forum.softwareconcepts.io/t/upvote-sample-concept-catalog-entry/32"
+    URL: "https://forum.essenceofsoftware.com/t/upvote-sample-concept-catalog-entry/32"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 aliases:
@@ -22,7 +22,7 @@ Concepts provide a framework for recording design experience. Designers often fi
 
 My dream is to have a concept catalog (or a collection of concept catalogs, perhaps organized by domains) that would hold a collection of concept definitions, and with each the accumulated experience and design wisdom from previous deployments of that concept.
 
-As an example of what such a catalog entry might look like, here is a sample entry for the Upvote concept. Comments, suggestions and reactions welcome in the [forum topic](https://forum.softwareconcepts.io/t/upvote-sample-concept-catalog-entry/32) for this example.
+As an example of what such a catalog entry might look like, here is a sample entry for the Upvote concept. Comments, suggestions and reactions welcome in the [forum topic](https://forum.essenceofsoftware.com/t/upvote-sample-concept-catalog-entry/32) for this example.
 
 This idea is inspired, of course, by the success of design patterns in programming.
 

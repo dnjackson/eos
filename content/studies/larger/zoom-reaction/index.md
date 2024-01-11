@@ -8,7 +8,7 @@ TocOpen: true
 hideMeta: false # removes date etc from post
 summary: "Removing irregularities is perhaps the best way to achieve simplicity. This post explains some tactics for how to do it."
 editPost:
-    URL: "https://forum.softwareconcepts.io"
+    URL: "https://forum.essenceofsoftware.com"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 aliases:
@@ -183,7 +183,7 @@ The basic idea of identifying and eliminating irregularities is not specific to 
 
 # An Invitation
 
-I'm sure many of my readers have conducted analyses similar to the one I describe here. If you have one you can share, please post it in the [concept forum](http://forum.softwareconcepts.io). And as always, comments, criticisms and reactions (!) welcome.
+I'm sure many of my readers have conducted analyses similar to the one I describe here. If you have one you can share, please post it in the [concept forum](http://forum.essenceofsoftware.com). And as always, comments, criticisms and reactions (!) welcome.
 
 # A Concept Integrity Violation
-You may wonder why I included parens around the red checkmarks in the tables. Winter Ferguson [pointed out](https://forum.softwareconcepts.io/t/concept-design-tutorials/129/2) that those checkmarks appear uncolored on Android phones. Android automatically converts text characters to corresponding emoji, on which CSS colors are then ineffective. This is a nice example of a concept integrity violation and is a [known problem](https://stackoverflow.com/questions/32915485/how-to-prevent-unicode-characters-from-rendering-as-emoji-in-html-from-javascrip).
+You may wonder why I included parens around the red checkmarks in the tables. Winter Ferguson [pointed out](https://forum.essenceofsoftware.com/t/concept-design-tutorials/129/2) that those checkmarks appear uncolored on Android phones. Android automatically converts text characters to corresponding emoji, on which CSS colors are then ineffective. This is a nice example of a concept integrity violation and is a [known problem](https://stackoverflow.com/questions/32915485/how-to-prevent-unicode-characters-from-rendering-as-emoji-in-html-from-javascrip).

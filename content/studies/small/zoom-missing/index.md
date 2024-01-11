@@ -8,7 +8,7 @@ TocOpen: true
 hideMeta: false # removes date etc from post
 summary: "How the omission of a single concept may threaten the success of an app, with Zoom as an example."
 editPost:
-    URL: "https://forum.softwareconcepts.io"
+    URL: "https://forum.essenceofsoftware.com"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 aliases:

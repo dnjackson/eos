@@ -9,7 +9,7 @@ hideMeta: false # removes date etc from post
 # hideSummary: true
 summary: "Or why basic sysadmin tasks are so hard."
 editPost:
-    URL: "https://forum.softwareconcepts.io"
+    URL: "https://forum.essenceofsoftware.com"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 aliases:
@@ -57,14 +57,14 @@ Now you might say that I'm making a mountain out of a molehill, and that these a
 Piggybacking will always seem cheaper and easier than modifying a concept or creating a new one. But the eventual price may be much higher.
 
 <!--
-*As always, comments welcome, in the [concept forum](https://forum.softwareconcepts.io) or by [email](mailto:dnj@mit.edu).*
+*As always, comments welcome, in the [concept forum](https://forum.essenceofsoftware.com) or by [email](mailto:dnj@mit.edu).*
  -->
 
 *From my newsletter: archives and signup [here](https://buttondown.email/essence-of-software).*
 
 ### Update
 
-A few updates and corrections, following some further investigation and [input](https://forum.softwareconcepts.io/t/one-little-underscore-reveals-overloading/107/6) from DNS experts:
+A few updates and corrections, following some further investigation and [input](https://forum.essenceofsoftware.com/t/one-little-underscore-reveals-overloading/107/6) from DNS experts:
 
 **DNS as a general database**. The earliest RFCs mention DNS holding information beyond host addresses—including phone numbers for CSNET, for example—and make it clear that the resource records were not to be limited to the initial types. It wasn't until later, though, that the idea of DNS as a general key/value store seems to have emerged explicitly. Jerry Saltzer, who developed a name service for Athena at MIT called Hesiod, told me that Paul Mockapetris added the TXT resource type to support more general lookups, as required by applications such as Hesiod.
 

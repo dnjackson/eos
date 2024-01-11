@@ -8,7 +8,7 @@ TocOpen: true
 hideMeta: false # removes date etc from post
 summary: "A brief intro to concept design in three parts."
 editPost:
-    URL: "https://forum.softwareconcepts.io"
+    URL: "https://forum.essenceofsoftware.com"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---
@@ -145,5 +145,5 @@ And this is just the beginning. There are lots of **exciting things** to apply c
 
 **Hot off the press**: a [paper](http://arxiv.org/abs/2304.14975) I wrote with colleagues at Palantir describing how they organized their development process around concepts.
 
-There’s a concept design [forum](https://forum.softwareconcepts.io) too, which is a great place to post reactions, questions, comments, etc. Feel free to [email](mailto:dnj@mit.edu) me too.
+There’s a concept design [forum](https://forum.essenceofsoftware.com) too, which is a great place to post reactions, questions, comments, etc. Feel free to [email](mailto:dnj@mit.edu) me too.
 

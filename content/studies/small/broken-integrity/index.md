@@ -8,7 +8,7 @@ TocOpen: true
 hideMeta: false # removes date etc from post
 summary: "Integrity violations aren't as common as I once expected. But when they happen, they're bad."
 editPost:
-    URL: "https://forum.softwareconcepts.io"
+    URL: "https://forum.essenceofsoftware.com"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 aliases:

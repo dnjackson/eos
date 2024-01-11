@@ -8,7 +8,7 @@ TocOpen: true
 hideMeta: false # removes date etc from post
 summary: "Notes on design of a GPT-powered tutor"
 editPost:
-  URL: "https://forum.softwareconcepts.io"
+  URL: "https://forum.essenceofsoftware.com"
   Text: "Comments" # edit text
   appendFilePath: false # to append file path to Edit link
 ---

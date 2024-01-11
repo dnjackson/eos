@@ -8,7 +8,7 @@ TocOpen: false
 hideMeta: false # removes date etc from post
 summary: "Why agile no longer makes sense in the LLM era."
 editPost:
-    URL: "https://forum.softwareconcepts.io"
+    URL: "https://forum.essenceofsoftware.com"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---

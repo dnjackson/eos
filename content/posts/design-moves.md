@@ -9,7 +9,7 @@ hideMeta: false # removes date etc from post
 hideSummary: false
 summary: "Or how to become a great software designer."
 editPost:
-    URL: "https://forum.softwareconcepts.io"
+    URL: "https://forum.essenceofsoftware.com"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---
@@ -57,7 +57,7 @@ As always, the challenge will be to balance richness of functionality and automa
 
 # Let's help Zoom!
 
-Here's an experiment in community design. Let's together develop a design to address the Zoom raised-hands problem in the [concept forum](https://forum.softwareconcepts.io/t/lets-help-zoom-with-their-design/113). I'll post these initial ideas to get the topic going.
+Here's an experiment in community design. Let's together develop a design to address the Zoom raised-hands problem in the [concept forum](https://forum.essenceofsoftware.com/t/lets-help-zoom-with-their-design/113). I'll post these initial ideas to get the topic going.
 
 <!-- 
 *As always, comments welcome, in the  or by [email](mailto:dnj@mit.edu).*

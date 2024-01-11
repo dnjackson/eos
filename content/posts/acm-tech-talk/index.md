@@ -13,7 +13,7 @@ hideMeta: false # removes date etc from post
 hideSummary: false
 summary: "Daniel explains concept design in a single video."
 editPost:
-    URL: "https://forum.softwareconcepts.io"
+    URL: "https://forum.essenceofsoftware.com"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---

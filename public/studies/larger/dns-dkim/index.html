@@ -212,7 +212,7 @@ if (!doNotTrack) {
     <div class="post-description">
       How overloading in DNS brings trouble
     </div>
-    <div class="post-meta"><span title='2022-03-11 00:00:00 +0000 UTC'>March 11, 2022</span>&nbsp;·&nbsp;11 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="https://forum.softwareconcepts.io" rel="noopener noreferrer" target="_blank">Comments</a>
+    <div class="post-meta"><span title='2022-03-11 00:00:00 +0000 UTC'>March 11, 2022</span>&nbsp;·&nbsp;11 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="https://forum.essenceofsoftware.com" rel="noopener noreferrer" target="_blank">Comments</a>
 
 </div>
   </header> 
@@ -237,11 +237,11 @@ if (!doNotTrack) {
 <p>Now you might say that I&rsquo;m making a mountain out of a molehill, and that these are small complications. But in practice, it&rsquo;s a mass of small, self-inflicted wounds of this sort that make many systems so complex and fragile. It turns out that DKIM—as well as SPF and DMARC, the other protocols used to prevent mail spoofing—can often be <a href="https://www.usenix.org/conference/usenixsecurity20/presentation/chen-jianjun">broken by hackers</a>, because of exactly this kind of non-uniformity (for example, in parsing email addresses).</p>
 <p>Piggybacking will always seem cheaper and easier than modifying a concept or creating a new one. But the eventual price may be much higher.</p>
 <!--
-*As always, comments welcome, in the [concept forum](https://forum.softwareconcepts.io) or by [email](mailto:dnj@mit.edu).*
+*As always, comments welcome, in the [concept forum](https://forum.essenceofsoftware.com) or by [email](mailto:dnj@mit.edu).*
  -->
 <p><em>From my newsletter: archives and signup <a href="https://buttondown.email/essence-of-software">here</a>.</em></p>
 <h3 id="update">Update<a hidden class="anchor" aria-hidden="true" href="#update">#</a></h3>
-<p>A few updates and corrections, following some further investigation and <a href="https://forum.softwareconcepts.io/t/one-little-underscore-reveals-overloading/107/6">input</a> from DNS experts:</p>
+<p>A few updates and corrections, following some further investigation and <a href="https://forum.essenceofsoftware.com/t/one-little-underscore-reveals-overloading/107/6">input</a> from DNS experts:</p>
 <p><strong>DNS as a general database</strong>. The earliest RFCs mention DNS holding information beyond host addresses—including phone numbers for CSNET, for example—and make it clear that the resource records were not to be limited to the initial types. It wasn&rsquo;t until later, though, that the idea of DNS as a general key/value store seems to have emerged explicitly. Jerry Saltzer, who developed a name service for Athena at MIT called Hesiod, told me that Paul Mockapetris added the TXT resource type to support more general lookups, as required by applications such as Hesiod.</p>
 <p><strong>Domain names as intentional names</strong>. Domain names that included property labels go back at least to <a href="https://web.mit.edu/Saltzer/www/publications/athenaplan/e.2.3.pdf">Hesiod</a>, which used an @-symbol to separate the property-specifying part from the rest, eg. <a href="mailto:finger-server@berkeley.mit.edu">finger-server@berkeley.mit.edu</a>. A project at MIT in 1999 explored this general idea, in which a name does not designate a service directly, but rather specifies the properties for a desired service, and called it <a href="http://nms.lcs.mit.edu/projects/ins/">intentional naming</a>. In 2000, <a href="https://datatracker.ietf.org/doc/html/rfc2782">RFC 2782</a> described the addition of the SRV resource type, which mapped domain names of the form _service._protocol.name to server/port names, allowing intentional names such as _ldap._tcp.foo.com.</p>
 <p><strong>Domain names that include property keys</strong>. A domain name like <em>domainkey.foo.com</em> is not an intentional name that specifies a service. The DKIM protocol does not require a service; all that&rsquo;s needed is for the DKIM key to provided for the domain. Instead, this domain name is a combination of a domain name (<em>foo.com</em>) and a key to be looked up in the DNS records of that domain name.</p>

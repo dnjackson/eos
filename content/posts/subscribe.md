@@ -12,7 +12,7 @@ comments: false
 hideMeta: false # removes date etc from post
 summary: "Join an ultra-low-volume email list to hear new ideas about concepts and design."
 editPost:
-    URL: "https://forum.softwareconcepts.io"
+    URL: "https://forum.essenceofsoftware.com"
     Text: "Comments" # edit text
     appendFilePath: false # to append file path to Edit link
 ---
