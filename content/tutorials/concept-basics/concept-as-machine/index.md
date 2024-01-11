@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Concepts are state machines"
-weight: 6
+weight: 250
 date: "2022-09-14"
 description: ""
 ShowToc: false

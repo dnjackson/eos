@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Software = concepts"
-weight: 1
+weight: 210
 date: "2022-08-23"
 description: ""
 ShowToc: false

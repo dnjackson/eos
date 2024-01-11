@@ -44,14 +44,12 @@ From use cases and user stories, concept design takes the idea that software int
     </item>
     
     <item>
-      <title>Software = concepts</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</link>
-      <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
+      <title>How software succeeds</title>
+      <link>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</link>
+      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</guid>
-      <description>Any software app, service or system can be viewed as a collection of interacting concepts.
-Concepts are the building blocks of software Imagine explaining Twitter to someone who&amp;rsquo;s never used it. You might tell them about the Tweet and Follower concepts, then maybe Hashtag and Like (aka Upvote), and if they&amp;rsquo;re keen to know even more, you could explain VerifiedAccount or Bookmark.
-Each concept can be explained with a purpose (what it&amp;rsquo;s for) and an operational principle (how you use it):</description>
+      <guid>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</guid>
+      <description>The first step to great software: scenarios of success</description>
     </item>
     
     <item>
@@ -74,16 +72,6 @@ With all the hype in the design world about creativity and brainstorming, it’s
     </item>
     
     <item>
-      <title>Concept purposes</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</link>
-      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</guid>
-      <description>The role of purposes From what to why. The beginning of wisdom for a designer is to stop asking “what?” and start asking “why?”.
-This applies at every level. You can ask “what application shall I design?”. But a better question is “why would I design that?”. And at a finer grain, the question “what features should my app have?” gives way to “why should my app have these particular features?</description>
-    </item>
-    
-    <item>
       <title>Form, context &amp; misfits</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/misfits/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
@@ -92,25 +80,6 @@ This applies at every level. You can ask “what application shall I design?”.
       <description>What is a design problem? What exactly is a design problem? And why are design problems often hard to solve?
 The most compelling answer to this question, in my view, comes from Christopher Alexander in his influential book Notes on the Synthesis of Form (1964).
 Most of the book is about a way to structure goals into a tree, by noting alignments and conflicts between them, and grouping them to minimize conflicts across groups.</description>
-    </item>
-    
-    <item>
-      <title>Operational principles</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/principle/</link>
-      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/principle/</guid>
-      <description>A compelling way to explain how something works is to tell a story. Not any story, but a kind of defining story that shows, through a typical scenario, why the thing is useful and fulfills its purpose.
-The Minuteman Library Network, for example, offers a wonderful service. If I request a book, then when it becomes available at my local library, I get an email notifying me that it’s ready to be picked up.</description>
-    </item>
-    
-    <item>
-      <title>Concept criteria: what&#39;s a concept?</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</link>
-      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</guid>
-      <description>Two sides of a coin The key to concept design is, perhaps not surprisingly, the idea of concepts. A concept is two things at once. On the one hand, a “concept” means you’d expect it to mean: a mental construct that you need to understand to be able to use an app effectively. So you might that to use Photoshop you need to understand the “concept of a layer”; to use Facebook you need to understand the “concept of friending”; and so on.</description>
     </item>
     
     <item>
@@ -125,17 +94,6 @@ Efficient: letting users accomplish their goals with no more steps or effort tha
     </item>
     
     <item>
-      <title>Apps are state machines</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/app-as-machine/</link>
-      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/app-as-machine/</guid>
-      <description>If user experience runs deeper than the user interface, we need a way to talk about an app that isn’t just visual, and that captures behavior in a more fundamental way.
-Programmers think in terms of complicated things like objects, callbacks, streams, functionals, and so on. They’re essential for structuring code, but for behavior a much simpler model is effective.
-State machines That model is the state machine. You’ve probably come across state machines, either in a class about the theory of computation, or seeing diagrams like this:</description>
-    </item>
-    
-    <item>
       <title>Simplicity</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/simplicity/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
@@ -143,15 +101,6 @@ State machines That model is the state machine. You’ve probably come across st
       <guid>https://essenceofsoftware.com/tutorials/design-general/simplicity/</guid>
       <description>Most of us* believe that simplicity is the key to design. I’m a sucker for the best quotes about it. Here are some of my favorites. First, Tony Hoare in his Turing Award lecture lamenting the complexity of Algol-68:
 I conclude that there are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies.</description>
-    </item>
-    
-    <item>
-      <title>Concepts are state machines</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/</link>
-      <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/</guid>
-      <description>As I explained in another tutorial, the easiest and most effective way to define the behavior of an app precisely is to model it as a state machine. The app has a set of possible states, and actions that update and query the states. An execution of the app is just a sequence of actions (or more correctly, action instances that include particular action arguments), and the behavior as a whole is the set of all possible executions.</description>
     </item>
     
     <item>
@@ -164,16 +113,6 @@ I conclude that there are two ways of constructing a software design: One way is
 Over the years, designers and researchers have defined various levels, reflecting their view of design and what they emphasize.
 I find the following scheme most helpful:
 Physical. If you want to think of levels as low and high, this one is at the bottom. It’s the level of design in which you’re concerned about the physical (and physiological) qualities of human users.</description>
-    </item>
-    
-    <item>
-      <title>Concept state</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/state/</link>
-      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/state/</guid>
-      <description>Motivation: Defining Behavior The operational principle of a concept explains its archetypal behavior: how it’s typically used, and how it fulfills its purpose. But for a concept to be flexible and powerful, it should work in many different scenarios, so we need a way to pin down the behavior in detail.
-Using the notion of a state machine, we can define how a concept will behave in every possible situation. Then we can analyze the design to make sure that the behavior is always acceptable.</description>
     </item>
     
     <item>
@@ -197,6 +136,86 @@ The first mode is expansive, and most successful when critical judgment is suspe
     </item>
     
     <item>
+      <title>Tactics for divergent design</title>
+      <link>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</guid>
+      <description>Tactics for divergence Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.
+Interviewing stakeholders Talking to potential users and other stakeholders is good not only for identifying needs but also for getting design ideas. You can ask what tools and techniques a user currently finds helpful, and what changes might make them more effective.</description>
+    </item>
+    
+    <item>
+      <title>Software = concepts</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</link>
+      <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</guid>
+      <description>Any software app, service or system can be viewed as a collection of interacting concepts.
+Concepts are the building blocks of software Imagine explaining Twitter to someone who&amp;rsquo;s never used it. You might tell them about the Tweet and Follower concepts, then maybe Hashtag and Like (aka Upvote), and if they&amp;rsquo;re keen to know even more, you could explain VerifiedAccount or Bookmark.
+Each concept can be explained with a purpose (what it&amp;rsquo;s for) and an operational principle (how you use it):</description>
+    </item>
+    
+    <item>
+      <title>Operational principles</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/principle/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/principle/</guid>
+      <description>A compelling way to explain how something works is to tell a story. Not any story, but a kind of defining story that shows, through a typical scenario, why the thing is useful and fulfills its purpose.
+The Minuteman Library Network, for example, offers a wonderful service. If I request a book, then when it becomes available at my local library, I get an email notifying me that it’s ready to be picked up.</description>
+    </item>
+    
+    <item>
+      <title>Concept purposes</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</guid>
+      <description>The role of purposes From what to why. The beginning of wisdom for a designer is to stop asking “what?” and start asking “why?”.
+This applies at every level. You can ask “what application shall I design?”. But a better question is “why would I design that?”. And at a finer grain, the question “what features should my app have?” gives way to “why should my app have these particular features?</description>
+    </item>
+    
+    <item>
+      <title>Apps are state machines</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/app-as-machine/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/app-as-machine/</guid>
+      <description>If user experience runs deeper than the user interface, we need a way to talk about an app that isn’t just visual, and that captures behavior in a more fundamental way.
+Programmers think in terms of complicated things like objects, callbacks, streams, functionals, and so on. They’re essential for structuring code, but for behavior a much simpler model is effective.
+State machines That model is the state machine. You’ve probably come across state machines, either in a class about the theory of computation, or seeing diagrams like this:</description>
+    </item>
+    
+    <item>
+      <title>Concepts are state machines</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/</link>
+      <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/</guid>
+      <description>As I explained in another tutorial, the easiest and most effective way to define the behavior of an app precisely is to model it as a state machine. The app has a set of possible states, and actions that update and query the states. An execution of the app is just a sequence of actions (or more correctly, action instances that include particular action arguments), and the behavior as a whole is the set of all possible executions.</description>
+    </item>
+    
+    <item>
+      <title>Concept state</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/state/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/state/</guid>
+      <description>Motivation: Defining Behavior The operational principle of a concept explains its archetypal behavior: how it’s typically used, and how it fulfills its purpose. But for a concept to be flexible and powerful, it should work in many different scenarios, so we need a way to pin down the behavior in detail.
+Using the notion of a state machine, we can define how a concept will behave in every possible situation. Then we can analyze the design to make sure that the behavior is always acceptable.</description>
+    </item>
+    
+    <item>
+      <title>Concept criteria: what&#39;s a concept?</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</guid>
+      <description>Two sides of a coin The key to concept design is, perhaps not surprisingly, the idea of concepts. A concept is two things at once. On the one hand, a “concept” means you’d expect it to mean: a mental construct that you need to understand to be able to use an app effectively. So you might that to use Photoshop you need to understand the “concept of a layer”; to use Facebook you need to understand the “concept of friending”; and so on.</description>
+    </item>
+    
+    <item>
       <title>Concept composition and sync</title>
       <link>https://essenceofsoftware.com/tutorials/concept-basics/sync/</link>
       <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
@@ -214,25 +233,6 @@ concept Yellkey purpose shorten URLs to common words principle if you register a
       <guid>https://essenceofsoftware.com/tutorials/concept-basics/dependency/</guid>
       <description>An idea you need to know One of the most important and useful ideas in software also happens to be one of the least well known. It was introduced in a paper that David Parnas wrote in 1979, entitled Designing Software for Ease of Extension and Contraction.
 Program families. Following on from an earlier paper that introduced the idea of “program families”&amp;mdash;that when you design software you should realize that you’re designing a whole family of programs, not just one&amp;mdash;this paper addresses the question of how to do this.</description>
-    </item>
-    
-    <item>
-      <title>Tactics for divergent design</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</link>
-      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</guid>
-      <description>Tactics for divergence Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.
-Interviewing stakeholders Talking to potential users and other stakeholders is good not only for identifying needs but also for getting design ideas. You can ask what tools and techniques a user currently finds helpful, and what changes might make them more effective.</description>
-    </item>
-    
-    <item>
-      <title>How software succeeds</title>
-      <link>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</link>
-      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</guid>
-      <description>The first step to great software: scenarios of success</description>
     </item>
     
     <item>

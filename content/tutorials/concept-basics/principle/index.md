@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Operational principles"
-weight: 3
+weight: 220
 date: "2022-08-02"
 description: ""
 ShowToc: false

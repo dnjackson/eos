@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Tactics for divergent design"
-weight: 9
+weight: 190
 date: "2023-09-11"
 description: ""
 ShowToc: false

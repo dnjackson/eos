@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Apps are state machines"
-weight: 5
+weight: 240
 date: "2022-08-02"
 description: ""
 ShowToc: false

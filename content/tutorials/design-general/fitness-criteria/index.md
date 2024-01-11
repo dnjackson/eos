@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Generic fitness criteria"
-weight: 4
+weight: 140
 date: "2022-08-02"
 description: ""
 ShowToc: false

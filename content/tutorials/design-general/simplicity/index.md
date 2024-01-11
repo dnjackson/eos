@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Simplicity"
-weight: 5
+weight: 150
 date: "2022-08-02"
 description: ""
 ShowToc: false

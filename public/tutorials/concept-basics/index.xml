@@ -25,16 +25,6 @@ Each concept can be explained with a purpose (what it&amp;rsquo;s for) and an op
     </item>
     
     <item>
-      <title>Concept purposes</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</link>
-      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</guid>
-      <description>The role of purposes From what to why. The beginning of wisdom for a designer is to stop asking “what?” and start asking “why?”.
-This applies at every level. You can ask “what application shall I design?”. But a better question is “why would I design that?”. And at a finer grain, the question “what features should my app have?” gives way to “why should my app have these particular features?</description>
-    </item>
-    
-    <item>
       <title>Operational principles</title>
       <link>https://essenceofsoftware.com/tutorials/concept-basics/principle/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
@@ -45,12 +35,13 @@ The Minuteman Library Network, for example, offers a wonderful service. If I req
     </item>
     
     <item>
-      <title>Concept criteria: what&#39;s a concept?</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</link>
+      <title>Concept purposes</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</guid>
-      <description>Two sides of a coin The key to concept design is, perhaps not surprisingly, the idea of concepts. A concept is two things at once. On the one hand, a “concept” means you’d expect it to mean: a mental construct that you need to understand to be able to use an app effectively. So you might that to use Photoshop you need to understand the “concept of a layer”; to use Facebook you need to understand the “concept of friending”; and so on.</description>
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</guid>
+      <description>The role of purposes From what to why. The beginning of wisdom for a designer is to stop asking “what?” and start asking “why?”.
+This applies at every level. You can ask “what application shall I design?”. But a better question is “why would I design that?”. And at a finer grain, the question “what features should my app have?” gives way to “why should my app have these particular features?</description>
     </item>
     
     <item>
@@ -81,6 +72,15 @@ State machines That model is the state machine. You’ve probably come across st
       <guid>https://essenceofsoftware.com/tutorials/concept-basics/state/</guid>
       <description>Motivation: Defining Behavior The operational principle of a concept explains its archetypal behavior: how it’s typically used, and how it fulfills its purpose. But for a concept to be flexible and powerful, it should work in many different scenarios, so we need a way to pin down the behavior in detail.
 Using the notion of a state machine, we can define how a concept will behave in every possible situation. Then we can analyze the design to make sure that the behavior is always acceptable.</description>
+    </item>
+    
+    <item>
+      <title>Concept criteria: what&#39;s a concept?</title>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</guid>
+      <description>Two sides of a coin The key to concept design is, perhaps not surprisingly, the idea of concepts. A concept is two things at once. On the one hand, a “concept” means you’d expect it to mean: a mental construct that you need to understand to be able to use an app effectively. So you might that to use Photoshop you need to understand the “concept of a layer”; to use Facebook you need to understand the “concept of friending”; and so on.</description>
     </item>
     
     <item>

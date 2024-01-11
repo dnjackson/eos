@@ -1,3 +1,4 @@
 ---
-title: "On software design generally"
+title: "On software design"
+weight: 100
 ---

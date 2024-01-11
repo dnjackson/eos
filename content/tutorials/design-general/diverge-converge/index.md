@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Divergent and convergent design"
-weight: 8
+weight: 180
 date: "2023-09-11"
 description: ""
 ShowToc: false

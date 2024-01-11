@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Concept modularity"
-weight: 10
+weight: 300
 date: "2022-09-22"
 description: ""
 ShowToc: false

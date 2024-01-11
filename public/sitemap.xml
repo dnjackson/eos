@@ -11,8 +11,14 @@
     <loc>https://essenceofsoftware.com/studies/small/</loc>
     <lastmod>2023-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</loc>
-    <lastmod>2022-08-23T00:00:00+00:00</lastmod>
+    <loc>https://essenceofsoftware.com/tutorials/gentle-intro/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/</loc>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
@@ -20,40 +26,49 @@
     <loc>https://essenceofsoftware.com/tutorials/design-general/great-design/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</loc>
-    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/misfits/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/principle/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</loc>
-    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/fitness-criteria/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/app-as-machine/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/simplicity/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/</loc>
-    <lastmod>2022-09-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/state/</loc>
-    <lastmod>2023-05-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</loc>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</loc>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/</loc>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</loc>
+    <lastmod>2022-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/principle/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</loc>
+    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/app-as-machine/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/</loc>
+    <lastmod>2022-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/state/</loc>
+    <lastmod>2023-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/sync/</loc>
@@ -62,29 +77,14 @@
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/dependency/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</loc>
-    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</loc>
-    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/modularity/</loc>
     <lastmod>2022-09-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/gentle-intro/</loc>
-    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/</loc>
     <lastmod>2024-01-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/tutorials/</loc>
     <lastmod>2024-01-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/</loc>
-    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/</loc>
-    <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/posts/</loc>
     <lastmod>2023-07-18T00:00:00+00:00</lastmod>

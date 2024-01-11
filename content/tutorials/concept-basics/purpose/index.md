@@ -1,6 +1,6 @@
 ---
 author: "Daniel Jackson"
-weight: 2
+weight: 230
 title: "Concept purposes"
 date: "2023-09-11"
 description: ""

@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "How great design happens"
-weight: 1
+weight: 120
 date: "2022-08-02"
 description: ""
 ShowToc: false

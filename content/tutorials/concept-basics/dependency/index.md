@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Concept dependencies and subsets"
-weight: 9
+weight: 290
 date: "2023-09-11"
 description: ""
 ShowToc: false

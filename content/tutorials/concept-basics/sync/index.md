@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Concept composition and sync"
-weight: 8
+weight: 280
 date: "2022-09-14"
 description: ""
 ShowToc: false
