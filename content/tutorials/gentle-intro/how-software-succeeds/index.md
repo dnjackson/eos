@@ -16,6 +16,7 @@ editPost:
 
 *For a video version of this post, see my recent [TEDx talk](https://www.youtube.com/watch?v=LtvkRJuMa6A).*
 
+_Now [translated into Japanese](https://bonotake.hatenablog.com/entry/2024/04/05/150812) by Takeo Imai!_
 
 # Diagnosing software success
 
