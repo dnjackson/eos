@@ -1,4 +1,17 @@
-# Concept Configuration
+---
+author: "Daniel Jackson"
+title: "Concept Configuration"
+date: "2024-07-30"
+description: "Notes on the design of concept configurations"
+ShowToc: true
+TocOpen: true
+hideMeta: false # removes date etc from post
+summary: "Notes on the design of concept configurations"
+editPost:
+  URL: "https://forum.essenceofsoftware.com"
+  Text: "Comments" # edit text
+  appendFilePath: false # to append file path to Edit link
+---
 
 In concept design, a running app is viewed as a configuration of concept instances. I’ve been thinking about how these configurations should be designed, and had planned to write a short blurb about it. But as I wrote it, I realized there was more to say than I’d expected, and also more to figure out.
 
