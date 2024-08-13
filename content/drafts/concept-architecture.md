@@ -32,5 +32,6 @@ Some elements of the new architecture might be:
 - **Global CSS**. The frontend components use a standardized set of CSS styles to make it easy to achieve a uniform appearance, and to change it.
 - **Default syncs**. By default, each action of a backend concept has an associated sync that simply wraps the action in a route. The frontend components don’t call the concept actions directly, but instead call the syncs. [Should these syncs be plain function calls instead of routes, so that the BFF components encapsulate all HTTP-related functionality?]
 - **Overriding syncs**. When more application-specific behavior is needed, the default syncs can be replaced by specialized syncs, for example, adding authentication actions.
+- **Predefined schema objects**. For standard things (like books, movies, mailing addresses), we can use schemas/formats as defined in schema.org. These will often be passed as parameters to polymorphic concepts. For example, Catalog concept that lets you find items based on several metadata fields could be instantiated with the book schema.
 
 # Examples
