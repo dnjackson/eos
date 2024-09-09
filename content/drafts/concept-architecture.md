@@ -35,3 +35,7 @@ Some elements of the new architecture might be:
 - **Predefined schema objects**. For standard things (like books, movies, mailing addresses), we can use schemas/formats as defined in schema.org. These will often be passed as parameters to polymorphic concepts. For example, Catalog concept that lets you find items based on several metadata fields could be instantiated with the book schema.
 
 # Examples
+
+## Adam’s programming language fan table
+
+

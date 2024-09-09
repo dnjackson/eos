@@ -54,12 +54,12 @@ The consequences of this design decision are disastrous. Since the chat instance
 
 ## More Extent Examples
 
-Can you suggest other interesting examples?
-
 - In Github, a chat instance is associated with a pull request. This means the conversation must end if a pull request is rejected or withdrawn, and cannot start until the request has been issued. [Thanks to Geoffrey Litt for this example.]
 - In an online store, the extent of the *Order* concept is a user, but the concept can be lifted over users, since the orders of different users are independent of one another. In contrast, the *Auction* concept associates bids with users in its state, and cannot be lifted over users because the outcome of an auction depends on the behavior of multiple users.
 
 A helpful way to figure out when a concept can be lifted is to consider the operational principle (OP). The OP that explains the *Order* concept, for example, need never mention a user: “you place an order for an item, then the item is delivered”. But the OP for the *Auction* concept must mention users: “if one user issues a bid for an item, and then another user issues a higher bid...”.
+
+Another example: in a traditional elevator system, each elevator operates independently and so the assemblage could be modeled as a set of instances of an Elevator concept. In modern systems, there may be some load balancing amongst the elevators, but this might not affect user’s experience. But in Schindler’s PORT system, in which you select a destination and the system directs you to an elevator bank, the concept must clearly include the entire set of elevators.
 
 ## Lifting: A Design Move
 
