@@ -101,3 +101,19 @@ h1.post-title {
 .entry-content p {
     font-size:16px
 }
+
+/* style tables */
+tr:nth-child(even){background-color: #f2f2f2;}
+
+td, th {
+	border: 1px solid #ddd;
+	}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px !important;
+  text-align: left;
+  background-color: rgb(43,103,121);
+  color: white;
+}

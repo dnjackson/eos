@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Thu, 11 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/drafts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/drafts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A new take on concept design</title>
       <link>https://essenceofsoftware.com/drafts/concepts-redux/new-take/</link>
@@ -41,6 +41,24 @@ So the design of the software is what determines whether or not it fulfills the 
       <guid>https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/</guid>
       <description>Concept design builds on many familiar ideas. To mention a few:
 From use cases and user stories, concept design takes the idea that software interacts with the world through scenarios that deliver value. From user-centered design (as taught by Don Norman in The Design of Everyday Things), concept design takes the idea that the user interface is a kind of apparition (a “system image” in Norman’s phrasing) that stands between the user and the system, revealing only indirectly the underlying reality.</description>
+    </item>
+    
+    <item>
+      <title>Concept Architecture</title>
+      <link>https://essenceofsoftware.com/drafts/concept-architecture/</link>
+      <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/concept-architecture/</guid>
+      <description>A Proposal for a Concept-based App Architecture</description>
+    </item>
+    
+    <item>
+      <title>Concept Configuration</title>
+      <link>https://essenceofsoftware.com/drafts/concept-extents/</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/concept-extents/</guid>
+      <description>Notes on the design of concept configurations</description>
     </item>
     
     <item>
@@ -92,6 +110,22 @@ The operational principle is just a sample scenario, but it includes enough rich
     
     <item>
       <title></title>
+      <link>https://essenceofsoftware.com/drafts/consent-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/consent-concepts/</guid>
+      <description>Consent concepts
+owner,
+GPT suggests data custodian authorized party service provider
+let’s go with provider or party.
+consent applies to a resource instance (SSN) or type (bank account transaction). but can treat instance as a pathological type that has just one instance.
+do we need actions allowed if party is specified? party might share. or purposes/uses
+marketing, sharing, etc
+can owner provide blanket consent to any party? or any party in some category?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://essenceofsoftware.com/drafts/deemph-data-model-and-action-definitions-for-coding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -111,12 +145,38 @@ The answer to this objection is easy: yes. Design is necessary but not sufficien
     
     <item>
       <title></title>
+      <link>https://essenceofsoftware.com/drafts/function-cascadedel-p-postconcept-c-commentconcept-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/function-cascadedel-p-postconcept-c-commentconcept-i/</guid>
+      <description>function cascadeDel (p: PostConcept, c: CommentConcept) { return i -&amp;gt; { p.del (*, i); c.del (i) } }
+function authDel (p: PostConcept, s: SessionConcept) { return i -&amp;gt; { u = s.getUser ();
+p.del (u, i); } }
+function authCascDel (&amp;hellip;)
+sy = new Sync ();
+sy = sy.add (
+new Link (“Post.del”,”Comment.del”) ) sy = sy.add (\ // when Sess.user, Post.del (u) )</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://essenceofsoftware.com/drafts/noosphere-v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://essenceofsoftware.com/drafts/noosphere-v2/</guid>
       <description>A Concept Model of Noosphere Warning Heavy-duty concept design ahead! This note exploring the concept design of Noosphere is not for the faint-hearted. For those who aren&amp;rsquo;t very familiar with the concepts of decentralized storage (which includes me!) or who are learning concept design for the first time, this is likely not the best introduction to concepts.
 Why conceptualize Noosphere? This note applies my theory of concept design to Gordon Brander&amp;rsquo;s Noosphere.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://essenceofsoftware.com/drafts/some-principles-regarding-concept-synchronization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/drafts/some-principles-regarding-concept-synchronization/</guid>
+      <description>Some notes about syncs Daniel Jackson
+Sept 16, 2024
+Separating Semantic Actions from HTTP Request All web app frameworks separate details of HTTP requests (HTTP verb, URL, serialization formats) from underlying data model calls. In our previous architecture (the one we used in Kodless and in the 6.1040 starter code), we used the HTTP “route” (that is, the endpoint API call corresponding to the HTTP request) also as the function that performs concept synchronization.</description>
     </item>
     
   </channel>

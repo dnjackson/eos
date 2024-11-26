@@ -11,6 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Daniel Jackson</copyright><atom:link href="https://essenceofsoftware.com/workshops/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Daniel Jackson</copyright>
+    <lastBuildDate>Tue, 26 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/workshops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autodesk Workshop</title>
+      <link>https://essenceofsoftware.com/workshops/autodesk/schedule/</link>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://essenceofsoftware.com/workshops/autodesk/schedule/</guid>
+      <description>Schedule with links to slides and other resources</description>
+    </item>
+    
   </channel>
 </rss>
