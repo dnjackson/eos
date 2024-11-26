@@ -7,6 +7,8 @@ ShowToc: false
 TocOpen: false
 hideMeta: true # removes date etc from post
 summary: "Schedule with links to slides and other resources"
+aliases:
+- /autodesk
 editPost:
   URL: "https://forum.essenceofsoftware.com"
   Text: "Forum" # edit text
