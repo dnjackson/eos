@@ -280,6 +280,6 @@ How can we achieve this? You saw this coming: we can use our friend the Expiring
 	    Session.getUser (s, u)
 
 	  sync terminate (s: Session)
-	    when ExpiringResource.expire (session)
-	    Session.end (session)
+	    when ExpiringResource.expire (s)
+	    Session.end (s)
 
