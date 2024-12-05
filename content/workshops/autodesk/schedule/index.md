@@ -27,6 +27,6 @@ editPost:
 | 15:00 | Break                | Break                           |                                  |
 | 15:15 | Designing syncs ([slides](./pdfs/4-sync-design.pdf))     | Team activity |                                  |
 | 16:30 | Review of day        | Review of day                   |                                  |
-| 17:00 | Adjourn ([survey](https://forms.gle/esgV9mPVy5TrwsRh7), [responses](./pdfs/day-1-responses.pdf))              | Adjourn   ([survey](https://forms.gle/esgV9mPVy5TrwsRh7))                       |                                  |
+| 17:00 | Adjourn ([survey](https://forms.gle/esgV9mPVy5TrwsRh7), [responses](./pdfs/day-1-responses.pdf))              | Adjourn   ([survey](https://forms.gle/esgV9mPVy5TrwsRh7),[responses](./pdfs/day-2-responses.pdf))                       |                                  |
 
 _All the slides linked to from this page, with the exception of the Autodesk-specific exercises, are background IP and may be used freely within Autodesk (but not beyond)._
