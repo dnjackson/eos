@@ -17,6 +17,8 @@ ShowBreadCrumbs: false
 [Powell's](https://www.powells.com/book/the-essence-of-software-9780691225388)  
 [Amazon UK](https://www.amazon.co.uk/Essence-Software-Concepts-Matter-Design/dp/0691225389)  
 [Maruzen](https://www.maruzen-publishing.co.jp/item/?book_no=304995) (Japanese)
+[Acorn](http://www.acornpub.co.kr/book/essence-of-software) (Korean)
+[Cheers](https://www.cheerspublishing.com/ebook/detail/1797928304438861824) (Chinese)
 
 ## Book details
 
@@ -46,5 +48,10 @@ Japanese edition
 Published June 2023  
 [Maruzen Publishing](https://www.maruzen-publishing.co.jp/item/?book_no=304995)
 
+Korean edition  
+Published September 2024
+[Acorn Publishing](http://www.acornpub.co.kr/book/essence-of-software)
 
-
+Chinese edition
+Published 2024
+[Cheers Publishing](https://www.cheerspublishing.com/ebook/detail/1797928304438861824)
