@@ -1,7 +1,7 @@
 #baseURL: "https://dnjackson.github.io/eos"
 baseURL: "https://essenceofsoftware.com"
 title: "The Essence of Software"
-paginate: 20
+#paginate: 20
 theme: PaperMod
 copyright: "Daniel Jackson"
 
@@ -163,11 +163,6 @@ markup:
 privacy:
     vimeo:
         disabled: false
-        simple: true
-
-    twitter:
-        disabled: false
-        enableDNT: true
         simple: true
 
     instagram:
