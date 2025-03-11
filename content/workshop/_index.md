@@ -1,7 +1,7 @@
 ---
 title: "Workshops"
 layout: "home"
-url: "/workshops"
+url: "/workshop-info"
 summary: "Workshops"
 ShowBreadCrumbs: false
 ---

@@ -80,7 +80,10 @@
     <loc>https://essenceofsoftware.com/tutorials/concept-basics/modularity/</loc>
     <lastmod>2022-09-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/workshops/autodesk/schedule/</loc>
+    <loc>https://essenceofsoftware.com/workshops/autodesk-boston/</loc>
+    <lastmod>2024-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://essenceofsoftware.com/workshops/autodesk-woodinville/</loc>
     <lastmod>2024-11-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://essenceofsoftware.com/</loc>
@@ -258,6 +261,6 @@
   </url><url>
     <loc>https://essenceofsoftware.com/subscribe/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/workshops/</loc>
+    <loc>https://essenceofsoftware.com/workshop-info/</loc>
   </url>
 </urlset>
