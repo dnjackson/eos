@@ -9,54 +9,45 @@
       <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
       <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/studies/larger/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://essenceofsoftware.com/studies/larger/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A GPT-powered tutor</title>
       <link>https://essenceofsoftware.com/studies/larger/tutor/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/studies/larger/tutor/</guid>
       <description>Notes on designing a GPT-powered tutor using concepts</description>
     </item>
-    
     <item>
       <title>Android Camera API</title>
       <link>https://essenceofsoftware.com/studies/larger/rotation/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/studies/larger/rotation/</guid>
       <description>Applying concept design to the camera rotation API</description>
     </item>
-    
     <item>
       <title>Redesigning Zoom&#39;s Reaction Concept</title>
       <link>https://essenceofsoftware.com/studies/larger/zoom-reaction/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/studies/larger/zoom-reaction/</guid>
       <description>A How-To Guide for Removing Irregularities in Your App</description>
     </item>
-    
     <item>
       <title>Facebook and Dark Patterns</title>
       <link>https://essenceofsoftware.com/studies/larger/facebook/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/studies/larger/facebook/</guid>
       <description>Finding Clarity in Design</description>
     </item>
-    
     <item>
       <title>Concept Piggybacking in DNS</title>
       <link>https://essenceofsoftware.com/studies/larger/dns-dkim/</link>
       <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/studies/larger/dns-dkim/</guid>
       <description>How overloading in DNS brings trouble</description>
     </item>
-    
   </channel>
 </rss>

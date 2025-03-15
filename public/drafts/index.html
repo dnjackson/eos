@@ -10,7 +10,7 @@
 <meta name="description" content="Drafts - The Essence of Software">
 <meta name="author" content="Daniel Jackson">
 <link rel="canonical" href="https://essenceofsoftware.com/drafts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.10b46262efde62bfde2e6b990234776439b6b9ca49ab4575de4ef7087668077b.css" integrity="sha256-ELRiYu/eYr/eLmuZAjR3ZDm2ucpJq0V13k73CHZoB3s=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
@@ -19,6 +19,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://essenceofsoftware.com/drafts/index.xml">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/drafts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -36,7 +37,7 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -56,36 +57,40 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Drafts" />
-<meta property="og:description" content="The Essence of Software: Why Concepts Matter for Great Design" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://essenceofsoftware.com/drafts/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
-
-<meta name="twitter:title" content="Drafts"/>
-<meta name="twitter:description" content="The Essence of Software: Why Concepts Matter for Great Design"/>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WRQ6HWW3ZW');
+        }
+      </script><meta property="og:url" content="https://essenceofsoftware.com/drafts/">
+  <meta property="og:site_name" content="The Essence of Software">
+  <meta property="og:title" content="Drafts">
+  <meta property="og:description" content="The Essence of Software: Why Concepts Matter for Great Design">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:title" content="Drafts">
+<meta name="twitter:description" content="The Essence of Software: Why Concepts Matter for Great Design">
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Drafts",
       "item": "https://essenceofsoftware.com/drafts/"
     }
@@ -105,7 +110,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
             <div class="logo-switches">
             </div>
         </div>
@@ -164,7 +169,8 @@ if (!doNotTrack) {
   </header>
   <section class="entry-content">
     <p>It’s been just over two years since the publication of The Essence of Software (EOS). In that time, engaging with readers, consulting and teaching to students and practitioners has given me a new perspective on concept design.
-In a series of notes (of which this is the first), I hope to share some of the respects in which my understanding has evolved. In addition to having a better sense of what matters most, I think I have a greater appreciation of the obstacles that make concept design seem (at the same time!...</p>
+In a series of notes (of which this is the first), I hope to share some of the respects in which my understanding has evolved. In addition to having a better sense of what matters most, I think I have a greater appreciation of the obstacles that make concept design seem (at the same time!) trivial to some and obscure to others. I also hope to point to some exciting new directions for concept design—in particular how concepts make it easier to exploit LLMs for generating code.
+...</p>
   </section>
   <footer class="entry-footer">1 min&nbsp;·&nbsp;Daniel Jackson</footer>
   <a class="entry-link" aria-label="post link to A new take on concept design" href="https://essenceofsoftware.com/drafts/concepts-redux/new-take/"></a>
@@ -177,7 +183,8 @@ In a series of notes (of which this is the first), I hope to share some of the r
   </header>
   <section class="entry-content">
     <p>As I explain in EOS, I’ve coopted the term “software design” to mean something different from what most people in the software world expect. To me, it means designing function: how the software will behave and interact with its users and the world.
-So the design of the software is what determines whether or not it fulfills the user’s needs, because if the function is wrong (or confusing), the user won’t be happy....</p>
+So the design of the software is what determines whether or not it fulfills the user’s needs, because if the function is wrong (or confusing), the user won’t be happy. The user interface matters too, but that’s a separate issue (of how the design is presented).
+...</p>
   </section>
   <footer class="entry-footer">2 min&nbsp;·&nbsp;Daniel Jackson</footer>
   <a class="entry-link" aria-label="post link to What is software design?" href="https://essenceofsoftware.com/drafts/concepts-redux/what-is-design/"></a>
@@ -190,7 +197,8 @@ So the design of the software is what determines whether or not it fulfills the 
   </header>
   <section class="entry-content">
     <p>Concept design builds on many familiar ideas. To mention a few:
-From use cases and user stories, concept design takes the idea that software interacts with the world through scenarios that deliver value. From user-centered design (as taught by Don Norman in The Design of Everyday Things), concept design takes the idea that the user interface is a kind of apparition (a “system image” in Norman’s phrasing) that stands between the user and the system, revealing only indirectly the underlying reality....</p>
+From use cases and user stories, concept design takes the idea that software interacts with the world through scenarios that deliver value. From user-centered design (as taught by Don Norman in The Design of Everyday Things), concept design takes the idea that the user interface is a kind of apparition (a “system image” in Norman’s phrasing) that stands between the user and the system, revealing only indirectly the underlying reality. When the user’s understanding (their “mental model”) is not aligned with this reality (the “conceptual model”), the system becomes unusable. From domain-driven design (and its predecessors, such as OMT and JSD), concept design takes the idea that the most stable part of a system’s function may be grounded in structures that already exist in the problem domain. In each of these cases, concept design goes in new directions. Unlike use cases, the scenarios of concept design are not used as specifications. Whereas user-centered design focuses on building the system image that connects the conceptual model to the mental model, concept design focuses on the conceptual model itself. And while domain-driven design looks for existing structures in data, concept design looks for them in function.
+...</p>
   </section>
   <footer class="entry-footer">2 min&nbsp;·&nbsp;Daniel Jackson</footer>
   <a class="entry-link" aria-label="post link to Building on good ideas" href="https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/"></a>
@@ -262,7 +270,8 @@ From use cases and user stories, concept design takes the idea that software int
     </h2>
   </header>
   <section class="entry-content">
-    <p>Strong concepts. Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept. Conceptual clarity. The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, video call and meeting) for the same function....</p>
+    <p> Strong concepts. Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept. Conceptual clarity. The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, video call and meeting) for the same function. User are also very sensitive to needless complications and distractions in a UI (in Skype’s case, spam and advertisements). Robustness. If the concept implementations are buggy or unreliable, or fail to scale sufficiently, it won’t matter that their design is good. Users will abandon them anyway. Skype suffered from a reputation for bugs and low reliability. Robustness might seem orthogonal to concept design, but it isn’t. Bugs arise because developers get confused about what they’re trying to do, so having fewer, simpler concepts leads to more robust code.
+...</p>
   </section>
   <footer class="entry-footer">2 min&nbsp;·&nbsp;Daniel Jackson</footer>
   <a class="entry-link" aria-label="post link to " href="https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/"></a>
@@ -276,106 +285,23 @@ From use cases and user stories, concept design takes the idea that software int
   <section class="entry-content">
     <p>The operational principle Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its operational principle (OP).
 The operational principle is just a sample scenario, but it includes enough richness to convey typical usages. The example I gave above for Zoom could be written in a more textual way like this
-&lt;create, start, join&#43;, end&gt; where join&#43; means one or more join actions....</p>
+&lt;create, start, join&#43;, end&gt; where join&#43; means one or more join actions. Another scenario would be this
+...</p>
   </section>
   <footer class="entry-footer">4 min&nbsp;·&nbsp;Daniel Jackson</footer>
   <a class="entry-link" aria-label="post link to " href="https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Consent concepts
-owner,
-GPT suggests data custodian authorized party service provider
-let’s go with provider or party.
-consent applies to a resource instance (SSN) or type (bank account transaction). but can treat instance as a pathological type that has just one instance.
-do we need actions allowed if party is specified? party might share. or purposes/uses
-marketing, sharing, etc
-can owner provide blanket consent to any party? or any party in some category?...</p>
-  </section>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;Daniel Jackson</footer>
-  <a class="entry-link" aria-label="post link to " href="https://essenceofsoftware.com/drafts/consent-concepts/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>deemph: data model and action definitions for coding. extending: modularity, but probably needs data. essence: OPs. relevance: LLMs</p>
-  </section>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;Daniel Jackson</footer>
-  <a class="entry-link" aria-label="post link to " href="https://essenceofsoftware.com/drafts/deemph-data-model-and-action-definitions-for-coding/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Design is necessary but not sufficient One final response to another possible skepticism. Some might say that none of this design stuff matters if the software isn’t reliable, scalable, performant, etc.
-The answer to this objection is easy: yes. Design is necessary but not sufficient. Just as great architecture won’t make a building successful if the civil engineers fail to ensure that it can withstand the wind, so a well-designed software product can’t succeed without good software engineering....</p>
-  </section>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;Daniel Jackson</footer>
-  <a class="entry-link" aria-label="post link to " href="https://essenceofsoftware.com/drafts/design-is-necessary-but-not-sufficient/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>function cascadeDel (p: PostConcept, c: CommentConcept) { return i -&gt; { p.del (*, i); c.del (i) } }
-function authDel (p: PostConcept, s: SessionConcept) { return i -&gt; { u = s.getUser ();
-p.del (u, i); } }
-function authCascDel (…)
-sy = new Sync ();
-sy = sy.add (
-new Link (“Post.del”,”Comment.del”) ) sy = sy.add (\ // when Sess.user, Post.del (u) )</p>
-  </section>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;Daniel Jackson</footer>
-  <a class="entry-link" aria-label="post link to " href="https://essenceofsoftware.com/drafts/function-cascadedel-p-postconcept-c-commentconcept-i/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>A Concept Model of Noosphere Warning Heavy-duty concept design ahead! This note exploring the concept design of Noosphere is not for the faint-hearted. For those who aren’t very familiar with the concepts of decentralized storage (which includes me!) or who are learning concept design for the first time, this is likely not the best introduction to concepts.
-Why conceptualize Noosphere? This note applies my theory of concept design to Gordon Brander’s Noosphere....</p>
-  </section>
-  <footer class="entry-footer">19 min&nbsp;·&nbsp;Daniel Jackson</footer>
-  <a class="entry-link" aria-label="post link to " href="https://essenceofsoftware.com/drafts/noosphere-v2/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Some notes about syncs Daniel Jackson
-Sept 16, 2024
-Separating Semantic Actions from HTTP Request All web app frameworks separate details of HTTP requests (HTTP verb, URL, serialization formats) from underlying data model calls. In our previous architecture (the one we used in Kodless and in the 6.1040 starter code), we used the HTTP “route” (that is, the endpoint API call corresponding to the HTTP request) also as the function that performs concept synchronization....</p>
-  </section>
-  <footer class="entry-footer">3 min&nbsp;·&nbsp;Daniel Jackson</footer>
-  <a class="entry-link" aria-label="post link to " href="https://essenceofsoftware.com/drafts/some-principles-regarding-concept-synchronization/"></a>
-</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://essenceofsoftware.com/drafts/page/2/">Next »</a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">
 
 
-    <span>&copy; 2025 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

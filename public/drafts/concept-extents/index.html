@@ -10,9 +10,7 @@
 <meta name="description" content="Notes on the design of concept configurations">
 <meta name="author" content="Daniel Jackson">
 <link rel="canonical" href="https://essenceofsoftware.com/drafts/concept-extents/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.10b46262efde62bfde2e6b990234776439b6b9ca49ab4575de4ef7087668077b.css" integrity="sha256-ELRiYu/eYr/eLmuZAjR3ZDm2ucpJq0V13k73CHZoB3s=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
@@ -20,6 +18,7 @@
 <link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/drafts/concept-extents/">
 <noscript>
     <style>
         #theme-toggle,
@@ -37,7 +36,7 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -57,44 +56,49 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Concept Configuration" />
-<meta property="og:description" content="Notes on the design of concept configurations" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://essenceofsoftware.com/drafts/concept-extents/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="drafts" />
-<meta property="article:published_time" content="2024-07-30T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-07-30T00:00:00+00:00" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
-
-<meta name="twitter:title" content="Concept Configuration"/>
-<meta name="twitter:description" content="Notes on the design of concept configurations"/>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WRQ6HWW3ZW');
+        }
+      </script><meta property="og:url" content="https://essenceofsoftware.com/drafts/concept-extents/">
+  <meta property="og:site_name" content="The Essence of Software">
+  <meta property="og:title" content="Concept Configuration">
+  <meta property="og:description" content="Notes on the design of concept configurations">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="drafts">
+    <meta property="article:published_time" content="2024-07-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-30T00:00:00+00:00">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:title" content="Concept Configuration">
+<meta name="twitter:description" content="Notes on the design of concept configurations">
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Drafts",
       "item": "https://essenceofsoftware.com/drafts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "Concept Configuration",
       "item": "https://essenceofsoftware.com/drafts/concept-extents/"
     }
@@ -114,7 +118,7 @@ if (!doNotTrack) {
   "articleBody": "In concept design, a running app is viewed as a configuration of concept instances. I’ve been thinking about how these configurations should be designed, and had planned to write a short blurb about it. But as I wrote it, I realized there was more to say than I’d expected, and also more to figure out.\nSo I thought I’d share it with some friends for feedback. I’d welcome help and comments from all you concept designers out there, but I’m thinking particularly of the following people whose recent work is connected to these ideas:\nKevin Sullivan, who’d argued, in our collaborative work on concept design for moral distress, that surveys and temperature readings could be linked externally in the application state. I’d resisted this but now I think Kevin was right all along. Abutalib (Barish) Namazov, whose concept-driven, LLM-based code generator Kodless might exploit configurations as a construction strategy. Geoffrey Litt, whose Patchwork system corrects a flaw of Github’s and binds chats to branches rather than pull requests. A discussion with Geoffrey prompted me to write this piece. Alcino Cunha, whose work on software configurations separates regular state from configuration state. The ideas here might help make that distinction more precise, and the configuration-enhanced version of Alloy might help analyze configurations in concept designs. Concept Instances \u0026 Extents Concepts manage sets. A concept instance handles sets of things. For example, the Label concept, which is used in Gmail for organizing messages, contains the functionality for creating labels, associating them with messages, and finding messages with particular labels. Only one instance of the concept is needed to represent these sets and relationships.\nOOP is different. In contrast, the instances (or objects) of a Label class in an object-oriented program would each represent a single label. You could have each label object hold links to the associated messages, and this would make it easy to find the messages with a given label.\nOOP still needs concept-like obejcts. In an object-oriented program, you’d still need some way to navigate from label names entered by the user to the actual labels. For this, you’d probably define another class, say LabelRegistry, whose objects contain mappings from strings to label objects. Or you might add a static mapping to the Label class, although this is a bad idea because, as we’ll see below, you’re likely to want to have more than one such mapping. Either way, this simple example shows how the relationship between domain concepts and objects or classes in object-oriented programming isn’t as simpler as people sometimes claim, and more often than not a single domain concept is implemented as a collection of classes.\nHow many instances per concept? In the simplest cases, having a single instance of each concept will suffice. But often multiple instances will be needed, to correspond to different, disjoint contexts. In the Label case, different Gmail users will have different instances, so that their labels aren’t confused.\nConcept extent. Each instance of a concept has an extent that determines its lifetime and span, and is defined by some other concept (or object) instances it’s associated with. In Gmail, for example, the extent of each Label instance is a single User. Two distinct users will have different Label instances so that their labelings will never interact (in particular, labels aren’t included in sent messages), and the same Label instance will be associated with a given user for that user’s lifetime.\nDeciding on a concept’s extent is often a critical design question. Apple’s macOS file system, for example, has a Label concept, with labels called “tags,” but there seems to be just one instance across multiple users, with some surprising consequences.\nZoom: Design Snags with Chat Extent Zoom’s Chat concept shows how concept extents can have serious impacts on usability. There are of course many instances of the Chat concept in Zoom, since otherwise all users would have to be within a single chat. But what exactly is the extent of a Chat instance?\nNot just a meeting. At first glance, it seems that the extent of a chat is a single meeting. But this isn’t quite right. A Zoom meeting can be restarted multiple times, even one that wasn’t defined as “recurring” when it was created. When you join the restarted meeting, you won’t see any messages from the chat of the previous session. So each restart associates a fresh chat instance with the meeting. In other words, the extent of each chat instance is a meeting session.\nPrivate chats. When you post a message in Zoom, you can optionally send it privately to a single participant. One could view this as a special feature of Zoom’s Chat concept. But a simpler (and more robust) interpretation is that there are separate chat instances for each pair of participants. In this case, the extent of a private chat is defined by a tuple (meeting-session, participant, participant).\nBreakout rooms. Finally, a chat extent issue that reflects a serious design flaw in Zoom. When you open breakout rooms in a Zoom session, each room gets its own chat instance. If this were an additional instance, it might be justified—as a means of allowing the members of the breakout room to converse privately. But unfortunately it’s the only instance that is accessible.\nThe consequences of this design decision are disastrous. Since the chat instance of the main meeting session is no longer accessible, instructions or background information for a breakout room cannot be posted in the session chat. Moreover, the host of the meeting, not being a member of the breakout room chats, cannot post a chat message to signal the upcoming end of the breakout, for example. One guide to using breakout rooms in teaching recommends a tedious workaround:\nStudents will no longer have access to anything in the main room once the breakout session has begun (including the chat and the whiteboard). Consider posting the discussion objectives/prompts on Canvas and ensuring each student has Canvas up in another window before the breakout session begins.\nFixing breakout rooms. To mitigate this obvious flaw, Zoom added the concept of Broadcast to allow a host to send a message to breakout rooms. This concept needlessly replicates some of the features of the Chat concept, while missing other important features (such as persistence, and the ability to copy and paste from messages, or to click on links).\nMore Extent Examples In Github, a chat instance is associated with a pull request. This means the conversation must end if a pull request is rejected or withdrawn, and cannot start until the request has been issued. [Thanks to Geoffrey Litt for this example.] In an online store, the extent of the Order concept is a user, but the concept can be lifted over users, since the orders of different users are independent of one another. In contrast, the Auction concept associates bids with users in its state, and cannot be lifted over users because the outcome of an auction depends on the behavior of multiple users. A helpful way to figure out when a concept can be lifted is to consider the operational principle (OP). The OP that explains the Order concept, for example, need never mention a user: “you place an order for an item, then the item is delivered”. But the OP for the Auction concept must mention users: “if one user issues a bid for an item, and then another user issues a higher bid…”.\nAnother example: in a traditional elevator system, each elevator operates independently and so the assemblage could be modeled as a set of instances of an Elevator concept. In modern systems, there may be some load balancing amongst the elevators, but this might not affect user’s experience. But in Schindler’s PORT system, in which you select a destination and the system directs you to an elevator bank, the concept must clearly include the entire set of elevators.\nLifting: A Design Move Enriching concept state. An alternative to having multiple instances of a concept is for the state of the concept itself to be enriched with mappings.\nFor example, a single instance of the Meeting concept could allocate multiple meeting objects, and manage their association with chats. This would be a bad idea for two reasons.\nFirst, it would make the Meeting concept dependent on the Chat concept: if we wanted to build a system that had meetings but not chats, such as meeting concept would not be suitable (and making an associated chat optional would not solve this).\nSecond, the meeting-chat association is not an intrinsic part of either concept, but is a property of how they are configured together. Including it in Meeting corrupts and needlessly complicates the concept.\nContexts: a bad idea. In an earlier attempt to model Zoom, I augmented the Chat concept with a “context” representing the extent of the chat. Because this context is polymorphic, and because it’s plausible that every chat has some context, it doesn’t seem to introduce a dependence (which augmenting Meeting would). But it nevertheless feels like a kludge that complicates the concept by adding functionality that is not concept-specific, and now seems like a mistake.\nLifting as a design move. We can capture this idea as a design move that I call lifting. Whenever a concept state includes relational mappings, we can consider moving a mapping outside the concept into application configuration state.\nFor the meeting-chat example, if we started with this:\nconcept Chat [Context] state chat: Context -\u003e lone Chat posts: Chat -\u003e set Post app Zoom includes Meeting Chat [Meeting] we can lift to this:\nconcept Chat state posts: set Post app Zoom includes Meeting ch: Meeting -\u003e lone Chat In abstract terms, what’s going on is that we have a state relation of the form\nMeeting -\u003e Chat that can either be expressed like this\n[Meeting -\u003e Chat] with square brackets denoting state stored inside a concept, or, in lifted form, like this\n[Meeting] -\u003e [Chat] How Lifting Simplifies Concepts The importance of lifting is that it simplifies a concept by reducing its scope.\nSimple lifting example. For a more basic example, and setting aside the extent question for now, suppose we were modeling the meeting concept and were considering something like this\nconcept Meeting state meetings: set MeetingObject created: meetings -\u003e one Date ... in which the concept maintains a set of meetings (represented by members of the allocated type MeetingObject), and mappings to associate each meeting with its creation date, etc.\nThis is a poor design, because all the functionality of the meeting concept can be described within the span of a single meeting. There are no actions that merge meetings, for example, or any invariants that would limit the properties of a meeting due to the presence of other meetings. Lifting fixes this, and results in a simpler concept state:\nconcept Meeting state created: Date ... Invariants prevent lifting. Now suppose we’d included meeting links in the meeting concept, like this:\nconcept Meeting state meetings: set MeetingObject link: meetings lone -\u003e one Link created: meetings -\u003e one Date ... This introduces an invariant (indicated by the lone keyword in the link declaration) that links are unique, with no two meetings sharing a link.\nTo maintain this invariant, the concept needs access to the set of all meetings and their links. Applying lifting here would mean maintaining this invariant in the synchronizations, violating the concept design principle that all significant functionality is held inside concepts.\nHaving your cake and eating it. But lifting still seems desirable for the other aspects of meeting behavior, which are all scoped within a single meeting. A solution to this dilemma is to separate out the link assignment functionality in a separate concept, and then lift the meeting concept. This would be especially compelling if the link assignment functionality has uses in other situations and thus has a claim to being a concept in its own right. And indeed, this is the case, and the concept, called Capability, is a widely used scheme for granting access to resources through unique keys.\nWhen Non-Lifting Reveals Complexity Sometimes considering whether a concept can be lifted reveals an interesting design complexity.\nCan reservation be lifted? Take the Reservation concept, for example. Reservations associate users with resources (for example, restaurant patrons with tables), but we also need to represent the fact that resources have owners (the restaurants that own the tables).\nMust the Reservation concept include ownership of resources in its state? Or can we lift this? In the lifted version, we would have one instance of the Reservation concept for each business that takes reservations.\nThis seems promising. The tables of one restaurant or the rooms of one hotel are not coupled in any way to the tables of another restaurant or the rooms of another hotel. And indeed many restaurants and hotels do run their own reservation systems, so it seems that separate instances for each business should make sense even for a service that manages multiple businesses.\nConflict detection. But there’s a feature of reservation services that does actually couple the businesses together. In order to prevent consumers who want to preserve their choices from gaming the system by making multiple reservations and then dropping all but one, these services prevent such reservations from being made.\nApps like OpenTable and Resy, for example, prevent you from making two reservations on the same night. This successfully rules out foul play, but it frustrates legitimate demands too (such as wanting to book a bar for a cocktail and then a restaurant for a meal, as this aggrieved user of Resy explains).\nSo, in its current form, the Reservation concept cannot be lifted if it is to support this kind of multiple booking.\nChallenge to readers. Is there a neat way to factor this behavior out into a separate concept (whose purpose is to detect and prevent abuse), in the same way that the Capability concept was used to factor linking out of the Meeting concept?\nConcept code To make concrete the explanations above, here’s the Zoom meeting-chat design in the formal concept notation.\nconcept Chat [User] state posts: set Post date: Post -\u003e one Date by: Post -\u003e one User msg: Post -\u003e one Text members: set User joined: User -\u003e one Date actions new (out c: Chat) join (u: User) leave(u: User) post (u: User, t: Text, out p: Post) delete (u: User, p: Post) concept Meeting [User] state host: User participants: set User + Endpoint active: bool actions new (h: User, out m: Meeting) start (u: User) end (u: User) join (u: User + Endpoint) leave (u: User + Endpoint) concept Capability [Resource] principle after allocate, can get (and can't access without get) state used: set Key private resource: used -\u003e lone Resource actions allocate (r: Resource, out k: Key) k not in used used += k k.resource := r get (k: Key, out r: Resource) r := k.resource concept Auth state username: User -\u003e one Text password: User -\u003e one Text actions register (n, p: Text, out u: User) authenticate (n, p: Text, out u: User) changePassword (u: User, p: Text) delete (u: User) app Zoom includes let U = [Auth.User], M = Meeting [U], C = Chat [U], K = Capability [M].Key au: Auth ca: Capability [M] ch: M -\u003e lone C syncs createMeeting (host: U, out k: K, out m: M) M.new (host, m) ca.allocate (m, k) startMeeting (host: U, k: K, out m: M) ca.get (k, m) m.start (host) C.new (c) m.ch := c // replaces on restart c.join (host) postInChat (m: M, u: U, t: Text, out p: C.Post) m.ch.post (u, t, p) Notes\nI haven’t introduced an explicit session type corresponding to Zoom meeting sessions. Instead, chats are bound to meetings, and the binding is reassigned on start. I’ve used uppercase names (eg, C, M, U) as shorthands for types, and lowercase names (eg, ca) for concept instances. The new action allocates a fresh instance of the concept. Previously, I’ve often overloaded names, using the same name for a concept and for a type used in that concept. For example, in the unlisted version of the Meeting concept, I might have used the name Meeting both for the concept and for meeting objects within the concept. I now think this was a bad idea. So the name Meeting within the new action of the Meeting concept refers only to the concept type itself (and is the type of the instance returned by the action). Here’s the variant in which the chat is associated with the meeting and persists across sessions of that meeting:\ncreateMeeting (host: U, out k: K, out m: M) M.new (host, m) Ca.allocate (m, k) C.new (c) m.ch := c c.join (host) startMeeting (host: U, k: K, out m: M) ca.get (k, m) m.start (host) Note that the declaration of the application-level binding is unchanged, but the chat is now allocated and bound to the meeting when the meeting is created rather than when the meeting is started.\nAnd here’s the variant for private chats:\napp Zoom includes let U = [Auth.User], M = Meeting [U], C = Chat [U], K = Capability [M].Key au: Auth ca: Capability [M] ch: M -\u003e lone C privateCh : M -\u003e U -\u003e U -\u003e lone C syncs privatePost (m: M, from, to: U, t: Text, out p: C.Post) if no privateCh [m, from, to] C.new (c) privateCh[m, from, to] := c privateCh[m, to, from] := c privateCh[m, from, to].post (u, t, p) ",
   "wordCount" : "2917",
   "inLanguage": "en",
-  "datePublished": "2024-07-30T00:00:00Z",
+  "image": "https://essenceofsoftware.com/eos-twitter-card.png","datePublished": "2024-07-30T00:00:00Z",
   "dateModified": "2024-07-30T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -147,7 +151,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
             <div class="logo-switches">
             </div>
         </div>
@@ -200,7 +204,7 @@ if (!doNotTrack) {
 <article class="post-single">
   <header class="post-header">
     
-    <h1 class="post-title">
+    <h1 class="post-title entry-hint-parent">
       Concept Configuration
     </h1>
     <div class="post-description">
@@ -217,7 +221,7 @@ if (!doNotTrack) {
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#concept-instances--extents" aria-label="Concept Instances &amp;amp; Extents">Concept Instances &amp; Extents</a></li>
+                    <a href="#concept-instances--extents" aria-label="Concept Instances &amp; Extents">Concept Instances &amp; Extents</a></li>
                 <li>
                     <a href="#zoom-design-snags-with-chat-extent" aria-label="Zoom: Design Snags with Chat Extent">Zoom: Design Snags with Chat Extent</a></li>
                 <li>
@@ -258,8 +262,7 @@ if (!doNotTrack) {
 <p><strong>Breakout rooms.</strong> Finally, a chat extent issue that reflects a serious design flaw in Zoom. When you open breakout rooms in a Zoom session, each room gets its own chat instance. If this were an additional instance, it might be justified&mdash;as a means of allowing the members of the breakout room to converse privately. But unfortunately it’s the <em>only</em> instance that is accessible.</p>
 <p>The consequences of this design decision are disastrous. Since the chat instance of the main meeting session is no longer accessible, instructions or background information for a breakout room cannot be posted in the session chat. Moreover, the host of the meeting, not being a member of the breakout room chats, cannot post a chat message to signal the upcoming end of the breakout, for example. One <a href="https://history.washington.edu/tutorial-zoom-breakout-rooms">guide</a> to using breakout rooms in teaching recommends a tedious workaround:</p>
 <blockquote>
-<p>Students will no longer have access to anything in the main room once the breakout session has begun (including the chat and the whiteboard). Consider posting the discussion objectives/prompts on Canvas and ensuring each student has Canvas up in another window before the breakout session begins.</p>
-</blockquote>
+<p>Students will no longer have access to anything in the main room once the breakout session has begun (including the chat and the whiteboard). Consider posting the discussion objectives/prompts on Canvas and ensuring each student has Canvas up in another window before the breakout session begins.</p></blockquote>
 <p><strong>Fixing breakout rooms.</strong> To mitigate this obvious flaw, Zoom added the concept of Broadcast to allow a host to send a message to breakout rooms. This concept needlessly replicates some of the features of the Chat concept, while missing other important features (such as persistence, and the ability to copy and paste from messages, or to click on links).</p>
 <h2 id="more-extent-examples">More Extent Examples<a hidden class="anchor" aria-hidden="true" href="#more-extent-examples">#</a></h2>
 <ul>
@@ -466,7 +469,7 @@ syncs
 <footer class="footer">
 
 
-    <span>&copy; 2025 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

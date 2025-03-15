@@ -10,9 +10,7 @@
 <meta name="description" content="Lessons learned from deploying concepts at scale.">
 <meta name="author" content="Daniel Jackson">
 <link rel="canonical" href="https://essenceofsoftware.com/posts/palantir/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.10b46262efde62bfde2e6b990234776439b6b9ca49ab4575de4ef7087668077b.css" integrity="sha256-ELRiYu/eYr/eLmuZAjR3ZDm2ucpJq0V13k73CHZoB3s=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
@@ -20,6 +18,7 @@
 <link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/posts/palantir/">
 <noscript>
     <style>
         #theme-toggle,
@@ -37,7 +36,7 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -57,44 +56,49 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="A Concept Experiment at Palantir" />
-<meta property="og:description" content="Lessons learned from deploying concepts at scale." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://essenceofsoftware.com/posts/palantir/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-06-26T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-06-26T00:00:00+00:00" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
-
-<meta name="twitter:title" content="A Concept Experiment at Palantir"/>
-<meta name="twitter:description" content="Lessons learned from deploying concepts at scale."/>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WRQ6HWW3ZW');
+        }
+      </script><meta property="og:url" content="https://essenceofsoftware.com/posts/palantir/">
+  <meta property="og:site_name" content="The Essence of Software">
+  <meta property="og:title" content="A Concept Experiment at Palantir">
+  <meta property="og:description" content="Lessons learned from deploying concepts at scale.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-06-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-06-26T00:00:00+00:00">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:title" content="A Concept Experiment at Palantir">
+<meta name="twitter:description" content="Lessons learned from deploying concepts at scale.">
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://essenceofsoftware.com/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "A Concept Experiment at Palantir",
       "item": "https://essenceofsoftware.com/posts/palantir/"
     }
@@ -114,7 +118,7 @@ if (!doNotTrack) {
   "articleBody": "When I wrote my book about concept design, I hoped that its ideas might nudge practicing software developers to think differently about their work. My grander, long-term dream was that whole organizations might restructure themselves around concepts.\nThrillingly, this is starting to happen. About a year ago, Peter Wilczynski got in touch to tell me about some exciting work that he and Taylor Gregoire-Wright were doing at Palantir to center their development process on concepts. Their idea was to add concepts as a new entity type to Palantir’s company-wide knowledge database, augmenting existing types (which ranged from representing individual software modules to entire applications and teams). This would be their Trojan horse, not only encouraging developers to think about their projects in terms of concepts, but most significantly, to factor out the concepts that are common to multiple apps, shining a light on them and providing a basis for efforts to align them more fully.\nPeter and Taylor had noticed an increasing number of issues reported against their products that couldn’t be neatly assigned to a module or even to an entire app. These issues weren’t simple bugs in which some function does the wrong thing; they were manifestations of deeper conceptual flaws, in which an app’s behavior didn’t match user expectations, or in which two apps in their product suite presented essentially the same functionality in confusingly different ways.\nOver a period of a year or so, Peter and Taylor insinuated concepts into Palantir’s daily work. They organized many of their internal design documents to highlight key concepts, creating new concept entries in the knowledge base and linking them to the relevant documents. They invented a new structure, the concept cluster, to represent a collection of concepts that are typically used together. And, most impressively, they persuaded their colleagues to follow along, identifying their own concepts and concept clusters, and thinking about their design work in a new way.\nThis experiment is in its early days, but the results so far are promising. The collection of concepts in the knowledge base is growing, from only in handful at the start of 2023 to over 150 now, with several hundred Palantir employees accessing the concepts in the knowledge graph regularly.\nMost exciting, in my view, is the way concepts are changing the role of product managers, who typically have few opportunities for career advancement unless they move into management. In Palantir, product managers can now become owners of clusters of concepts that cross application boundaries, becoming the company’s experts on key product assets. In this role, they can ensure that valuable design experience (which is often tied to concepts rather than code modules, and is thus easily lost as members rotate in and out of product teams) is maintained and exploited as products mature. And with their larger view of the product family, these product managers are well positioned to align different products, so that their functionality is uniform and consistent, and to prevent needless reinvention.\nPeter, Taylor and I recently wrote an experience report about this effort, which will appear in the SPLASH Onward! conference this fall. We expect to improve the paper in line with the helpful suggestions of the reviewers. In the meantime, a draft of the paper is available on Arxiv.\nI was delighted (and somewhat surprised) that my coauthors, with the approval of the company, were able to talk in detail about what Peter calls the “dynamics” of concept development. In two brief case studies, the paper explains how two concepts were created and evolved, drawing on prior concepts and lessons from the experiences of users. The paper offers some preliminary advice to others interested in reorienting software design around concepts–for example, the importance of educating engineers about concepts, assigning staff to curation of the concept inventory, and integrating concepts into existing work planning and task tracking.\nI learned a lot working with Peter and Taylor on the paper. One lesson involved microservices. I sometimes explain concepts as “nanoservices”—like microservices but smaller. I knew that microservices hadn’t fulfilled all their promises (and had supervised an industrial masters thesis focused on reducing microservice dependences). But I was surprised to learn that, in Peter and Taylor’s experience, adopting a microservice architecture often leads to even less modularity, since microservices encourage teams to replicate functionality that has been implemented in other teams’ microservices. Concepts may act as a corrective, allowing teams working on different microservices to identify shared functionality.\nIn a similar vein, domain-driven design, a deservedly popular approach to development, may also have a tendency towards replication of functionality. Teams are discouraged from discovering commonalities with the designs of other teams, since they lie beyond the “bounded context” that isolates one team’s work from another’s. In addition to resulting in wasted development effort, this may make it hard to identify the concepts that comprise a company’s key assets, and to ensure consistent experiences across products. Concept design may help redress the balance, and break down some barriers between teams by offering a succinct way to express shared assets.\nOne anecdote I can’t resist telling you about: We had explained in the paper how including concepts in the knowledge base was helping employees working in marketing and strategy, because the concepts provided a simpler account of each app’s functionality and of the value of product improvements. Since the paper shared a considerable amount of detail about Palantir’s software development practices and was not shy about reporting some challenges that teams had faced, it was necessary (of course) to run the paper by Palantir’s legal team prior to publication. In their email to us approving publication, they suggested that concepts might help them in their work too, by highlighting the essential IP of their products. I’d hinted at this role for concepts in Chapter 3 of my book, but was delighted to see it acknowledged by experts.\nOne of the reasons that improvements in design processes are so rare is that companies are often reluctant to make investments that don’t pay off immediately. As Nelson Repenning and John Sterman explain in an insightful paper from 2001, improvements to capability may not only fail to bring benefits in the short term, but cutting back on new capabilities may produce a productivity boost (albeit one that is short-lived). It takes courage to slow down the production line to sharpen the tools.\n",
   "wordCount" : "1060",
   "inLanguage": "en",
-  "datePublished": "2023-06-26T00:00:00Z",
+  "image": "https://essenceofsoftware.com/eos-twitter-card.png","datePublished": "2023-06-26T00:00:00Z",
   "dateModified": "2023-06-26T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -147,7 +151,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
             <div class="logo-switches">
             </div>
         </div>
@@ -200,7 +204,7 @@ if (!doNotTrack) {
 <article class="post-single">
   <header class="post-header">
     
-    <h1 class="post-title">
+    <h1 class="post-title entry-hint-parent">
       A Concept Experiment at Palantir
     </h1>
     <div class="post-description">
@@ -237,7 +241,7 @@ if (!doNotTrack) {
 <footer class="footer">
 
 
-    <span>&copy; 2025 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

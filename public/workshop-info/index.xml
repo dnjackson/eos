@@ -9,8 +9,9 @@
       <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
       <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <copyright>Daniel Jackson</copyright><atom:link href="https://essenceofsoftware.com/workshop-info/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Daniel Jackson</copyright>
+    <atom:link href="https://essenceofsoftware.com/workshop-info/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

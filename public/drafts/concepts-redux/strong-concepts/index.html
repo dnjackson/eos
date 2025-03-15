@@ -7,12 +7,15 @@
 <meta name="robots" content="index, follow">
 <title>The Essence of Software</title>
 <meta name="keywords" content="">
-<meta name="description" content="Strong concepts. Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept. Conceptual clarity. The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, video call and meeting) for the same function.">
+<meta name="description" content="
+Strong concepts. Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept.
+Conceptual clarity. The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, video call and meeting) for the same function. User are also very sensitive to needless complications and distractions in a UI (in Skype’s case, spam and advertisements).
+Robustness. If the concept implementations are buggy or unreliable, or fail to scale sufficiently, it won’t matter that their design is good. Users will abandon them anyway. Skype suffered from a reputation for bugs and low reliability.
+
+Robustness might seem orthogonal to concept design, but it isn’t. Bugs arise because developers get confused about what they’re trying to do, so having fewer, simpler concepts leads to more robust code.">
 <meta name="author" content="Daniel Jackson">
 <link rel="canonical" href="https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.10b46262efde62bfde2e6b990234776439b6b9ca49ab4575de4ef7087668077b.css" integrity="sha256-ELRiYu/eYr/eLmuZAjR3ZDm2ucpJq0V13k73CHZoB3s=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
@@ -20,6 +23,7 @@
 <link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -37,7 +41,7 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -57,44 +61,52 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="" />
-<meta property="og:description" content="Strong concepts. Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept. Conceptual clarity. The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, video call and meeting) for the same function." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="drafts" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WRQ6HWW3ZW');
+        }
+      </script><meta property="og:url" content="https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/">
+  <meta property="og:site_name" content="The Essence of Software">
+  <meta property="og:title" content="The Essence of Software">
+  <meta property="og:description" content=" Strong concepts. Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept. Conceptual clarity. The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, video call and meeting) for the same function. User are also very sensitive to needless complications and distractions in a UI (in Skype’s case, spam and advertisements). Robustness. If the concept implementations are buggy or unreliable, or fail to scale sufficiently, it won’t matter that their design is good. Users will abandon them anyway. Skype suffered from a reputation for bugs and low reliability. Robustness might seem orthogonal to concept design, but it isn’t. Bugs arise because developers get confused about what they’re trying to do, so having fewer, simpler concepts leads to more robust code.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="drafts">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="
+Strong concepts. Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept.
+Conceptual clarity. The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, video call and meeting) for the same function. User are also very sensitive to needless complications and distractions in a UI (in Skype’s case, spam and advertisements).
+Robustness. If the concept implementations are buggy or unreliable, or fail to scale sufficiently, it won’t matter that their design is good. Users will abandon them anyway. Skype suffered from a reputation for bugs and low reliability.
 
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
-
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Strong concepts. Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept. Conceptual clarity. The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, video call and meeting) for the same function."/>
+Robustness might seem orthogonal to concept design, but it isn’t. Bugs arise because developers get confused about what they’re trying to do, so having fewer, simpler concepts leads to more robust code.">
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Drafts",
       "item": "https://essenceofsoftware.com/drafts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "",
       "item": "https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/"
     }
@@ -107,14 +119,14 @@ if (!doNotTrack) {
   "@type": "BlogPosting",
   "headline": "",
   "name": "",
-  "description": "Strong concepts. Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept. Conceptual clarity. The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, video call and meeting) for the same function.",
+  "description": " Strong concepts. Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept. Conceptual clarity. The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, video call and meeting) for the same function. User are also very sensitive to needless complications and distractions in a UI (in Skype’s case, spam and advertisements). Robustness. If the concept implementations are buggy or unreliable, or fail to scale sufficiently, it won’t matter that their design is good. Users will abandon them anyway. Skype suffered from a reputation for bugs and low reliability. Robustness might seem orthogonal to concept design, but it isn’t. Bugs arise because developers get confused about what they’re trying to do, so having fewer, simpler concepts leads to more robust code.\n",
   "keywords": [
     
   ],
   "articleBody": " Strong concepts. Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept. Conceptual clarity. The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, video call and meeting) for the same function. User are also very sensitive to needless complications and distractions in a UI (in Skype’s case, spam and advertisements). Robustness. If the concept implementations are buggy or unreliable, or fail to scale sufficiently, it won’t matter that their design is good. Users will abandon them anyway. Skype suffered from a reputation for bugs and low reliability. Robustness might seem orthogonal to concept design, but it isn’t. Bugs arise because developers get confused about what they’re trying to do, so having fewer, simpler concepts leads to more robust code.\ndiagrams for these scenarios\nlabeling the painful bits: actions and states in old scenario. do as annotations. and use same ones on new scenario. whether all steps must be included (eg end of call?); generally would be good to show completion but may not be necessary. whether user actions not in concept included (send link, talk); yes, helpful to show in grey. whether have to resolve how call ends or host leave early; no, show one example and leave full range to SM. can i lift the meeting concept? yes, because create action is still allowed (but how to specify that link returned is unique? does this really doom the lifting? and even join has to find the object, so it’s really not so easy to lift; mahybe a story here about why objects aren’t good?) ",
   "wordCount" : "306",
   "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
+  "image": "https://essenceofsoftware.com/eos-twitter-card.png","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -147,7 +159,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
             <div class="logo-switches">
             </div>
         </div>
@@ -200,7 +212,7 @@ if (!doNotTrack) {
 <article class="post-single">
   <header class="post-header">
     
-    <h1 class="post-title">
+    <h1 class="post-title entry-hint-parent">
       
     </h1>
     <div class="post-meta">2 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="discourse.org" rel="noopener noreferrer" target="_blank">Comments</a>
@@ -214,7 +226,7 @@ if (!doNotTrack) {
 <li><strong>Robustness</strong>. If the concept implementations are buggy or unreliable, or fail to scale sufficiently, it won’t matter that their design is good. Users will abandon them anyway. Skype suffered from a reputation for bugs and low reliability.</li>
 </ul>
 <p>Robustness might seem orthogonal to concept design, but it isn’t. Bugs arise because developers get confused about what they’re trying to do, so having fewer, simpler concepts leads to more robust code.</p>
-<h1 id="heading"><a hidden class="anchor" aria-hidden="true" href="#heading">#</a></h1>
+<h1></h1>
 <p>diagrams for these scenarios</p>
 <ul>
 <li>labeling the painful bits: actions and states in old scenario. do as annotations. and use same ones on new scenario.</li>
@@ -238,7 +250,7 @@ if (!doNotTrack) {
 <footer class="footer">
 
 
-    <span>&copy; 2025 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

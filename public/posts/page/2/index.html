@@ -10,7 +10,7 @@
 <meta name="description" content="Posts - The Essence of Software">
 <meta name="author" content="Daniel Jackson">
 <link rel="canonical" href="https://essenceofsoftware.com/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.1eecbf9c7523bd5ac80b32f81ece29e45269e9f1fa42874b4bbc1b722c883eba.css" integrity="sha256-Huy/nHUjvVrICzL4Hs4p5FJp6fH6QodLS7wbciyIPro=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
@@ -19,6 +19,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://essenceofsoftware.com/posts/index.xml">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/posts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -36,7 +37,7 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -56,36 +57,40 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="The Essence of Software: Why Concepts Matter for Great Design" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://essenceofsoftware.com/posts/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
-
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="The Essence of Software: Why Concepts Matter for Great Design"/>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WRQ6HWW3ZW');
+        }
+      </script><meta property="og:url" content="https://essenceofsoftware.com/posts/">
+  <meta property="og:site_name" content="The Essence of Software">
+  <meta property="og:title" content="Posts">
+  <meta property="og:description" content="The Essence of Software: Why Concepts Matter for Great Design">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="The Essence of Software: Why Concepts Matter for Great Design">
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://essenceofsoftware.com/posts/"
     }
@@ -105,7 +110,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
             <div class="logo-switches">
             </div>
         </div>
@@ -159,67 +164,30 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>The siloing of UX design
+    <h2>ACM tech talk
     </h2>
   </header>
   <section class="entry-content">
-    <p>There’s no single role for UX design. Instead it’s split amongst roles, with unfortunate consequences.</p>
+    <p>Daniel explains concept design in a single video.</p>
   </section>
-  <footer class="entry-footer"><span title='2022-10-14 00:00:00 +0000 UTC'>October 14, 2022</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Daniel Jackson</footer>
-  <a class="entry-link" aria-label="post link to The siloing of UX design" href="https://essenceofsoftware.com/posts/ux-design-silo/"></a>
+  <footer class="entry-footer"><span title='2021-11-14 00:00:00 +0000 UTC'>November 14, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Daniel Jackson</footer>
+  <a class="entry-link" aria-label="post link to ACM tech talk" href="https://essenceofsoftware.com/posts/acm-tech-talk/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Design Moves for Software
+    <h2>Sample book chapters
     </h2>
   </header>
   <section class="entry-content">
-    <p>Or how to become a great software designer.</p>
+    <p>Download free sample chapters.</p>
   </section>
-  <footer class="entry-footer"><span title='2022-04-18 00:00:00 +0000 UTC'>April 18, 2022</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Daniel Jackson</footer>
-  <a class="entry-link" aria-label="post link to Design Moves for Software" href="https://essenceofsoftware.com/posts/design-moves/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>The Essence of the Essence
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Save yourself the trouble of actually reading the book.</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-01-31 00:00:00 +0000 UTC'>January 31, 2022</span>&nbsp;·&nbsp;35 min&nbsp;·&nbsp;Daniel Jackson</footer>
-  <a class="entry-link" aria-label="post link to The Essence of the Essence" href="https://essenceofsoftware.com/posts/distillation/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Concept Design Sketchnote
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Early concept design ideas, drawn by MJ Broadbent.</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-11-20 00:00:00 +0000 UTC'>November 20, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Daniel Jackson</footer>
-  <a class="entry-link" aria-label="post link to Concept Design Sketchnote" href="https://essenceofsoftware.com/posts/sketchnote/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Design Updates in Your Mailbox
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Join an ultra-low-volume email list to hear new ideas about concepts and design.</p>
-  </section>
-  <footer class="entry-footer"><span title='2021-11-19 00:00:00 +0000 UTC'>November 19, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Daniel Jackson</footer>
-  <a class="entry-link" aria-label="post link to Design Updates in Your Mailbox" href="https://essenceofsoftware.com/posts/subscribe/"></a>
+  <footer class="entry-footer"><span title='2021-11-13 00:00:00 +0000 UTC'>November 13, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Daniel Jackson</footer>
+  <a class="entry-link" aria-label="post link to Sample book chapters" href="https://essenceofsoftware.com/posts/sample-chapters/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://essenceofsoftware.com/posts/">« Prev</a>
-    <a class="next" href="https://essenceofsoftware.com/posts/page/3/">Next »</a>
   </nav>
 </footer>
     </main>
@@ -227,7 +195,7 @@ if (!doNotTrack) {
 <footer class="footer">
 
 
-    <span>&copy; 2024 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

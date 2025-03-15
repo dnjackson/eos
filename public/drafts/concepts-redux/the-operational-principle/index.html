@@ -7,14 +7,15 @@
 <meta name="robots" content="index, follow">
 <title>The Essence of Software</title>
 <meta name="keywords" content="">
-<meta name="description" content="The operational principle Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its operational principle (OP).
+<meta name="description" content="The operational principle
+Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its operational principle (OP).
 The operational principle is just a sample scenario, but it includes enough richness to convey typical usages. The example I gave above for Zoom could be written in a more textual way like this
-&lt;create, start, join&#43;, end&gt; where join&#43; means one or more join actions.">
+&lt;create, start, join&#43;, end&gt;
+
+where join&#43; means one or more join actions. Another scenario would be this">
 <meta name="author" content="Daniel Jackson">
 <link rel="canonical" href="https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.10b46262efde62bfde2e6b990234776439b6b9ca49ab4575de4ef7087668077b.css" integrity="sha256-ELRiYu/eYr/eLmuZAjR3ZDm2ucpJq0V13k73CHZoB3s=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
@@ -22,6 +23,7 @@ The operational principle is just a sample scenario, but it includes enough rich
 <link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/">
 <noscript>
     <style>
         #theme-toggle,
@@ -39,7 +41,7 @@ The operational principle is just a sample scenario, but it includes enough rich
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -59,48 +61,54 @@ The operational principle is just a sample scenario, but it includes enough rich
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="" />
-<meta property="og:description" content="The operational principle Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its operational principle (OP).
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WRQ6HWW3ZW');
+        }
+      </script><meta property="og:url" content="https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/">
+  <meta property="og:site_name" content="The Essence of Software">
+  <meta property="og:title" content="The Essence of Software">
+  <meta property="og:description" content="The operational principle Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its operational principle (OP).
 The operational principle is just a sample scenario, but it includes enough richness to convey typical usages. The example I gave above for Zoom could be written in a more textual way like this
-&lt;create, start, join&#43;, end&gt; where join&#43; means one or more join actions." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="drafts" />
-
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
-
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="The operational principle Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its operational principle (OP).
+&lt;create, start, join&#43;, end&gt; where join&#43; means one or more join actions. Another scenario would be this">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="drafts">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="The operational principle
+Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its operational principle (OP).
 The operational principle is just a sample scenario, but it includes enough richness to convey typical usages. The example I gave above for Zoom could be written in a more textual way like this
-&lt;create, start, join&#43;, end&gt; where join&#43; means one or more join actions."/>
+&lt;create, start, join&#43;, end&gt;
+
+where join&#43; means one or more join actions. Another scenario would be this">
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Drafts",
       "item": "https://essenceofsoftware.com/drafts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "",
       "item": "https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/"
     }
@@ -113,14 +121,14 @@ The operational principle is just a sample scenario, but it includes enough rich
   "@type": "BlogPosting",
   "headline": "",
   "name": "",
-  "description": "The operational principle Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its operational principle (OP).\nThe operational principle is just a sample scenario, but it includes enough richness to convey typical usages. The example I gave above for Zoom could be written in a more textual way like this\n\u0026lt;create, start, join+, end\u0026gt; where join+ means one or more join actions.",
+  "description": "The operational principle Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its operational principle (OP).\nThe operational principle is just a sample scenario, but it includes enough richness to convey typical usages. The example I gave above for Zoom could be written in a more textual way like this\n\u0026lt;create, start, join+, end\u0026gt; where join+ means one or more join actions. Another scenario would be this\n",
   "keywords": [
     
   ],
   "articleBody": "The operational principle Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its operational principle (OP).\nThe operational principle is just a sample scenario, but it includes enough richness to convey typical usages. The example I gave above for Zoom could be written in a more textual way like this\nwhere join+ means one or more join actions. Another scenario would be this\nin which the meeting is started but nobody joins, so the poor host ends it without talking to anyone. That’s a perfectly valid scenario, but it’s not useful, so it wouldn’t count as an OP.\nAnother example: To use a traditional elevator, you call it (by pressing the up or down button), you enter the first elevator that arrives, select your floor, and exit when you arrive:\nSome modern elevators work differently: you select the floor in the elevator lobby, enter the elevator at the indicated bank, and then exit at your floor:\nNote that we could enrich the OP to make it clear that you have to enter the correct elevator, writing something like\nto say that when you select floor f, the system responds with elevator bank b, and you then enter an elevator in bank b, and exit at floor f. Likewise we could have indicated that the participants in our Zoom meeting use the link it was started with:\nA restaurant reservation system lets you reserve a table, then start using it at the prescribed time, and then end using it some time later:\n(How much later the end action might occur is a difficult design challenge: if diners stay too long, the restaurant fails to deliver on its OP, but if the reservation slot is longer than necessary, tables will sit empty.)\nThe OP of a software app represents its innovative essence. Some OPs were invented just for software (or for computerized systems)—the elevator’s, for example. Many, like the restaurant reservation OP, were invented as a social protocol that existed long before computers (back in the 19th century, in fact). And some, like Zoom’s, are a kind of hybrid: naming a meeting place in advance is not so different from what people have always done when they say “let’s meet at the pub at 7pm” (although, unlike the pub, Zoom’s meeting place is created on demand from an unlimited pool).\nThe non-obviousness of an OP may be a symptom of cleverness: the elevator that begins with floor selection, for example, allows better load balancing (by directing travelers to particular elevators).\nBut a trivial OP can be a significant innovation too. Take the OP for blogging platforms, which is little more than this:\nThat is, the blogger posts an article and then multiple people read it. This seems almost too silly to specify. But it’s more subtle than it seems. The action of reading an article involves specifying\nhow is selection specified???\nsomeone performs a read, they\nread actions are read\nactually relies on a\nthe converse doesn’t hold: a trivial\nit’s a mistake to think that a trivial OP is evidence of no ad\ndon’t be the converse is not true\niPod\npay, park, leave all these OPs have interesting subtleties if a one space zone, don’t need car license (but they may still ask so they can prevent you sharing?)\nIf you don’t believe that use is part of the system, see what happens if you make lots of OpenTable reservations and don’t turn up.\nOPs are often computerizations of social protocols. parking, reservations, calls, meetings in places.\nCan describe socio-technical systems too. The OP for social security:\nas a simple sequence\nComparisons drinking band to simple age verification Can be very simple, novelty is in comparison to more complex one. Social media posting.\nThis was the argument that Apple’s detractors used This argument has become weaker over the years as Apple’s detractors (who claimed that design didn’t matter and that Apple’s fancy products would never compete against the cost effectiv\n",
   "wordCount" : "707",
   "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
+  "image": "https://essenceofsoftware.com/eos-twitter-card.png","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -153,7 +161,7 @@ The operational principle is just a sample scenario, but it includes enough rich
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
             <div class="logo-switches">
             </div>
         </div>
@@ -206,7 +214,7 @@ The operational principle is just a sample scenario, but it includes enough rich
 <article class="post-single">
   <header class="post-header">
     
-    <h1 class="post-title">
+    <h1 class="post-title entry-hint-parent">
       
     </h1>
     <div class="post-meta">4 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="discourse.org" rel="noopener noreferrer" target="_blank">Comments</a>
@@ -277,8 +285,7 @@ The OP for social security:</p>
 <pre><code>&lt;assign, contribute+, retire, withdraw+&gt;
 </code></pre>
 <blockquote>
-<p>as a simple sequence</p>
-</blockquote>
+<p>as a simple sequence</p></blockquote>
 <p>Comparisons
 drinking band to simple age verification
 Can be very simple, novelty is in comparison to more complex one. Social media posting.</p>
@@ -299,7 +306,7 @@ This argument has become weaker over the years as Apple’s detractors (who clai
 <footer class="footer">
 
 
-    <span>&copy; 2025 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

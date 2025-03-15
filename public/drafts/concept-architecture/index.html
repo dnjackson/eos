@@ -10,9 +10,7 @@
 <meta name="description" content="A Proposal for a Concept-based App Architecture">
 <meta name="author" content="Daniel Jackson">
 <link rel="canonical" href="https://essenceofsoftware.com/drafts/concept-architecture/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.10b46262efde62bfde2e6b990234776439b6b9ca49ab4575de4ef7087668077b.css" integrity="sha256-ELRiYu/eYr/eLmuZAjR3ZDm2ucpJq0V13k73CHZoB3s=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
@@ -20,6 +18,7 @@
 <link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/drafts/concept-architecture/">
 <noscript>
     <style>
         #theme-toggle,
@@ -37,7 +36,7 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -57,44 +56,49 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Concept Architecture" />
-<meta property="og:description" content="A Proposal for a Concept-based App Architecture" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://essenceofsoftware.com/drafts/concept-architecture/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="drafts" />
-<meta property="article:published_time" content="2024-08-12T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-08-12T00:00:00+00:00" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
-
-<meta name="twitter:title" content="Concept Architecture"/>
-<meta name="twitter:description" content="A Proposal for a Concept-based App Architecture"/>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WRQ6HWW3ZW');
+        }
+      </script><meta property="og:url" content="https://essenceofsoftware.com/drafts/concept-architecture/">
+  <meta property="og:site_name" content="The Essence of Software">
+  <meta property="og:title" content="Concept Architecture">
+  <meta property="og:description" content="A Proposal for a Concept-based App Architecture">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="drafts">
+    <meta property="article:published_time" content="2024-08-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-12T00:00:00+00:00">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:title" content="Concept Architecture">
+<meta name="twitter:description" content="A Proposal for a Concept-based App Architecture">
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Drafts",
       "item": "https://essenceofsoftware.com/drafts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "Concept Architecture",
       "item": "https://essenceofsoftware.com/drafts/concept-architecture/"
     }
@@ -114,7 +118,7 @@ if (!doNotTrack) {
   "articleBody": "Background Our Kodless prototype seems to be very promising and allows effective LLM-based code generation of both concepts and syncs, as demonstrated by the HackerNews example.\nSome limitations and opportunities:\nCatalog. Currently all concepts are generated afresh, aside from some basic ones like Session. It would be easy to extend Kodless to allow concepts to be selected from a catalog. This would allow (a) reuse; (b) greater confidence in the security of critical concepts; (c) concepts that might be hard to build with an LLM because they involve tricky functionality or use complex APIs (such as maps); (d) faster app composition. Cross-concept queries. In the current design, when a query must access the databases of multiple concepts, the sync code makes action calls to the concepts and essentially aggregates results. This is not ideal, both because it complicates the sync code and because it requires complex view actions in concepts (such as getByIds). Not clear how to fix this. Request structure in syncs. Some routes require fairly elaborate structure, in having multiple params and in packaging results into structured objects. This is currently handled by requiring the user to write prompts that contain this information. It could be mitigated by some metaprompts that provide general guidance on how request results should be packaged. It could also be absorbed inside standard BFF components (see below). Frontend code. Barish designed a nice DSL for frontend code which makes it easy to build a reactive tree that interleaves components from different concepts. He has also had some success using GPT to generate the DSL code. I am convinced, however, that the base functionality of Kodless should offer reusable frontend components. New Architecture The proposed architecture offers reusable frontend components so that apps can be built without any frontend code generation.\nSome elements of the new architecture might be:\nPer-concept BFF. Each concept comes with not only its backend component encapsulating a data store and actions, but also a default frontend component, perhaps implemented in the Backend for Frontend pattern. This new component is a server-side component that sits between the frontend and the backend like a proxy, and offers actions that respond with frontend widgets (in which calls to other component actions are embedded). Global CSS. The frontend components use a standardized set of CSS styles to make it easy to achieve a uniform appearance, and to change it. Default syncs. By default, each action of a backend concept has an associated sync that simply wraps the action in a route. The frontend components don’t call the concept actions directly, but instead call the syncs. [Should these syncs be plain function calls instead of routes, so that the BFF components encapsulate all HTTP-related functionality?] Overriding syncs. When more application-specific behavior is needed, the default syncs can be replaced by specialized syncs, for example, adding authentication actions. Predefined schema objects. For standard things (like books, movies, mailing addresses), we can use schemas/formats as defined in schema.org. These will often be passed as parameters to polymorphic concepts. For example, Catalog concept that lets you find items based on several metadata fields could be instantiated with the book schema. Examples Adam’s programming language fan table ",
   "wordCount" : "529",
   "inLanguage": "en",
-  "datePublished": "2024-08-12T00:00:00Z",
+  "image": "https://essenceofsoftware.com/eos-twitter-card.png","datePublished": "2024-08-12T00:00:00Z",
   "dateModified": "2024-08-12T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -147,7 +151,7 @@ if (!doNotTrack) {
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
             <div class="logo-switches">
             </div>
         </div>
@@ -200,7 +204,7 @@ if (!doNotTrack) {
 <article class="post-single">
   <header class="post-header">
     
-    <h1 class="post-title">
+    <h1 class="post-title entry-hint-parent">
       Concept Architecture
     </h1>
     <div class="post-description">
@@ -269,7 +273,7 @@ if (!doNotTrack) {
 <footer class="footer">
 
 
-    <span>&copy; 2025 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

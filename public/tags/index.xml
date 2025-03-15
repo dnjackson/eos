@@ -9,72 +9,59 @@
       <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
       <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://essenceofsoftware.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>css</title>
+      <title>Css</title>
       <link>https://essenceofsoftware.com/tags/css/</link>
       <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tags/css/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>html</title>
+      <title>Html</title>
       <link>https://essenceofsoftware.com/tags/html/</link>
       <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tags/html/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>markdown</title>
+      <title>Markdown</title>
       <link>https://essenceofsoftware.com/tags/markdown/</link>
       <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tags/markdown/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>themes</title>
+      <title>Themes</title>
       <link>https://essenceofsoftware.com/tags/themes/</link>
       <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tags/themes/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>catalog</title>
+      <title>Catalog</title>
       <link>https://essenceofsoftware.com/tags/catalog/</link>
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tags/catalog/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>concept</title>
+      <title>Concept</title>
       <link>https://essenceofsoftware.com/tags/concept/</link>
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tags/concept/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>upvote</title>
+      <title>Upvote</title>
       <link>https://essenceofsoftware.com/tags/upvote/</link>
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tags/upvote/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

@@ -1,7 +1,7 @@
 ---
 author: "Daniel Jackson"
 title: "Autodesk Concept Design Workshop"
-date: "2024-11-26"
+date: "2025-03-14"
 description: "Boston, March 17-18, 2024"
 ShowToc: true
 TocOpen: true
@@ -27,7 +27,7 @@ editPost:
 | **12:15** | Lunch                | Lunch                  |
 | **1:15**  | Designing concepts   | Forma concepts 1       |
 | **2:45**  | Break                | Break                  |
-| **3:00**  | Designing syncs      | Forma concepts 2       |
+| **3:00**  | Design exercise      | Forma concepts 2       |
 | **4:30**  | Reflections          | Reflections            |
 | **5:00**  | Adjourn              | Adjourn                |
 

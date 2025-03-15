@@ -9,17 +9,18 @@
 <meta name="keywords" content="">
 <meta name="description" content="Consent concepts
 owner,
-GPT suggests data custodian authorized party service provider
+GPT suggests
+data custodian
+authorized party
+service provider
 let’s go with provider or party.
 consent applies to a resource instance (SSN) or type (bank account transaction). but can treat instance as a pathological type that has just one instance.
 do we need actions allowed if party is specified? party might share. or purposes/uses
 marketing, sharing, etc
-can owner provide blanket consent to any party? or any party in some category?">
+can owner provide blanket consent to any party? or any party in some category? or a party in some group (eg, as defined by Consumer Reports companies)? can one party inherit consent from another?">
 <meta name="author" content="Daniel Jackson">
 <link rel="canonical" href="https://essenceofsoftware.com/drafts/consent-concepts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.10b46262efde62bfde2e6b990234776439b6b9ca49ab4575de4ef7087668077b.css" integrity="sha256-ELRiYu/eYr/eLmuZAjR3ZDm2ucpJq0V13k73CHZoB3s=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
@@ -27,6 +28,7 @@ can owner provide blanket consent to any party? or any party in some category?">
 <link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/drafts/consent-concepts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -44,7 +46,7 @@ can owner provide blanket consent to any party? or any party in some category?">
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -64,58 +66,64 @@ can owner provide blanket consent to any party? or any party in some category?">
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WRQ6HWW3ZW', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="" />
-<meta property="og:description" content="Consent concepts
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WRQ6HWW3ZW');
+        }
+      </script><meta property="og:url" content="https://essenceofsoftware.com/drafts/consent-concepts/">
+  <meta property="og:site_name" content="The Essence of Software">
+  <meta property="og:title" content="The Essence of Software">
+  <meta property="og:description" content="Consent concepts
 owner,
 GPT suggests data custodian authorized party service provider
 let’s go with provider or party.
 consent applies to a resource instance (SSN) or type (bank account transaction). but can treat instance as a pathological type that has just one instance.
 do we need actions allowed if party is specified? party might share. or purposes/uses
 marketing, sharing, etc
-can owner provide blanket consent to any party? or any party in some category?" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://essenceofsoftware.com/drafts/consent-concepts/" /><meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/><meta property="article:section" content="drafts" />
-
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png"/>
-
-<meta name="twitter:title" content=""/>
+can owner provide blanket consent to any party? or any party in some category? or a party in some group (eg, as defined by Consumer Reports companies)? can one party inherit consent from another?">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="drafts">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:title" content="">
 <meta name="twitter:description" content="Consent concepts
 owner,
-GPT suggests data custodian authorized party service provider
+GPT suggests
+data custodian
+authorized party
+service provider
 let’s go with provider or party.
 consent applies to a resource instance (SSN) or type (bank account transaction). but can treat instance as a pathological type that has just one instance.
 do we need actions allowed if party is specified? party might share. or purposes/uses
 marketing, sharing, etc
-can owner provide blanket consent to any party? or any party in some category?"/>
+can owner provide blanket consent to any party? or any party in some category? or a party in some group (eg, as defined by Consumer Reports companies)? can one party inherit consent from another?">
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Drafts",
       "item": "https://essenceofsoftware.com/drafts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "",
       "item": "https://essenceofsoftware.com/drafts/consent-concepts/"
     }
@@ -128,14 +136,14 @@ can owner provide blanket consent to any party? or any party in some category?"/
   "@type": "BlogPosting",
   "headline": "",
   "name": "",
-  "description": "Consent concepts\nowner,\nGPT suggests data custodian authorized party service provider\nlet’s go with provider or party.\nconsent applies to a resource instance (SSN) or type (bank account transaction). but can treat instance as a pathological type that has just one instance.\ndo we need actions allowed if party is specified? party might share. or purposes/uses\nmarketing, sharing, etc\ncan owner provide blanket consent to any party? or any party in some category?",
+  "description": "Consent concepts\nowner,\nGPT suggests data custodian authorized party service provider\nlet’s go with provider or party.\nconsent applies to a resource instance (SSN) or type (bank account transaction). but can treat instance as a pathological type that has just one instance.\ndo we need actions allowed if party is specified? party might share. or purposes/uses\nmarketing, sharing, etc\ncan owner provide blanket consent to any party? or any party in some category? or a party in some group (eg, as defined by Consumer Reports companies)? can one party inherit consent from another?\n",
   "keywords": [
     
   ],
   "articleBody": "Consent concepts\nowner,\nGPT suggests data custodian authorized party service provider\nlet’s go with provider or party.\nconsent applies to a resource instance (SSN) or type (bank account transaction). but can treat instance as a pathological type that has just one instance.\ndo we need actions allowed if party is specified? party might share. or purposes/uses\nmarketing, sharing, etc\ncan owner provide blanket consent to any party? or any party in some category? or a party in some group (eg, as defined by Consumer Reports companies)? can one party inherit consent from another?\nactions for concept request consent grant consent; (and party confirms/attests?) revoke consent exploit consent\nshould exploiting consent be part of this concept? what if exploit does not meet consent constraint?\nshould concept keep record of exploited consent actions? this seems to extend it to a logging concept. maybe just have an action for approving of disapproving of an exploitation.\nduration, expiration rights assertion: not attestation requesting data be fixed, deleted, etc consent important element of control tracing essential for accountability\n",
   "wordCount" : "173",
   "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
+  "image": "https://essenceofsoftware.com/eos-twitter-card.png","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -168,7 +176,7 @@ can owner provide blanket consent to any party? or any party in some category?"/
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://essenceofsoftware.com" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
             <div class="logo-switches">
             </div>
         </div>
@@ -221,7 +229,7 @@ can owner provide blanket consent to any party? or any party in some category?"/
 <article class="post-single">
   <header class="post-header">
     
-    <h1 class="post-title">
+    <h1 class="post-title entry-hint-parent">
       
     </h1>
     <div class="post-meta">1 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="discourse.org" rel="noopener noreferrer" target="_blank">Comments</a>
@@ -267,7 +275,7 @@ tracing essential for accountability</p>
 <footer class="footer">
 
 
-    <span>&copy; 2025 <a href="https://essenceofsoftware.com">Daniel Jackson</a></span>
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

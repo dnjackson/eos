@@ -9,102 +9,105 @@
       <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
       <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://essenceofsoftware.com/tutorials/design-general/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://essenceofsoftware.com/tutorials/design-general/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Design vs. engineering</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</guid>
       <description>What&amp;#39;s the difference between design and engineering?</description>
     </item>
-    
     <item>
       <title>How great design happens</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/great-design/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tutorials/design-general/great-design/</guid>
-      <description>Think about your favorite product, whether it’s a photo-editing app or a toaster, and ask yourself: how did it get to be so good?
-With all the hype in the design world about creativity and brainstorming, it’s easy to imagine that great designs simply appear, out of the blue. Someone conjures up a new idea, and it just needs to be translated from sketch to product. Maybe many details need to be added, but the quality of the design was there at the start—like a tiny seed that grows spontaneously into a magnificent tree.</description>
+      <description>&lt;p&gt;Think about your favorite product, whether it’s a photo-editing app or a toaster, and ask yourself: how did it get to be so good?&lt;/p&gt;
+&lt;p&gt;With all the hype in the design world about creativity and brainstorming, it’s easy to imagine that great designs simply appear, out of the blue. Someone conjures up a new idea, and it just needs to be translated from sketch to product. Maybe many details need to be added, but the quality of the design was there at the start—like a tiny seed that grows spontaneously into a magnificent tree.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Form, context &amp; misfits</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/misfits/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tutorials/design-general/misfits/</guid>
-      <description>What is a design problem? What exactly is a design problem? And why are design problems often hard to solve?
-The most compelling answer to this question, in my view, comes from Christopher Alexander in his influential book Notes on the Synthesis of Form (1964).
-Most of the book is about a way to structure goals into a tree, by noting alignments and conflicts between them, and grouping them to minimize conflicts across groups.</description>
+      <description>&lt;h2 id=&#34;what-is-a-design-problem&#34;&gt;What is a design problem?&lt;/h2&gt;
+&lt;p&gt;What exactly is a design problem? And why are design problems often hard to solve?&lt;/p&gt;
+&lt;p&gt;The most compelling answer to this question, in my view, comes from Christopher Alexander in his influential book &lt;em&gt;Notes on the Synthesis of Form&lt;/em&gt; (1964).&lt;/p&gt;
+&lt;p&gt;Most of the book is about a way to structure goals into a tree, by noting alignments and conflicts between them, and grouping them to minimize conflicts across groups. This idea is very similar to Herb Simon’s notion of nearly decomposable systems, which was described in his “Architecture of Complexity” paper (1962) two years before.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Generic fitness criteria</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/fitness-criteria/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tutorials/design-general/fitness-criteria/</guid>
-      <description>Seven criteria What makes a design fit for purpose depends—surprise!—on the purpose. But generic criteria are helpful for two reasons. First, they give you some basis for evaluation, however crude. Second, they can be used as a checklist to suggest more specific ones.
-A software product should be:
-Efficient: letting users accomplish their goals with no more steps or effort than needed; Flexible: supporting not just one fixed and narrow goal, but a range of goals that users are likely to have; Responsive: responding to requests from the user in a timely way; Understandable: behaving predictably, offering options and producing outcomes that make sense to users; Robust: tolerant of errors made by the user and other common perturbations of context, such as failures of other systems or agents to perform their expected roles; Secure: resistant to malicious attacks, including social engineering attacks that induce the user to perform unintended actions.</description>
+      <description>&lt;h2 id=&#34;seven-criteria&#34;&gt;Seven criteria&lt;/h2&gt;
+&lt;p&gt;What makes a design fit for purpose depends—surprise!—on the purpose. But generic criteria are helpful for two reasons. First, they give you some basis for evaluation, however crude. Second, they can be used as a checklist to suggest more specific ones.&lt;/p&gt;
+&lt;p&gt;A software product should be:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Efficient&lt;/strong&gt;: letting users accomplish their goals with no more steps or effort than needed;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flexible&lt;/strong&gt;: supporting not just one fixed and narrow goal, but a range of goals that users are likely to have;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Responsive&lt;/strong&gt;: responding to requests from the user in a timely way;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Understandable&lt;/strong&gt;: behaving predictably, offering options and producing outcomes that make sense to users;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Robust&lt;/strong&gt;: tolerant of errors made by the user and other common perturbations of context, such as failures of other systems or agents to perform their expected roles;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Secure&lt;/strong&gt;: resistant to malicious attacks, including social engineering attacks that induce the user to perform unintended actions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Just&lt;/strong&gt;: allocating benefits amongst different groups of users and stakeholders in a fair way.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;non-criteria&#34;&gt;Non-criteria&lt;/h2&gt;
+&lt;p&gt;Some criteria I have intentionally omitted from this list:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Simplicity</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/simplicity/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tutorials/design-general/simplicity/</guid>
-      <description>Most of us* believe that simplicity is the key to design. I’m a sucker for the best quotes about it. Here are some of my favorites. First, Tony Hoare in his Turing Award lecture lamenting the complexity of Algol-68:
-I conclude that there are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies.</description>
+      <description>&lt;p&gt;Most of us* believe that simplicity is the key to design. I’m a sucker for the best quotes about it. Here are some of my favorites. First, Tony Hoare in his Turing Award lecture lamenting the complexity of Algol-68:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I conclude that there are two ways of constructing a software design: One way is to make it so simple that there are &lt;strong&gt;obviously&lt;/strong&gt; no deficiencies and the other way is to make it so complicated that there are no &lt;strong&gt;obvious&lt;/strong&gt; deficiencies.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Levels of design</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</guid>
-      <description>When you’re diagnosing a usability snag, or coming up with a new design idea, it’s helpful to know what level you’re working at.
-Over the years, designers and researchers have defined various levels, reflecting their view of design and what they emphasize.
-I find the following scheme most helpful:
-Physical. If you want to think of levels as low and high, this one is at the bottom. It’s the level of design in which you’re concerned about the physical (and physiological) qualities of human users.</description>
+      <description>&lt;p&gt;When you’re diagnosing a usability snag, or coming up with a new design idea, it’s helpful to know what &lt;em&gt;level&lt;/em&gt; you’re working at.&lt;/p&gt;
+&lt;p&gt;Over the years, designers and researchers have defined various levels, reflecting their view of design and what they emphasize.&lt;/p&gt;
+&lt;p&gt;I find the following scheme most helpful:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Physical&lt;/strong&gt;. If you want to think of levels as low and high, this one is at the bottom. It’s the level of design in which you’re concerned about the physical (and physiological) qualities of human users. So it might involve physical things (like picking colors), but it includes less tangible aspects too (such as how long an action can take before you need to show a progress bar).  To do this kind of design, you need to know a bit about human anatomy and physiology. For example, Fitts’s Law tells you how long it takes to move a pointing device to its target; perceptual fusion tells you that a delay of more than 10ms will be perceptible; and the fact that 1 in 12 males is red-green colorblind says you’d better not rely on those colors for important distinctions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Linguistic&lt;/strong&gt;. This level involves design around language, and how you can use icons and words to convey information to users. Unlike the physical level, this level is culturally dependent: a &lt;a href=&#34;https://en.wikipedia.org/wiki/Prohibitory_traffic_sign&#34;&gt;white circle with a red border&lt;/a&gt; means no entry to Europeans, but not to Americans. One of the most important design heuristics is to use linguistic cues consistently within your app and across apps.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conceptual&lt;/strong&gt;. This level is about the semantics of an app: its behavior, given by the actions you can perform and the state the actions read and write, and the meaning and implications of those actions and state.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here’s a picture illustrating these levels. The illustration for the linguistic level is a British road sign affectionately known as “man having trouble opening umbrella” (illustrating the subjectivity of linguistic signals).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Beyond the user interface</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</guid>
-      <description>In the 1980s, there was a revolution in software. The Apple Macintosh came out (building on the invention of the WIMP interface at PARC), Don Norman wrote The Design of Everyday Things, and the first CHI conference was held.
-Now everyone knows how important user interface design is, and there’s no excuse for messing it up. You can find several collections of UI design heuristics (such as Nielsen’s) online, and many companies publish standards for how to use UI widgets consistently (here’s Google’s, for example).</description>
+      <description>&lt;p&gt;In the 1980s, there was a revolution in software. The Apple Macintosh came out (building on the invention  of the WIMP interface at &lt;a href=&#34;https://en.wikipedia.org/wiki/Xerox_Alto&#34;&gt;PARC&lt;/a&gt;), Don Norman wrote &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things&#34;&gt;&lt;em&gt;The Design of Everyday Things&lt;/em&gt;&lt;/a&gt;, and the first &lt;a href=&#34;https://sigchi.org/conferences/conference-history/&#34;&gt;CHI conference&lt;/a&gt; was held.&lt;/p&gt;
+&lt;p&gt;Now everyone knows how important user interface design is, and there’s no excuse for messing it up.  You can find several collections of UI design heuristics (such as &lt;a href=&#34;https://www.nngroup.com/articles/ten-usability-heuristics/&#34;&gt;Nielsen’s&lt;/a&gt;) online, and many companies publish standards for how to use UI widgets consistently (here’s &lt;a href=&#34;https://material.io/design&#34;&gt;Google’s&lt;/a&gt;, for example).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Divergent and convergent design</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</guid>
-      <description>Two modes of design thinking Design, whatever the domain, includes two different modes of thinking. In one, the designer generates ideas freely, often responding only loosely to any given need or problem. In the other, the designer takes some previously articulated design ideas, and attempts to improve them.
-The first mode is expansive, and most successful when critical judgment is suspended; the second is reductive, and calls for focus and analysis.</description>
+      <description>&lt;h2 id=&#34;two-modes-of-design-thinking&#34;&gt;Two modes of design thinking&lt;/h2&gt;
+&lt;p&gt;Design, whatever the domain, includes two different modes of thinking. In one, the designer generates ideas freely, often responding only loosely to any given need or problem. In the other, the designer takes some previously articulated design ideas, and attempts to improve them.&lt;/p&gt;
+&lt;p&gt;The first mode is expansive, and most successful when critical judgment is suspended; the second is reductive, and calls for focus and analysis. The first tends to complicate a design and make it less coherent as new ideas are introduced that have yet to find their place; the second brings order and clarity.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tactics for divergent design</title>
       <link>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</guid>
-      <description>Tactics for divergence Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.
-Interviewing stakeholders Talking to potential users and other stakeholders is good not only for identifying needs but also for getting design ideas. You can ask what tools and techniques a user currently finds helpful, and what changes might make them more effective.</description>
+      <description>&lt;h1 id=&#34;tactics-for-divergence&#34;&gt;Tactics for divergence&lt;/h1&gt;
+&lt;p&gt;Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.&lt;/p&gt;
+&lt;h2 id=&#34;interviewing-stakeholders&#34;&gt;Interviewing stakeholders&lt;/h2&gt;
+&lt;p&gt;Talking to potential users and other stakeholders is good not only for identifying needs but also for getting design ideas. You can ask what tools and techniques a user currently finds helpful, and what changes might make them more effective. Just resist the temptation to ask whether a particular design idea would be attractive; most interviews (even if just out of consideration for the interviewer) are likely to express unwarranted enthusiasm.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
