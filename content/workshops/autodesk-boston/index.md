@@ -20,7 +20,7 @@ editPost:
 
 | **Time**  | **Monday**           | **Tuesday**            |
 | --------- | -------------------- | ---------------------- |
-| **9:00**  | Welcome ([slides](./pdfs/0-introduction.pdf))     | Questions & review     |
+| **9:00**  | Welcome ([slides](./pdfs/0-introduction.pdf), [goals poll](https://app.sli.do/event/6EYs7HG2ceVXh5EiPQiw2q), [sw poll](https://app.sli.do/event/4jw4fpftSbYcSnycjiqCDA))     | Questions & review     |
 | **9:30**  | Introducing concepts ([slides](./pdfs/1-introducing-concepts.pdf)) | Design moves ([slides](./pdfs/5-design-moves.pdf)) |
 | **10:45** | Break                | Break                  |
 | **11:00** | Identifying concepts ([slides](./pdfs/2-identifying-concepts.pdf)) | Team vision exercise ([slides](./pdfs/6-team-vision.pdf), [yours](https://tinyurl.com/ad-vision))    |
