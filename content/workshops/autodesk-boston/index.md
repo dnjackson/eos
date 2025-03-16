@@ -20,15 +20,15 @@ editPost:
 
 | **Time**  | **Monday**           | **Tuesday**            |
 | --------- | -------------------- | ---------------------- |
-| **9:00**  | Welcome & intros     | Questions & review     |
-| **9:30**  | Introducing concepts | Designing compositions |
+| **9:00**  | Welcome ([slides](./pdfs/0-introduction.pdf))     | Questions & review     |
+| **9:30**  | Introducing concepts ([slides](./pdfs/1-introducing-concepts.pdf)) | Design moves ([slides](./pdfs/5-design-moves.pdf)) |
 | **10:45** | Break                | Break                  |
-| **11:00** | Identifying concepts | Synergistic design     |
+| **11:00** | Identifying concepts ([slides](./pdfs/2-identifying-concepts.pdf)) | Team vision exercise ([slides](./pdfs/6-team-vision.pdf), [yours](https://tinyurl.com/ad-vision))    |
 | **12:15** | Lunch                | Lunch                  |
-| **1:15**  | Designing concepts   | Forma concepts 1       |
+| **1:15**  | Designing concepts ([slides](./pdfs/3-designing-concepts.pdf))  | Team integration exercise ([slides](./pdfs/7-integration.pdf), [yours](https://tinyurl.com/ad-integ)) |
 | **2:45**  | Break                | Break                  |
-| **3:00**  | Design exercise      | Forma concepts 2       |
-| **4:30**  | Reflections          | Reflections            |
+| **3:00**  | Design exercise ([slides](./pdfs/4-design-exercise.pdf))      | Presentations ([slides](./pdfs/8-presentations.pdf)) |
+| **4:30**  | Reflections ([slides](./pdfs/reflections-day-1.pdf), [survey](https://forms.gle/TRekSYTHMXqabehs8))         | Reflections ([slides](./pdfs/reflections-day-2.pdf), [survey](https://forms.gle/9XFWu4KvJLLVrGeT9))           |
 | **5:00**  | Adjourn              | Adjourn                |
 
 
