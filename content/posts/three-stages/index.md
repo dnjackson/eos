@@ -76,7 +76,7 @@ _The WhatsApp molecule and its structure: the [graph](https://essenceofsoftware.
 
 How does this change the design process? It means that your first step is to figure out if some existing concepts will do the job. You might want to adjust them, or even add some new concepts. You won’t need to elaborate the states and actions of most of the concepts because you know them already.
 
-You might wonder if this makes design less creative. I’d argue that it makes it more creative, because you spend less time reinventing the wheel and more time focusing on the aspects that are truly novel. When you put concepts together in creative ways, magical things can happen. Two examples: [Yellkey](http://yellkey.com) takes two familiar concepts—let’s call them *LinkShortener* and *ExpiringService*—and puts them together, and by ensuring that links expire quickly, can offer common words as links, completely changing the user’s experience. And the [Arc](https://arc.net) browser makes tabs more manageable by joining the *Tab* and *Bookmark* concepts in a new way.
+You might wonder if this makes design less creative. I’d argue that it makes it more creative, because you spend less time reinventing the wheel and more time focusing on the aspects that are truly novel. When you put concepts together in creative ways, magical things can happen. Two examples: [Yellkey](https://yellkey.com) takes two familiar concepts—let’s call them *LinkShortener* and *ExpiringService*—and puts them together, and by ensuring that links expire quickly, can offer common words as links, completely changing the user’s experience. And the [Arc](https://arc.net) browser makes tabs more manageable by joining the *Tab* and *Bookmark* concepts in a new way.
 
 Concept design helps you identify what makes apps distinct, and what a company’s true assets are. Photoshop succeeded because of the Layer concept; TBL’s invention of the web rests not on hypertext or markup or HTTP (none of which were novel) but on the *URL* concept; Microsoft Word introduced *Style*, the concept that almost defines desktop publishing; Dan Bricklin’s VisiCalc had *RelativeReference*, the concept that makes spreadsheets work.
 
@@ -100,7 +100,7 @@ Concept design uses a much simpler approach, inspired by Tony Hoare’s [CSP](ht
 Synchronizations are like transactions: either all the actions happen or none of them. So this sync
 
     sync Group.post (u, p)
-      Karma.permit (u, 10)
+      Karma.permit (u, 20)
   
 might enforce the requirement that a user can post to a group only when the *permit* action of the *Karma* concept can occur (with 20 karma points).
 
@@ -117,7 +117,7 @@ Finally, in some cases, a synchronization is so powerful that it enables all kin
 # So what can you do with all this?
 
 As an **individual designer**, a concept design lens can change how you work:
-- **App = concepts**. Viewing apps as compositions of concepts brings a new clarity: now you can explain how a word processor differs from a text editor (it has *Paragraph*, *Style* and *Format* concepts, but usually no robust *Line* concept) and from a desktop publishing app (it has a *TextFlow* concept and a real *Page* concept).
+- **App = concepts**. Viewing apps as compositions of concepts brings a new clarity: now you can explain how a word processor differs from a text editor (which has *Paragraph*, *Style* and *Format* concepts, but usually no robust *Line* concept) and from a desktop publishing app (which has a *TextFlow* concept and a real *Page* concept).
 - **90% of design is reuse**. Designing an app is now mostly about combining existing concepts in creative ways. Gordon’s Noosphere takes concepts like *Notebook*, *ContentAddressableStorage*, *PublicKeyNaming*, *ImmutableDocument*, *Version*, etc and makes an entirely new platform for peer-to-peer knowledge sharing. 
 
 - **Behavior = state + actions**. Sketching behavior as a tentative UI is very evocative, but it only goes so far. If you think about behavior as states and actions, with the help of concepts to modularize it, you can go a lot further and still avoid the complexities of code.
