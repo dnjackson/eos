@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,16 +9,16 @@
 <meta name="keywords" content="">
 <meta name="description" content="Applying concept design to the camera rotation API">
 <meta name="author" content="Daniel Jackson">
-<link rel="canonical" href="https://essenceofsoftware.com/studies/larger/rotation/">
+<link rel="canonical" href="http://localhost:1313/studies/larger/rotation/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
-<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/studies/larger/rotation/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/studies/larger/rotation/">
 <noscript>
     <style>
         #theme-toggle,
@@ -69,7 +69,7 @@
           gtag('js', new Date());
           gtag('config', 'G-WRQ6HWW3ZW');
         }
-      </script><meta property="og:url" content="https://essenceofsoftware.com/studies/larger/rotation/">
+      </script><meta property="og:url" content="http://localhost:1313/studies/larger/rotation/">
   <meta property="og:site_name" content="The Essence of Software">
   <meta property="og:title" content="Android Camera API">
   <meta property="og:description" content="Applying concept design to the camera rotation API">
@@ -78,9 +78,9 @@
     <meta property="article:section" content="studies">
     <meta property="article:published_time" content="2023-07-11T00:00:00+00:00">
     <meta property="article:modified_time" content="2023-07-11T00:00:00+00:00">
-      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+      <meta property="og:image" content="http://localhost:1313/eos-twitter-card.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:image" content="http://localhost:1313/eos-twitter-card.png">
 <meta name="twitter:title" content="Android Camera API">
 <meta name="twitter:description" content="Applying concept design to the camera rotation API">
 
@@ -94,19 +94,19 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Case Studies",
-      "item": "https://essenceofsoftware.com/studies/"
+      "item": "http://localhost:1313/studies/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Longer case studies",
-      "item": "https://essenceofsoftware.com/studies/larger/"
+      "item": "http://localhost:1313/studies/larger/"
     }, 
     {
       "@type": "ListItem",
       "position":  3 ,
       "name": "Android Camera API",
-      "item": "https://essenceofsoftware.com/studies/larger/rotation/"
+      "item": "http://localhost:1313/studies/larger/rotation/"
     }
   ]
 }
@@ -124,7 +124,7 @@
   "articleBody": "API Design at Google Concept design was developed for shaping the functionality of apps, and because it emphasizes the underlying semantics behind the user interface, it should be straightforward to apply it to the design of services. But can it be applied to APIs?\nRecently, inspired by discussions with Meital Tagor Sbero, a UX research manager at Google, I’ve started looking into whether it might be useful in the design of APIs.\nMeital runs a team working on making APIs easier for programmers to use. They have been applying cognitive dimensions of notations, a collection of heuristic principles for usability (due to Thomas Green and Marian Petre) to the design of Android APIs.\nOne of the heuristics is called closeness of mapping and suggests that a notation (or in this case an API) should correspond closely to the problem world. Concept design seems to offer a way to pursue this goal.\nAs an example of an API that programmers find hard to understand, Meital pointed me to the Android Camera API. I decided to focus for a small case study on the Rotation API, because it’s small and seems to have some complexities that concepts can address. I’ve developed a concept model of this API which I believe resolves some of the problems in understanding it, but the model is not complete and it may well contain errors that reflect my own misunderstandings. I’ve also not done the hard work of mapping the concept actions and states to the programmatic components of the API.\nWhy the Rotation API is tricky Before showing you the concepts I came up with, I need to explain why the Rotation API isn’t so easy to understand. I’ll do this by pointing to explanations within the official API documentation.\nThe documentation starts by introducing some key terms:\nReading this, I found myself confused:\nTarget = display? If the display rotation “represents the degrees by which the device is rotated counter-clockwise from its natural orientation” and the target rotation “represents the number of degrees through which to rotate the device clockwise to reach its natural orientation”, why aren’t the two always equal? And indeed, in the graphical examples that follow, the two are equal.\nHow many orientations? The display orientation is said to have only four values, but the phone can surely be held in between these. Indeed, the code sample that appears later shows an onOrientationChanged listener that gives an orientation in degrees:\nDisplay or device? The definitions seem to use the terms “display” and “device” interchangeably, but later it will transpire that the display orientation may not match the device orientation: Furthermore, a second code sample shows an alternative way to set the target rotation not using the onOrientationChanged listener but using the onDisplayChanged listener instead:\nThe next section introduces two new terms: sensor orientation, “a constant value, which represents the degrees (0, 90, 180, 270) the sensor is rotated from the top of the device when the device is in a natural position” and the image rotation which “describes how the data should be rotated clockwise to appear upright.” A series of diagrams then illustrate sensor orientations for different phones:\nThis puzzled me. How can the sensor be rotated and not be aligned with the phone? If the Pixel 3XL indeed has a sensor that is rotated 90 degrees, that would mean that the sensor would be in landscape mode when the phone is held upright in portrait mode.\nA Conceptual Take Here is my attempt to resolve these issues and explain what I believe is going on here.\nFirst, the phone contains an accelerometer that gives its rotation from the upright position. I’ll model this in a simple concept with just one state component (holding the current rotation) and an action that is called whenever the rotation changes:\nconcept DeviceRotation purpose provide physical rotation info from accelerometer principle when user rotates device R degrees counterclockwise from upright position, rotationUpdated(R) occurs state\u2028rotation: Degrees actions // system action performed whenever // change in rotation is detected // outputs current rotation and sets rotation = r rotationUpdated (out r: Degrees) I’m using the word “rotation” throughout for an angular measurement, and reserving the word “orientation” for portrait, landscape, etc. But note that this rotationUpdated action is the onOrientationChanged listener in the API.\nNote that the notion of physical rotation is non-trivial, and isn’t even defined when the phone is parallel to the ground: you’ll have noticed this when you’ve taken photos of something on the ground and been surprised that the resulting image’s orientation seems wrong. But the notion should be intuitively clear enough that we can proceed to the other concepts.\nOur second concept models just one aspect of a digital camera, namely how a captured image has a rotation associated with it:\nconcept Camera purpose take images with recorded rotations principle after setAdditionalRotation (r); capture (i) {i.rotation = r + defaultRotation} state const defaultRotation: Degrees // defined by hardware additionalRotation: Degrees rotation: Image -\u003e Degrees rows: Image -\u003e seq seq Pixel actions setAdditionalRotation (r: Degrees)\t// make new image i with i.rotation = defaultRotation + additionalRotation capture (out i: Image) Images are represented here naively as rows of pixels. Each image has a rotation associated with it. This rotation is intended to be applied to the image when it is displayed, and is chosen so that the image will have the appropriate orientation.\nFor example, if the camera is positioned to take an image in portrait orientation, but the first row in the recorded image corresponds to the pixels in the rightmost column as seen through the camera viewfinder, the image will need to be rotated by 90 degrees (clockwise) to be displayed correctly.\nThis scenario might still occur if the portrait orientation is the natural orientation of the camera (as it is for most mobile phones), because it’s not necessary to require the sensor always record an image so that rows are horizontal in the natural orientation.\nThis is why there is a hardware-specific defaultRotation that holds the rotation that must be applied when the camera is in its natural orientation. So for a camera that has a natural portrait orientation, but whose sensor records rows as just described, the defaultRotation will be 90, and that will determine the image rotation. Now if the camera is held in landscape orientation (by being rotated 90 degrees counterclockwise), the additionalRotation will be set to -90 degrees. As a result, the rotation of the image will be the sum of these, and will be zero, reflecting the fact that in this position the sensor happens to record the image in the expected orientation.\nThe defaultRotation is what was called “sensor rotation” in the API documentation, and the rotation associated with the captured image is the “image rotation”.\nNow finally the most subtle concept. As the user rotates the camera, we need to infer from the extent of the rotation whether the intended orientation is portrait or landscape. Clearly when the camera is perfectly upright, a portrait orientation is intended; and when it is perfectly on its side, rotated 90 degrees counterclockwise, a landscape orientation is intended.\nBut what about in between? Here’s what you might see as you rotate a camera from portrait through to landscape:\nNear the extremes, the intended orientation is clear, but in the middle (as illustrated by the example shown on the bottom right) it seems arbitrary. Perhaps the intended orientation could be inferred by looking at the sensor image, but the angle of rotation alone won’t answer the question definitively.\nTo model this, we define a concept that infers an orientation from a given angle:\nconcept UserOrientation purpose infer intended camera orientation from device angle principle (1) after updateDeviceAngle (a); getInferredOrientation (o, d) {o is the inferred orientation and d its value in degrees} (2) after toggleLock(); updateDeviceAngle (a); getInferredOrientation (o, d) {o is PORTRAIT and d is 0} state Orientation = {PORTRAIT, LANDSCAPE, PORTRAIT_REV, LANDSCAPE_REV} inferredOrientation: Orientation deviceAngle: Degrees orientationLock: Bool = false action toggleLock () updateDeviceAngle (angle: Degrees) getInferredOrientation (out orientation: Orientation, inDegrees: Degrees) The concept holds in its state:\nthe inferred orientation of the device, which has one of four values (including the “reverse” versions of portrait and landscape, namely when the camera is upside down); the angle at which the device is being held; and an orientation lock field, which when true holds the inferred orientation to be the standard portrait orientation. There are three actions:\ntoggleLock simply toggles the orientation lock; updateDeviceAngle updates the angle; getInferredOrientation returns as outputs the inferred orientation, and its equivalent in degrees. This last action embodies whatever (arbitrary) decision we make on when to switch between orientations.\nSynchronizing the concepts Now we can put the concepts together:\napp Camera include concept DeviceRotation concept Camera concept UserOrientation and connect their behaviors with synchronization. The essential one occurs when a device rotation is detected:\nsync updateRotation (out r, o: 0..359) when DeviceRotation.rotationUpdated (r) UserOrientation.updateDeviceAngle (r) UserOrientation.getInferredOrientation (_, o) Camera.setAdditionalRotation (o) When the accelerometer reports a change in the rotation of the device, a new inferred orientation is obtained from the new angle, and the additional rotation in the camera is updated accordingly.\nA diagram Here is a diagrammatic depiction that shows more directly the causal flow, from the rotation being updated in DeviceRotation to the device angle being updated in UserOrientation and then finally the additional rotation being set in Camera:\nThe diagrammatic notation is explained here (and will be explained more fully in an upcoming tutorial).\nNote that some causal steps are still implicit, in particular how the updating of additionalRotation in Camera affects the rotation of the image produced by capture.\nConnecting back to the API Now looking back at the API code sample we can understand it more readily:\nThe firing of the onOrientationChanged listener corresponds to the DeviceRotation.rotationUpdated action that fires the sync; the when statement that assigns rotation based on orientation is an implementation of the UserOrientation.getInferredOrientation action; and the setting of imageCapture.targetRotation is the Camera.setAdditionalRotation action.\nIn the alternative code sample,\nmy guess is that the following is going on. There is a separate and fuller implementation of the UserOrientation concept that rotates the display for apps in general (and is appropriately sync’d with the other concepts as above). The camera can use the orientation reported directly by this module, obtaining the rotation field of the display object. This presumably is affected by whether the orientation lock is on, and perhaps also by whether the app in question is using this feature.\nSummary In summary, we’ve resolved our initial questions as follows:\nThe word “orientation” seems to be used in two distinct ways: for the device rotation, and for the inferred orientation. The “sensor rotation” is just the default rotation associated with captured images, and the “image rotation” is their total associated rotation. Because the phone already includes a module that infers orientation and rotates the display accordingly, display orientation and device orientation are distinct, and a programmer might be able to obtain the display orientation directly, bypassing the need to make the inference in application code. What are the benefits of the conceptual view here? I’d argue that they are:\nA clean separation of concerns, into (a) obtaining the device rotation from the accelerometer; (b) storing rotations with images; and (c) inferring orientations from rotations. A purpose and simple scenarios (OPs) for the concepts, in particular the UserOrientation concept which the API docs didn’t make clear is heuristic. It remains to be seen how this kind of concept design can best be worked into API documentation. It’s clearly not ideal to have a textual notation for concepts that is different from the typical interface specs of APIs. One possibility is to represent concepts diagrammatically.\nAnother challenge involves mapping the concepts to the sometimes complex object-oriented patterns that are used in APIs, which are often more like frameworks (with application code written as subclassing extensions) than service interfaces.\n",
   "wordCount" : "1993",
   "inLanguage": "en",
-  "image": "https://essenceofsoftware.com/eos-twitter-card.png","datePublished": "2023-07-11T00:00:00Z",
+  "image": "http://localhost:1313/eos-twitter-card.png","datePublished": "2023-07-11T00:00:00Z",
   "dateModified": "2023-07-11T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -132,14 +132,14 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://essenceofsoftware.com/studies/larger/rotation/"
+    "@id": "http://localhost:1313/studies/larger/rotation/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "The Essence of Software",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://essenceofsoftware.com/favicon.ico"
+      "url": "http://localhost:1313/favicon.ico"
     }
   }
 }
@@ -157,48 +157,48 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <a href="http://localhost:1313/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
             <div class="logo-switches">
             </div>
         </div>
         <ul id="menu">
             <li>
-                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
+                <a href="http://localhost:1313/ask/" title="FAQ">
                     <span>FAQ</span>
                 </a>
             </li>
             <li>
-                <a href="https://essenceofsoftware.com/buy/" title="Buy">
+                <a href="http://localhost:1313/buy/" title="Buy">
                     <span>Buy</span>
                 </a>
             </li>
             <li>
-                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
+                <a href="http://localhost:1313/reviews/" title="Reviews">
                     <span>Reviews</span>
                 </a>
             </li>
             <li>
-                <a href="https://essenceofsoftware.com/author/" title="Author">
+                <a href="http://localhost:1313/author/" title="Author">
                     <span>Author</span>
                 </a>
             </li>
             <li>
-                <a href="https://essenceofsoftware.com/posts/" title="Blog">
+                <a href="http://localhost:1313/posts/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
+                <a href="http://localhost:1313/tutorials/" title="Tutorials">
                     <span>Tutorials</span>
                 </a>
             </li>
             <li>
-                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
+                <a href="http://localhost:1313/studies/" title="Case Studies">
                     <span>Case Studies</span>
                 </a>
             </li>
             <li>
-                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
+                <a href="http://localhost:1313/subscribe/" title="Subscribe">
                     <span>Subscribe</span>
                 </a>
             </li>
@@ -406,7 +406,7 @@ include
 <footer class="footer">
 
 
-    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
+    <span>&copy; 2025 <a href="http://localhost:1313/">Daniel Jackson</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

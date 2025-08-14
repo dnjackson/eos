@@ -2,11 +2,11 @@
 author: "Daniel Jackson"
 title: "Autodesk Concept Design Workshop"
 date: "2025-07-24"
-description: "Oslo: August 25-26, 2025"
+description: "Oslo, August 25-26, 2025"
 ShowToc: true
 TocOpen: true
 hideMeta: true # removes date etc from post
-summary: "Oslo: August 2025"
+summary: "Oslo, August 2025"
 aliases:
 - /autodesk
 editPost:
@@ -14,6 +14,23 @@ editPost:
   Text: "Forum" # edit text
   appendFilePath: false # to append file path to Edit link
 ---
+
+# Workshop Schedule
+
+| **Time**  | **Monday**           | **Tuesday**            |
+| --------- | -------------------- | ---------------------- |
+| **9:00**  | Welcome ([slides](./pdfs/0-introduction.pdf), [goals poll](https://app.sli.do/event/6EYs7HG2ceVXh5EiPQiw2q), [sw poll](https://app.sli.do/event/4jw4fpftSbYcSnycjiqCDA))     | Questions & review   [exercise](./exercises/concept-comparison)  |
+| **9:30**  | Introducing concepts ([slides](./pdfs/1-introducing-concepts.pdf)) | Design moves ([slides](./pdfs/5-design-moves.pdf)) |
+| **10:45** | Break                | Break                  |
+| **11:00** | Identifying concepts ([slides](./pdfs/2-identifying-concepts.pdf)) | Team vision exercise ([slides](./pdfs/6-team-vision.pdf), [yours](https://tinyurl.com/ad-vision))    |
+| **12:00** | Lunch                | Lunch                  |
+| **1:00**  | Designing concepts ([slides](./pdfs/3-designing-concepts.pdf))  | Team integration exercise ([slides](./pdfs/7-integration.pdf), [yours](https://tinyurl.com/ad-integ)) |
+| **2:45**  | Break                | Break                  |
+| **3:00**  | Design exercise ([slides](./pdfs/4-design-exercise.pdf))      | Presentations ([slides](./pdfs/8-presentations.pdf)) |
+| **4:30**  | Reflections ([slides](./pdfs/reflections-day-1.pdf), [survey](https://forms.gle/TRekSYTHMXqabehs8))         | Reflections ([slides](./pdfs/reflections-day-2.pdf), [survey](https://forms.gle/9XFWu4KvJLLVrGeT9))           |
+| **5:00**  | Adjourn              | Adjourn                |
+
+
 
 
 # Goals

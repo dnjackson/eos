@@ -2,11 +2,11 @@
 author: "Daniel Jackson"
 title: "Autodesk Concept Design Workshop"
 date: "2025-06-10"
-description: "Online: June 10, 12, 16, 24, 2025"
+description: "Online, June 10, 12, 16, 24, 2025"
 ShowToc: true
 TocOpen: true
 hideMeta: true # removes date etc from post
-summary: "Online: June 2025"
+summary: "Online, June 2025"
 aliases:
 - /autodesk
 editPost:

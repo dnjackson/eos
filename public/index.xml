@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Home on The Essence of Software</title>
-    <link>https://essenceofsoftware.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on The Essence of Software</description>
     <image>
       <title>The Essence of Software</title>
-      <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
-      <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
+      <url>http://localhost:1313/eos-twitter-card.png</url>
+      <link>http://localhost:1313/eos-twitter-card.png</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
     <lastBuildDate>Thu, 24 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A new take on concept design</title>
-      <link>https://essenceofsoftware.com/drafts/concepts-redux/new-take/</link>
+      <link>http://localhost:1313/drafts/concepts-redux/new-take/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/concepts-redux/new-take/</guid>
+      <guid>http://localhost:1313/drafts/concepts-redux/new-take/</guid>
       <description>&lt;p&gt;It’s been just over two years since the publication of &lt;em&gt;The Essence of Software&lt;/em&gt; (EOS). In that time, engaging with readers, consulting and teaching to students and practitioners has given me a new perspective on concept design.&lt;/p&gt;
 &lt;p&gt;In a series of notes (of which this is the first), I hope to share some of the respects in which my understanding has evolved. In addition to having a better sense of what matters most, I think I have a greater appreciation of the obstacles that make concept design seem (at the same time!) trivial to some and obscure to others. I also hope to point to some exciting new directions for concept design&amp;mdash;in particular how concepts make it easier to exploit LLMs for generating code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is software design?</title>
-      <link>https://essenceofsoftware.com/drafts/concepts-redux/what-is-design/</link>
+      <link>http://localhost:1313/drafts/concepts-redux/what-is-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/concepts-redux/what-is-design/</guid>
+      <guid>http://localhost:1313/drafts/concepts-redux/what-is-design/</guid>
       <description>&lt;p&gt;As I explain in EOS, I’ve coopted the term “software design” to mean something different from what most people in the software world expect. To me, it means designing &lt;em&gt;function&lt;/em&gt;: how the software will behave and interact with its users and the world.&lt;/p&gt;
 &lt;p&gt;So the design of the software is what determines whether or not it fulfills the user’s needs, because if the function is wrong (or confusing), the user won’t be happy. The user interface matters too, but that’s a separate issue (of how the design is presented).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building on good ideas</title>
-      <link>https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/</link>
+      <link>http://localhost:1313/drafts/concepts-redux/building-on-ideas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/</guid>
+      <guid>http://localhost:1313/drafts/concepts-redux/building-on-ideas/</guid>
       <description>&lt;p&gt;Concept design builds on many familiar ideas. To mention a few:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;From &lt;strong&gt;use cases and user stories&lt;/strong&gt;, concept design takes the idea that software interacts with the world through scenarios that deliver value.&lt;/li&gt;
@@ -45,31 +45,31 @@
     </item>
     <item>
       <title>How software succeeds</title>
-      <link>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</link>
+      <link>http://localhost:1313/tutorials/gentle-intro/how-software-succeeds/</link>
       <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</guid>
+      <guid>http://localhost:1313/tutorials/gentle-intro/how-software-succeeds/</guid>
       <description>The first step to great software: scenarios of success</description>
     </item>
     <item>
       <title>Design vs. engineering</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</link>
+      <link>http://localhost:1313/tutorials/design-general/design-vs-engineering/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/design-vs-engineering/</guid>
       <description>What&amp;#39;s the difference between design and engineering?</description>
     </item>
     <item>
       <title>How great design happens</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/great-design/</link>
+      <link>http://localhost:1313/tutorials/design-general/great-design/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/great-design/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/great-design/</guid>
       <description>&lt;p&gt;Think about your favorite product, whether it’s a photo-editing app or a toaster, and ask yourself: how did it get to be so good?&lt;/p&gt;
 &lt;p&gt;With all the hype in the design world about creativity and brainstorming, it’s easy to imagine that great designs simply appear, out of the blue. Someone conjures up a new idea, and it just needs to be translated from sketch to product. Maybe many details need to be added, but the quality of the design was there at the start—like a tiny seed that grows spontaneously into a magnificent tree.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Form, context &amp; misfits</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/misfits/</link>
+      <link>http://localhost:1313/tutorials/design-general/misfits/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/misfits/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/misfits/</guid>
       <description>&lt;h2 id=&#34;what-is-a-design-problem&#34;&gt;What is a design problem?&lt;/h2&gt;
 &lt;p&gt;What exactly is a design problem? And why are design problems often hard to solve?&lt;/p&gt;
 &lt;p&gt;The most compelling answer to this question, in my view, comes from Christopher Alexander in his influential book &lt;em&gt;Notes on the Synthesis of Form&lt;/em&gt; (1964).&lt;/p&gt;
@@ -77,9 +77,9 @@
     </item>
     <item>
       <title>Generic fitness criteria</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/fitness-criteria/</link>
+      <link>http://localhost:1313/tutorials/design-general/fitness-criteria/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/fitness-criteria/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/fitness-criteria/</guid>
       <description>&lt;h2 id=&#34;seven-criteria&#34;&gt;Seven criteria&lt;/h2&gt;
 &lt;p&gt;What makes a design fit for purpose depends—surprise!—on the purpose. But generic criteria are helpful for two reasons. First, they give you some basis for evaluation, however crude. Second, they can be used as a checklist to suggest more specific ones.&lt;/p&gt;
 &lt;p&gt;A software product should be:&lt;/p&gt;
@@ -97,17 +97,17 @@
     </item>
     <item>
       <title>Simplicity</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/simplicity/</link>
+      <link>http://localhost:1313/tutorials/design-general/simplicity/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/simplicity/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/simplicity/</guid>
       <description>&lt;p&gt;Most of us* believe that simplicity is the key to design. I’m a sucker for the best quotes about it. Here are some of my favorites. First, Tony Hoare in his Turing Award lecture lamenting the complexity of Algol-68:&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;I conclude that there are two ways of constructing a software design: One way is to make it so simple that there are &lt;strong&gt;obviously&lt;/strong&gt; no deficiencies and the other way is to make it so complicated that there are no &lt;strong&gt;obvious&lt;/strong&gt; deficiencies.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Levels of design</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</link>
+      <link>http://localhost:1313/tutorials/design-general/levels-of-design/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/levels-of-design/</guid>
       <description>&lt;p&gt;When you’re diagnosing a usability snag, or coming up with a new design idea, it’s helpful to know what &lt;em&gt;level&lt;/em&gt; you’re working at.&lt;/p&gt;
 &lt;p&gt;Over the years, designers and researchers have defined various levels, reflecting their view of design and what they emphasize.&lt;/p&gt;
 &lt;p&gt;I find the following scheme most helpful:&lt;/p&gt;
@@ -120,26 +120,26 @@
     </item>
     <item>
       <title>Beyond the user interface</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</link>
+      <link>http://localhost:1313/tutorials/design-general/beyond-ui/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/beyond-ui/</guid>
       <description>&lt;p&gt;In the 1980s, there was a revolution in software. The Apple Macintosh came out (building on the invention  of the WIMP interface at &lt;a href=&#34;https://en.wikipedia.org/wiki/Xerox_Alto&#34;&gt;PARC&lt;/a&gt;), Don Norman wrote &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things&#34;&gt;&lt;em&gt;The Design of Everyday Things&lt;/em&gt;&lt;/a&gt;, and the first &lt;a href=&#34;https://sigchi.org/conferences/conference-history/&#34;&gt;CHI conference&lt;/a&gt; was held.&lt;/p&gt;
 &lt;p&gt;Now everyone knows how important user interface design is, and there’s no excuse for messing it up.  You can find several collections of UI design heuristics (such as &lt;a href=&#34;https://www.nngroup.com/articles/ten-usability-heuristics/&#34;&gt;Nielsen’s&lt;/a&gt;) online, and many companies publish standards for how to use UI widgets consistently (here’s &lt;a href=&#34;https://material.io/design&#34;&gt;Google’s&lt;/a&gt;, for example).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Divergent and convergent design</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</link>
+      <link>http://localhost:1313/tutorials/design-general/diverge-converge/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/diverge-converge/</guid>
       <description>&lt;h2 id=&#34;two-modes-of-design-thinking&#34;&gt;Two modes of design thinking&lt;/h2&gt;
 &lt;p&gt;Design, whatever the domain, includes two different modes of thinking. In one, the designer generates ideas freely, often responding only loosely to any given need or problem. In the other, the designer takes some previously articulated design ideas, and attempts to improve them.&lt;/p&gt;
 &lt;p&gt;The first mode is expansive, and most successful when critical judgment is suspended; the second is reductive, and calls for focus and analysis. The first tends to complicate a design and make it less coherent as new ideas are introduced that have yet to find their place; the second brings order and clarity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tactics for divergent design</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</link>
+      <link>http://localhost:1313/tutorials/design-general/divergent-tactics/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/divergent-tactics/</guid>
       <description>&lt;h1 id=&#34;tactics-for-divergence&#34;&gt;Tactics for divergence&lt;/h1&gt;
 &lt;p&gt;Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.&lt;/p&gt;
 &lt;h2 id=&#34;interviewing-stakeholders&#34;&gt;Interviewing stakeholders&lt;/h2&gt;
@@ -147,9 +147,9 @@
     </item>
     <item>
       <title>Software = concepts</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</link>
+      <link>http://localhost:1313/tutorials/concept-basics/sw-as-concepts/</link>
       <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</guid>
+      <guid>http://localhost:1313/tutorials/concept-basics/sw-as-concepts/</guid>
       <description>&lt;p&gt;Any software app, service or  system can be viewed as a &lt;strong&gt;collection of interacting concepts&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;concepts-are-the-building-blocks-of-software&#34;&gt;Concepts are the building blocks of software&lt;/h2&gt;
 &lt;p&gt;Imagine explaining Twitter to someone who&amp;rsquo;s never used it. You might tell them about the &lt;em&gt;Tweet&lt;/em&gt; and &lt;em&gt;Follower&lt;/em&gt; concepts, then maybe &lt;em&gt;Hashtag&lt;/em&gt; and &lt;em&gt;Like&lt;/em&gt; (aka Upvote), and if they&amp;rsquo;re keen to know even more, you could explain &lt;em&gt;VerifiedAccount&lt;/em&gt; or &lt;em&gt;Bookmark&lt;/em&gt;.&lt;/p&gt;
@@ -157,26 +157,26 @@
     </item>
     <item>
       <title>Operational principles</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/principle/</link>
+      <link>http://localhost:1313/tutorials/concept-basics/principle/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/principle/</guid>
+      <guid>http://localhost:1313/tutorials/concept-basics/principle/</guid>
       <description>&lt;p&gt;A compelling way to explain how something works is to tell a story. Not any story, but a kind of defining story that shows, through a typical scenario, why the thing is useful and fulfills its purpose.&lt;/p&gt;
 &lt;p&gt;The Minuteman Library Network, for example, offers a wonderful service. If I request a book, then when it becomes available at my local library, I get an email notifying me that it’s ready to be picked up.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concept purposes</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</link>
+      <link>http://localhost:1313/tutorials/concept-basics/purpose/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</guid>
+      <guid>http://localhost:1313/tutorials/concept-basics/purpose/</guid>
       <description>&lt;h2 id=&#34;the-role-of-purposes&#34;&gt;The role of purposes&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;From what to why&lt;/strong&gt;. The beginning of wisdom for a designer   is to stop asking “what?” and start asking “why?”.&lt;/p&gt;
 &lt;p&gt;This applies at every level. You can ask “what application shall I design?”. But a better question is “why would I design that?”. And at a finer grain, the question “what features should my app have?” gives way to “why should my app have these particular features?”.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Apps are state machines</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/app-as-machine/</link>
+      <link>http://localhost:1313/tutorials/concept-basics/app-as-machine/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/app-as-machine/</guid>
+      <guid>http://localhost:1313/tutorials/concept-basics/app-as-machine/</guid>
       <description>&lt;p&gt;If user experience runs &lt;a href=&#34;../../design-general/beyond-ui&#34;&gt;deeper&lt;/a&gt; than the user interface, we need a way to talk about an app that isn’t just visual, and that captures behavior in a more fundamental way.&lt;/p&gt;
 &lt;p&gt;Programmers think in terms of complicated things like objects, callbacks, streams, functionals, and so on. They’re essential for structuring code, but for behavior a much simpler model is effective.&lt;/p&gt;
 &lt;h2 id=&#34;state-machines&#34;&gt;State machines&lt;/h2&gt;
@@ -184,34 +184,34 @@
     </item>
     <item>
       <title>Concepts are state machines</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/</link>
+      <link>http://localhost:1313/tutorials/concept-basics/concept-as-machine/</link>
       <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/</guid>
+      <guid>http://localhost:1313/tutorials/concept-basics/concept-as-machine/</guid>
       <description>&lt;p&gt;As I explained in another &lt;a href=&#34;../apps-are-state-machines&#34;&gt;tutorial&lt;/a&gt;, the easiest and most effective way to define the behavior of an app precisely is to model it as a state machine. The app has a set of possible states, and actions that update and query the states. An execution of the app is just a sequence of actions (or more correctly, action instances that include particular action arguments), and the behavior as a whole is the set of all possible executions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concept state</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/state/</link>
+      <link>http://localhost:1313/tutorials/concept-basics/state/</link>
       <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/state/</guid>
+      <guid>http://localhost:1313/tutorials/concept-basics/state/</guid>
       <description>&lt;h2 id=&#34;motivation-defining-behavior&#34;&gt;Motivation: Defining Behavior&lt;/h2&gt;
 &lt;p&gt;The operational principle of a concept explains its archetypal behavior: how it’s typically used, and how it fulfills its purpose. But for a concept to be flexible and powerful, it should work in many different scenarios, so we need a way to pin down the behavior in detail.&lt;/p&gt;
 &lt;p&gt;Using the notion of a state machine, we can define how a concept will behave in every possible situation. Then we can analyze the design to make sure that the behavior is always acceptable. And as we transition from design to code, the state machine provides an ideal stepping stone. The state of the state machine will become the state of the program and the actions of the state machine will become the functions of its API.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concept criteria: what&#39;s a concept?</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</link>
+      <link>http://localhost:1313/tutorials/concept-basics/criteria/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</guid>
+      <guid>http://localhost:1313/tutorials/concept-basics/criteria/</guid>
       <description>&lt;h2 id=&#34;two-sides-of-a-coin&#34;&gt;Two sides of a coin&lt;/h2&gt;
 &lt;p&gt;The key to concept design is, perhaps not surprisingly, the idea of &lt;em&gt;concepts&lt;/em&gt;.
 A concept is two things at once. On the one hand, a “concept” means you’d expect it to mean: a mental construct that you need to understand to be able to use an app effectively. So you might that to use Photoshop you need to understand the “concept of a layer”; to use Facebook you need to understand the “concept of  friending”; and so on. But if concepts were just vague mental constructs, there wouldn’t be much you could do with them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concept composition and sync</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/sync/</link>
+      <link>http://localhost:1313/tutorials/concept-basics/sync/</link>
       <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/sync/</guid>
+      <guid>http://localhost:1313/tutorials/concept-basics/sync/</guid>
       <description>&lt;p&gt;In another &lt;a href=&#34;../concept-as-machine&#34;&gt;tutorial&lt;/a&gt;, I showed a concept definition for &lt;a href=&#34;https://yellkey.com&#34;&gt;Yellkey&lt;/a&gt;, a popular URL shortening service:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;concept Yellkey
 purpose shorten URLs to common words
@@ -250,237 +250,237 @@ actions
     </item>
     <item>
       <title>Concept dependencies and subsets</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/dependency/</link>
+      <link>http://localhost:1313/tutorials/concept-basics/dependency/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/dependency/</guid>
+      <guid>http://localhost:1313/tutorials/concept-basics/dependency/</guid>
       <description>&lt;h2 id=&#34;an-idea-you-need-to-know&#34;&gt;An idea you need to know&lt;/h2&gt;
 &lt;p&gt;One of the most important and useful ideas in software also happens to be one of the least well known. It was introduced in a &lt;a href=&#34;https://ieeexplore.ieee.org/document/1702607&#34;&gt;paper&lt;/a&gt; that &lt;a href=&#34;https://en.wikipedia.org/wiki/David_Parnas&#34;&gt;David Parnas&lt;/a&gt; wrote in 1979, entitled &lt;em&gt;Designing Software for Ease of Extension and Contraction&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Program families&lt;/strong&gt;. Following on from an earlier paper that introduced the idea of “program families”&amp;mdash;that when you design software you should realize that you’re designing a whole family of programs, not just one&amp;mdash;this paper addresses the question of how to do this. How do you come up with one design that can be easily extended (by adding new functionality) or contracted (by removing functionality)?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concept modularity</title>
-      <link>https://essenceofsoftware.com/tutorials/concept-basics/modularity/</link>
+      <link>http://localhost:1313/tutorials/concept-basics/modularity/</link>
       <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/concept-basics/modularity/</guid>
+      <guid>http://localhost:1313/tutorials/concept-basics/modularity/</guid>
       <description>&lt;h2 id=&#34;why-modularity-matters&#34;&gt;Why modularity matters&lt;/h2&gt;
 &lt;p&gt;To see why modularity is so critical in software design, consider what goes wrong when it’s missing.&lt;/p&gt;
 &lt;p&gt;For the programmer, life becomes miserable. Whenever you need to understand or modify some piece of functionality, there’s no single place in the code to go to, and you may have to visit many widely separated locations (and just finding them can be a major challenge). Even removing (let alone adding) functionality is hard, because the parts of the codebase are all interconnected in subtle ways, and taking anything away risks breaking the parts that remain.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Autodesk Concept Design Workshop</title>
-      <link>https://essenceofsoftware.com/workshops/autodesk-oslo/</link>
+      <link>http://localhost:1313/workshops/autodesk-oslo/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/workshops/autodesk-oslo/</guid>
-      <description>Oslo: August 25-26, 2025</description>
+      <guid>http://localhost:1313/workshops/autodesk-oslo/</guid>
+      <description>Oslo, August 25-26, 2025</description>
     </item>
     <item>
       <title>Autodesk Concept Design Workshop</title>
-      <link>https://essenceofsoftware.com/workshops/autodesk-online/</link>
+      <link>http://localhost:1313/workshops/autodesk-online/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/workshops/autodesk-online/</guid>
-      <description>Online: June 10, 12, 16, 24, 2025</description>
+      <guid>http://localhost:1313/workshops/autodesk-online/</guid>
+      <description>Online, June 10, 12, 16, 24, 2025</description>
     </item>
     <item>
       <title>Autodesk Concept Design Workshop</title>
-      <link>https://essenceofsoftware.com/workshops/autodesk-boston/</link>
+      <link>http://localhost:1313/workshops/autodesk-boston/</link>
       <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/workshops/autodesk-boston/</guid>
-      <description>Boston, March 17-18, 2024</description>
+      <guid>http://localhost:1313/workshops/autodesk-boston/</guid>
+      <description>Boston, March 2025</description>
     </item>
     <item>
       <title>Autodesk Concept Design Workshop</title>
-      <link>https://essenceofsoftware.com/workshops/autodesk-woodinville/</link>
+      <link>http://localhost:1313/workshops/autodesk-woodinville/</link>
       <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/workshops/autodesk-woodinville/</guid>
+      <guid>http://localhost:1313/workshops/autodesk-woodinville/</guid>
       <description>Workshop held in Woodinville, WA, in December 2024</description>
     </item>
     <item>
       <title>Concept Architecture</title>
-      <link>https://essenceofsoftware.com/drafts/concept-architecture/</link>
+      <link>http://localhost:1313/drafts/concept-architecture/</link>
       <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/concept-architecture/</guid>
+      <guid>http://localhost:1313/drafts/concept-architecture/</guid>
       <description>A Proposal for a Concept-based App Architecture</description>
     </item>
     <item>
       <title>Concept Configuration</title>
-      <link>https://essenceofsoftware.com/drafts/concept-extents/</link>
+      <link>http://localhost:1313/drafts/concept-extents/</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/concept-extents/</guid>
+      <guid>http://localhost:1313/drafts/concept-extents/</guid>
       <description>Notes on the design of concept configurations</description>
     </item>
     <item>
       <title>The End of Agile</title>
-      <link>https://essenceofsoftware.com/posts/end-of-agile/</link>
+      <link>http://localhost:1313/posts/end-of-agile/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/posts/end-of-agile/</guid>
+      <guid>http://localhost:1313/posts/end-of-agile/</guid>
       <description>Why agile no longer makes sense in the LLM era.</description>
     </item>
     <item>
       <title>A GPT-powered tutor</title>
-      <link>https://essenceofsoftware.com/studies/larger/tutor/</link>
+      <link>http://localhost:1313/studies/larger/tutor/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/larger/tutor/</guid>
+      <guid>http://localhost:1313/studies/larger/tutor/</guid>
       <description>Notes on designing a GPT-powered tutor using concepts</description>
     </item>
     <item>
       <title>Android Camera API</title>
-      <link>https://essenceofsoftware.com/studies/larger/rotation/</link>
+      <link>http://localhost:1313/studies/larger/rotation/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/larger/rotation/</guid>
+      <guid>http://localhost:1313/studies/larger/rotation/</guid>
       <description>Applying concept design to the camera rotation API</description>
     </item>
     <item>
       <title>A Concept Experiment at Palantir</title>
-      <link>https://essenceofsoftware.com/posts/palantir/</link>
+      <link>http://localhost:1313/posts/palantir/</link>
       <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/posts/palantir/</guid>
+      <guid>http://localhost:1313/posts/palantir/</guid>
       <description>Lessons learned from deploying concepts at scale.</description>
     </item>
     <item>
       <title>Notes on design of a GPT-powered tutor</title>
-      <link>https://essenceofsoftware.com/drafts/ai-tutor-v1/</link>
+      <link>http://localhost:1313/drafts/ai-tutor-v1/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/ai-tutor-v1/</guid>
+      <guid>http://localhost:1313/drafts/ai-tutor-v1/</guid>
       <description>Notes on design of a GPT-powered tutor</description>
     </item>
     <item>
       <title>Notes on design of a GPT-powered tutor</title>
-      <link>https://essenceofsoftware.com/drafts/ai-tutor-v2/</link>
+      <link>http://localhost:1313/drafts/ai-tutor-v2/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/ai-tutor-v2/</guid>
+      <guid>http://localhost:1313/drafts/ai-tutor-v2/</guid>
       <description>Notes on design of a GPT-powered tutor</description>
     </item>
     <item>
       <title>Noosphere concepts</title>
-      <link>https://essenceofsoftware.com/drafts/noosphere-v1/</link>
+      <link>http://localhost:1313/drafts/noosphere-v1/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/noosphere-v1/</guid>
+      <guid>http://localhost:1313/drafts/noosphere-v1/</guid>
       <description>A Concept Exploration of Noosphere</description>
     </item>
     <item>
       <title>Three Stages of Enlightenment</title>
-      <link>https://essenceofsoftware.com/posts/three-stages/</link>
+      <link>http://localhost:1313/posts/three-stages/</link>
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/posts/three-stages/</guid>
+      <guid>http://localhost:1313/posts/three-stages/</guid>
       <description>A brief intro to concept design in three parts.</description>
     </item>
     <item>
       <title>Breaking Integrity: Three Examples</title>
-      <link>https://essenceofsoftware.com/studies/small/broken-integrity/</link>
+      <link>http://localhost:1313/studies/small/broken-integrity/</link>
       <pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/small/broken-integrity/</guid>
+      <guid>http://localhost:1313/studies/small/broken-integrity/</guid>
       <description>Integrity violations aren&amp;rsquo;t as common as I once expected. But when they happen, they&amp;rsquo;re bad.</description>
     </item>
     <item>
       <title>Dark Concepts in Software Design</title>
-      <link>https://essenceofsoftware.com/posts/dark-concepts/</link>
+      <link>http://localhost:1313/posts/dark-concepts/</link>
       <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/posts/dark-concepts/</guid>
+      <guid>http://localhost:1313/posts/dark-concepts/</guid>
       <description>The building blocks that social media apps use to control us.</description>
     </item>
     <item>
       <title>Conceptual models missed the point</title>
-      <link>https://essenceofsoftware.com/posts/conceptual-models/</link>
+      <link>http://localhost:1313/posts/conceptual-models/</link>
       <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/posts/conceptual-models/</guid>
+      <guid>http://localhost:1313/posts/conceptual-models/</guid>
       <description>Don Norman’s book helped improve interface design, but it also misled us.</description>
     </item>
     <item>
       <title>The siloing of UX design</title>
-      <link>https://essenceofsoftware.com/posts/ux-design-silo/</link>
+      <link>http://localhost:1313/posts/ux-design-silo/</link>
       <pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/posts/ux-design-silo/</guid>
+      <guid>http://localhost:1313/posts/ux-design-silo/</guid>
       <description>Why a new discipline of software design is needed.</description>
     </item>
     <item>
       <title>Zoom&#39;s Missing Concept</title>
-      <link>https://essenceofsoftware.com/studies/small/zoom-missing/</link>
+      <link>http://localhost:1313/studies/small/zoom-missing/</link>
       <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/small/zoom-missing/</guid>
+      <guid>http://localhost:1313/studies/small/zoom-missing/</guid>
       <description>When critical concepts are missing</description>
     </item>
     <item>
       <title>Redesigning Zoom&#39;s Reaction Concept</title>
-      <link>https://essenceofsoftware.com/studies/larger/zoom-reaction/</link>
+      <link>http://localhost:1313/studies/larger/zoom-reaction/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/larger/zoom-reaction/</guid>
+      <guid>http://localhost:1313/studies/larger/zoom-reaction/</guid>
       <description>A How-To Guide for Removing Irregularities in Your App</description>
     </item>
     <item>
       <title>Design Moves for Software</title>
-      <link>https://essenceofsoftware.com/posts/design-moves/</link>
+      <link>http://localhost:1313/posts/design-moves/</link>
       <pubDate>Mon, 18 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/posts/design-moves/</guid>
+      <guid>http://localhost:1313/posts/design-moves/</guid>
       <description>A new way to think about concept design</description>
     </item>
     <item>
       <title>Facebook and Dark Patterns</title>
-      <link>https://essenceofsoftware.com/studies/larger/facebook/</link>
+      <link>http://localhost:1313/studies/larger/facebook/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/larger/facebook/</guid>
+      <guid>http://localhost:1313/studies/larger/facebook/</guid>
       <description>Finding Clarity in Design</description>
     </item>
     <item>
       <title>Concept Piggybacking in DNS</title>
-      <link>https://essenceofsoftware.com/studies/larger/dns-dkim/</link>
+      <link>http://localhost:1313/studies/larger/dns-dkim/</link>
       <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/larger/dns-dkim/</guid>
+      <guid>http://localhost:1313/studies/larger/dns-dkim/</guid>
       <description>How overloading in DNS brings trouble</description>
     </item>
     <item>
       <title>The Class Number Dilemma</title>
-      <link>https://essenceofsoftware.com/studies/small/class-numbers/</link>
+      <link>http://localhost:1313/studies/small/class-numbers/</link>
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/small/class-numbers/</guid>
+      <guid>http://localhost:1313/studies/small/class-numbers/</guid>
       <description>A Concept Example in Everyday Life</description>
     </item>
     <item>
       <title>The Essence of the Essence</title>
-      <link>https://essenceofsoftware.com/posts/distillation/</link>
+      <link>http://localhost:1313/posts/distillation/</link>
       <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/posts/distillation/</guid>
+      <guid>http://localhost:1313/posts/distillation/</guid>
       <description>A short(ish) summary of the book</description>
     </item>
     <item>
       <title>Concept Design Sketchnote</title>
-      <link>https://essenceofsoftware.com/posts/sketchnote/</link>
+      <link>http://localhost:1313/posts/sketchnote/</link>
       <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/posts/sketchnote/</guid>
+      <guid>http://localhost:1313/posts/sketchnote/</guid>
       <description>A graphical summary of concept design ideas</description>
     </item>
     <item>
       <title>Design Updates in Your Mailbox</title>
-      <link>https://essenceofsoftware.com/posts/subscribe/</link>
+      <link>http://localhost:1313/posts/subscribe/</link>
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/posts/subscribe/</guid>
+      <guid>http://localhost:1313/posts/subscribe/</guid>
       <description>Join an ultra-low-volume email list to hear new ideas about concepts and design.</description>
     </item>
     <item>
       <title>Upvote: An Example Concept</title>
-      <link>https://essenceofsoftware.com/studies/small/upvote/</link>
+      <link>http://localhost:1313/studies/small/upvote/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/small/upvote/</guid>
+      <guid>http://localhost:1313/studies/small/upvote/</guid>
       <description>An example of what a concept catalog entry might look like</description>
     </item>
     <item>
       <title>ACM tech talk</title>
-      <link>https://essenceofsoftware.com/posts/acm-tech-talk/</link>
+      <link>http://localhost:1313/posts/acm-tech-talk/</link>
       <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/posts/acm-tech-talk/</guid>
+      <guid>http://localhost:1313/posts/acm-tech-talk/</guid>
       <description>Daniel explains concept design in a single video.</description>
     </item>
     <item>
       <title>Sample book chapters</title>
-      <link>https://essenceofsoftware.com/posts/sample-chapters/</link>
+      <link>http://localhost:1313/posts/sample-chapters/</link>
       <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/posts/sample-chapters/</guid>
+      <guid>http://localhost:1313/posts/sample-chapters/</guid>
       <description>Download free sample chapters.</description>
     </item>
     <item>
       <title></title>
-      <link>https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/</link>
+      <link>http://localhost:1313/drafts/concepts-redux/strong-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/</guid>
+      <guid>http://localhost:1313/drafts/concepts-redux/strong-concepts/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Strong concepts.&lt;/strong&gt; Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Conceptual clarity.&lt;/strong&gt; The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, &lt;em&gt;video call&lt;/em&gt; and &lt;em&gt;meeting&lt;/em&gt;) for the same function. User are also very sensitive to needless complications and distractions in a UI (in Skype’s case, spam and advertisements).&lt;/li&gt;
@@ -490,9 +490,9 @@ actions
     </item>
     <item>
       <title></title>
-      <link>https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/</link>
+      <link>http://localhost:1313/drafts/concepts-redux/the-operational-principle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/</guid>
+      <guid>http://localhost:1313/drafts/concepts-redux/the-operational-principle/</guid>
       <description>&lt;h1 id=&#34;the-operational-principle&#34;&gt;The operational principle&lt;/h1&gt;
 &lt;p&gt;Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its &lt;em&gt;operational principle&lt;/em&gt; (OP).&lt;/p&gt;
 &lt;p&gt;The operational principle is just a sample scenario, but it includes enough richness to convey typical usages. The example I gave above for Zoom could be written in a more textual way like this&lt;/p&gt;
@@ -502,9 +502,9 @@ actions
     </item>
     <item>
       <title></title>
-      <link>https://essenceofsoftware.com/drafts/consent-concepts/</link>
+      <link>http://localhost:1313/drafts/consent-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/consent-concepts/</guid>
+      <guid>http://localhost:1313/drafts/consent-concepts/</guid>
       <description>&lt;p&gt;Consent concepts&lt;/p&gt;
 &lt;p&gt;owner,&lt;/p&gt;
 &lt;p&gt;GPT suggests
@@ -519,9 +519,9 @@ service provider&lt;/p&gt;
     </item>
     <item>
       <title></title>
-      <link>https://essenceofsoftware.com/drafts/deemph--data-model-and-action-definitions-for-coding/</link>
+      <link>http://localhost:1313/drafts/deemph--data-model-and-action-definitions-for-coding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/deemph--data-model-and-action-definitions-for-coding/</guid>
+      <guid>http://localhost:1313/drafts/deemph--data-model-and-action-definitions-for-coding/</guid>
       <description>&lt;p&gt;deemph: data model and action definitions for coding.
 extending: modularity, but probably needs data.
 essence: OPs.
@@ -529,18 +529,18 @@ relevance: LLMs&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://essenceofsoftware.com/drafts/design-is-necessary-but-not-sufficient/</link>
+      <link>http://localhost:1313/drafts/design-is-necessary-but-not-sufficient/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/design-is-necessary-but-not-sufficient/</guid>
+      <guid>http://localhost:1313/drafts/design-is-necessary-but-not-sufficient/</guid>
       <description>&lt;h1 id=&#34;design-is-necessary-but-not-sufficient&#34;&gt;Design is necessary but not sufficient&lt;/h1&gt;
 &lt;p&gt;One final response to another possible skepticism. Some might say that none of this design stuff matters if the software isn’t reliable, scalable, performant, etc.&lt;/p&gt;
 &lt;p&gt;The answer to this objection is easy: yes. Design is necessary but not sufficient. Just as great architecture won’t make a building successful if the civil engineers fail to ensure that it can withstand the wind, so a well-designed software product can’t succeed without good software engineering.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://essenceofsoftware.com/drafts/function-cascadedel-p--postconcept-c--commentconcept-i/</link>
+      <link>http://localhost:1313/drafts/function-cascadedel-p--postconcept-c--commentconcept-i/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/function-cascadedel-p--postconcept-c--commentconcept-i/</guid>
+      <guid>http://localhost:1313/drafts/function-cascadedel-p--postconcept-c--commentconcept-i/</guid>
       <description>&lt;p&gt;function cascadeDel (p: PostConcept, c: CommentConcept) {
 return i -&amp;gt; {
 p.del (*, i);
@@ -564,9 +564,9 @@ sy = sy.add (\
     </item>
     <item>
       <title></title>
-      <link>https://essenceofsoftware.com/drafts/noosphere-v2/</link>
+      <link>http://localhost:1313/drafts/noosphere-v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/noosphere-v2/</guid>
+      <guid>http://localhost:1313/drafts/noosphere-v2/</guid>
       <description>&lt;h1 id=&#34;a-concept-model-of-noosphere&#34;&gt;A Concept Model of Noosphere&lt;/h1&gt;
 &lt;h2 id=&#34;warning&#34;&gt;Warning&lt;/h2&gt;
 &lt;p&gt;Heavy-duty concept design ahead! This note exploring the concept design of Noosphere is not for the faint-hearted. For those who aren&amp;rsquo;t very familiar with the concepts of decentralized storage (which includes me!) or who are learning concept design for the first time, this is likely not the best introduction to concepts.&lt;/p&gt;
@@ -575,9 +575,9 @@ sy = sy.add (\
     </item>
     <item>
       <title></title>
-      <link>https://essenceofsoftware.com/drafts/some-principles-regarding-concept-synchronization/</link>
+      <link>http://localhost:1313/drafts/some-principles-regarding-concept-synchronization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/drafts/some-principles-regarding-concept-synchronization/</guid>
+      <guid>http://localhost:1313/drafts/some-principles-regarding-concept-synchronization/</guid>
       <description>&lt;h1 id=&#34;some-notes-about-syncs&#34;&gt;Some notes about syncs&lt;/h1&gt;
 &lt;p&gt;Daniel Jackson&lt;br&gt;
 Sept 16, 2024&lt;/p&gt;

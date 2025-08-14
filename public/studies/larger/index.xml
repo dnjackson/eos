@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Longer case studies on The Essence of Software</title>
-    <link>https://essenceofsoftware.com/studies/larger/</link>
+    <link>http://localhost:1313/studies/larger/</link>
     <description>Recent content in Longer case studies on The Essence of Software</description>
     <image>
       <title>The Essence of Software</title>
-      <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
-      <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
+      <url>http://localhost:1313/eos-twitter-card.png</url>
+      <link>http://localhost:1313/eos-twitter-card.png</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
     <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://essenceofsoftware.com/studies/larger/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/studies/larger/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A GPT-powered tutor</title>
-      <link>https://essenceofsoftware.com/studies/larger/tutor/</link>
+      <link>http://localhost:1313/studies/larger/tutor/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/larger/tutor/</guid>
+      <guid>http://localhost:1313/studies/larger/tutor/</guid>
       <description>Notes on designing a GPT-powered tutor using concepts</description>
     </item>
     <item>
       <title>Android Camera API</title>
-      <link>https://essenceofsoftware.com/studies/larger/rotation/</link>
+      <link>http://localhost:1313/studies/larger/rotation/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/larger/rotation/</guid>
+      <guid>http://localhost:1313/studies/larger/rotation/</guid>
       <description>Applying concept design to the camera rotation API</description>
     </item>
     <item>
       <title>Redesigning Zoom&#39;s Reaction Concept</title>
-      <link>https://essenceofsoftware.com/studies/larger/zoom-reaction/</link>
+      <link>http://localhost:1313/studies/larger/zoom-reaction/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/larger/zoom-reaction/</guid>
+      <guid>http://localhost:1313/studies/larger/zoom-reaction/</guid>
       <description>A How-To Guide for Removing Irregularities in Your App</description>
     </item>
     <item>
       <title>Facebook and Dark Patterns</title>
-      <link>https://essenceofsoftware.com/studies/larger/facebook/</link>
+      <link>http://localhost:1313/studies/larger/facebook/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/larger/facebook/</guid>
+      <guid>http://localhost:1313/studies/larger/facebook/</guid>
       <description>Finding Clarity in Design</description>
     </item>
     <item>
       <title>Concept Piggybacking in DNS</title>
-      <link>https://essenceofsoftware.com/studies/larger/dns-dkim/</link>
+      <link>http://localhost:1313/studies/larger/dns-dkim/</link>
       <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/larger/dns-dkim/</guid>
+      <guid>http://localhost:1313/studies/larger/dns-dkim/</guid>
       <description>How overloading in DNS brings trouble</description>
     </item>
   </channel>

@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>On software design on The Essence of Software</title>
-    <link>https://essenceofsoftware.com/tutorials/design-general/</link>
+    <link>http://localhost:1313/tutorials/design-general/</link>
     <description>Recent content in On software design on The Essence of Software</description>
     <image>
       <title>The Essence of Software</title>
-      <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
-      <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
+      <url>http://localhost:1313/eos-twitter-card.png</url>
+      <link>http://localhost:1313/eos-twitter-card.png</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
     <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://essenceofsoftware.com/tutorials/design-general/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tutorials/design-general/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Design vs. engineering</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</link>
+      <link>http://localhost:1313/tutorials/design-general/design-vs-engineering/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/design-vs-engineering/</guid>
       <description>What&amp;#39;s the difference between design and engineering?</description>
     </item>
     <item>
       <title>How great design happens</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/great-design/</link>
+      <link>http://localhost:1313/tutorials/design-general/great-design/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/great-design/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/great-design/</guid>
       <description>&lt;p&gt;Think about your favorite product, whether it’s a photo-editing app or a toaster, and ask yourself: how did it get to be so good?&lt;/p&gt;
 &lt;p&gt;With all the hype in the design world about creativity and brainstorming, it’s easy to imagine that great designs simply appear, out of the blue. Someone conjures up a new idea, and it just needs to be translated from sketch to product. Maybe many details need to be added, but the quality of the design was there at the start—like a tiny seed that grows spontaneously into a magnificent tree.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Form, context &amp; misfits</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/misfits/</link>
+      <link>http://localhost:1313/tutorials/design-general/misfits/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/misfits/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/misfits/</guid>
       <description>&lt;h2 id=&#34;what-is-a-design-problem&#34;&gt;What is a design problem?&lt;/h2&gt;
 &lt;p&gt;What exactly is a design problem? And why are design problems often hard to solve?&lt;/p&gt;
 &lt;p&gt;The most compelling answer to this question, in my view, comes from Christopher Alexander in his influential book &lt;em&gt;Notes on the Synthesis of Form&lt;/em&gt; (1964).&lt;/p&gt;
@@ -41,9 +41,9 @@
     </item>
     <item>
       <title>Generic fitness criteria</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/fitness-criteria/</link>
+      <link>http://localhost:1313/tutorials/design-general/fitness-criteria/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/fitness-criteria/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/fitness-criteria/</guid>
       <description>&lt;h2 id=&#34;seven-criteria&#34;&gt;Seven criteria&lt;/h2&gt;
 &lt;p&gt;What makes a design fit for purpose depends—surprise!—on the purpose. But generic criteria are helpful for two reasons. First, they give you some basis for evaluation, however crude. Second, they can be used as a checklist to suggest more specific ones.&lt;/p&gt;
 &lt;p&gt;A software product should be:&lt;/p&gt;
@@ -61,17 +61,17 @@
     </item>
     <item>
       <title>Simplicity</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/simplicity/</link>
+      <link>http://localhost:1313/tutorials/design-general/simplicity/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/simplicity/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/simplicity/</guid>
       <description>&lt;p&gt;Most of us* believe that simplicity is the key to design. I’m a sucker for the best quotes about it. Here are some of my favorites. First, Tony Hoare in his Turing Award lecture lamenting the complexity of Algol-68:&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;I conclude that there are two ways of constructing a software design: One way is to make it so simple that there are &lt;strong&gt;obviously&lt;/strong&gt; no deficiencies and the other way is to make it so complicated that there are no &lt;strong&gt;obvious&lt;/strong&gt; deficiencies.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Levels of design</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</link>
+      <link>http://localhost:1313/tutorials/design-general/levels-of-design/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/levels-of-design/</guid>
       <description>&lt;p&gt;When you’re diagnosing a usability snag, or coming up with a new design idea, it’s helpful to know what &lt;em&gt;level&lt;/em&gt; you’re working at.&lt;/p&gt;
 &lt;p&gt;Over the years, designers and researchers have defined various levels, reflecting their view of design and what they emphasize.&lt;/p&gt;
 &lt;p&gt;I find the following scheme most helpful:&lt;/p&gt;
@@ -84,26 +84,26 @@
     </item>
     <item>
       <title>Beyond the user interface</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</link>
+      <link>http://localhost:1313/tutorials/design-general/beyond-ui/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/beyond-ui/</guid>
       <description>&lt;p&gt;In the 1980s, there was a revolution in software. The Apple Macintosh came out (building on the invention  of the WIMP interface at &lt;a href=&#34;https://en.wikipedia.org/wiki/Xerox_Alto&#34;&gt;PARC&lt;/a&gt;), Don Norman wrote &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things&#34;&gt;&lt;em&gt;The Design of Everyday Things&lt;/em&gt;&lt;/a&gt;, and the first &lt;a href=&#34;https://sigchi.org/conferences/conference-history/&#34;&gt;CHI conference&lt;/a&gt; was held.&lt;/p&gt;
 &lt;p&gt;Now everyone knows how important user interface design is, and there’s no excuse for messing it up.  You can find several collections of UI design heuristics (such as &lt;a href=&#34;https://www.nngroup.com/articles/ten-usability-heuristics/&#34;&gt;Nielsen’s&lt;/a&gt;) online, and many companies publish standards for how to use UI widgets consistently (here’s &lt;a href=&#34;https://material.io/design&#34;&gt;Google’s&lt;/a&gt;, for example).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Divergent and convergent design</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</link>
+      <link>http://localhost:1313/tutorials/design-general/diverge-converge/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/diverge-converge/</guid>
       <description>&lt;h2 id=&#34;two-modes-of-design-thinking&#34;&gt;Two modes of design thinking&lt;/h2&gt;
 &lt;p&gt;Design, whatever the domain, includes two different modes of thinking. In one, the designer generates ideas freely, often responding only loosely to any given need or problem. In the other, the designer takes some previously articulated design ideas, and attempts to improve them.&lt;/p&gt;
 &lt;p&gt;The first mode is expansive, and most successful when critical judgment is suspended; the second is reductive, and calls for focus and analysis. The first tends to complicate a design and make it less coherent as new ideas are introduced that have yet to find their place; the second brings order and clarity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tactics for divergent design</title>
-      <link>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</link>
+      <link>http://localhost:1313/tutorials/design-general/divergent-tactics/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</guid>
+      <guid>http://localhost:1313/tutorials/design-general/divergent-tactics/</guid>
       <description>&lt;h1 id=&#34;tactics-for-divergence&#34;&gt;Tactics for divergence&lt;/h1&gt;
 &lt;p&gt;Let’s consider some tactics that you might find useful as a software designer to make divergent design more effective. To make these concrete, I’ll suppose that we’re developing an app to support architectural walking tours.&lt;/p&gt;
 &lt;h2 id=&#34;interviewing-stakeholders&#34;&gt;Interviewing stakeholders&lt;/h2&gt;

@@ -2,271 +2,271 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://essenceofsoftware.com/drafts/concepts-redux/new-take/</loc>
+    <loc>http://localhost:1313/drafts/concepts-redux/new-take/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/concepts-redux/what-is-design/</loc>
+    <loc>http://localhost:1313/drafts/concepts-redux/what-is-design/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/</loc>
+    <loc>http://localhost:1313/drafts/concepts-redux/building-on-ideas/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/small/</loc>
+    <loc>http://localhost:1313/studies/small/</loc>
     <lastmod>2023-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/gentle-intro/</loc>
+    <loc>http://localhost:1313/tutorials/gentle-intro/</loc>
     <lastmod>2024-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/gentle-intro/how-software-succeeds/</loc>
+    <loc>http://localhost:1313/tutorials/gentle-intro/how-software-succeeds/</loc>
     <lastmod>2024-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/</loc>
+    <loc>http://localhost:1313/tutorials/design-general/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/design-vs-engineering/</loc>
+    <loc>http://localhost:1313/tutorials/design-general/design-vs-engineering/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/great-design/</loc>
+    <loc>http://localhost:1313/tutorials/design-general/great-design/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/misfits/</loc>
+    <loc>http://localhost:1313/tutorials/design-general/misfits/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/fitness-criteria/</loc>
+    <loc>http://localhost:1313/tutorials/design-general/fitness-criteria/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/simplicity/</loc>
+    <loc>http://localhost:1313/tutorials/design-general/simplicity/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/levels-of-design/</loc>
+    <loc>http://localhost:1313/tutorials/design-general/levels-of-design/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/beyond-ui/</loc>
+    <loc>http://localhost:1313/tutorials/design-general/beyond-ui/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/diverge-converge/</loc>
+    <loc>http://localhost:1313/tutorials/design-general/diverge-converge/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/design-general/divergent-tactics/</loc>
+    <loc>http://localhost:1313/tutorials/design-general/divergent-tactics/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/</loc>
+    <loc>http://localhost:1313/tutorials/concept-basics/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</loc>
+    <loc>http://localhost:1313/tutorials/concept-basics/sw-as-concepts/</loc>
     <lastmod>2022-08-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/principle/</loc>
+    <loc>http://localhost:1313/tutorials/concept-basics/principle/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</loc>
+    <loc>http://localhost:1313/tutorials/concept-basics/purpose/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/app-as-machine/</loc>
+    <loc>http://localhost:1313/tutorials/concept-basics/app-as-machine/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/</loc>
+    <loc>http://localhost:1313/tutorials/concept-basics/concept-as-machine/</loc>
     <lastmod>2022-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/state/</loc>
+    <loc>http://localhost:1313/tutorials/concept-basics/state/</loc>
     <lastmod>2023-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</loc>
+    <loc>http://localhost:1313/tutorials/concept-basics/criteria/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/sync/</loc>
+    <loc>http://localhost:1313/tutorials/concept-basics/sync/</loc>
     <lastmod>2022-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/dependency/</loc>
+    <loc>http://localhost:1313/tutorials/concept-basics/dependency/</loc>
     <lastmod>2023-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/concept-basics/modularity/</loc>
+    <loc>http://localhost:1313/tutorials/concept-basics/modularity/</loc>
     <lastmod>2022-09-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/workshops/autodesk-oslo/</loc>
+    <loc>http://localhost:1313/workshops/autodesk-oslo/</loc>
     <lastmod>2025-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/workshops/</loc>
+    <loc>http://localhost:1313/workshops/</loc>
     <lastmod>2025-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/workshops/autodesk-online/</loc>
+    <loc>http://localhost:1313/workshops/autodesk-online/</loc>
     <lastmod>2025-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/workshops/autodesk-boston/</loc>
+    <loc>http://localhost:1313/workshops/autodesk-boston/</loc>
     <lastmod>2025-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/workshops/autodesk-woodinville/</loc>
+    <loc>http://localhost:1313/workshops/autodesk-woodinville/</loc>
     <lastmod>2024-11-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/concept-architecture/</loc>
+    <loc>http://localhost:1313/drafts/concept-architecture/</loc>
     <lastmod>2024-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/</loc>
+    <loc>http://localhost:1313/drafts/</loc>
     <lastmod>2024-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/concept-extents/</loc>
+    <loc>http://localhost:1313/drafts/concept-extents/</loc>
     <lastmod>2024-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tutorials/</loc>
+    <loc>http://localhost:1313/tutorials/</loc>
     <lastmod>2024-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2023-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/end-of-agile/</loc>
+    <loc>http://localhost:1313/posts/end-of-agile/</loc>
     <lastmod>2023-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/larger/tutor/</loc>
+    <loc>http://localhost:1313/studies/larger/tutor/</loc>
     <lastmod>2023-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/larger/rotation/</loc>
+    <loc>http://localhost:1313/studies/larger/rotation/</loc>
     <lastmod>2023-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/</loc>
+    <loc>http://localhost:1313/studies/</loc>
     <lastmod>2023-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/larger/</loc>
+    <loc>http://localhost:1313/studies/larger/</loc>
     <lastmod>2023-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/palantir/</loc>
+    <loc>http://localhost:1313/posts/palantir/</loc>
     <lastmod>2023-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/ai-tutor-v1/</loc>
+    <loc>http://localhost:1313/drafts/ai-tutor-v1/</loc>
     <lastmod>2023-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/ai-tutor-v2/</loc>
+    <loc>http://localhost:1313/drafts/ai-tutor-v2/</loc>
     <lastmod>2023-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/noosphere-v1/</loc>
+    <loc>http://localhost:1313/drafts/noosphere-v1/</loc>
     <lastmod>2023-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/three-stages/</loc>
+    <loc>http://localhost:1313/posts/three-stages/</loc>
     <lastmod>2023-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/small/broken-integrity/</loc>
+    <loc>http://localhost:1313/studies/small/broken-integrity/</loc>
     <lastmod>2023-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/dark-concepts/</loc>
+    <loc>http://localhost:1313/posts/dark-concepts/</loc>
     <lastmod>2023-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/conceptual-models/</loc>
+    <loc>http://localhost:1313/posts/conceptual-models/</loc>
     <lastmod>2022-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/ux-design-silo/</loc>
+    <loc>http://localhost:1313/posts/ux-design-silo/</loc>
     <lastmod>2022-10-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/small/zoom-missing/</loc>
+    <loc>http://localhost:1313/studies/small/zoom-missing/</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/larger/zoom-reaction/</loc>
+    <loc>http://localhost:1313/studies/larger/zoom-reaction/</loc>
     <lastmod>2022-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/design-moves/</loc>
+    <loc>http://localhost:1313/posts/design-moves/</loc>
     <lastmod>2022-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/larger/facebook/</loc>
+    <loc>http://localhost:1313/studies/larger/facebook/</loc>
     <lastmod>2022-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/larger/dns-dkim/</loc>
+    <loc>http://localhost:1313/studies/larger/dns-dkim/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/categories/cases/</loc>
+    <loc>http://localhost:1313/categories/cases/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/small/class-numbers/</loc>
+    <loc>http://localhost:1313/studies/small/class-numbers/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tags/css/</loc>
+    <loc>http://localhost:1313/tags/css/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tags/html/</loc>
+    <loc>http://localhost:1313/tags/html/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tags/markdown/</loc>
+    <loc>http://localhost:1313/tags/markdown/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/categories/syntax/</loc>
+    <loc>http://localhost:1313/categories/syntax/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/distillation/</loc>
+    <loc>http://localhost:1313/posts/distillation/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/categories/themes/</loc>
+    <loc>http://localhost:1313/categories/themes/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tags/themes/</loc>
+    <loc>http://localhost:1313/tags/themes/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/sketchnote/</loc>
+    <loc>http://localhost:1313/posts/sketchnote/</loc>
     <lastmod>2021-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/series/</loc>
+    <loc>http://localhost:1313/series/</loc>
     <lastmod>2021-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/series/themes-guide/</loc>
+    <loc>http://localhost:1313/series/themes-guide/</loc>
     <lastmod>2021-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tags/catalog/</loc>
+    <loc>http://localhost:1313/tags/catalog/</loc>
     <lastmod>2021-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tags/concept/</loc>
+    <loc>http://localhost:1313/tags/concept/</loc>
     <lastmod>2021-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/subscribe/</loc>
+    <loc>http://localhost:1313/posts/subscribe/</loc>
     <lastmod>2021-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/tags/upvote/</loc>
+    <loc>http://localhost:1313/tags/upvote/</loc>
     <lastmod>2021-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/studies/small/upvote/</loc>
+    <loc>http://localhost:1313/studies/small/upvote/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/acm-tech-talk/</loc>
+    <loc>http://localhost:1313/posts/acm-tech-talk/</loc>
     <lastmod>2021-11-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/posts/sample-chapters/</loc>
+    <loc>http://localhost:1313/posts/sample-chapters/</loc>
     <lastmod>2021-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/</loc>
+    <loc>http://localhost:1313/drafts/concepts-redux/strong-concepts/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/</loc>
+    <loc>http://localhost:1313/drafts/concepts-redux/the-operational-principle/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/consent-concepts/</loc>
+    <loc>http://localhost:1313/drafts/consent-concepts/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/deemph--data-model-and-action-definitions-for-coding/</loc>
+    <loc>http://localhost:1313/drafts/deemph--data-model-and-action-definitions-for-coding/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/design-is-necessary-but-not-sufficient/</loc>
+    <loc>http://localhost:1313/drafts/design-is-necessary-but-not-sufficient/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/function-cascadedel-p--postconcept-c--commentconcept-i/</loc>
+    <loc>http://localhost:1313/drafts/function-cascadedel-p--postconcept-c--commentconcept-i/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/noosphere-v2/</loc>
+    <loc>http://localhost:1313/drafts/noosphere-v2/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/drafts/some-principles-regarding-concept-synchronization/</loc>
+    <loc>http://localhost:1313/drafts/some-principles-regarding-concept-synchronization/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/%E2%80%9C/rude%E2%80%9D/</loc>
+    <loc>http://localhost:1313/%E2%80%9C/rude%E2%80%9D/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/ask/</loc>
+    <loc>http://localhost:1313/ask/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/author/</loc>
+    <loc>http://localhost:1313/author/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/buy/</loc>
+    <loc>http://localhost:1313/buy/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/reviews/</loc>
+    <loc>http://localhost:1313/reviews/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/subscribe/</loc>
+    <loc>http://localhost:1313/subscribe/</loc>
   </url><url>
-    <loc>https://essenceofsoftware.com/workshop-info/</loc>
+    <loc>http://localhost:1313/workshop-info/</loc>
   </url>
 </urlset>

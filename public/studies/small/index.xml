@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Shorter case studies on The Essence of Software</title>
-    <link>https://essenceofsoftware.com/studies/small/</link>
+    <link>http://localhost:1313/studies/small/</link>
     <description>Recent content in Shorter case studies on The Essence of Software</description>
     <image>
       <title>The Essence of Software</title>
-      <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
-      <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
+      <url>http://localhost:1313/eos-twitter-card.png</url>
+      <link>http://localhost:1313/eos-twitter-card.png</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
     <lastBuildDate>Sun, 02 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://essenceofsoftware.com/studies/small/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/studies/small/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Breaking Integrity: Three Examples</title>
-      <link>https://essenceofsoftware.com/studies/small/broken-integrity/</link>
+      <link>http://localhost:1313/studies/small/broken-integrity/</link>
       <pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/small/broken-integrity/</guid>
+      <guid>http://localhost:1313/studies/small/broken-integrity/</guid>
       <description>Integrity violations aren&amp;rsquo;t as common as I once expected. But when they happen, they&amp;rsquo;re bad.</description>
     </item>
     <item>
       <title>Zoom&#39;s Missing Concept</title>
-      <link>https://essenceofsoftware.com/studies/small/zoom-missing/</link>
+      <link>http://localhost:1313/studies/small/zoom-missing/</link>
       <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/small/zoom-missing/</guid>
+      <guid>http://localhost:1313/studies/small/zoom-missing/</guid>
       <description>When critical concepts are missing</description>
     </item>
     <item>
       <title>The Class Number Dilemma</title>
-      <link>https://essenceofsoftware.com/studies/small/class-numbers/</link>
+      <link>http://localhost:1313/studies/small/class-numbers/</link>
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/small/class-numbers/</guid>
+      <guid>http://localhost:1313/studies/small/class-numbers/</guid>
       <description>A Concept Example in Everyday Life</description>
     </item>
     <item>
       <title>Upvote: An Example Concept</title>
-      <link>https://essenceofsoftware.com/studies/small/upvote/</link>
+      <link>http://localhost:1313/studies/small/upvote/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://essenceofsoftware.com/studies/small/upvote/</guid>
+      <guid>http://localhost:1313/studies/small/upvote/</guid>
       <description>An example of what a concept catalog entry might look like</description>
     </item>
   </channel>
