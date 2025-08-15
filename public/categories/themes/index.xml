@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Themes on The Essence of Software</title>
-    <link>http://localhost:1313/categories/themes/</link>
+    <link>https://essenceofsoftware.com/categories/themes/</link>
     <description>Recent content in Themes on The Essence of Software</description>
     <image>
       <title>The Essence of Software</title>
-      <url>http://localhost:1313/eos-twitter-card.png</url>
-      <link>http://localhost:1313/eos-twitter-card.png</link>
+      <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
+      <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
     <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/themes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://essenceofsoftware.com/categories/themes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Essence of the Essence</title>
-      <link>http://localhost:1313/posts/distillation/</link>
+      <link>https://essenceofsoftware.com/posts/distillation/</link>
       <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/distillation/</guid>
+      <guid>https://essenceofsoftware.com/posts/distillation/</guid>
       <description>A short(ish) summary of the book</description>
     </item>
     <item>
       <title>Concept Design Sketchnote</title>
-      <link>http://localhost:1313/posts/sketchnote/</link>
+      <link>https://essenceofsoftware.com/posts/sketchnote/</link>
       <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/sketchnote/</guid>
+      <guid>https://essenceofsoftware.com/posts/sketchnote/</guid>
       <description>A graphical summary of concept design ideas</description>
     </item>
     <item>
       <title>Design Updates in Your Mailbox</title>
-      <link>http://localhost:1313/posts/subscribe/</link>
+      <link>https://essenceofsoftware.com/posts/subscribe/</link>
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/subscribe/</guid>
+      <guid>https://essenceofsoftware.com/posts/subscribe/</guid>
       <description>Join an ultra-low-volume email list to hear new ideas about concepts and design.</description>
     </item>
     <item>
       <title>ACM tech talk</title>
-      <link>http://localhost:1313/posts/acm-tech-talk/</link>
+      <link>https://essenceofsoftware.com/posts/acm-tech-talk/</link>
       <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/acm-tech-talk/</guid>
+      <guid>https://essenceofsoftware.com/posts/acm-tech-talk/</guid>
       <description>Daniel explains concept design in a single video.</description>
     </item>
     <item>
       <title>Sample book chapters</title>
-      <link>http://localhost:1313/posts/sample-chapters/</link>
+      <link>https://essenceofsoftware.com/posts/sample-chapters/</link>
       <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/sample-chapters/</guid>
+      <guid>https://essenceofsoftware.com/posts/sample-chapters/</guid>
       <description>Download free sample chapters.</description>
     </item>
   </channel>

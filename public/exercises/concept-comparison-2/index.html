@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Concept comparison exercise | The Essence of Software</title>
+<meta name="keywords" content="">
+<meta name="description" content="Learning about concept design by comparing similar concepts">
+<meta name="author" content="Daniel Jackson">
+<link rel="canonical" href="http://localhost:1313/exercises/concept-comparison-2/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/exercises/concept-comparison-2/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WRQ6HWW3ZW');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/exercises/concept-comparison-2/">
+  <meta property="og:site_name" content="The Essence of Software">
+  <meta property="og:title" content="Concept comparison exercise">
+  <meta property="og:description" content="Learning about concept design by comparing similar concepts">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="exercises">
+    <meta property="article:published_time" content="2025-07-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-07-24T00:00:00+00:00">
+      <meta property="og:image" content="http://localhost:1313/eos-twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/eos-twitter-card.png">
+<meta name="twitter:title" content="Concept comparison exercise">
+<meta name="twitter:description" content="Learning about concept design by comparing similar concepts">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Exercises",
+      "item": "http://localhost:1313/exercises/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Concept comparison exercise",
+      "item": "http://localhost:1313/exercises/concept-comparison-2/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Concept comparison exercise",
+  "name": "Concept comparison exercise",
+  "description": "Learning about concept design by comparing similar concepts",
+  "keywords": [
+    
+  ],
+  "articleBody": "One way to improve your understanding of concept design is to compare related concepts, and try to determine (and then articulate) how and why they differ.\nConfusion between related concepts can be a design flaw in itself, when the designer fails to convey (through the user interface and support materials) what concept is being offered in a particular situation.\nFor example, X/Twitter used to have a feature called “favorites,” but it wasn’t clear if this was an instance of an Upvoting concept (which collected votes from users for popularity ranking) or a Favoriting (or Bookmarking) concept (which let users save favorite tweets). In 2015, Twitter renamed “favorites” to “likes” and replaced the yellow star icon with a red heart, explaining in a press release “We are changing our star icon for favorites to a heart and we’ll be calling them likes… We know that at times the star could be confusing, especially to newcomers. You might like a lot of things, but not everything can be your favorite.” Needless to say, this didn’t help explain what concept was actually at play, and in 2017, Melania Trump famously “liked” a tweet that taunted her husband, presumably believing that she was bookmarking it, when in fact her “like” was shown publicly as a gesture of approval. In 2018, Twitter finally added a Bookmark concept.\nIn this case, it seems possible that the confusion was intentional, since public likes, unlike private bookmarks, serve the company’s business goals of increasing visible user engagement (and indeed, even after they were added, the bookmarking actions were buried in the user interface and far harder to access than the upvoting actions). In other cases, confusion between concepts is simply a consequence of poor design, and even with good design it is not possible to ensure complete clarity for all users given their diversity of background and assumptions.\nExercise: Style Concepts Most tools that offer formatting of text or graphical objects include concepts for styling them, which allow a user to apply formatting rules that were previously defined. There is a fundamental difference between a concept that merely stores formatting rules as “styles” and one that maintains associations between objects and their styles.\nTo explore this difference, start by experimenting with some of the following concepts, using whichever applications you have convenient access to or are familiar with, selecting at least one example from each category:\nCategory A\nParagraph styles in Microsoft Word, Apple Pages and Google Docs Color swatches in Adobe Indesign Site styles in Squarespace Selection colors in Figma Color themes in Visual Studio Code Shape styles in Apple Keynote Theme colors in Microsoft Powerpoint Category B\nColor palettes in the Apple color picker Text color selector in Google Docs Cell styles in Microsoft Excel Layer styles in Adobe Photoshop Shape styles in Microsoft Powerpoint Text styles in Apple TextEdit Now articulate the difference between these categories by formulating two concepts, one for each category. Make your concepts simple and generic; they do not need to capture all the details of a particular example. Point to the essential difference in behavior between the two concepts (in operational principle and actions). Do the two concepts share a purpose, or are their purposes different? Is one easier to implement than the other (hint: look at the concept state)?\nExercise: Passwords and Personal Access Tokens Github offers a form of authentication called personal access tokens. This is described as “an alternative to using passwords.” Creating a token sounds very much like creating a password with a strong password helper: you click a button to create a token, and get an obscure string which you can then save. Using a token appears to be the same as using a password: you enter a username and the token string, and will then be authenticated if the string matches the one that was generated when the token was created. Moreover, at the very start of the article we are told “Treat your access tokens like passwords.”\nSo what exactly is the difference between the standard Password concept and the PersonalAccessToken concept? Read the Github page carefully*, and document the two concepts, paying particular attention to their purposes and operational principles. Now consider how they differ, and explain how their behavior is motivated by different purposes. You will also want to consider whether one of the concepts has actions that are not provided by the other concept.\n* Note: consider only “personal access tokens (classic)” and not “fine-grained personal access tokens.”\n",
+  "wordCount" : "748",
+  "inLanguage": "en",
+  "image": "http://localhost:1313/eos-twitter-card.png","datePublished": "2025-07-24T00:00:00Z",
+  "dateModified": "2025-07-24T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Daniel Jackson"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/exercises/concept-comparison-2/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Essence of Software",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/ask/" title="FAQ">
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/buy/" title="Buy">
+                    <span>Buy</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/reviews/" title="Reviews">
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/author/" title="Author">
+                    <span>Author</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tutorials/" title="Tutorials">
+                    <span>Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/studies/" title="Case Studies">
+                    <span>Case Studies</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/subscribe/" title="Subscribe">
+                    <span>Subscribe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Concept comparison exercise
+    </h1>
+    <div class="post-description">
+      Learning about concept design by comparing similar concepts
+    </div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#exercise-style-concepts" aria-label="Exercise: Style Concepts">Exercise: Style Concepts</a></li>
+                <li>
+                    <a href="#exercise-passwords-and-personal-access-tokens" aria-label="Exercise: Passwords and Personal Access Tokens">Exercise: Passwords and Personal Access Tokens</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>One way to improve your understanding of concept design is to compare related concepts, and try to determine (and then articulate) how and why they differ.</p>
+<p>Confusion between related concepts can be a design flaw in itself, when the designer fails to convey (through the user interface and support materials) what concept is being offered in a particular situation.</p>
+<p>For example, X/Twitter used to have a feature called &ldquo;favorites,&rdquo; but it wasn&rsquo;t clear if this was an instance of an Upvoting concept (which collected votes from users for popularity ranking) or a Favoriting (or Bookmarking) concept (which let users save favorite tweets). In 2015, Twitter renamed &ldquo;favorites&rdquo; to &ldquo;likes&rdquo; and replaced the yellow star icon with a red heart, explaining in a press release &ldquo;We are changing our star icon for favorites to a heart and we’ll be calling them likes… We know that at times the star could be confusing, especially to newcomers. You might like a lot of things, but not everything can be your favorite.&rdquo; Needless to say, this didn&rsquo;t help explain what concept was actually at play, and in 2017, Melania Trump famously &ldquo;liked&rdquo; a tweet that taunted her husband, presumably believing that she was bookmarking it, when in fact her &ldquo;like&rdquo; was shown publicly as a gesture of approval. In 2018, Twitter finally added a Bookmark concept.</p>
+<p>In this case, it seems possible that the confusion was intentional, since public likes, unlike private bookmarks, serve the company&rsquo;s business goals of increasing visible user engagement (and indeed, even after they were added, the bookmarking actions were buried in the user interface and far harder to access than the upvoting actions). In other cases, confusion between concepts is simply a consequence of poor design, and even with good design it is not possible to ensure complete clarity for all users given their diversity of background and assumptions.</p>
+<h2 id="exercise-style-concepts">Exercise: Style Concepts<a hidden class="anchor" aria-hidden="true" href="#exercise-style-concepts">#</a></h2>
+<p>Most tools that offer formatting of text or graphical objects include concepts for styling them, which allow a user to apply formatting rules that were previously defined. There is a fundamental difference between a concept that merely stores formatting rules as &ldquo;styles&rdquo; and one that maintains associations between objects and their styles.</p>
+<p>To explore this difference, start by experimenting with some of the following concepts, using whichever applications you have convenient access to or are familiar with, selecting at least one example from each category:</p>
+<p>Category A</p>
+<ul>
+<li>Paragraph styles in Microsoft Word, Apple Pages and Google Docs</li>
+<li>Color swatches in Adobe Indesign</li>
+<li>Site styles in Squarespace</li>
+<li>Selection colors in Figma</li>
+<li>Color themes in Visual Studio Code</li>
+<li>Shape styles in Apple Keynote</li>
+<li>Theme colors in Microsoft Powerpoint</li>
+</ul>
+<p>Category B</p>
+<ul>
+<li>Color palettes in the Apple color picker</li>
+<li>Text color selector in Google Docs</li>
+<li>Cell styles in Microsoft Excel</li>
+<li>Layer styles in Adobe Photoshop</li>
+<li>Shape styles in Microsoft Powerpoint</li>
+<li>Text styles in Apple TextEdit</li>
+</ul>
+<p>Now articulate the difference between these categories by formulating two concepts, one for each category. Make your concepts simple and generic; they do not need to capture all the details of a particular example. Point to the essential difference in behavior between the two concepts (in operational principle and actions). Do the two concepts share a purpose, or are their purposes different? Is one easier to implement than the other (hint: look at the concept state)?</p>
+<h2 id="exercise-passwords-and-personal-access-tokens">Exercise: Passwords and Personal Access Tokens<a hidden class="anchor" aria-hidden="true" href="#exercise-passwords-and-personal-access-tokens">#</a></h2>
+<p>Github offers a form of authentication called <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">personal access tokens</a>. This is described as &ldquo;an alternative to using passwords.&rdquo; <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic">Creating a token</a> sounds very much like creating a password with a strong password helper: you click a button to create a token, and get an obscure string which you can then save. <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#using-a-personal-access-token-on-the-command-line">Using a token</a> appears to be the same as using a password: you enter a username and the token string, and will then be authenticated if the string matches the one that was generated when the token was created. Moreover, at the very start of the <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic">article</a> we are told &ldquo;Treat your access tokens like passwords.&rdquo;</p>
+<p>So what exactly is the difference between the standard Password concept and the PersonalAccessToken concept? Read the Github page carefully*, and document the two concepts, paying particular attention to their purposes and operational principles. Now consider how they differ, and explain how their behavior is motivated by different purposes. You will also want to consider whether one of the concepts has actions that are not provided by the other concept.</p>
+<p>* Note: consider only &ldquo;personal access tokens (classic)&rdquo; and not &ldquo;fine-grained personal access tokens.&rdquo;</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+
+    <span>&copy; 2025 <a href="http://localhost:1313/">Daniel Jackson</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

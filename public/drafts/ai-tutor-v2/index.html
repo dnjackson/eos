@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,16 +9,16 @@
 <meta name="keywords" content="">
 <meta name="description" content="Notes on design of a GPT-powered tutor">
 <meta name="author" content="Daniel Jackson">
-<link rel="canonical" href="http://localhost:1313/drafts/ai-tutor-v2/">
+<link rel="canonical" href="https://essenceofsoftware.com/drafts/ai-tutor-v2/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/drafts/ai-tutor-v2/">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/drafts/ai-tutor-v2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -69,7 +69,7 @@
           gtag('js', new Date());
           gtag('config', 'G-WRQ6HWW3ZW');
         }
-      </script><meta property="og:url" content="http://localhost:1313/drafts/ai-tutor-v2/">
+      </script><meta property="og:url" content="https://essenceofsoftware.com/drafts/ai-tutor-v2/">
   <meta property="og:site_name" content="The Essence of Software">
   <meta property="og:title" content="Notes on design of a GPT-powered tutor">
   <meta property="og:description" content="Notes on design of a GPT-powered tutor">
@@ -78,9 +78,9 @@
     <meta property="article:section" content="drafts">
     <meta property="article:published_time" content="2023-05-11T00:00:00+00:00">
     <meta property="article:modified_time" content="2023-05-11T00:00:00+00:00">
-      <meta property="og:image" content="http://localhost:1313/eos-twitter-card.png">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/eos-twitter-card.png">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
 <meta name="twitter:title" content="Notes on design of a GPT-powered tutor">
 <meta name="twitter:description" content="Notes on design of a GPT-powered tutor">
 
@@ -94,13 +94,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Drafts",
-      "item": "http://localhost:1313/drafts/"
+      "item": "https://essenceofsoftware.com/drafts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Notes on design of a GPT-powered tutor",
-      "item": "http://localhost:1313/drafts/ai-tutor-v2/"
+      "item": "https://essenceofsoftware.com/drafts/ai-tutor-v2/"
     }
   ]
 }
@@ -118,7 +118,7 @@
   "articleBody": "Goals and Principles These notes are intended to contribute to the design of a tutor based on GPT that Geoffrey is building for use in Software Studio this fall.\nSome of the goals of building and deploying the tutor are:\nTo get some initial experience using GPT-like tools in education; To help students learn concept design; To gather data both about students’ learning of concept design and about the performance of the AI tutor; To refine the pedagogy around concept design. Some design principles of the tutor are:\nTo make the simplest thing that works; While serving the needs of concept design, to make the tutor as general as possible so that it can be applied in other domains; To reduce barrier to usage by students; To make it easy for class staff to change the materials and exercises; To implement using the class tech stack–Node/Express, Vue (or React if that’s easier for Geoffrey)–so the tutor can be used as an exemplar for students and also easily modified by staff; Identifying concepts The central concept captures the protocol of interacting with tools like GPT:\nconcept ChatBot purpose interact with AI agent principle prompt (t0); ask (t1); respond (t2); ... state prompt: lone Text questions, answers: seq Text actions prompt (t: Text) // initialize the chatbot with a prompt ask (t: Text) // user enters text respond (t: Text) // bot responds The prompt will turn out to be a concatenation of distinct components, such as a general tactic for the bot to follow; a pedagogical context for the exercise at hand; and the starting seed for the exercise itself (eg, “ask the user to do X”).\nThe student will work in a mutable buffer, generating a sequence of immutable texts:\nconcept Buffer purpose create immutable text with mutable buffer principle // if you open buffer and edit it, // saving produces last content open (t); edit (t'); save (ts) {ts = t'} state content: Text actions open (t: Text) // reset buffer contents to t edit (t: Text) // edit buffer content to be t save (out t: Text) // save contents of buffer The save action is intended to be sync’d with another concept; this factors out the means by which the text is saved and where it’s saved to.\nConcept design theory aside. This concept might seem so simple that its functionality should be absorbed into another concept (eg, Drill, below). But this would be a mistake. First, it embodies distinct and complex functionality–a complete text editor. The edit action represents very abstractly and generally all possible edits. Second, by separating the concept out we’re able to lift it (that is, create an indexed collection of instances without having to pollute any concept with a spurious index type).\nThe chatbot is fueled by a repository of advice, which I’ll model as a concept that offers advice on various topics:\nconcept Advice [Topic] purpose manage repo of advice principle // create topic, add advice, then getting // advice will return all advice added to that // topic newTopic (n, t); addAdvice (t, a1)... addAdvice (t, aN); get (t, a') {a' = a1 + ... + aN} state advices: Topic -\u003e set Text name: Topic lone -\u003e one Text actions newTopic (name: Text, out t: Topic) addAdvice (t: Topic, advice: Text) getAdvice (t: Topic, out advices: set Text) Concept design theory aside. Another concept that might seem too simple to represent. In this case, the behavior is indeed very simple, but the concept is factored out because it represents very distinct and domain-dependent functionality, and represents a significant part of the tutor. I’ve included an action getAdvice to help reify the operational principle even though the state is visible and observer actions aren’t generally needed. Could this concept be made more similar to one that already exists, such as a Q\u0026A concept of the sort you might use to model StackOverflow etc? In the AI tutor setting, the advice will be given to the chatbot, not the student, but this should be irrelevant in the design of the concept.\nThe pedagogical content is organized as a collection of exercises with multiple parts; the parts are associated with competencies (which will be the topics for advice).\nconcept Exercise purpose maintain and offer structured exercises principle // admin creates exercise with parts // when student selects part, they get // the relevant descriptions newExercise(te, e); newPart (e, tp, c, p); getPart (e, p, t', c') {t' = te^tp, c' = c} state parts: Exercise one -\u003e set Part competency: Part -\u003e one Competency description: Exercise + Part -\u003e one Text actions newCompetency (out c: Competency) newExercise (t: Text, out e: Exercise) newPart (e: Exercise, t: Text, c: Competency, out p: Part) getExercise (e: Exercise, out t: Text) getPart (e: Exercise, p: Part, out t: Text, out c: Competency) // when student selects a part of an exercise, // they're given a description that combines // the description of the exercise with the // description of the part (and the competency // they'll acquire) Notes:\nBoth exercises and their parts have descriptions Competency associated only with parts and not whole exercises. This will mean we can’t associate advice with exercises as a whole. Perhaps advice common to all parts is just included for those parts? Parts are not shared between exercises Considered including student behavior in this concept to make it richer but then decided it was more important to factor it out so that the student behavior concept could be lifted over students (that is, each student behavior being independent) selectexercise was added so that it could be synchronized with the resetting of the buffer as the student begins a new exercise. Competencies will presumably have textual names, but treating them abstractly in the concept. Concept for student behavior:\nconcept Drill [Task] purpose store incremental student work on structured task principle // if you select a task and one of its subtasks // and then submit a solution, it's recorded // appropriately selectTask (t); selectSubTask (t, t'); submit (s) {t' in t.subtasks and t.solution = s} state subtasks: Task one -\u003e set Task solution: Task -\u003e lone Text current: lone Task actions selectTask (t: Task) // set current to t selectSubTask (super, sub: Task) // set current to sub // ensure sub a subtask of super submit (t: Text) // current.solution := t Notes:\nDecided to make this cursor-based; not sure this is a good idea, but seems useful to have this state somewhere in the app. OP is not very satisfying but at least suggests how concept is used. An important design issue. For simplicity, this design assumes that student work is saved only for subtasks (which will correspond to parts of exercises). There is no separate storage of whole exercise solutions. Instead, the text of an exercise solution is derived from the texts of the solutions of the parts. The student may be shown a coherent block of text representing their solution to the whole exercise but will not be able to edit it: only edits to solutions to parts are allowed. The Drill concept maintains the fragmentary solutions; the app can display a solution to an entire exercise by combining state from Exercise and Drill.\nA concept is needed to manage student sessions and provide access to students to the work they have done:\nconcept Session purpose maintain persistent identities of clients principle // if you open a session on a client and then // get the session at the client before closing, // you'll get the session that was created on open open (c, s); getSession (c, s') {s' = s} state session: Client -\u003e one Session actions open (c: Client, out s: Session) // create new session on client getSession (c: Client, out s: Session) // return session associated with client close (s: Session) // close session and forget client Note. Client abstracts the implementation details of how the server associates session state with the user’s browser, tab etc. Probably easiest to generate a session id on open and install a cookie containing it.\nA concept that contains all the functionality for remember email addresses and sending emails:\nconcept Email [Principal] purpose support sending progress emails to users principle // if you register a principal with an email // and send an email to that principal // then it will be sent to their address register (p, a); send (p, t) {message {t} sent to p.address} state address: Principal -\u003e one Address actions register (p: Principal, a: Address) forget (p: Principal) send (p: Principal, t: Text) // send a message containing t to p Composing concepts All the concepts are assembled into an app, with one instance of the Buffer and Drill concepts for each session, the Drill concept instantiated so that its tasks are exercises and parts from the Exercise concept, and one instance of the Chatbot concept for each combination of session and task:\napp Tutor includes\tSession Email Exercise Advice [Exercise.Competency] Buffers: Session.Session -\u003e one Buffer Drills: Session.Session -\u003e one Drill[Exercise.Exercise + Exercise.Part] Chatbots: Session.Session -\u003e Drills.Task -\u003e Chatbot Note. There will actually only be one chatbot instance per subtask, even though the declaration suggests one per task.\nWhen a user opens a new session, their email address is registered:\nsync open (c: Client, addr: Email.Address, out s: Session.Session) Session.open (c, s) Email.register (s, addr) When a user selects an exercise, a new task is selected associated with that exercise, and the user’s buffer is cleared:\nsync selectExercise (c: Client, out s: Session, ex: Exercise.Exercise, out exerciseText: Text) Session.getSession (c, s) Exercise.getExercise (ex, exerciseText) Drills[s].selectTask (ex) Buffers[s].open (\"\") The text associated with the exercise (exerciseText) will be displayed to the user.\nWhen a user selects a part of an exercise, a new subtask is selected associated with that exercise, the user’s buffer is reset with the content of the prior solution to that part (or an empty string if none), the advice stored for the competency associated with that part is obtained, and the associated chatbot is prompted with that advice and the textual description of the exercise part:\nsync selectPart (c: Client, out s: Session, ex: Exercise.Exercise, part: Exercise.Part, out comp: Exercise.Competency, out partText: Text, out advice: Text) Session.getSession (c, s) Exercise.getPart (ex, partText, comp, part) Drills[s].selectSubTask (ex, part) Buffers[s].open (emptyIfNone(part.solution)) Advice.getAdvice (comp, advice) Chatbots[s][part].prompt (advice ^ partText) When a user saves the buffer, the content is submitted as a solution (to the current part), that solution is presented as a query to the relevant chatbot, and the solution is also emailed to the user:\nsync submitSolution (c: Client, out s: Session, out solution: Text) Session.getSession (c, s) Drills[s].submit (solution) Buffers[s].save (solution) Chatbots[s][p].ask (solution) Email.send (s, solution) Notes. In this current formulation, the query to the chatbot includes only the solution to the current part of the exercise, but perhaps it should contain the (derived) current version of the entire exercise solution. The chatbot will respond to the query spontaneously; no sync is needed to describe that.\nSummary of Concept Design Ideas Here are some of the principles that guided the conceptual design:\nFactoring. Reasons for factoring out concepts include: standard reusable functionality (Session); separable/optional feature (Email); separable feature with considerable complexity (Buffer, Chatbot); to exploit lifting so that concept need not include indexing (Drill); functionality that is separable and may be subsequently elaborated (Advice). Lifting. Whenever a concept might have included an indexed state component, but the different indexed parts of the state never interact, the concept should instead be lifted. For example, each buffer has its own behavior, and there are no actions across buffers, so rather than having the Buffer concept include an indexed collection of buffers, the concept itself is instantiated, indexed over sessions. Email should probably be lifted too. Abstraction. Details of a concept are excluded if they are not relevant to the essential design questions. For example, Buffer.edit embodies all the complexity of a text editor, but for the purpose of high level design, it’s best just to assume this. Polymorphism. Concepts are made polymorphic when possible. For example, the tasks of the Drill concept and the competencies of Advice can be bound to any types. Concept vs sync design. In some apps, the design of the concepts themselves will be challenging. In this case, the main problem was how they fit together, so laying out the essential actions and figuring out how they would be synced was primary. Open Design Questions The concept design offers only a draft attempt at resolving the tricky questions about how the various parts of the app should interact. Particular decisions embodied in the concept design that should be revisited include:\nAssociating chatbot sessions with parts of exercises. Deriving exercise solutions from part solutions, and not allowing them to be edited explicitly. Conveying solutions to user by emailing submitted solutions to subparts. Clearly, users may prefer an explicit action for sending or saving a solution, which should probably send the entire exercise solution. There should also be a way to send the chatbot transcript. Associating prompts with competencies tied to parts, and not with whole exercises, and feeding the text of the exercise part as part of the prompt. The chatbot instances are associated with parts of exercises, and their sessions persist, so that if you select a part, then select another part and come back to the first, you’ll be in the same session. … ",
   "wordCount" : "2235",
   "inLanguage": "en",
-  "image": "http://localhost:1313/eos-twitter-card.png","datePublished": "2023-05-11T00:00:00Z",
+  "image": "https://essenceofsoftware.com/eos-twitter-card.png","datePublished": "2023-05-11T00:00:00Z",
   "dateModified": "2023-05-11T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -126,14 +126,14 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/drafts/ai-tutor-v2/"
+    "@id": "https://essenceofsoftware.com/drafts/ai-tutor-v2/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "The Essence of Software",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "https://essenceofsoftware.com/favicon.ico"
     }
   }
 }
@@ -151,48 +151,48 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
             <div class="logo-switches">
             </div>
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/ask/" title="FAQ">
+                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
                     <span>FAQ</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/buy/" title="Buy">
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
                     <span>Buy</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/reviews/" title="Reviews">
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
                     <span>Reviews</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/author/" title="Author">
+                <a href="https://essenceofsoftware.com/author/" title="Author">
                     <span>Author</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/posts/" title="Blog">
+                <a href="https://essenceofsoftware.com/posts/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tutorials/" title="Tutorials">
+                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
                     <span>Tutorials</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/studies/" title="Case Studies">
+                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
                     <span>Case Studies</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/subscribe/" title="Subscribe">
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
                     <span>Subscribe</span>
                 </a>
             </li>
@@ -492,7 +492,7 @@ Buffers[s].open (&quot;&quot;)
 <footer class="footer">
 
 
-    <span>&copy; 2025 <a href="http://localhost:1313/">Daniel Jackson</a></span>
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>On concept design on The Essence of Software</title>
-    <link>http://localhost:1313/tutorials/concept-basics/</link>
+    <link>https://essenceofsoftware.com/tutorials/concept-basics/</link>
     <description>Recent content in On concept design on The Essence of Software</description>
     <image>
       <title>The Essence of Software</title>
-      <url>http://localhost:1313/eos-twitter-card.png</url>
-      <link>http://localhost:1313/eos-twitter-card.png</link>
+      <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
+      <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
     <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tutorials/concept-basics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://essenceofsoftware.com/tutorials/concept-basics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software = concepts</title>
-      <link>http://localhost:1313/tutorials/concept-basics/sw-as-concepts/</link>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</link>
       <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/concept-basics/sw-as-concepts/</guid>
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/sw-as-concepts/</guid>
       <description>&lt;p&gt;Any software app, service or  system can be viewed as a &lt;strong&gt;collection of interacting concepts&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;concepts-are-the-building-blocks-of-software&#34;&gt;Concepts are the building blocks of software&lt;/h2&gt;
 &lt;p&gt;Imagine explaining Twitter to someone who&amp;rsquo;s never used it. You might tell them about the &lt;em&gt;Tweet&lt;/em&gt; and &lt;em&gt;Follower&lt;/em&gt; concepts, then maybe &lt;em&gt;Hashtag&lt;/em&gt; and &lt;em&gt;Like&lt;/em&gt; (aka Upvote), and if they&amp;rsquo;re keen to know even more, you could explain &lt;em&gt;VerifiedAccount&lt;/em&gt; or &lt;em&gt;Bookmark&lt;/em&gt;.&lt;/p&gt;
@@ -26,26 +26,26 @@
     </item>
     <item>
       <title>Operational principles</title>
-      <link>http://localhost:1313/tutorials/concept-basics/principle/</link>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/principle/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/concept-basics/principle/</guid>
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/principle/</guid>
       <description>&lt;p&gt;A compelling way to explain how something works is to tell a story. Not any story, but a kind of defining story that shows, through a typical scenario, why the thing is useful and fulfills its purpose.&lt;/p&gt;
 &lt;p&gt;The Minuteman Library Network, for example, offers a wonderful service. If I request a book, then when it becomes available at my local library, I get an email notifying me that it’s ready to be picked up.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concept purposes</title>
-      <link>http://localhost:1313/tutorials/concept-basics/purpose/</link>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/concept-basics/purpose/</guid>
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/purpose/</guid>
       <description>&lt;h2 id=&#34;the-role-of-purposes&#34;&gt;The role of purposes&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;From what to why&lt;/strong&gt;. The beginning of wisdom for a designer   is to stop asking “what?” and start asking “why?”.&lt;/p&gt;
 &lt;p&gt;This applies at every level. You can ask “what application shall I design?”. But a better question is “why would I design that?”. And at a finer grain, the question “what features should my app have?” gives way to “why should my app have these particular features?”.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Apps are state machines</title>
-      <link>http://localhost:1313/tutorials/concept-basics/app-as-machine/</link>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/app-as-machine/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/concept-basics/app-as-machine/</guid>
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/app-as-machine/</guid>
       <description>&lt;p&gt;If user experience runs &lt;a href=&#34;../../design-general/beyond-ui&#34;&gt;deeper&lt;/a&gt; than the user interface, we need a way to talk about an app that isn’t just visual, and that captures behavior in a more fundamental way.&lt;/p&gt;
 &lt;p&gt;Programmers think in terms of complicated things like objects, callbacks, streams, functionals, and so on. They’re essential for structuring code, but for behavior a much simpler model is effective.&lt;/p&gt;
 &lt;h2 id=&#34;state-machines&#34;&gt;State machines&lt;/h2&gt;
@@ -53,34 +53,34 @@
     </item>
     <item>
       <title>Concepts are state machines</title>
-      <link>http://localhost:1313/tutorials/concept-basics/concept-as-machine/</link>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/</link>
       <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/concept-basics/concept-as-machine/</guid>
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/concept-as-machine/</guid>
       <description>&lt;p&gt;As I explained in another &lt;a href=&#34;../apps-are-state-machines&#34;&gt;tutorial&lt;/a&gt;, the easiest and most effective way to define the behavior of an app precisely is to model it as a state machine. The app has a set of possible states, and actions that update and query the states. An execution of the app is just a sequence of actions (or more correctly, action instances that include particular action arguments), and the behavior as a whole is the set of all possible executions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concept state</title>
-      <link>http://localhost:1313/tutorials/concept-basics/state/</link>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/state/</link>
       <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/concept-basics/state/</guid>
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/state/</guid>
       <description>&lt;h2 id=&#34;motivation-defining-behavior&#34;&gt;Motivation: Defining Behavior&lt;/h2&gt;
 &lt;p&gt;The operational principle of a concept explains its archetypal behavior: how it’s typically used, and how it fulfills its purpose. But for a concept to be flexible and powerful, it should work in many different scenarios, so we need a way to pin down the behavior in detail.&lt;/p&gt;
 &lt;p&gt;Using the notion of a state machine, we can define how a concept will behave in every possible situation. Then we can analyze the design to make sure that the behavior is always acceptable. And as we transition from design to code, the state machine provides an ideal stepping stone. The state of the state machine will become the state of the program and the actions of the state machine will become the functions of its API.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concept criteria: what&#39;s a concept?</title>
-      <link>http://localhost:1313/tutorials/concept-basics/criteria/</link>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/concept-basics/criteria/</guid>
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/criteria/</guid>
       <description>&lt;h2 id=&#34;two-sides-of-a-coin&#34;&gt;Two sides of a coin&lt;/h2&gt;
 &lt;p&gt;The key to concept design is, perhaps not surprisingly, the idea of &lt;em&gt;concepts&lt;/em&gt;.
 A concept is two things at once. On the one hand, a “concept” means you’d expect it to mean: a mental construct that you need to understand to be able to use an app effectively. So you might that to use Photoshop you need to understand the “concept of a layer”; to use Facebook you need to understand the “concept of  friending”; and so on. But if concepts were just vague mental constructs, there wouldn’t be much you could do with them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concept composition and sync</title>
-      <link>http://localhost:1313/tutorials/concept-basics/sync/</link>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/sync/</link>
       <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/concept-basics/sync/</guid>
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/sync/</guid>
       <description>&lt;p&gt;In another &lt;a href=&#34;../concept-as-machine&#34;&gt;tutorial&lt;/a&gt;, I showed a concept definition for &lt;a href=&#34;https://yellkey.com&#34;&gt;Yellkey&lt;/a&gt;, a popular URL shortening service:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;concept Yellkey
 purpose shorten URLs to common words
@@ -119,18 +119,18 @@ actions
     </item>
     <item>
       <title>Concept dependencies and subsets</title>
-      <link>http://localhost:1313/tutorials/concept-basics/dependency/</link>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/dependency/</link>
       <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/concept-basics/dependency/</guid>
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/dependency/</guid>
       <description>&lt;h2 id=&#34;an-idea-you-need-to-know&#34;&gt;An idea you need to know&lt;/h2&gt;
 &lt;p&gt;One of the most important and useful ideas in software also happens to be one of the least well known. It was introduced in a &lt;a href=&#34;https://ieeexplore.ieee.org/document/1702607&#34;&gt;paper&lt;/a&gt; that &lt;a href=&#34;https://en.wikipedia.org/wiki/David_Parnas&#34;&gt;David Parnas&lt;/a&gt; wrote in 1979, entitled &lt;em&gt;Designing Software for Ease of Extension and Contraction&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Program families&lt;/strong&gt;. Following on from an earlier paper that introduced the idea of “program families”&amp;mdash;that when you design software you should realize that you’re designing a whole family of programs, not just one&amp;mdash;this paper addresses the question of how to do this. How do you come up with one design that can be easily extended (by adding new functionality) or contracted (by removing functionality)?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concept modularity</title>
-      <link>http://localhost:1313/tutorials/concept-basics/modularity/</link>
+      <link>https://essenceofsoftware.com/tutorials/concept-basics/modularity/</link>
       <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/concept-basics/modularity/</guid>
+      <guid>https://essenceofsoftware.com/tutorials/concept-basics/modularity/</guid>
       <description>&lt;h2 id=&#34;why-modularity-matters&#34;&gt;Why modularity matters&lt;/h2&gt;
 &lt;p&gt;To see why modularity is so critical in software design, consider what goes wrong when it’s missing.&lt;/p&gt;
 &lt;p&gt;For the programmer, life becomes miserable. Whenever you need to understand or modify some piece of functionality, there’s no single place in the code to go to, and you may have to visit many widely separated locations (and just finding them can be a major challenge). Even removing (let alone adding) functionality is hard, because the parts of the codebase are all interconnected in subtle ways, and taking anything away risks breaking the parts that remain.&lt;/p&gt;</description>

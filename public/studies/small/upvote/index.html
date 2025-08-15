@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,16 +9,16 @@
 <meta name="keywords" content="upvote, catalog, concept">
 <meta name="description" content="An example of what a concept catalog entry might look like">
 <meta name="author" content="Daniel Jackson">
-<link rel="canonical" href="http://localhost:1313/studies/small/upvote/">
+<link rel="canonical" href="https://essenceofsoftware.com/studies/small/upvote/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/studies/small/upvote/">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/studies/small/upvote/">
 <noscript>
     <style>
         #theme-toggle,
@@ -69,7 +69,7 @@
           gtag('js', new Date());
           gtag('config', 'G-WRQ6HWW3ZW');
         }
-      </script><meta property="og:url" content="http://localhost:1313/studies/small/upvote/">
+      </script><meta property="og:url" content="https://essenceofsoftware.com/studies/small/upvote/">
   <meta property="og:site_name" content="The Essence of Software">
   <meta property="og:title" content="Upvote: An Example Concept">
   <meta property="og:description" content="An example of what a concept catalog entry might look like">
@@ -81,9 +81,9 @@
     <meta property="article:tag" content="Upvote">
     <meta property="article:tag" content="Catalog">
     <meta property="article:tag" content="Concept">
-      <meta property="og:image" content="http://localhost:1313/eos-twitter-card.png">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/eos-twitter-card.png">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
 <meta name="twitter:title" content="Upvote: An Example Concept">
 <meta name="twitter:description" content="An example of what a concept catalog entry might look like">
 
@@ -97,19 +97,19 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Case Studies",
-      "item": "http://localhost:1313/studies/"
+      "item": "https://essenceofsoftware.com/studies/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Shorter case studies",
-      "item": "http://localhost:1313/studies/small/"
+      "item": "https://essenceofsoftware.com/studies/small/"
     }, 
     {
       "@type": "ListItem",
       "position":  3 ,
       "name": "Upvote: An Example Concept",
-      "item": "http://localhost:1313/studies/small/upvote/"
+      "item": "https://essenceofsoftware.com/studies/small/upvote/"
     }
   ]
 }
@@ -127,7 +127,7 @@
   "articleBody": "Concepts provide a framework for recording design experience. Designers often find themselves reinventing the wheel, designing and deploying concepts that have been built many times before, and then rediscovering a raft of subtle problems that were already known.\nMy dream is to have a concept catalog (or a collection of concept catalogs, perhaps organized by domains) that would hold a collection of concept definitions, and with each the accumulated experience and design wisdom from previous deployments of that concept.\nAs an example of what such a catalog entry might look like, here is a sample entry for the Upvote concept. Comments, suggestions and reactions welcome in the forum topic for this example.\nThis idea is inspired, of course, by the success of design patterns in programming.\nName: Upvote [Item, User]\nPurpose: Track relative popularity of items\nAlso known as: Like\nRelated concepts:\nReaction (send emotional reaction to author of post)\nRecommendation (track user approvals for future recommendations)\nModerate (maintain quality of forum by approving submissions)\nKarma (grant privileges to users based on good behavior)\nFlag (crowdsource moderation by having users mark bad items)\nState:\nupvotes, downvotes: Item -\u003e set User count: Item -\u003e one Int // item's count is defined as number of ups minus downs // all i: Item | i.count = #i.upvotes - #i.downvotes Actions:\nupvote (i: Item, u: User)\u2028u not in i.upvotes i.upvotes += u i.downvotes -= u downvote (i: Item, u: User)\u2028u not in i.downvotes i.downvotes += u i.upvotes -= u unvote (i: Item, u: User)\u2028u in i.(upvotes+downvotes) i.upvotes -= u i.downvotes -= u Operational principle:\nafter a sequence of upvote and downvote actions, the count of an item is equal to the number of users who upvoted minus the number who downvoted General notes\nSyntax. Since this is the first concept that I’m adding to the catalog, here are a few notes on the syntax I’m using. This is the structure I use in EOS, but with more formal definitions of the actions. I’m using Alloy-like syntax for expressions and statements, which is hopefully intuitive even to those unfamiliar with Alloy. The state and actions part of the concept model is not new to concept design; it’s just a definition of a state machine activated by atomic actions as you’d find in any formal modeling language (such as TLA+, B, Z, VDM, OCL).\nDeclarations. The declaration r: A -\u003e B declares a relation from A to B, constrained by any multiplicities (using the keywords one for exactly one, lone for zero or one, some for one or more, and set for zero or more).\nAction definitions. Action definitions can include constraints on the pre-state, as well as update statements. For example, in upvote, the first line is a precondition saying that you can’t upvote an item if you’ve already upvoted it. An update statement changes a relation, using +/- for adding and removing tuples. For example, in upvote, the second line says that the set of users associated with the item i in the upvotes relation is increased by u (or, equivalently, the tuple i-\u003eu is added to the relation).\nType parameters. The list of types after the name of the concept gives the type parameters. These are types that are polymorphic, and can be bound to other types when the concept is composed. In this case, all the types are parameters. The Item type, for example, may be bound to Comment or Post in another concept, and the User type may be bound to any kind of principal (as the term is used in the security community).\nOperational principle. The OP is given informally. As explained in EOS, it’s an archetypal scenario, and unlike use cases, doesn’t need to cover all the functionality (so note that unvote is not mentioned). In this case, it looks a bit pathological because the concept is pretty simple: it basically just counts votes.\nDesign issues\nNegative count. This design allows counts to go negative. An alternative is to make a minimum of zero (even if the number of downvotes is still tracked implicitly).\nUnvote as own action. In some deployments, you may use downvote to let a user reverse their upvote action instead of unvote, but this won’t work if downvoting is limited (eg, by Karma) to certain users (as in Hacker News).\nUsing count. The count of an item can be used in different ways. Often it is shown to users, and is used to determine the rank order in which items appear. Sometimes the count is used directly for item ordering (as in comments in the NY Times), but more complex schemes are common: in Hacker News, for example, the rank of a post is computed from the number of points, the post’s age, and other factors.\nPreventing double voting. This design prevents a user from voting twice on a single item. In practice, this requires either tracking the identity of the user (eg, with session tokens), or by using a proxy for the user, such as the IP address, MAC address or browser id.\nVisibility. Usually only the count relation (and not the upvotes and downvotes relations) is made visible, so users cannot see who voted for an item. For Facebook “likes”, usernames are visible, but that can be seen as an artifact of combining the Upvote concept with the Reaction concept.\nEventual consistency. Getting exact counts is generally not required, so common implementations scale by not requiring strong consistency. This means that a user who upvotes an item will generally see that item’s count increase, but may not see the effect of a simultaneous (or even earlier) upvote from another user until later.\nKnown uses. Universally used in all social media apps, typically for posts and comments. Facebook combines the Upvote, Reaction and Recommendation concepts into a single “Like” concept, with some confusing outcomes (for example, that an angry reactions counts as an upvote).\nSynchronizations. Commonly synchronized with authoring concepts (such as Comment and Post), and with Karma (where an upvote may be synchronized with a reward action, so that a user needs to obtain some number of upvotes before reaching a certain karma level).\n",
   "wordCount" : "1024",
   "inLanguage": "en",
-  "image": "http://localhost:1313/eos-twitter-card.png","datePublished": "2021-11-17T00:00:00Z",
+  "image": "https://essenceofsoftware.com/eos-twitter-card.png","datePublished": "2021-11-17T00:00:00Z",
   "dateModified": "2021-11-17T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -135,14 +135,14 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/studies/small/upvote/"
+    "@id": "https://essenceofsoftware.com/studies/small/upvote/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "The Essence of Software",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "https://essenceofsoftware.com/favicon.ico"
     }
   }
 }
@@ -160,48 +160,48 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
             <div class="logo-switches">
             </div>
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/ask/" title="FAQ">
+                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
                     <span>FAQ</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/buy/" title="Buy">
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
                     <span>Buy</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/reviews/" title="Reviews">
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
                     <span>Reviews</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/author/" title="Author">
+                <a href="https://essenceofsoftware.com/author/" title="Author">
                     <span>Author</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/posts/" title="Blog">
+                <a href="https://essenceofsoftware.com/posts/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tutorials/" title="Tutorials">
+                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
                     <span>Tutorials</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/studies/" title="Case Studies">
+                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
                     <span>Case Studies</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/subscribe/" title="Subscribe">
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
                     <span>Subscribe</span>
                 </a>
             </li>
@@ -286,9 +286,9 @@ catalog, here are a few notes on the syntax I&rsquo;m using. This is the structu
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/upvote/">Upvote</a></li>
-      <li><a href="http://localhost:1313/tags/catalog/">Catalog</a></li>
-      <li><a href="http://localhost:1313/tags/concept/">Concept</a></li>
+      <li><a href="https://essenceofsoftware.com/tags/upvote/">Upvote</a></li>
+      <li><a href="https://essenceofsoftware.com/tags/catalog/">Catalog</a></li>
+      <li><a href="https://essenceofsoftware.com/tags/concept/">Concept</a></li>
     </ul>
 
   </footer>
@@ -298,7 +298,7 @@ catalog, here are a few notes on the syntax I&rsquo;m using. This is the structu
 <footer class="footer">
 
 
-    <span>&copy; 2025 <a href="http://localhost:1313/">Daniel Jackson</a></span>
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Workshops on The Essence of Software</title>
-    <link>http://localhost:1313/workshops/</link>
+    <link>https://essenceofsoftware.com/workshops/</link>
     <description>Recent content in Workshops on The Essence of Software</description>
     <image>
       <title>The Essence of Software</title>
-      <url>http://localhost:1313/eos-twitter-card.png</url>
-      <link>http://localhost:1313/eos-twitter-card.png</link>
+      <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
+      <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
     <lastBuildDate>Thu, 24 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/workshops/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://essenceofsoftware.com/workshops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Autodesk Concept Design Workshop</title>
-      <link>http://localhost:1313/workshops/autodesk-oslo/</link>
+      <link>https://essenceofsoftware.com/workshops/autodesk-oslo/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/workshops/autodesk-oslo/</guid>
+      <guid>https://essenceofsoftware.com/workshops/autodesk-oslo/</guid>
       <description>Oslo, August 25-26, 2025</description>
     </item>
     <item>
       <title>Autodesk Concept Design Workshop</title>
-      <link>http://localhost:1313/workshops/autodesk-online/</link>
+      <link>https://essenceofsoftware.com/workshops/autodesk-online/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/workshops/autodesk-online/</guid>
+      <guid>https://essenceofsoftware.com/workshops/autodesk-online/</guid>
       <description>Online, June 10, 12, 16, 24, 2025</description>
     </item>
     <item>
       <title>Autodesk Concept Design Workshop</title>
-      <link>http://localhost:1313/workshops/autodesk-boston/</link>
+      <link>https://essenceofsoftware.com/workshops/autodesk-boston/</link>
       <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/workshops/autodesk-boston/</guid>
+      <guid>https://essenceofsoftware.com/workshops/autodesk-boston/</guid>
       <description>Boston, March 2025</description>
     </item>
     <item>
       <title>Autodesk Concept Design Workshop</title>
-      <link>http://localhost:1313/workshops/autodesk-woodinville/</link>
+      <link>https://essenceofsoftware.com/workshops/autodesk-woodinville/</link>
       <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/workshops/autodesk-woodinville/</guid>
+      <guid>https://essenceofsoftware.com/workshops/autodesk-woodinville/</guid>
       <description>Workshop held in Woodinville, WA, in December 2024</description>
     </item>
   </channel>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Reviews on The Essence of Software</title>
-    <link>http://localhost:1313/reviews/</link>
+    <link>https://essenceofsoftware.com/reviews/</link>
     <description>Recent content in Reviews on The Essence of Software</description>
     <image>
       <title>The Essence of Software</title>
-      <url>http://localhost:1313/eos-twitter-card.png</url>
-      <link>http://localhost:1313/eos-twitter-card.png</link>
+      <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
+      <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
-    <atom:link href="http://localhost:1313/reviews/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://essenceofsoftware.com/reviews/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

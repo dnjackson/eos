@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -15,16 +15,16 @@ From domain-driven design (and its predecessors, such as OMT and JSD), concept d
 
 In each of these cases, concept design goes in new directions. Unlike use cases, the scenarios of concept design are not used as specifications. Whereas user-centered design focuses on building the system image that connects the conceptual model to the mental model, concept design focuses on the conceptual model itself. And while domain-driven design looks for existing structures in data, concept design looks for them in function.">
 <meta name="author" content="Daniel Jackson">
-<link rel="canonical" href="http://localhost:1313/drafts/concepts-redux/building-on-ideas/">
+<link rel="canonical" href="https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.7307e9fa3987a55c6ee0d7471f5e70e27b04d0fd39b50b37bfa14e5029a362ea.css" integrity="sha256-cwfp&#43;jmHpVxu4NdHH15w4nsE0P05tQs3v6FOUCmjYuo=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/drafts/concepts-redux/building-on-ideas/">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/">
 <noscript>
     <style>
         #theme-toggle,
@@ -75,7 +75,7 @@ In each of these cases, concept design goes in new directions. Unlike use cases,
           gtag('js', new Date());
           gtag('config', 'G-WRQ6HWW3ZW');
         }
-      </script><meta property="og:url" content="http://localhost:1313/drafts/concepts-redux/building-on-ideas/">
+      </script><meta property="og:url" content="https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/">
   <meta property="og:site_name" content="The Essence of Software">
   <meta property="og:title" content="Building on good ideas">
   <meta property="og:description" content="Concept design builds on many familiar ideas. To mention a few:
@@ -83,9 +83,9 @@ From use cases and user stories, concept design takes the idea that software int
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="drafts">
-      <meta property="og:image" content="http://localhost:1313/eos-twitter-card.png">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/eos-twitter-card.png">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
 <meta name="twitter:title" content="Building on good ideas">
 <meta name="twitter:description" content="Concept design builds on many familiar ideas. To mention a few:
 
@@ -105,13 +105,13 @@ In each of these cases, concept design goes in new directions. Unlike use cases,
       "@type": "ListItem",
       "position":  1 ,
       "name": "Drafts",
-      "item": "http://localhost:1313/drafts/"
+      "item": "https://essenceofsoftware.com/drafts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Building on good ideas",
-      "item": "http://localhost:1313/drafts/concepts-redux/building-on-ideas/"
+      "item": "https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/"
     }
   ]
 }
@@ -129,7 +129,7 @@ In each of these cases, concept design goes in new directions. Unlike use cases,
   "articleBody": "Concept design builds on many familiar ideas. To mention a few:\nFrom use cases and user stories, concept design takes the idea that software interacts with the world through scenarios that deliver value. From user-centered design (as taught by Don Norman in The Design of Everyday Things), concept design takes the idea that the user interface is a kind of apparition (a “system image” in Norman’s phrasing) that stands between the user and the system, revealing only indirectly the underlying reality. When the user’s understanding (their “mental model”) is not aligned with this reality (the “conceptual model”), the system becomes unusable. From domain-driven design (and its predecessors, such as OMT and JSD), concept design takes the idea that the most stable part of a system’s function may be grounded in structures that already exist in the problem domain. In each of these cases, concept design goes in new directions. Unlike use cases, the scenarios of concept design are not used as specifications. Whereas user-centered design focuses on building the system image that connects the conceptual model to the mental model, concept design focuses on the conceptual model itself. And while domain-driven design looks for existing structures in data, concept design looks for them in function.\nMore fundamentally, concept design is about making the function of software modular: that is, dividing it into separable chunks that can be understood independently. Modularity is the key to many good things: separation of concerns, division of labor, reuse, decoupled implementation, etc.\nTo achieve modularity, concept design draws on well-established ideas from computer science (in particular the idea of defining actions over states, and composing processes by synchronizing actions).\nWhat about objects and classes? Given objects’ success in programming, and their use in simulations for modeling domains, you might have expected them to be the right modularity mechanism for concepts too. But as we’ll see, objects aren’t a good fit for structuring function.\n",
   "wordCount" : "318",
   "inLanguage": "en",
-  "image": "http://localhost:1313/eos-twitter-card.png","datePublished": "0001-01-01T00:00:00Z",
+  "image": "https://essenceofsoftware.com/eos-twitter-card.png","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -137,14 +137,14 @@ In each of these cases, concept design goes in new directions. Unlike use cases,
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/drafts/concepts-redux/building-on-ideas/"
+    "@id": "https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "The Essence of Software",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "https://essenceofsoftware.com/favicon.ico"
     }
   }
 }
@@ -162,48 +162,48 @@ In each of these cases, concept design goes in new directions. Unlike use cases,
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
             <div class="logo-switches">
             </div>
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/ask/" title="FAQ">
+                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
                     <span>FAQ</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/buy/" title="Buy">
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
                     <span>Buy</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/reviews/" title="Reviews">
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
                     <span>Reviews</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/author/" title="Author">
+                <a href="https://essenceofsoftware.com/author/" title="Author">
                     <span>Author</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/posts/" title="Blog">
+                <a href="https://essenceofsoftware.com/posts/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tutorials/" title="Tutorials">
+                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
                     <span>Tutorials</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/studies/" title="Case Studies">
+                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
                     <span>Case Studies</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/subscribe/" title="Subscribe">
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
                     <span>Subscribe</span>
                 </a>
             </li>
@@ -248,7 +248,7 @@ In each of these cases, concept design goes in new directions. Unlike use cases,
 <footer class="footer">
 
 
-    <span>&copy; 2025 <a href="http://localhost:1313/">Daniel Jackson</a></span>
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

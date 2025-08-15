@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Drafts on The Essence of Software</title>
-    <link>http://localhost:1313/drafts/</link>
+    <link>https://essenceofsoftware.com/drafts/</link>
     <description>Recent content in Drafts on The Essence of Software</description>
     <image>
       <title>The Essence of Software</title>
-      <url>http://localhost:1313/eos-twitter-card.png</url>
-      <link>http://localhost:1313/eos-twitter-card.png</link>
+      <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
+      <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
     <lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/drafts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://essenceofsoftware.com/drafts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A new take on concept design</title>
-      <link>http://localhost:1313/drafts/concepts-redux/new-take/</link>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/new-take/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/concepts-redux/new-take/</guid>
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/new-take/</guid>
       <description>&lt;p&gt;It’s been just over two years since the publication of &lt;em&gt;The Essence of Software&lt;/em&gt; (EOS). In that time, engaging with readers, consulting and teaching to students and practitioners has given me a new perspective on concept design.&lt;/p&gt;
 &lt;p&gt;In a series of notes (of which this is the first), I hope to share some of the respects in which my understanding has evolved. In addition to having a better sense of what matters most, I think I have a greater appreciation of the obstacles that make concept design seem (at the same time!) trivial to some and obscure to others. I also hope to point to some exciting new directions for concept design&amp;mdash;in particular how concepts make it easier to exploit LLMs for generating code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is software design?</title>
-      <link>http://localhost:1313/drafts/concepts-redux/what-is-design/</link>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/what-is-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/concepts-redux/what-is-design/</guid>
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/what-is-design/</guid>
       <description>&lt;p&gt;As I explain in EOS, I’ve coopted the term “software design” to mean something different from what most people in the software world expect. To me, it means designing &lt;em&gt;function&lt;/em&gt;: how the software will behave and interact with its users and the world.&lt;/p&gt;
 &lt;p&gt;So the design of the software is what determines whether or not it fulfills the user’s needs, because if the function is wrong (or confusing), the user won’t be happy. The user interface matters too, but that’s a separate issue (of how the design is presented).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building on good ideas</title>
-      <link>http://localhost:1313/drafts/concepts-redux/building-on-ideas/</link>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/concepts-redux/building-on-ideas/</guid>
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/building-on-ideas/</guid>
       <description>&lt;p&gt;Concept design builds on many familiar ideas. To mention a few:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;From &lt;strong&gt;use cases and user stories&lt;/strong&gt;, concept design takes the idea that software interacts with the world through scenarios that deliver value.&lt;/li&gt;
@@ -45,44 +45,44 @@
     </item>
     <item>
       <title>Concept Architecture</title>
-      <link>http://localhost:1313/drafts/concept-architecture/</link>
+      <link>https://essenceofsoftware.com/drafts/concept-architecture/</link>
       <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/concept-architecture/</guid>
+      <guid>https://essenceofsoftware.com/drafts/concept-architecture/</guid>
       <description>A Proposal for a Concept-based App Architecture</description>
     </item>
     <item>
       <title>Concept Configuration</title>
-      <link>http://localhost:1313/drafts/concept-extents/</link>
+      <link>https://essenceofsoftware.com/drafts/concept-extents/</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/concept-extents/</guid>
+      <guid>https://essenceofsoftware.com/drafts/concept-extents/</guid>
       <description>Notes on the design of concept configurations</description>
     </item>
     <item>
       <title>Notes on design of a GPT-powered tutor</title>
-      <link>http://localhost:1313/drafts/ai-tutor-v1/</link>
+      <link>https://essenceofsoftware.com/drafts/ai-tutor-v1/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/ai-tutor-v1/</guid>
+      <guid>https://essenceofsoftware.com/drafts/ai-tutor-v1/</guid>
       <description>Notes on design of a GPT-powered tutor</description>
     </item>
     <item>
       <title>Notes on design of a GPT-powered tutor</title>
-      <link>http://localhost:1313/drafts/ai-tutor-v2/</link>
+      <link>https://essenceofsoftware.com/drafts/ai-tutor-v2/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/ai-tutor-v2/</guid>
+      <guid>https://essenceofsoftware.com/drafts/ai-tutor-v2/</guid>
       <description>Notes on design of a GPT-powered tutor</description>
     </item>
     <item>
       <title>Noosphere concepts</title>
-      <link>http://localhost:1313/drafts/noosphere-v1/</link>
+      <link>https://essenceofsoftware.com/drafts/noosphere-v1/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/noosphere-v1/</guid>
+      <guid>https://essenceofsoftware.com/drafts/noosphere-v1/</guid>
       <description>A Concept Exploration of Noosphere</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/drafts/concepts-redux/strong-concepts/</link>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/concepts-redux/strong-concepts/</guid>
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/strong-concepts/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Strong concepts.&lt;/strong&gt; Having one or a few core concepts that are embodied in scenarios that deliver what the user needs, overcoming points of pain and friction. For Zoom, that’s the meeting concept.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Conceptual clarity.&lt;/strong&gt; The core concepts of an app have to be conveyed, through the UI and all explanatory material, with clarity and simplicity. It’s probably not possible to do this for a “dual use” app (like Hangouts) that offers multiple concepts (eg, &lt;em&gt;video call&lt;/em&gt; and &lt;em&gt;meeting&lt;/em&gt;) for the same function. User are also very sensitive to needless complications and distractions in a UI (in Skype’s case, spam and advertisements).&lt;/li&gt;
@@ -92,9 +92,9 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/drafts/concepts-redux/the-operational-principle/</link>
+      <link>https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/concepts-redux/the-operational-principle/</guid>
+      <guid>https://essenceofsoftware.com/drafts/concepts-redux/the-operational-principle/</guid>
       <description>&lt;h1 id=&#34;the-operational-principle&#34;&gt;The operational principle&lt;/h1&gt;
 &lt;p&gt;Using a term coined by Michael Polanyi (and brought to software engineering by Michael Jackson), I call a scenario that explains how a product “just works” its &lt;em&gt;operational principle&lt;/em&gt; (OP).&lt;/p&gt;
 &lt;p&gt;The operational principle is just a sample scenario, but it includes enough richness to convey typical usages. The example I gave above for Zoom could be written in a more textual way like this&lt;/p&gt;
@@ -104,9 +104,9 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/drafts/consent-concepts/</link>
+      <link>https://essenceofsoftware.com/drafts/consent-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/consent-concepts/</guid>
+      <guid>https://essenceofsoftware.com/drafts/consent-concepts/</guid>
       <description>&lt;p&gt;Consent concepts&lt;/p&gt;
 &lt;p&gt;owner,&lt;/p&gt;
 &lt;p&gt;GPT suggests
@@ -121,9 +121,9 @@ service provider&lt;/p&gt;
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/drafts/deemph--data-model-and-action-definitions-for-coding/</link>
+      <link>https://essenceofsoftware.com/drafts/deemph--data-model-and-action-definitions-for-coding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/deemph--data-model-and-action-definitions-for-coding/</guid>
+      <guid>https://essenceofsoftware.com/drafts/deemph--data-model-and-action-definitions-for-coding/</guid>
       <description>&lt;p&gt;deemph: data model and action definitions for coding.
 extending: modularity, but probably needs data.
 essence: OPs.
@@ -131,18 +131,18 @@ relevance: LLMs&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/drafts/design-is-necessary-but-not-sufficient/</link>
+      <link>https://essenceofsoftware.com/drafts/design-is-necessary-but-not-sufficient/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/design-is-necessary-but-not-sufficient/</guid>
+      <guid>https://essenceofsoftware.com/drafts/design-is-necessary-but-not-sufficient/</guid>
       <description>&lt;h1 id=&#34;design-is-necessary-but-not-sufficient&#34;&gt;Design is necessary but not sufficient&lt;/h1&gt;
 &lt;p&gt;One final response to another possible skepticism. Some might say that none of this design stuff matters if the software isn’t reliable, scalable, performant, etc.&lt;/p&gt;
 &lt;p&gt;The answer to this objection is easy: yes. Design is necessary but not sufficient. Just as great architecture won’t make a building successful if the civil engineers fail to ensure that it can withstand the wind, so a well-designed software product can’t succeed without good software engineering.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/drafts/function-cascadedel-p--postconcept-c--commentconcept-i/</link>
+      <link>https://essenceofsoftware.com/drafts/function-cascadedel-p--postconcept-c--commentconcept-i/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/function-cascadedel-p--postconcept-c--commentconcept-i/</guid>
+      <guid>https://essenceofsoftware.com/drafts/function-cascadedel-p--postconcept-c--commentconcept-i/</guid>
       <description>&lt;p&gt;function cascadeDel (p: PostConcept, c: CommentConcept) {
 return i -&amp;gt; {
 p.del (*, i);
@@ -166,9 +166,9 @@ sy = sy.add (\
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/drafts/noosphere-v2/</link>
+      <link>https://essenceofsoftware.com/drafts/noosphere-v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/noosphere-v2/</guid>
+      <guid>https://essenceofsoftware.com/drafts/noosphere-v2/</guid>
       <description>&lt;h1 id=&#34;a-concept-model-of-noosphere&#34;&gt;A Concept Model of Noosphere&lt;/h1&gt;
 &lt;h2 id=&#34;warning&#34;&gt;Warning&lt;/h2&gt;
 &lt;p&gt;Heavy-duty concept design ahead! This note exploring the concept design of Noosphere is not for the faint-hearted. For those who aren&amp;rsquo;t very familiar with the concepts of decentralized storage (which includes me!) or who are learning concept design for the first time, this is likely not the best introduction to concepts.&lt;/p&gt;
@@ -177,9 +177,9 @@ sy = sy.add (\
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/drafts/some-principles-regarding-concept-synchronization/</link>
+      <link>https://essenceofsoftware.com/drafts/some-principles-regarding-concept-synchronization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/drafts/some-principles-regarding-concept-synchronization/</guid>
+      <guid>https://essenceofsoftware.com/drafts/some-principles-regarding-concept-synchronization/</guid>
       <description>&lt;h1 id=&#34;some-notes-about-syncs&#34;&gt;Some notes about syncs&lt;/h1&gt;
 &lt;p&gt;Daniel Jackson&lt;br&gt;
 Sept 16, 2024&lt;/p&gt;

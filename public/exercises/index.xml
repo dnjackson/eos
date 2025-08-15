@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Exercises on The Essence of Software</title>
+    <link>https://essenceofsoftware.com/exercises/</link>
+    <description>Recent content in Exercises on The Essence of Software</description>
+    <image>
+      <title>The Essence of Software</title>
+      <url>https://essenceofsoftware.com/eos-twitter-card.png</url>
+      <link>https://essenceofsoftware.com/eos-twitter-card.png</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <copyright>Daniel Jackson</copyright>
+    <lastBuildDate>Thu, 24 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://essenceofsoftware.com/exercises/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Concept comparison exercise</title>
+      <link>https://essenceofsoftware.com/exercises/concept-comparison/</link>
+      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://essenceofsoftware.com/exercises/concept-comparison/</guid>
+      <description>Learning about concept design by comparing similar concepts</description>
+    </item>
+    <item>
+      <title>Concept reading exercise</title>
+      <link>https://essenceofsoftware.com/exercises/concept-reading/</link>
+      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://essenceofsoftware.com/exercises/concept-reading/</guid>
+      <description>Learning about concept design by reading a concept spec</description>
+    </item>
+    <item>
+      <title>Concept writing exercise</title>
+      <link>https://essenceofsoftware.com/exercises/concept-writing/</link>
+      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://essenceofsoftware.com/exercises/concept-writing/</guid>
+      <description>Learning about concept design by writing a concept spec</description>
+    </item>
+  </channel>
+</rss>
