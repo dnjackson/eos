@@ -17,46 +17,55 @@ editPost:
 
 To help you get going with designing individual concepts, this exercise asks you to read a mostly complete concept and answer some questions about it.
 
-**concept** GiftRegistry \[User, Item\]
+**concept** GiftRegistry \[User, Item\]  
 
-**purpose** track purchases of requested gifts
+**purpose** track purchases of requested gifts  
 
-**principle**
-a recipient creates a registry, and adds items to it indicating the number of each requested; opens the registry so it becomes publicly visible; then givers can view which items are still available and purchase them; and finally the recipient closes the registry, after which it is no longer publicly visible but the recipient can see which items were purchased and by whom.
+**principle**  
+a recipient creates a registry, and adds items to it indicating the number of each requested; opens the registry so it becomes publicly visible; then givers can view which items are still available and purchase them; and finally the recipient closes the registry, after which it is no longer publicly visible but the recipient can see which items were purchased and by whom.  
 
-**state**
-a set of Registrys with
-	an owner User
-	an active Flag
-	a set of Requests
-a set of Requests with
-	an Item
-	a count Number
-	a set of Purchases
-a set of Purchases with
-	a purchaser User
-	an Item
-	a count Number
+**state**  
+a set of Registrys with  
+-	an owner User  
+-	an active Flag  
+-	a set of Requests  
 
-**actions**
-create (owner: User): (registry: Registry)
-	create a new registry with this owner, active set to false and no requests
-addItem (registry: Registry, item: Item, count: Number)
-	requires registry exists
-	effects if a request for this item exists, add the count
-	  otherwise create a new request for the item with this count and add to registry
-removeItem (registry: Registry, item: Item)
-	requires a request for this item exists in the registry
-	effects remove the request from the registry
-open (registry: Registry)
-	requires registry exists and it is not active
-	effects make registry active
-close (registry: Registry)
-	requires registry exists and it is active
-	effects make registry not active
-purchase (purchaser: User, registry: Registry, item: Item, count: Number)
-	requires registry exists, is active and has a request for this item with at least count
-	effects create a new purchase for this purchaser, item and count and decrement the count in the matching request
+a set of Requests with  
+-	an Item  
+-	a count Number  
+-	a set of Purchases  
+
+a set of Purchases with  
+-	a purchaser User  
+-	an Item  
+-	a count Number  
+
+**actions**  
+
+create (owner: User): (registry: Registry)  
+-	create a new registry with this owner, active set to false and no requests  
+
+addItem (registry: Registry, item: Item, count: Number)  
+-	requires registry exists  
+-	effects if a request for this item exists, add the count  
+	  otherwise create a new request for the item with this count and add to registry  
+
+removeItem (registry: Registry, item: Item)  
+-	requires a request for this item exists in the registry  
+-	effects remove the request from the registry  
+
+open (registry: Registry)  
+-	requires registry exists and it is not active  
+-	effects make registry active  
+
+close (registry: Registry)  
+-	requires registry exists and it is active  
+-	effects make registry not active  
+
+purchase (purchaser: User, registry: Registry, item: Item, count: Number)  
+-	requires registry exists, is active and has a request for this item with at least count  
+-	effects create a new purchase for this purchaser, item and count and decrement  
+	the count in the matching request  
 
 ## Questions
 - **Invariants**. What are two invariants (aka integrity constraints) of the state? What are their purposes? Is one more important than the other? Which actions are primarily responsible for preserving each of the invariants, and how do they do it?

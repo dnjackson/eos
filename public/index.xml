@@ -295,6 +295,20 @@ actions
       <description>Learning about concept design by writing a concept spec</description>
     </item>
     <item>
+      <title>System design reading exercise</title>
+      <link>https://essenceofsoftware.com/exercises/system-reading/</link>
+      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://essenceofsoftware.com/exercises/system-reading/</guid>
+      <description>Learning about system design by reading concept specs and syncs</description>
+    </item>
+    <item>
+      <title>System design writing exercise</title>
+      <link>https://essenceofsoftware.com/exercises/system-writing/</link>
+      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://essenceofsoftware.com/exercises/system-writing/</guid>
+      <description>Learning about system design by writing concept specs and syncs</description>
+    </item>
+    <item>
       <title>Autodesk Concept Design Workshop</title>
       <link>https://essenceofsoftware.com/workshops/autodesk-online/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>

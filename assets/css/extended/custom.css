@@ -98,6 +98,20 @@ h1.post-title {
     font-size:18px
 }
 
+/* format lists for state components in concepts */
+.post-content li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.post-content ul {
+  margin-top: -12px !important;
+  margin-bottom: 20 !important;
+}
+.post-content ul ul {
+  margin-top: 0px !important;
+  margin-bottom: 20 !important;
+}
+
 .entry-content p {
     font-size:16px
 }

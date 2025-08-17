@@ -22,12 +22,12 @@ editPost:
 | **9:00**  | Welcome ([slides](./pdfs/0-welcome.pdf), [goals poll](https://app.sli.do/event/6EYs7HG2ceVXh5EiPQiw2q), [sw poll](https://app.sli.do/event/4jw4fpftSbYcSnycjiqCDA))     | Presentations (continued)  |
 | **9:30**  | Introducing concepts ([slides](./pdfs/1-introducing-concepts.pdf)) | Designing systems ([slides](./pdfs/5-designing-systems.pdf)) |
 | **11:00** | Break | Break |
-| **11:10** | Exercises ([slides](./pdfs/3-comparison-exercises.pdf), [comparisons](../../exercises/concept-comparison)) | Exercises ([slides](./pdfs/6-team-vision.pdf), [yours](https://tinyurl.com/ad-vision))    |
+| **11:10** | Exercises ([slides](./pdfs/2-comparisons-exercises.pdf), [comparisons](../../exercises/concept-comparison)) | Exercises ([slides](./pdfs/6-systems-exercises.pdf), [reading](../../exercises/system-reading), [writing](../../exercises/system-writing)) |
 | **12:00** | Lunch                | Lunch                  |
 | **1:00**  | Presentations | Presentations |
-| **1:30**  | Designing concepts ([slides](./pdfs/3-designing-concepts.pdf))  | Autodesk concept reviews ([slides](./pdfs/7-integration.pdf), [yours](https://tinyurl.com/ad-integ)) |
+| **1:30**  | Designing concepts ([slides](./pdfs/3-designing-concepts.pdf))  | Autodesk concept reviews|
 | **3:15**  | Break                | Break                  |
-| **3:30**  | Exercises ([slides](./pdfs/4-concept-exercises.pdf), [reading](../../exercises/concept-reading), [writing](../../exercises/concept-writing))    | Autodesk design exercise ([slides](./pdfs/8-presentations.pdf)) |
+| **3:30**  | Exercises ([slides](./pdfs/4-concept-exercises.pdf), [reading](../../exercises/concept-reading), [writing](../../exercises/concept-writing))    | Autodesk design exercise  |
 | **4:30**  | Presentations        | Presentations |
 | **4:45**  | End of day reflections             | End of workshop reflections ([survey](https://forms.gle/9XFWu4KvJLLVrGeT9))             |
 | **5:00**  | Adjourn  | Adjourn                |
