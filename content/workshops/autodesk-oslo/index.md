@@ -25,9 +25,9 @@ editPost:
 | **11:10** | Exercises ([slides](./pdfs/2-comparisons-exercises.pdf), [comparisons](../../exercises/concept-comparison)) | Exercises ([slides](./pdfs/6-systems-exercises.pdf), [reading](../../exercises/system-reading), [writing](../../exercises/system-writing)) |
 | **12:00** | Lunch                | Lunch                  |
 | **1:00**  | Presentations | Presentations |
-| **1:30**  | Designing concepts ([slides](./pdfs/3-designing-concepts.pdf))  | Autodesk concept reviews|
+| **1:30**  | Designing concepts ([slides](./pdfs/3-designing-concepts.pdf))  | Autodesk exercises ([slides](./pdfs/7-autodesk-exercises.pdf), [catalog](https://wiki.autodesk.com/display/AECCC/Concept+Catalog), [rubric](../../exercises/concept-rubric))|
 | **3:15**  | Break                | Break                  |
-| **3:30**  | Exercises ([slides](./pdfs/4-concept-exercises.pdf), [reading](../../exercises/concept-reading), [writing](../../exercises/concept-writing))    | Autodesk design exercise  |
+| **3:30**  | Exercises ([slides](./pdfs/4-concept-exercises.pdf), [reading](../../exercises/concept-reading), [writing](../../exercises/concept-writing))    | Autodesk exercises  |
 | **4:30**  | Presentations        | Presentations |
 | **4:45**  | End of day reflections             | End of workshop reflections ([survey](https://forms.gle/9XFWu4KvJLLVrGeT9))             |
 | **5:00**  | Adjourn  | Adjourn                |

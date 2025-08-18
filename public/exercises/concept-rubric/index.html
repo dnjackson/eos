@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Concept rubric | The Essence of Software</title>
+<meta name="keywords" content="">
+<meta name="description" content="Criteria for reviewing concept definitions">
+<meta name="author" content="Daniel Jackson">
+<link rel="canonical" href="https://essenceofsoftware.com/exercises/concept-rubric/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.aa2bfdef797952672daec0a939a38dd67fec418d7067292a61ff5203ea5bb643.css" integrity="sha256-qiv973l5UmctrsCpOaON1n/sQY1wZykqYf9SA&#43;pbtkM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/exercises/concept-rubric/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WRQ6HWW3ZW');
+        }
+      </script><meta property="og:url" content="https://essenceofsoftware.com/exercises/concept-rubric/">
+  <meta property="og:site_name" content="The Essence of Software">
+  <meta property="og:title" content="Concept rubric">
+  <meta property="og:description" content="Criteria for reviewing concept definitions">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="exercises">
+    <meta property="article:published_time" content="2025-07-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-07-24T00:00:00+00:00">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:title" content="Concept rubric">
+<meta name="twitter:description" content="Criteria for reviewing concept definitions">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Exercises",
+      "item": "https://essenceofsoftware.com/exercises/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Concept rubric",
+      "item": "https://essenceofsoftware.com/exercises/concept-rubric/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Concept rubric",
+  "name": "Concept rubric",
+  "description": "Criteria for reviewing concept definitions",
+  "keywords": [
+    
+  ],
+  "articleBody": " criterion name criterion description evidence example failing Independence Concepts are fully independent of each other, and can therefore be understood and used independently of one another. Concept description limits any references to context of use to notes. Concept purpose mentions the way in which the concept is intended to be used (eg, a payment concept whose purpose says “enables payment for magazine subscription”). Concept does not refer to another concept by name. Concept mentions working in concert with another (eg, session concept says “works with authentication concept to provide authenticated sessions”). Concept does not rely on any properties of other concepts. Concept action “calls” an action of another concept or queries the state of another concept. All external datatypes are either generic parameters or built-in types (such as String). Concept treats arguments as objects that have been constructed elsewhere (eg, takes in a user object that is assumed to have a name field). Completeness Each concept provides a complete and coherent unit of functionality that delivers the value described in the purpose without the help of other concepts. Concept functionality covers entire lifecycle of the purpose. Concept doesn’t include actions for set up (eg, defining available slots for reservations), or for closing down (eg, no deletion for an account). Concept embodies real functionality that fulfills a compelling purpose. Concept is a data structure with CRUD actions when purpose calls for richer behavior (eg, concept holds contact info for a user but doesn’t include any notification behaviors). Concept state is rich enough to support all the concept actions. Concept state is expressed as the instance variables of a single object (eg, password auth concept that declares state as username and password, failing to support lookup by username needed to check password). Concept actions are sufficient to provide essential functionality to users. No action to allow users to undo the effects of prior actions (eg, to cancel a reservation). Separation of concerns Concept does not conflate two concerns that could be broken into separate concepts that could be reused independently of one another. All components of the state work together for a single purpose. The state admits a factoring into two or more independent parts (eg, a user concept mixes preferences and profile fields). No state component can be dropped without compromising essential functionality. The concept gratuitously includes state that is not needed to support actions (eg, a password authentication concept that stores, in addition to username and password, the date on which the user first joined). The concept does not include state components that could be easily expanded into much richer, self-contained structures. The concept contains references to external objects and stores properties of them that are not needed for this concept (eg, references to users along with their names, which would better be stored in a separate profile concept). Concept represents at most one reusable and ideally familiar units of functionality. The concept does not include a subpart that could easily stand by itself, and may even be familiar in its own right (eg, user concept includes karma points). The concept is balanced in the attention to behavioral detail. The concept does not include a fragment of functionality that would in practice grow into a full and complex concept of its own (eg, a restaurant reservation concept including some details of table sizes, which would in practice belong to a concept that managed table layouts). Purpose Define the purpose of a concept that motivates its inclusion or invention Purpose is a succinct and compelling description of a need or problem that the concept solves. The purported purpose is instead a partial description of behavior (eg, purpose of Authentication concept is defined as being able to register and login, rather than as a means of identifying users). Purpose expresses a need and not a means by which the need is fulfilled. Purposes hints at mechanism of concept (eg, purpose for a Reservation concept saying that it enables users to obtain commitments of allocation of a resource in advance). Purpose is focused on the concept at hand and not a larger need. Purpose cannot be fulfilled by the concept itself, but would require other concepts too (eg, purpose of Friend concept is to allow users to connect to and share posts with each other, which cannot be fulfilled without a Post concept in addition). Purpose is expressed in an intelligible way that is easy to understand. Purpose uses technical terms or the name of the concept itself without explanation (eg, saying that the purpose of a Following concept is to allow users to follow each other). Purpose captures an end-to-end need that brings real value and does not focus on an aspect of behavior that brings no value in itself. Purpose specifies ability to enter data without indicating why the data is useful (eg, saying that the purpose of a school Attendance concept is to record whether students are present or absent, without saying how the concept makes use of this information, say for generating end-of-term reports). Purpose is expressed in an application-independent way that would make sense for any context of use. Purpose includes application-specific details that are not relevant to the design of the concept (eg, saying that the purpose of an Authentication concept in a concert ticketing app is to ensure that tickets are used by the people who bought them, which goes beyond authentication and includes irrelevant details of who is authenticated and why). Operational principle Summarize archetypal concept behavior as a scenario OP is a scenario that involves a sequence of steps. OP is instead a restatement or elaboration of the purpose (eg, an OP for Authentication that says that users are identified so that decisions can be made about what actions they may perform, rather than enumerating the key steps of registration, login, etc). OP covers the full lifecycle of the concept. OP covers only a user interaction that requires a prior setup (eg, an OP for Authentication that starts with login and neglects registration). OP includes actions by all stakeholders that modify the state. OP neglects the setting up the conditions by administrators or company employees that make consumer interactions possible (eg, an OP for a ProductCatalog concept that includes a customer searching the catalog but does not include the actions that create the catalog). OP only includes actions of the concept at hand, and not the actions of other concepts. OP describes a user journey that involves multiple concepts (eg, an OP that says that a user registers for an account, logs in and then posts a message, mixing Authentication and Post). State Design the abstract state of a concept, aka the data model State clearly defines distinct components. Not clear exactly what is being stored in the state (eg, state for a UserProfile concept mentions only “information about users”, rather than saying that it stores a display name and bio for each user, for example). State covers all the objects needed to support the actions. State lists the properties of a single object, as if the concept were an object-oriented class (eg, state for an Authentication concept listing “username and password” and not recognizing that a username and password is required for each user, so that the login action can match against all possible users). State indexes components appropriately by object. State includes some components that are either not indexed, or are indexed incorrectly (eg, state for a Friend concept defines friends as a set of users, failing to say that there is a set of users for each user; or says that each user has a set of friends and a date the friendship started, when instead there should be a set of friendships per user, each with the friend and the date started). State includes components that belong to other concepts and are not needed for the actions. State includes properties of an object when just the identity would be sufficient (eg, the state of an Article concept for a blogging app represents the author of an article as a username and thumbnail image, when only the identity of the author is required and these additional fields should appear only in a UserProfile concept). State references external objects by properties when identities would suffice. State references objects by user-friendly names (eg, in an Article concept, the author is represented by their username rather than by a user type that represents the identity of a user). State is sufficiently rich to support all actions. A precondition or postcondition cannot be expressed fully because of a missing state component (eg, the state of a Token concept fails to include an expiry date needed to determine whether a validation action succeeds). State is abstract and not tainted by implementation concerns that are irrelevant to the behavior. A collection of objects is declared as a list (or worse a tree) when a simple set would suffice (eg, in a Friend concept, the friends of a user are given as a list rather than a set). State does not include needless redundancies (except those introduced to enable easier querying). State includes a set of objects that are implicitly ordered by some property, and needlessly declares the set as an ordered list (eg, in a GroupChat concept, declaring the collection of messages in a chat as an ordered list when the messages are already implicitly ordered by send time). Actions Design the actions of a concept that update the state Actions required to set up the state are included. State includes components that have to be set up in advance of typical user interaction but actions are not provided to do so (eg, a ProductCatalog concept that does not include actions for populating a catalog in the first place). Set of actions is sufficient to reach all states. The state includes a special case that is not handled by an action (eg, a Style concept that allows styles to be organized into a hierarchy, and includes an “as is” value for a format associated with a style, but offers no way to specify this through an action). Set of actions is sufficient to update state components as needed. A state component is assumed to be mutable, but no action allows its mutation (eg, in a concept for handling user authentication by passwords, no action is provided to allow a user to change their password). For objects managed by the state, actions are provided to create, update and delete the objects as needed. Objects can only be created but never deleted (eg, a user account concept permits the creation of user accounts but no way to delete them). Undo or compensating actions are present when needed. A user can submit a request for a resource but has no action to cancel the request (eg, in a restaurant reservation concept, there is no action for canceling a reservation). Actions should not include getter methods. Actions are included that correspond to queries that a user would not typically be aware of and that might be performed repeatedly internally (eg, for a Post concept, an action that gets the author of a post). Actions should specify all necessary preconditions. (For a code-level specification, a valid alternative is to specify an error return.) An action depends on a resource being allocated, and will fail if the resource is not available (eg, for an action to reserve a table in a restaurant reservation concept, a slot at the given time must be available). Actions should only refer to state components of this concept. A common mistake is to refer to a component associated with an object that belongs to another concept (eg, an action in a Post concept takes a user object as an argument, and its specification refers to the name of the user, which belongs to a separate UserProfile concept). Set of actions should be minimal and not include actions that are easily expressed in terms of other actions. An action is included that performs another existing action over all the elements of some set, wrongly included because the designer imagines this might be useful (eg, a room reservation concept has an action for reserving a room at multiple times, but which does not create any kind of repeat reservation which might justify the action). Synchronizations for security Sufficient synchronizations are included for authentication and access control Synchronizations are included to identify user appropriately. An action that takes a user as an argument is invoked by a synchronization that binds that user to the currently active user (eg, when the user creates a post, the author of the post is assigned to the user creating it). Synchronizations are included to prevent unauthorized access An action that requires a user to have a particular relationship to an object is appropriately synchronized with authentication actions and state access (eg, in a group chat concept, an attempt to post a message requires the creator of the post to be a member of the group; in a Article concept, the editor of an article is required to be its author). Synchronizations to maintain coherent state Synchronizations are included so that the states of different concepts make sense globally Synchronizations are included to maintain invariants in which the presence of one object requires the presence of another. Actions that perform deletions are synchronized with cascading deletion actions for associated objects (eg, when a post is deleted in a Post concept, the comments of that post are deleted in a Comment concept). edit of post and associated upvotes and comments Synchronizations to support concepts that require it notifications, logging, auditing Use state appropriately to check conditions to find appropriate object karma ",
+  "wordCount" : "2274",
+  "inLanguage": "en",
+  "image": "https://essenceofsoftware.com/eos-twitter-card.png","datePublished": "2025-07-24T00:00:00Z",
+  "dateModified": "2025-07-24T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Daniel Jackson"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://essenceofsoftware.com/exercises/concept-rubric/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Essence of Software",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://essenceofsoftware.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
+                    <span>Buy</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/author/" title="Author">
+                    <span>Author</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
+                    <span>Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
+                    <span>Case Studies</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
+                    <span>Subscribe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Concept rubric
+    </h1>
+    <div class="post-description">
+      Criteria for reviewing concept definitions
+    </div>
+  </header> 
+
+  <div class="post-content"><table>
+  <thead>
+      <tr>
+          <th style="text-align: left">criterion name</th>
+          <th style="text-align: left">criterion description</th>
+          <th style="text-align: left">evidence</th>
+          <th style="text-align: left">example failing</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Independence</td>
+          <td style="text-align: left">Concepts are fully independent of each other, and can therefore be understood and used independently of one another.</td>
+          <td style="text-align: left">Concept description limits any references to context of use to notes.</td>
+          <td style="text-align: left">Concept purpose mentions the way in  which the concept is intended to be used (eg, a payment concept whose purpose says “enables payment for magazine subscription”).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Concept does not refer to another concept by name.</td>
+          <td style="text-align: left">Concept mentions working in concert with another (eg, session concept says “works with authentication concept to provide authenticated sessions”).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Concept does not rely on any properties of other concepts.</td>
+          <td style="text-align: left">Concept action “calls” an action of another concept or queries the state of another concept.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">All external datatypes are either generic parameters or built-in types (such as String).</td>
+          <td style="text-align: left">Concept treats arguments as objects that have been constructed elsewhere (eg, takes in a user object that is assumed to have a name field).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Completeness</td>
+          <td style="text-align: left">Each concept provides a complete and coherent unit of functionality that delivers the value described in the purpose without the help of other concepts.</td>
+          <td style="text-align: left">Concept functionality covers entire lifecycle of the purpose.</td>
+          <td style="text-align: left">Concept doesn’t include actions for set up (eg, defining available slots for reservations), or for closing down (eg, no deletion for an account).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Concept embodies real functionality that fulfills a compelling purpose.</td>
+          <td style="text-align: left">Concept is a data structure with CRUD actions when purpose calls for richer behavior (eg, concept holds contact info for a user but doesn’t include any notification behaviors).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Concept state is rich enough to support all the concept actions.</td>
+          <td style="text-align: left">Concept state is expressed as the instance variables of a single object (eg, password auth concept that declares state as username and password, failing to support lookup by username needed to check password).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Concept actions are sufficient to provide essential functionality to users.</td>
+          <td style="text-align: left">No action to allow users to undo the effects of prior actions (eg, to cancel a reservation).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Separation of concerns</td>
+          <td style="text-align: left">Concept does not conflate two concerns that could be broken into separate concepts that could be reused independently of one another.</td>
+          <td style="text-align: left">All components of the state work together for a single purpose.</td>
+          <td style="text-align: left">The state admits a factoring into two or more independent parts (eg, a user concept mixes preferences and profile fields).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">No state component can be dropped without compromising essential functionality.</td>
+          <td style="text-align: left">The concept gratuitously includes state that is not needed to support actions (eg, a password authentication concept that stores, in addition to username and password, the date on which the user first joined).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">The concept does not include state components that could be easily expanded into much richer, self-contained structures.</td>
+          <td style="text-align: left">The concept contains references to external objects and stores properties of them that are not needed for this concept (eg, references to users along with their names, which would better be stored in a separate profile concept).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Concept represents at most one reusable and ideally familiar units of functionality.</td>
+          <td style="text-align: left">The concept does not include a subpart that could easily stand by itself, and may even be familiar in its own right (eg, user concept includes karma points).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">The concept is balanced in the attention to behavioral detail.</td>
+          <td style="text-align: left">The concept does not include a fragment of functionality that would in practice grow into a full and complex concept of its own (eg, a restaurant reservation concept including some details of table sizes, which would in practice belong to a concept that managed table layouts).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Purpose</td>
+          <td style="text-align: left">Define the purpose of a concept that motivates its inclusion or invention</td>
+          <td style="text-align: left">Purpose is a succinct and compelling description of a need or problem that the concept solves.</td>
+          <td style="text-align: left">The purported purpose is instead a partial description of behavior (eg, purpose of Authentication  concept is defined as being able to register and login, rather than as a means of identifying users).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Purpose expresses a need and not a means by which the need is fulfilled.</td>
+          <td style="text-align: left">Purposes hints at mechanism of concept (eg, purpose for a Reservation concept saying that it enables users to obtain commitments of allocation of a resource in advance).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Purpose is focused on the concept at hand and not a larger need.</td>
+          <td style="text-align: left">Purpose cannot be fulfilled by the concept itself, but would require other concepts too (eg, purpose of Friend concept is to allow users to connect to and share posts with each other, which cannot be fulfilled without a Post concept in addition).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Purpose is expressed in an intelligible way that is easy to understand.</td>
+          <td style="text-align: left">Purpose uses technical terms or the name of the concept itself without explanation (eg, saying that the purpose of a Following concept is to allow users to follow each other).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Purpose captures an end-to-end need that brings real value and does not focus on an aspect of behavior that brings no value in itself.</td>
+          <td style="text-align: left">Purpose specifies ability to enter data without indicating why the data is useful (eg, saying that the purpose of a school Attendance concept is to record whether students are present or absent, without saying how the concept makes use of this information, say for generating end-of-term reports).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Purpose is expressed in an application-independent way that would make sense for any context of use.</td>
+          <td style="text-align: left">Purpose includes application-specific details that are not relevant to the design of the concept (eg, saying that the purpose of an Authentication concept in a concert ticketing app is to ensure that tickets are used by the people who bought them, which goes beyond authentication and includes irrelevant details of who is authenticated and why).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Operational principle</td>
+          <td style="text-align: left">Summarize archetypal concept behavior as a scenario</td>
+          <td style="text-align: left">OP is a scenario that involves a sequence of steps.</td>
+          <td style="text-align: left">OP is instead a restatement or elaboration of the purpose (eg, an OP for Authentication that says that users are identified so that decisions can be made about what actions they may perform, rather than enumerating the key steps of registration, login, etc).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">OP covers the full lifecycle of the concept.</td>
+          <td style="text-align: left">OP covers only a user interaction that requires a prior setup (eg, an OP for Authentication that starts with login and neglects registration).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">OP includes actions by all stakeholders that modify the state.</td>
+          <td style="text-align: left">OP neglects the setting up the conditions by administrators or company employees that make consumer interactions possible (eg, an OP for a ProductCatalog concept that includes a customer searching the catalog but does not include the actions that create the catalog).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">OP only includes actions of the concept at hand, and not the actions of other concepts.</td>
+          <td style="text-align: left">OP describes a user journey that involves multiple concepts (eg, an OP that says that a user registers for an account, logs in and then posts a message, mixing Authentication and Post).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">State</td>
+          <td style="text-align: left">Design the abstract state of a concept, aka the data model</td>
+          <td style="text-align: left">State clearly defines distinct components.</td>
+          <td style="text-align: left">Not clear exactly what is being stored in the state (eg, state for a UserProfile concept mentions only “information about users”, rather than saying that it stores a display name and bio for each user, for example).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">State covers all the objects needed to support the actions.</td>
+          <td style="text-align: left">State lists the properties of a single object, as if the concept were an object-oriented class (eg, state for an Authentication concept listing “username and password” and not recognizing that a username and password is required for each user, so that the login action can match against all possible users).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">State indexes components appropriately by object.</td>
+          <td style="text-align: left">State includes some components that are either not indexed, or are indexed incorrectly (eg, state for a Friend concept defines friends as a set of users, failing to say that there is a set of users for each user; or says that each user has a set of friends and a date the friendship started, when instead there should be a set of friendships per user, each with the friend and the date started).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">State includes components that belong to other concepts and are not needed for the actions.</td>
+          <td style="text-align: left">State includes properties of an object when just the identity would be sufficient (eg, the state of an Article concept for a blogging app represents the author of an article as a username and thumbnail image, when only the identity of the author is required and these additional fields should appear only in a UserProfile concept).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">State references external objects by properties when identities would suffice.</td>
+          <td style="text-align: left">State references objects by user-friendly names (eg, in an Article concept, the author is represented by their username rather than by a user type that represents the identity of a user).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">State is sufficiently rich to support all actions.</td>
+          <td style="text-align: left">A precondition or postcondition cannot be expressed fully because of a missing state component (eg, the state of a Token concept fails to include an expiry date needed to determine whether a validation action succeeds).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">State is abstract and not tainted by implementation concerns that are irrelevant to the behavior.</td>
+          <td style="text-align: left">A collection of objects is declared as a list (or worse a tree) when a simple set would suffice (eg, in a Friend concept, the friends of a user are given as a list rather than a set).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">State does not include needless redundancies (except those introduced to enable easier querying).</td>
+          <td style="text-align: left">State includes a set of objects that are implicitly ordered by some property, and needlessly declares the set as an ordered list (eg, in a GroupChat concept, declaring the collection of messages in a chat as an ordered list when the messages are already implicitly ordered by send time).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Actions</td>
+          <td style="text-align: left">Design the actions of a concept that update the state</td>
+          <td style="text-align: left">Actions required to set up the state are included.</td>
+          <td style="text-align: left">State includes components that have to be set up in advance of typical user interaction but actions are not provided to do so (eg, a ProductCatalog concept that does not include actions for populating a catalog in the first place).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Set of actions is sufficient to reach all states.</td>
+          <td style="text-align: left">The state includes a special case that is not handled by an action (eg, a Style concept that allows styles to be organized into a hierarchy, and includes an “as is” value for a format associated with a style, but offers no way to specify this through an action).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Set of actions is sufficient to update state components as needed.</td>
+          <td style="text-align: left">A state component is assumed to be mutable, but no action allows its mutation (eg, in a concept for handling user authentication by passwords, no action is provided to allow a user to change their password).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">For objects managed by the state, actions are provided to create, update and delete the objects as needed.</td>
+          <td style="text-align: left">Objects can only be created but never deleted (eg, a user account concept permits the creation of user accounts but no way to delete them).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Undo or compensating actions are present when needed.</td>
+          <td style="text-align: left">A user can submit a request for a resource but has no action to cancel the request (eg, in a restaurant reservation concept, there is no action for canceling a reservation).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Actions should not include getter methods.</td>
+          <td style="text-align: left">Actions are included that correspond to queries that a user would not typically be aware of and that might be performed repeatedly internally (eg, for a Post concept, an action that gets the author of a post).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Actions should specify all necessary preconditions. (For a code-level specification, a valid alternative is to specify an error return.)</td>
+          <td style="text-align: left">An action depends on a resource being allocated, and will fail if the resource is not available (eg, for an action to reserve a table in a restaurant reservation concept, a slot at the given time must be available).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Actions should only refer to state components of this concept.</td>
+          <td style="text-align: left">A common mistake is to refer to a component associated with an object that belongs to another concept (eg, an action in a Post concept takes a user object as an argument, and its specification refers to the name of the user, which belongs to a separate UserProfile concept).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Set of actions should be minimal and not include actions that are easily expressed in terms of other actions.</td>
+          <td style="text-align: left">An action is included that performs another existing action over all the elements of some set, wrongly included because the designer imagines this might be useful (eg, a room reservation concept has an action for reserving a room at multiple times, but which does not create any kind of repeat reservation which might justify the action).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Synchronizations for security</td>
+          <td style="text-align: left">Sufficient synchronizations are included for authentication and access control</td>
+          <td style="text-align: left">Synchronizations are included to identify user appropriately.</td>
+          <td style="text-align: left">An action that takes a user as an argument is invoked by a synchronization that binds that user to the currently active user (eg, when the user creates a post, the author of the post is assigned to the user creating it).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Synchronizations are included to prevent unauthorized access</td>
+          <td style="text-align: left">An action that requires a user to have a particular relationship to an object is appropriately synchronized with authentication actions and state access (eg, in a group chat concept, an attempt to post a message requires the creator of the post to be a member of the group; in a Article concept, the editor of an article is required to be its author).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Synchronizations to maintain coherent state</td>
+          <td style="text-align: left">Synchronizations are included so that the states of different concepts make sense globally</td>
+          <td style="text-align: left">Synchronizations are included to maintain invariants in which the presence of one object requires the presence of another.</td>
+          <td style="text-align: left">Actions that perform deletions are synchronized with cascading deletion actions for associated objects (eg, when a post is deleted in a Post concept, the comments of that post are deleted in a Comment concept).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">edit of post and associated upvotes and comments</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Synchronizations to support concepts that require it</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">notifications, logging, auditing</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Use state appropriately</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">to check conditions</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">to find appropriate object</td>
+          <td style="text-align: left">karma</td>
+      </tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
