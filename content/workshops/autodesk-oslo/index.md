@@ -19,7 +19,7 @@ editPost:
 
 | **Time**  | **Monday**           | **Tuesday**            |
 | --------- | -------------------- | ---------------------- |
-| **9:00**  | Welcome ([slides](./pdfs/0-welcome.pdf), [goals poll](https://app.sli.do/event/6EYs7HG2ceVXh5EiPQiw2q), [sw poll](https://app.sli.do/event/4jw4fpftSbYcSnycjiqCDA))     | Presentations (continued)  |
+| **9:00**  | Welcome ([slides](./pdfs/0-welcome.pdf), [goals poll](https://app.sli.do/event/pthNHf2MubcWG1k7wBA9EW), [challenge poll](https://app.sli.do/event/oYMHw6m4MbyZ4LBsTwCcwK))     | Presentations (continued)  |
 | **9:30**  | Introducing concepts ([slides](./pdfs/1-introducing-concepts.pdf)) | Designing systems ([slides](./pdfs/5-designing-systems.pdf)) |
 | **11:00** | Break | Break |
 | **11:10** | Exercises ([slides](./pdfs/2-comparisons-exercises.pdf), [comparisons](../../exercises/concept-comparison)) | Exercises ([slides](./pdfs/6-systems-exercises.pdf), [reading](../../exercises/system-reading), [writing](../../exercises/system-writing)) |
