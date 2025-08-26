@@ -29,7 +29,7 @@ editPost:
 | **3:15**  | Break                | Break                  |
 | **3:30**  | Exercises ([slides](./pdfs/4-concept-exercises.pdf), [reading](../../exercises/concept-reading), [writing](../../exercises/concept-writing))    | Autodesk exercises  |
 | **4:30**  | Presentations        | Presentations |
-| **4:45**  | End of day reflections             | End of workshop reflections ([survey](https://forms.gle/9XFWu4KvJLLVrGeT9))             |
+| **4:45**  | End of day reflections             | End of workshop reflections ([survey](https://docs.google.com/forms/d/e/1FAIpQLSdIng22bkVhoWBT6Udjk5auecnPseD9hmxbrLaK-j-5Bu8nLA/viewform?usp=sharing&ouid=116819486940564679399))             |
 | **5:00**  | Adjourn  | Adjourn                |
 
 # Goals
