@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Thu, 24 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://essenceofsoftware.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A new take on concept design</title>
@@ -265,6 +265,13 @@ actions
       <description>&lt;h2 id=&#34;why-modularity-matters&#34;&gt;Why modularity matters&lt;/h2&gt;
 &lt;p&gt;To see why modularity is so critical in software design, consider what goes wrong when it’s missing.&lt;/p&gt;
 &lt;p&gt;For the programmer, life becomes miserable. Whenever you need to understand or modify some piece of functionality, there’s no single place in the code to go to, and you may have to visit many widely separated locations (and just finding them can be a major challenge). Even removing (let alone adding) functionality is hard, because the parts of the codebase are all interconnected in subtle ways, and taking anything away risks breaking the parts that remain.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>WYSIWID: What you see is what it does</title>
+      <link>https://essenceofsoftware.com/posts/wysiwid/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://essenceofsoftware.com/posts/wysiwid/</guid>
+      <description>Rethinking software structure to enable LLM coding</description>
     </item>
     <item>
       <title>Autodesk Concept Design Workshop</title>

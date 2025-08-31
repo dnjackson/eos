@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>WYSIWID: What you see is what it does | The Essence of Software</title>
+<meta name="keywords" content="">
+<meta name="description" content="Rethinking software structure to enable LLM coding">
+<meta name="author" content="Daniel Jackson">
+<link rel="canonical" href="https://essenceofsoftware.com/posts/wysiwid/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.aa2bfdef797952672daec0a939a38dd67fec418d7067292a61ff5203ea5bb643.css" integrity="sha256-qiv973l5UmctrsCpOaON1n/sQY1wZykqYf9SA&#43;pbtkM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://essenceofsoftware.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://essenceofsoftware.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://essenceofsoftware.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://essenceofsoftware.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://essenceofsoftware.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://essenceofsoftware.com/posts/wysiwid/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRQ6HWW3ZW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WRQ6HWW3ZW');
+        }
+      </script><meta property="og:url" content="https://essenceofsoftware.com/posts/wysiwid/">
+  <meta property="og:site_name" content="The Essence of Software">
+  <meta property="og:title" content="WYSIWID: What you see is what it does">
+  <meta property="og:description" content="Rethinking software structure to enable LLM coding">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-08-31T00:00:00+00:00">
+      <meta property="og:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://essenceofsoftware.com/eos-twitter-card.png">
+<meta name="twitter:title" content="WYSIWID: What you see is what it does">
+<meta name="twitter:description" content="Rethinking software structure to enable LLM coding">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://essenceofsoftware.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "WYSIWID: What you see is what it does",
+      "item": "https://essenceofsoftware.com/posts/wysiwid/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "WYSIWID: What you see is what it does",
+  "name": "WYSIWID: What you see is what it does",
+  "description": "Rethinking software structure to enable LLM coding",
+  "keywords": [
+    
+  ],
+  "articleBody": "Full paper\nDividing labor with LLMs. As LLMs get better at writing code, it seems inevitable that there will be less work for human programmers. Thomas Dohmke is right that low-level coding skills will matter less and that “the future belongs to developers who can model systems, anticipate edge cases, and translate ambiguity into structure—skills that AI can’t automate.”\nDohmke says “We need to teach abstraction, decomposition, and specification not just as pre-coding steps, but as the new coding.” As someone who has been teaching these things as the core of coding for a few decades now, influenced by colleagues and my own teachers, I can’t disagree with that.\nBut this “division of labor” viewpoint—the human makes the big, high-level decisions and the LLM fills in the details—may not be the best way to think about AI in coding. First, it ignores the fact that LLM capabilities will undoubtedly improve, so the line between what LLMs can do and what must be left to a human coder is constantly shifting. Second, it assumes that all tasks at a particular level are alike, when in fact some high level design might be amenable to LLMs, and some low level coding may require human skills.\nBack to basics. Instead, we might ask: how should we build software so that humans and LLMs can work more effectively together? Most observers realize that the advent of LLMs is going to produce radical changes in software development. What they may not have recognized is how, paradoxically, LLMs will force us to re-adopt classic software engineering principles that we’ve only paid lip service to in recent years.\nThe end of software design? When ChatGPT came out, I worried that AI would suck all the air out of the room and it’d be ages before anyone would care about software design again. But then it began to dawn on me that the success of AI will be more dependent on good software design than most people realize, and that the advent of AI is more likely to revive interest in software fundamentals. A new era for software design?\nLLM coders are amazing. Coding has turned out to be one of the major successes of LLMs. Their capabilities are spectacular. Now that LLMs can one-shot entire applications, it’s hard to remember that just a few years ago researchers were struggling to synthesize ten-line functions.\nHype and reality. But, as anyone who has used LLM coders knows, the reality is not as pretty as the hype would suggest. LLMs quickly hit a complexity barrier when asked to build a full application, and when they operate as programming partners in a real codebase they tend to fumble around making changes in arbitrary places, breaking existing functionality, introducing security vulnerabilities and corroding the quality of the code—making coding take more time, not less. In short, they behave just like novice programmers.\nToday’s playbook. Most companies in this sector are following the same playbook. They hope to overcome the problems by stacking up one agent on another with more and more elaborate guidance and iterative strategies, and by giving these agents more control and wider access. It’s possible that this will work, but I’m skeptical. Evidence so far suggests that granting more control merely increases the risk of catastrophic errors. Widening access makes it harder to localize changes (and maintain structure), and means more tokens read and higher costs to the user. It’s common for agentic tools to ingest the entire codebase or reprocess a file many times even to make a tiny change.\nA new approach. A different approach is possible, however. Rather than seeking to adapt LLMs to the messy reality of software development, we might recognize that LLMs—and their failure to work effectively in complex codebases—are exposing flaws in how we develop software. They are the canary in the mine, sending us a signal that all is not happy in the way we write code.\nThis raises exciting prospects. If we can improve how we develop software, we might make LLMs more effective, so they scale to large and more complex systems and become more reliable even as they get better themselves. If software design can give a factor of 10 improvement for today’s LLMs, we might reasonably assume it will do the same for tomorrow’s, so that however effective LLMs become, good software design will continue to amplify their capabilities. And the gains improved design brings to LLMs, it should bring for human developers too.\nThe key idea. So what are the design ideas in this new approach? Well, the key idea is one of the oldest (and best). If we could structure our software in a modular fashion, with each module independent of the others, we could generate code one module at a time. That means the LLM’s context can be just the one module, and not the whole codebase. And since important behavioral properties would be encapsulated within individual modules, those properties would, by definition, continue to hold when other modules are modified.\nNot so easy. In practice, this is easier said than done. Codebases that purport to be modular turn out to be less modular than you might have hoped. This happens partly because modern software engineering practice encourages complex interfaces, and partly because even if programmers start out with a modular design, they’re not inclined to maintain it. We’ve coined a term—“technical debt”—to dignify the practice of creating a mess with the naive hope of fixing it later.\nOOP to blame. Lack of modularity happens for a more fundamental and interesting reason too. Even though most codebases for large systems are not strictly object-oriented, they tend to follow the gestalt of OOP, with functionality grouped according to the key entities of the problem domain. A typical structure for a blogging app, for example, breaks functionality into “stacks” of modules corresponding to entities such as User, Article, Comment, etc (and then breaks each stack into layers for routing, business logic and data persistence). The implicit rationale is that all functionality about users (authentication, eg) goes in the User stack; all functionality about articles (creating, deleting, editing, etc) goes in the Article stack; and so on. Unfortunately, though, a lot of functionality can’t be neatly assigned to an entity. Take favoriting, for example, in which users mark some articles as favorites to make them easy to visit later. Does this functionality belong to the User stack or the Article stack? There’s no good answer to this, and in one codebase we looked at it was split across both!\nA concept-based approach. Concept design makes modularity much easier to achieve. Concepts are defined not by entities but by user-facing purposes. So different functions associated with users (authentication, naming, profiles, notifications, preferences, etc) would be factored into distinct concepts. And favoriting would have a natural place—in its own concept.\nConcepts are independent. Concepts are, by definition, completely independent of one another. They have no knowledge of the interfaces (let alone the internals) of other concepts. All references to shared objects are fully polymorphic, and mutable state is never shared across concepts. This means that each concept can be designed and implemented by itself.\nSynchronizations for composition. So if concepts are independent, how are they coordinated at runtime? That’s what synchronizations (or syncs) are for. A sync is a kind of mediator that ties together actions across concepts, and manages dataflow between them. Syncs are very granular, and they factor out application-specific behavioral details that might otherwise compromise the reusability of concepts. For example, in our blogging example, syncs might include interactions such as:\nOnly allow an article to be editing if the authenticated user is the author When an article is deleted, delete its comments too When a comment is deleted, notify the author of the comment Syncs do need to know about concepts, but they only need their specifications. What we’ve done. We started experimenting with this idea two years ago. Barish Namazov, at the time an undergraduate in my research group, built a prototype tool called Kodless that generated concept implementations from minimal concept specification prompts (short talk here). (In Kodless, syncs were implemented as routes (HTTP endpoints), so they weren’t so granular.) Barish demonstrated that this worked by generating a backend for a HackerNews clone.\nOver the last year, my PhD student Eagon Meng has been working on improving this scheme. He developed a patterns for expressing granular syncs, and implemented it first using SPARQL and a graph database, and them more recently as a lightweight Typescript library. He also define a simple concept specification language. To demonstrate this new approach, we applied it to RealWorld, a benchmark collection of implementations of a Medium-like blogging app called Conduit. Standard LLMs have little trouble generating the concept specs from minimal prompts, and then generating concept implementations from them. Syncs are a bit trickier and needed some iteration, but LLMs seem to have no trouble with this pattern despite it being a bit unconventional.\nWYSIWID. The key quality of this approach is that code becomes “legible”, with a more straightforward correspondence between the behaviors that the user cares about the modular structure of the code. Concepts are a new kind of module which, unlike traditional modules, are user-facing (always having a purpose that maps directly to some user needs), fully decoupled from one another, and that separate concerns more cleanly. Syncs allow application-specific details to be factored out and represented in a granular way. In short, what you see (in the code) is what it does (for the user). Together, concepts and syncs offer a new structural pattern that allows LLMs to be applied in a more incremental and focused way, reducing costs while increasing scalability and integrity.\nProgress so far. We’ve written a paper explaining all of this which will appear at SPLASH Onward! this fall. We’re teaching this approach to undergraduates in the Software Design class that I’m running with my colleague Mitchell Gordon at MIT this fall. We’ve been using concept design and implementation in the class for several years, so what’s new is not the structure and modularity but leveraging LLMs to generate code. As a dry run, we did a hackathon with the wonderful folks from the Sundai Club a few weeks ago. About 40 people came and they spent the day using a concept-infused version of Cursor to generate some really impressive little apps.\nProspects. We’re excited to see where this goes. One direction, in the spirit of low-code apps, would be a SAAS tool for non-experts that offers a library of reusable concepts, and synthesizes apps by selecting concepts and compiling application-specific syncs to glue them together. Another, aimed at developers, would be an agentic workflow that not only compiles concept specs but also helps write them. We’re also thinking hard about front ends, and how they might also be structured with concepts and syncs, eliminating the aggregation of cross-concept data that currently makes endpoints needlessly complicated. Whatever happens, it seems that software design is here to stay…\n",
+  "wordCount" : "1838",
+  "inLanguage": "en",
+  "image": "https://essenceofsoftware.com/eos-twitter-card.png","datePublished": "2025-08-31T00:00:00Z",
+  "dateModified": "2025-08-31T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Daniel Jackson"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://essenceofsoftware.com/posts/wysiwid/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Essence of Software",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://essenceofsoftware.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://essenceofsoftware.com/" accesskey="h" title="The Essence of Software (Alt + H)">The Essence of Software</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://essenceofsoftware.com/ask/" title="FAQ">
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/buy/" title="Buy">
+                    <span>Buy</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/reviews/" title="Reviews">
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/author/" title="Author">
+                    <span>Author</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/tutorials/" title="Tutorials">
+                    <span>Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/studies/" title="Case Studies">
+                    <span>Case Studies</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://essenceofsoftware.com/subscribe/" title="Subscribe">
+                    <span>Subscribe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      WYSIWID: What you see is what it does
+    </h1>
+    <div class="post-description">
+      Rethinking software structure to enable LLM coding
+    </div>
+    <div class="post-meta"><span title='2025-08-31 00:00:00 +0000 UTC'>August 31, 2025</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Daniel Jackson&nbsp;|&nbsp;<a href="https://forum.essenceofsoftware.com" rel="noopener noreferrer" target="_blank">Comments</a>
+
+</div>
+  </header> 
+
+  <div class="post-content"><p><a href="https://arxiv.org/abs/2508.14511">Full paper</a></p>
+<p><img alt="A concept-based code generation scheme" loading="lazy" src="/posts/wysiwid/code-generation-scheme.png"></p>
+<p><strong>Dividing labor with LLMs</strong>. As LLMs get better at writing code, it seems inevitable that there will be less work for human programmers. <a href="https://ashtom.github.io/developers-reinvented">Thomas Dohmke</a> is right that low-level coding skills will matter less and that &ldquo;the future belongs to developers who can model systems, anticipate edge cases, and translate ambiguity into structure—skills that AI can’t automate.&rdquo;</p>
+<p>Dohmke says &ldquo;We need to teach abstraction, decomposition, and specification not just as pre-coding steps, but as the new coding.&rdquo; As someone who has been <a href="https://people.csail.mit.edu/dnj/publications/fall00-lectures.pdf">teaching</a> these things as the core of coding for a few decades now, influenced by <a href="https://www.researchgate.net/publication/221368374_The_CMU_Master_of_Software_Engineering_Core_Curriculum">colleagues</a> and my own <a href="https://mitpress.mit.edu/9780262121125/abstraction-and-specification-in-program-development/">teachers</a>, I can&rsquo;t disagree with that.</p>
+<p>But this &ldquo;division of labor&rdquo; viewpoint—the human makes the big, high-level decisions and the LLM fills in the details—may not be the best way to think about AI in coding. First, it ignores the fact that LLM capabilities will undoubtedly improve, so the line between what LLMs can do and what must be left to a human coder is constantly shifting. Second, it assumes that all tasks at a particular level are alike, when in fact some high level design might be amenable to LLMs, and some low level coding may require human skills.</p>
+<p><strong>Back to basics</strong>. Instead, we might ask: how should we build software so that humans and LLMs can work more effectively together? Most observers realize that the advent of LLMs is going to produce radical changes in software development. What they may not have recognized is how, paradoxically, LLMs will force us to re-adopt classic software engineering principles that we&rsquo;ve only paid lip service to in recent years.</p>
+<p><strong>The end of software design?</strong> When ChatGPT came out, I worried that AI would suck all the air out of the room and it&rsquo;d be ages before anyone would care about software design again. But then it began to dawn on me that the success of AI will be more dependent on good software design than most people realize, and that the advent of AI is more likely to revive interest in software fundamentals. A new era for software design?</p>
+<p><strong>LLM coders are amazing</strong>. Coding has turned out to be one of the major successes of LLMs. Their capabilities are spectacular. Now that LLMs can one-shot entire applications, it&rsquo;s hard to remember that just a few years ago researchers were struggling to synthesize ten-line functions.</p>
+<p><strong>Hype and reality</strong>. But, as anyone who has used LLM coders knows, the reality is not as pretty as the hype would suggest. LLMs quickly hit a complexity barrier when asked to build a full application, and when they operate as programming partners in a real codebase they tend to fumble around making changes in arbitrary places, <a href="https://yorkspace.library.yorku.ca/items/39fdcdf5-f606-4b77-b59a-27ed480838fa">breaking existing functionality</a>, introducing <a href="https://www.bu.edu/peaclab/files/2024/05/saad_ullah_llm_final.pdf">security vulnerabilities</a> and corroding the quality of the code—making coding take <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">more time</a>, not less. In short, they behave just like novice programmers.</p>
+<p><strong>Today&rsquo;s playbook</strong>. Most companies in this sector are following the same playbook. They hope to overcome the problems by stacking up one agent on another with more and more elaborate guidance and iterative strategies, and by giving these agents more control and wider access. It&rsquo;s possible that this will work, but I&rsquo;m skeptical. Evidence so far suggests that granting more control merely increases the risk of <a href="https://www.pcmag.com/news/vibe-coding-fiasco-replite-ai-agent-goes-rogue-deletes-company-database">catastrophic errors</a>. Widening access makes it harder to localize changes (and maintain structure), and means more tokens read and higher costs to the user. It&rsquo;s common for agentic tools to ingest the entire codebase or reprocess a file many times even to make a <a href="https://forum.cursor.com/t/why-is-a-simple-edit-eating-100-000-tokens-let-s-talk-about-this/120025">tiny change</a>.</p>
+<p><strong>A new approach</strong>. A different approach is possible, however. Rather than seeking to adapt LLMs to the messy reality of software development, we might recognize that LLMs—and their failure to work effectively in complex codebases—are exposing flaws in how we develop software. They are the canary in the mine, sending us a signal that all is not happy in the way we write code.</p>
+<p>This raises exciting prospects. If we can improve how we develop software, we might make LLMs more effective, so they scale to large and more complex systems and become more reliable even as they get better themselves. If software design can give a factor of 10 improvement for today&rsquo;s LLMs, we might reasonably assume it will do the same for tomorrow&rsquo;s, so that however effective LLMs become, good software design will continue to amplify their capabilities. And the gains improved design brings to LLMs, it should bring for human developers too.</p>
+<p><strong>The key idea</strong>. So what are the design ideas in this new approach? Well, the key idea is one of the oldest (and best). If we could structure our software in a <em>modular</em> fashion, with each module independent of the others, we could generate code one module at a time. That means the LLM&rsquo;s context can be just the one module, and not the whole codebase. And since important behavioral properties would be encapsulated within individual modules, those properties would, by definition, continue to hold when other modules are modified.</p>
+<p><strong>Not so easy</strong>. In practice, this is easier said than done. Codebases that purport to be modular turn out to be less modular than you might have hoped. This happens partly because modern software engineering practice encourages complex interfaces, and partly because even if programmers start out with a modular design, they&rsquo;re not inclined to maintain it. We&rsquo;ve coined a term—&ldquo;technical debt&rdquo;—to dignify the practice of creating a mess with the naive hope of fixing it later.</p>
+<p><strong>OOP to blame</strong>. Lack of modularity happens for a more fundamental and interesting reason too. Even though most codebases for large systems are not strictly object-oriented, they tend to follow the gestalt of OOP, with functionality grouped according to the key entities of the problem domain. A typical structure for a blogging app, for example, breaks functionality into &ldquo;stacks&rdquo; of modules corresponding to entities such as User, Article, Comment, etc (and then breaks each stack into layers for routing, business logic and data persistence). The implicit rationale is that all functionality about users (authentication, eg) goes in the User stack; all functionality about articles (creating, deleting, editing, etc) goes in the Article stack; and so on. Unfortunately, though, a lot of functionality can&rsquo;t be neatly assigned to an entity. Take favoriting, for example, in which users mark some articles as favorites to make them easy to visit later. Does this functionality belong to the User stack or the Article stack? There&rsquo;s no good answer to this, and in one codebase we looked at it was split across both!</p>
+<p><strong>A concept-based approach</strong>. <a href="https://essenceofsoftware.com/posts/three-stages/">Concept design</a> makes modularity much easier to achieve. Concepts are defined not by entities but by user-facing purposes. So different functions associated with users (authentication, naming, profiles, notifications, preferences, etc) would be factored into distinct concepts. And favoriting would have a natural place—in its own concept.</p>
+<p><strong>Concepts are independent</strong>. Concepts are, by definition, <em>completely</em> <a href="https://essenceofsoftware.com/tutorials/concept-basics/modularity/">independent</a> of one another. They have no knowledge of the interfaces (let alone the internals) of other concepts. All references to shared objects are fully polymorphic, and mutable state is never shared across concepts. This means that each concept can be designed and implemented by itself.</p>
+<p><strong>Synchronizations for composition</strong>. So if concepts are independent, how are they coordinated at runtime? That&rsquo;s what synchronizations (or syncs) are for. A sync is a kind of mediator that ties together actions across concepts, and manages dataflow between them. Syncs are very granular, and they factor out application-specific behavioral details that might otherwise compromise the reusability of concepts. For example, in our blogging example, syncs might include interactions such as:</p>
+<ul>
+<li>Only allow an article to be editing if the authenticated user is the author</li>
+<li>When an article is deleted, delete its comments too</li>
+<li>When a comment is deleted, notify the author of the comment
+Syncs <em>do</em> need to know about concepts, but they only need their specifications.</li>
+</ul>
+<p><strong>What we&rsquo;ve done</strong>. We started experimenting with this idea two years ago. <a href="https://barish.me">Barish Namazov</a>, at the time an undergraduate in my research group, built a prototype tool called Kodless that generated concept implementations from minimal concept specification prompts (short talk <a href="https://www.youtube.com/watch?v=WgOhtH3lugk&amp;list=PLY_nsiUEgM3nbxcO3_ONmKL-ZRhLKpfGV">here</a>). (In Kodless, syncs were implemented as routes (HTTP endpoints), so they weren&rsquo;t so granular.) Barish demonstrated that this worked by generating a backend for a HackerNews clone.</p>
+<p>Over the last year, my PhD student Eagon Meng has been working on improving this scheme. He developed a patterns for expressing granular syncs, and implemented it first using SPARQL and a graph database, and them more recently as a lightweight Typescript library. He also define a simple concept specification language. To demonstrate this new approach, we applied it to <a href="http://realworld.io">RealWorld</a>, a benchmark collection of implementations of a Medium-like blogging app called Conduit. Standard LLMs have little trouble generating the concept specs from minimal prompts, and then generating concept implementations from them. Syncs are a bit trickier and needed some iteration, but LLMs seem to have no trouble with this pattern despite it being a bit unconventional.</p>
+<p><strong>WYSIWID</strong>. The key quality of this approach is that code becomes &ldquo;legible&rdquo;, with a more straightforward correspondence between the behaviors that the user cares about the modular structure of the code. Concepts are a new kind of module which, unlike traditional modules, are <strong>user-facing</strong> (always having a purpose that maps directly to some user needs), <strong>fully decoupled</strong> from one another, and that <strong>separate concerns</strong> more cleanly. Syncs allow application-specific details to be factored out and represented in a granular way. In short, <strong>what you see</strong> (in the code) <strong>is what it does</strong> (for the user). Together, concepts and syncs offer a new structural pattern that allows LLMs to be applied in a more incremental and focused way, reducing costs while increasing scalability and integrity.</p>
+<p><strong>Progress so far</strong>. We&rsquo;ve written a <a href="https://arxiv.org/abs/2508.14511">paper</a> explaining all of this which will appear at <a href="https://2025.splashcon.org/track/splash-2025-Onward-papers">SPLASH Onward!</a> this fall. We&rsquo;re teaching this approach to undergraduates in the Software Design <a href="http://61040-fa25.github.io">class</a> that I&rsquo;m running with my colleague <a href="https://mgordon.me">Mitchell Gordon</a> at MIT this fall. We&rsquo;ve been using concept design and implementation in the class for several years, so what&rsquo;s new is not the structure and modularity but leveraging LLMs to generate code. As a dry run, we did a hackathon with the wonderful folks from the <a href="https://www.sundai.club">Sundai Club</a> a few weeks ago. About 40 people came and they spent the day using a concept-infused version of Cursor to generate some really impressive little apps.</p>
+<p><strong>Prospects</strong>. We&rsquo;re excited to see where this goes. One direction, in the spirit of low-code apps, would be a SAAS tool for non-experts that offers a library of reusable concepts, and synthesizes apps by selecting concepts and compiling application-specific syncs to glue them together. Another, aimed at developers, would be an agentic workflow that not only compiles concept specs but also helps write them. We&rsquo;re also thinking hard about front ends, and how they might also be structured with concepts and syncs, eliminating the aggregation of cross-concept data that currently makes endpoints needlessly complicated. Whatever happens, it seems that software design is here to stay&hellip;</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+
+    <span>&copy; 2025 <a href="https://essenceofsoftware.com/">Daniel Jackson</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
