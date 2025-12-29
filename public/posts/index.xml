@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Daniel Jackson</copyright>
-    <lastBuildDate>Sun, 31 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://essenceofsoftware.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why concepts aren&#39;t objects</title>
+      <link>https://essenceofsoftware.com/posts/concepts-and-oop/</link>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://essenceofsoftware.com/posts/concepts-and-oop/</guid>
+      <description>Object oriented modeling and its pitfalls.</description>
+    </item>
     <item>
       <title>WYSIWID: What you see is what it does</title>
       <link>https://essenceofsoftware.com/posts/wysiwid/</link>
