@@ -66,9 +66,7 @@ Finally we come to the notion of object orientation that is most relevant at the
 
 This notion has its roots in a very compelling idea: that a software system can be constructed in two parts, one a model that tracks the state of the world outside, and the other a collection of queries on this model.
 
-Michael Jackson's [JSD method](https://en.wikipedia.org/wiki/Jackson_system_development) (1986) is the most systematic and elegant formulation of this idea. A banking system, for example, has a model that has an entity for each bank account; as customers perform deposits and withdrawals, the state of the entity is updated; a bank statement is then just a query on the state of the bank account object.
-
-Jackson modeled each entity as a long-lived process; this made it possible to handle real-time functionality using the same idea. 
+Michael Jackson's [JSD method](https://en.wikipedia.org/wiki/Jackson_system_development) (1986) is the most systematic and elegant formulation of this idea. A banking system, for example, has a model that has an entity for each bank account; as customers perform deposits and withdrawals, the state of the entity is updated; a bank statement is then just a query on the state of the bank account object. Jackson modeled each entity as a long-lived process; this made it possible to handle real-time functionality using the same idea. 
 
 The [Object Management Technique](https://www.amazon.com/Object-Oriented-Modeling-Design-James-Rumbaugh/dp/0136298419) (OMT, 1991) applied this idea in the more conventional context of data modeling and databases, and was one of the sources of UML, a modeling language that has been largely abandoned but lives on in spirit.
 
